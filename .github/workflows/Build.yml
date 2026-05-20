@@ -224,7 +224,7 @@ jobs:
             git commit -m "Update Files List:
         $CHANGED_FILES
         ---
-        Time: $CURRENT_TIME"
+        Time: $CURRENT_DATE"
             git push origin main
           else
             echo "No changes to commit."
