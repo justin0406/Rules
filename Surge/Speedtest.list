@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 17127
+# 规则统计: 17131
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -3503,6 +3503,7 @@ DOMAIN,sp1.speedcom.com.br
 DOMAIN,sp1.speedfiberconnect.net.br
 DOMAIN,sp1.speedfibranetwork.com.br
 DOMAIN,sp1.speedtest.kaza.cz
+DOMAIN,sp1.speedy.bb-swrag.de
 DOMAIN,sp1.speedy.breitband-rostock.de
 DOMAIN,sp1.spitwspots.com
 DOMAIN,sp1.sulconnect.com.br
@@ -4599,6 +4600,7 @@ DOMAIN,speed.wiupfibra.com
 DOMAIN,speed.wlinktelecom.net.br
 DOMAIN,speed.wmatera.com.br
 DOMAIN,speed.worldfast.net.br
+DOMAIN,speed.x-idleb.com
 DOMAIN,speed.x-sy.com
 DOMAIN,speed.xeonbd.com
 DOMAIN,speed.xfiber.net.il
@@ -5640,6 +5642,7 @@ DOMAIN,speedtest-nix-2.redi.es
 DOMAIN,speedtest-njf.asiacell.com
 DOMAIN,speedtest-nl.bellaliant.net
 DOMAIN,speedtest-nl.cloudlease.co.il
+DOMAIN,speedtest-nl.digiturunc.com
 DOMAIN,speedtest-nl.eastlink.ca
 DOMAIN,speedtest-nl.hyperfilter.com
 DOMAIN,speedtest-nl.the.hosting
@@ -12427,6 +12430,7 @@ DOMAIN,speedtest01.netbarra.net.br
 DOMAIN,speedtest01.netflexfibra.com.br
 DOMAIN,speedtest01.netflextelecom.com.br
 DOMAIN,speedtest01.netgool.com.br
+DOMAIN,speedtest01.netmountains.space
 DOMAIN,speedtest01.netway.com.ar
 DOMAIN,speedtest01.nteb.no
 DOMAIN,speedtest01.o-net.ca
