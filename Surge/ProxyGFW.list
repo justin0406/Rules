@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 8048
+# 规则统计: 8049
 
 DOMAIN,ccmdl.adobe.com
 DOMAIN,cloud.oracle.com
@@ -4510,6 +4510,7 @@ DOMAIN-SUFFIX,motor4ik.ru
 DOMAIN-SUFFIX,mousebreaker.com
 DOMAIN-SUFFIX,movements.org
 DOMAIN-SUFFIX,moviefap.com
+DOMAIN-SUFFIX,mozilla.ai
 DOMAIN-SUFFIX,mozilla.com
 DOMAIN-SUFFIX,mozilla.org
 DOMAIN-SUFFIX,moztw.org
