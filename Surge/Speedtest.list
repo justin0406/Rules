@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 17285
+# 规则统计: 17287
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -16156,6 +16156,7 @@ DOMAIN,teste.wfitelecom.com.br
 DOMAIN,teste.wificonnect.com.br
 DOMAIN,teste.winforbyte.com.br
 DOMAIN,teste.witelecom.com.br
+DOMAIN,teste.wnettecnologia.com.br
 DOMAIN,teste.wsconnect.com.br
 DOMAIN,teste.wsfibra.com.br
 DOMAIN,teste.wspeednet.com.br
@@ -16615,6 +16616,7 @@ DOMAIN,velocidade.gti.masternetrs.com.br
 DOMAIN,velocidade.gtmtelecom.com.br
 DOMAIN,velocidade.hardonline.com.br
 DOMAIN,velocidade.hnaconecta.com.br
+DOMAIN,velocidade.hrcfiber.com
 DOMAIN,velocidade.hrctelecom.com.br
 DOMAIN,velocidade.hypernettelecombv.com.br
 DOMAIN,velocidade.i2telecom.com.br
