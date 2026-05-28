@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 8049
+# 规则统计: 8050
 
 DOMAIN,ccmdl.adobe.com
 DOMAIN,cloud.oracle.com
@@ -1835,6 +1835,7 @@ DOMAIN-SUFFIX,doujincafe.com
 DOMAIN-SUFFIX,doujins.com
 DOMAIN-SUFFIX,dowei.org
 DOMAIN-SUFFIX,dowjones.com
+DOMAIN-SUFFIX,dowjones.io
 DOMAIN-SUFFIX,downdetector.com
 DOMAIN-SUFFIX,downdetectorapi.com
 DOMAIN-SUFFIX,download.dappcdn.com
