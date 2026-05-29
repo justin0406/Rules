@@ -104,7 +104,7 @@ jobs:
                 "https://raw.githubusercontent.com/Elysian-Realme/FuGfConfig/main/ConfigFile/Surge/Apple/cdn-domain.list"
                 "https://raw.githubusercontent.com/Elysian-Realme/FuGfConfig/main/ConfigFile/Surge/Apple/domain.list"
                 "https://ruleset.skk.moe/List/non_ip/apple_cn.conf"
-                "https://ruleset.skk.moe/List/non_ip/apple_cdn.conf"
+                "https://ruleset.skk.moe/List/domainset/apple_cdn.conf"
             )
             > Tool-repo/Ruleset/AppleCN.list
             for url in "${urls[@]}"; do
