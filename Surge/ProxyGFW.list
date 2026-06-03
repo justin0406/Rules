@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 8056
+# 规则统计: 8057
 
 DOMAIN,ccmdl.adobe.com
 DOMAIN,cloud.oracle.com
@@ -5361,6 +5361,7 @@ DOMAIN-SUFFIX,post01.com
 DOMAIN-SUFFIX,post76.com
 DOMAIN-SUFFIX,post852.com
 DOMAIN-SUFFIX,postadult.com
+DOMAIN-SUFFIX,posthog.com
 DOMAIN-SUFFIX,postimg.org
 DOMAIN-SUFFIX,postmarkapp.com
 DOMAIN-SUFFIX,posts.careerengine.us
