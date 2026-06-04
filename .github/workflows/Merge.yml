@@ -149,8 +149,8 @@ jobs:
             done
             # 下载规则
             files=(
-                # 苹果
-                "APNs.list https://git.repcz.link/kelee.one/Tool/Loon/Lsr/ApplePushNotificationService.lsr"
+                # Apple APNS
+                "AppleAPNs.list https://git.repcz.link/kelee.one/Tool/Loon/Lsr/ApplePushNotificationService.lsr"
             )
             for file in "${files[@]}"; do
                 set -- $file
