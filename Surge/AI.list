@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 132
+# 规则统计: 137
 
 DOMAIN,ai-gateway.vercel.sh
 DOMAIN,ai.google.dev
@@ -16,12 +16,16 @@ DOMAIN,api.githubcopilot.com
 DOMAIN,api.hyperbolic.xyz
 DOMAIN,api.jetbrains.ai
 DOMAIN,api.x.ai
+DOMAIN,apple-relay.apple.com
+DOMAIN,apple-relay.cloudflare.com
+DOMAIN,apple-relay.fastly-edge.com
 DOMAIN,bard.google.com
 DOMAIN,chat.mistral.ai
 DOMAIN,chatgpt.livekit.cloud
 DOMAIN,console.mistral.ai
 DOMAIN,copilot-proxy.githubusercontent.com
 DOMAIN,copilot.microsoft.com
+DOMAIN,cp4.cloudflare.com
 DOMAIN,daily-cloudcode-pa.googleapis.com
 DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com
 DOMAIN,deepmind.com
@@ -32,6 +36,7 @@ DOMAIN,gemini.google
 DOMAIN,gemini.google.com
 DOMAIN,generativeai.google
 DOMAIN,generativelanguage.googleapis.com
+DOMAIN,gspe1-ssl.ls.apple.com
 DOMAIN,host.livekit.cloud
 DOMAIN,imagine.meta.com
 DOMAIN,integrate.api.nvidia.com
