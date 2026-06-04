@@ -30,7 +30,7 @@ jobs:
         if [[ "$repo_name" == "Rules" ]]; then
             echo "Running in Rules repository"
             mkdir -p Tool-repo/Ruleset
-            # 合并 Direct Fix 规则
+            # 合并 SukkaW Direct 规则
             urls=(
                 "https://ruleset.skk.moe/List/non_ip/direct.conf"
             )
@@ -39,6 +39,17 @@ jobs:
                 echo "Downloading: $url"
                 curl -f -L "$url" >> Tool-repo/Ruleset/Direct.list || { echo "Download Failed: $url"; exit 1; }
                 echo "" >> Tool-repo/Ruleset/Direct.list
+            done
+            # 合并 SukkaW CN 规则
+            urls=(
+                "https://ruleset.skk.moe/List/non_ip/domestic.conf"
+                "https://ruleset.skk.moe/List/ip/domestic.conf"
+            )
+            > Tool-repo/Ruleset/CN.list
+            for url in "${urls[@]}"; do
+                echo "Downloading: $url"
+                curl -f -L "$url" >> Tool-repo/Ruleset/CN.list || { echo "Download Failed: $url"; exit 1; }
+                echo "" >> Tool-repo/Ruleset/CN.list
             done
             # 合并 SukkaW CDN 规则
             urls=(
@@ -50,6 +61,29 @@ jobs:
                 echo "Downloading: $url"
                 curl -f -L "$url" >> Tool-repo/Ruleset/CDN.list || { echo "Download Failed: $url"; exit 1; }
                 echo "" >> Tool-repo/Ruleset/CDN.list
+            done
+            # 合并 SukkaW ChinaIP 规则
+            urls=(
+                "https://ruleset.skk.moe/List/ip/china_ip.conf"
+                "https://ruleset.skk.moe/List/ip/china_ip_ipv6.conf"
+            )
+            > Tool-repo/Ruleset/ChinaIP.list
+            for url in "${urls[@]}"; do
+                echo "Downloading: $url"
+                curl -f -L "$url" >> Tool-repo/Ruleset/ChinaIP.list || { echo "Download Failed: $url"; exit 1; }
+                echo "" >> Tool-repo/Ruleset/ChinaIP.list
+            done
+            # 合并 SukkaW TG 规则
+            urls=(
+                "https://ruleset.skk.moe/List/non_ip/telegram.conf"
+                "https://ruleset.skk.moe/List/ip/telegram.conf"
+                "https://ruleset.skk.moe/List/ip/telegram_asn.conf"
+            )
+            > Tool-repo/Ruleset/TG.list
+            for url in "${urls[@]}"; do
+                echo "Downloading: $url"
+                curl -f -L "$url" >> Tool-repo/Ruleset/TG.list || { echo "Download Failed: $url"; exit 1; }
+                echo "" >> Tool-repo/Ruleset/TG.list
             done
             # 合并 ProxyGFW 规则
             urls=(
@@ -77,6 +111,7 @@ jobs:
             # 合并 AI 规则
             urls=(
                 "https://ruleset.skk.moe/List/non_ip/ai.conf"
+                "https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf"
                 "https://git.repcz.link/kelee.one/Tool/Loon/Lsr/AI.lsr"
                 "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/AI.list"
             )
