@@ -1,4 +1,4 @@
-name: Build
+name: Merge
 
 on:
   workflow_dispatch:
