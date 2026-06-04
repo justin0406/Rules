@@ -85,17 +85,17 @@ jobs:
                 curl -f -L "$url" >> Tool-repo/Ruleset/TG.list || { echo "Download Failed: $url"; exit 1; }
                 echo "" >> Tool-repo/Ruleset/TG.list
             done
-            # 合并 ProxyGFW 规则
+            # 合并 GFW 规则
             urls=(
                 "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
                 "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt"
                 "https://ruleset.skk.moe/List/non_ip/global.conf"
             )
-            > Tool-repo/Ruleset/ProxyGFW.list
+            > Tool-repo/Ruleset/GFW.list
             for url in "${urls[@]}"; do
                 echo "Downloading: $url"
-                curl -f -L "$url" >> Tool-repo/Ruleset/ProxyGFW.list || { echo "Download Failed: $url"; exit 1; }
-                echo "" >> Tool-repo/Ruleset/ProxyGFW.list
+                curl -f -L "$url" >> Tool-repo/Ruleset/GFW.list || { echo "Download Failed: $url"; exit 1; }
+                echo "" >> Tool-repo/Ruleset/GFW.list
             done
             # 合并 Speedtest 规则
             urls=(
