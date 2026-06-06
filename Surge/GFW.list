@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8059
+# 规则统计: 8060
 
 DOMAIN,ccmdl.adobe.com
 DOMAIN,cloud.oracle.com
@@ -6759,6 +6759,7 @@ DOMAIN-SUFFIX,tr
 DOMAIN-SUFFIX,tracfone.com
 DOMAIN-SUFFIX,tradingview.com
 DOMAIN-SUFFIX,traffichaus.com
+DOMAIN-SUFFIX,trakt.tv
 DOMAIN-SUFFIX,translate.goog
 DOMAIN-SUFFIX,transparency.org
 DOMAIN-SUFFIX,travelinkcard.com
