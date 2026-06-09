@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8060
+# 规则统计: 8061
 
 DOMAIN,ccmdl.adobe.com
 DOMAIN,cloud.oracle.com
@@ -2286,6 +2286,7 @@ DOMAIN-SUFFIX,fixupx.com
 DOMAIN-SUFFIX,fixvx.com
 DOMAIN-SUFFIX,fizzik.com
 DOMAIN-SUFFIX,flagsonline.it
+DOMAIN-SUFFIX,flathub.org
 DOMAIN-SUFFIX,flecheinthepeche.fr
 DOMAIN-SUFFIX,fleshbot.com
 DOMAIN-SUFFIX,fleursdeslettres.com
