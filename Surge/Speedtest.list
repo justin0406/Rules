@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 17012
+# 规则统计: 17014
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -14221,6 +14221,7 @@ DOMAIN,speedvelletri.teleimpiantisrl.net
 DOMAIN,speedvha.cntconnect.com.br
 DOMAIN,speedvox-ita.voxconexao.com.br
 DOMAIN,speedvox-mcl01.voxconexao.com.br
+DOMAIN,speedy-ookla.cablelink.at
 DOMAIN,speedy.colton.com
 DOMAIN,speedy.jabnet.id
 DOMAIN,speedy.lybertynet.com.br
@@ -16064,6 +16065,7 @@ DOMAIN,tlaquepaque.speedtest.totalplay.com.mx
 DOMAIN,tlc2-speedtest.globe.com.ph
 DOMAIN,tldk-st.astel.kz
 DOMAIN,tls.cubic.ookla.bytel.fr
+DOMAIN,tls3.speedtest.mire.sfr.net
 DOMAIN,tlssp1.myaisfibre.com
 DOMAIN,tmas-ga-st.highlinefast.com
 DOMAIN,tmbtest.cixve.net
