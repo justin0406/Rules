@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 17014
+# 规则统计: 17018
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -1137,6 +1137,7 @@ DOMAIN,jp-nperf.verizon.net.prod.hosts.ooklaserver.net
 DOMAIN,jp.speedtest.bug.pw
 DOMAIN,jp.speedtest.bug.pw.prod.hosts.ooklaserver.net
 DOMAIN,jp.speedtest.railtel.in
+DOMAIN,jp1-speedtest-infra.lunaiz.com
 DOMAIN,jrnet.tinfosolution.com.br
 DOMAIN,jsnspt.jsonsnetworks.com
 DOMAIN,jsrst.protoactnetworks.com
@@ -4850,6 +4851,7 @@ DOMAIN,speedjpr1.jioconnect.com
 DOMAIN,speedkaltim.lancarjaya.net.id
 DOMAIN,speedkl.time.com.my
 DOMAIN,speedkle.htspl.in
+DOMAIN,speedkonya.fizynet.com.tr
 DOMAIN,speedkovai.cherrinet.in
 DOMAIN,speedlacruz.altamedios.cl
 DOMAIN,speedlc.planaltonet.net.br
@@ -8723,6 +8725,7 @@ DOMAIN,speedtest.itc.com.ar
 DOMAIN,speedtest.itcom.al
 DOMAIN,speedtest.itcsa.net
 DOMAIN,speedtest.itctel.com
+DOMAIN,speedtest.itegal.es
 DOMAIN,speedtest.itel.com
 DOMAIN,speedtest.itel.com.ni
 DOMAIN,speedtest.itelkom.co
@@ -10027,6 +10030,7 @@ DOMAIN,speedtest.ntspark.coop
 DOMAIN,speedtest.nu-ip.ro
 DOMAIN,speedtest.nu-z.net
 DOMAIN,speedtest.nubesmart.com
+DOMAIN,speedtest.nuclearhost.it
 DOMAIN,speedtest.nuetel.com
 DOMAIN,speedtest.nuevosiglo.com.uy
 DOMAIN,speedtest.nullworks.dev
