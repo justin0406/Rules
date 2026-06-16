@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 17019
+# 规则统计: 17020
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -16232,6 +16232,7 @@ DOMAIN,vel-ija.soumaster.com.br
 DOMAIN,vel-moc.soumaster.com.br
 DOMAIN,vel-ptu.soumaster.com.br
 DOMAIN,vel-tte.soumaster.com.br
+DOMAIN,vel.cabralnet.com.br
 DOMAIN,vel.certto.com.br
 DOMAIN,vel01.conectarbrasil.tec.br
 DOMAIN,vel01.foradehora.com.br
