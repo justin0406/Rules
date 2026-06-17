@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 17020
+# 规则统计: 17022
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -4636,6 +4636,7 @@ DOMAIN,speed07.gonetspeed.com
 DOMAIN,speed08.gonetspeed.com
 DOMAIN,speed09.gonetspeed.com
 DOMAIN,speed1.acessocom.net.br
+DOMAIN,speed1.airtek.com.ve
 DOMAIN,speed1.aymaninternet.in
 DOMAIN,speed1.bluwifi.in
 DOMAIN,speed1.bottegatelecom.com.br
@@ -13906,6 +13907,7 @@ DOMAIN,speedtestmera.vs.mythic-beasts.com
 DOMAIN,speedtestmera.vs.mythic-beasts.com.prod.hosts.ooklaserver.net
 DOMAIN,speedtestmgn.ajustconsulting.com.br
 DOMAIN,speedtestmgw.ipn.net.id
+DOMAIN,speedtestmh.airtelbroadband.in
 DOMAIN,speedtestmi.ktsolutions.it
 DOMAIN,speedtestmi001pg.tecnoadsl.it
 DOMAIN,speedtestmi1.telecomitalia.it
