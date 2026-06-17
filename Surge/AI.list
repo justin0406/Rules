@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 137
+# 规则统计: 138
 
 DOMAIN,ai-gateway.vercel.sh
 DOMAIN,ai.google.dev
@@ -58,6 +58,7 @@ DOMAIN,production-openaicom-storage.azureedge.net
 DOMAIN,robinfrontend-pa.googleapis.com
 DOMAIN,router.huggingface.co
 DOMAIN,sydney.bing.com
+DOMAIN,token-plan-sgp.xiaomimimo.com
 DOMAIN,trae-api-sg.mchost.guru
 DOMAIN,turn.livekit.cloud
 DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
