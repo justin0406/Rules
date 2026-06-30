@@ -262,7 +262,6 @@ jobs:
             lcnt=$(wc -l < "$out")
             sed -i "1i\# 规则名称: $fname\n# 规则统计: $lcnt\n" "$out"
           done
-          cd repo/QuantumultX && (cp Ads_DiDiChuXing.list DDCX.snippet 2>/dev/null || true)
 
       # =========================================================================
       # Step 10: Shadowrocket 平台格式处理
