@@ -1,0 +1,353 @@
+# =============================================================================
+# 规则集自动构建工作流（标准多平台适配版）
+# 每天 0:05 和 12:05 (UTC) 自动运行，从上游源下载规则并转换为多平台格式
+# =============================================================================
+name: Merge
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "5 0,12 * * *"
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    env:
+      TZ: "Asia/Shanghai"
+
+    steps:
+      # =========================================================================
+      # Step 1: 检出仓库
+      # =========================================================================
+      - name: Checkout Repository
+        uses: actions/checkout@v7.0.0
+        with:
+          repository: ${{ github.repository }}
+          path: repo
+
+      # =========================================================================
+      # Step 2: 异步并发下载上游规则源并合并（分行易读格式）
+      # =========================================================================
+      - name: Download and merge
+        run: |
+          #!/bin/bash
+          set -euo pipefail
+
+          if [[ "$(basename "$GITHUB_REPOSITORY")" != "Rules" ]]; then
+            echo "Error: This script is intended to run in the 'Rules' repository."
+            exit 1
+          fi
+
+          mkdir -p repo/Ruleset
+          
+          declare -A RULE_SOURCES=(
+            ["Direct"]="
+              https://ruleset.skk.moe/List/non_ip/direct.conf
+            "
+            
+            ["CN"]="
+              https://ruleset.skk.moe/List/non_ip/domestic.conf
+              https://ruleset.skk.moe/List/ip/domestic.conf
+            "
+            
+            ["CDN"]="
+              https://ruleset.skk.moe/List/domainset/cdn.conf
+              https://ruleset.skk.moe/List/non_ip/cdn.conf
+            "
+            
+            ["ChinaIP"]="
+              https://ruleset.skk.moe/List/ip/china_ip.conf
+              https://ruleset.skk.moe/List/ip/china_ip_ipv6.conf
+              https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt
+            "
+            
+            ["TG"]="
+              https://ruleset.skk.moe/List/non_ip/telegram.conf
+              https://ruleset.skk.moe/List/ip/telegram.conf
+              https://ruleset.skk.moe/List/ip/telegram_asn.conf
+            "
+            
+            ["GFW"]="
+              https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+              https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
+              https://ruleset.skk.moe/List/non_ip/global.conf
+            "
+            
+            ["Speedtest"]="
+              https://ruleset.skk.moe/List/domainset/speedtest.conf
+            "
+            
+            ["AI"]="
+              https://ruleset.skk.moe/List/non_ip/ai.conf
+              https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf
+              https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/AI.list
+              https://raw.githubusercontent.com/EAlyce/conf/refs/heads/main/Rule/OpenAI.list
+            "
+            
+            ["AppleProxy"]="
+              https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleProxy/AppleProxy.list
+              https://raw.githubusercontent.com/Elysian-Realme/FuGfConfig/main/ConfigFile/Surge/Apple/no-cn-cdn-domain.list
+            "
+            
+            ["AppleCN"]="
+              https://raw.githubusercontent.com/Elysian-Realme/FuGfConfig/main/ConfigFile/Surge/Apple/update-domain.list
+              https://raw.githubusercontent.com/Elysian-Realme/FuGfConfig/main/ConfigFile/Surge/Apple/api-domain.list
+              https://raw.githubusercontent.com/Elysian-Realme/FuGfConfig/main/ConfigFile/Surge/Apple/cdn-domain.list
+              https://raw.githubusercontent.com/Elysian-Realme/FuGfConfig/main/ConfigFile/Surge/Apple/domain.list
+              https://ruleset.skk.moe/List/non_ip/apple_cn.conf
+              https://ruleset.skk.moe/List/domainset/apple_cdn.conf
+            "
+          )
+
+          for filename in "${!RULE_SOURCES[@]}"; do
+            (
+              output_file="repo/Ruleset/${filename}.list"
+              > "$output_file"
+              for url in ${RULE_SOURCES[$filename]}; do
+                if ! curl -f -s -L "$url" >> "$output_file"; then
+                  echo "Warning: Failed to download $url"
+                fi
+                echo "" >> "$output_file"
+              done
+            ) &
+          done
+          wait
+
+      # =========================================================================
+      # Step 3 & 4: 源文件格式标准化与高性能排序去重
+      # =========================================================================
+      - name: Process and Format Rules
+        run: |
+          set -euo pipefail
+          for file in repo/Ruleset/*.list; do
+            [ -f "$file" ] || continue
+            
+            awk '
+            { sub(/ \/\/.*$/, ""); }
+            /^\s*$/ || /^\s*[#;]/ { next }
+            /ad\.12306\.cn/ { next }
+            /^\./ { sub(/^\./, "DOMAIN-SUFFIX,"); }
+            !/^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|DOMAIN-WILDCARD|IP-CIDR|IP-CIDR6|IP-ASN|GEOIP|AND|OR|NOT|URL-REGEX|USER-AGENT|PROCESS-NAME|DEST-PORT),/ {
+              if ($0 ~ /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+\/[0-9]+/) $0 = "IP-CIDR," $0;
+              else if ($0 ~ /^[a-fA-F0-9]+:|([a-fA-F0-9]+:+)+[a-fA-F0-9]+\/[0-9]+/) $0 = "IP-CIDR6," $0;
+              else $0 = "DOMAIN," $0;
+            }
+            /DOMAIN,.*ruleset\.skk\.moe/ { next }
+            { sub(/,reject$/, ""); gsub(/, */, ","); }
+            {
+              key = tolower($0);
+              if (seen[key]++) next;
+              
+              weight = 15;
+              if ($0 ~ /^DOMAIN,/) weight = 0;
+              else if ($0 ~ /^DOMAIN-SUFFIX,/) weight = 1;
+              else if ($0 ~ /^DOMAIN-KEYWORD,/) weight = 2;
+              else if ($0 ~ /^DOMAIN-WILDCARD,/) weight = 3;
+              else if ($0 ~ /^IP-CIDR,/) weight = 4;
+              else if ($0 ~ /^IP-CIDR6,/) weight = 5;
+              else if ($0 ~ /^IP-ASN,/) weight = 6;
+              else if ($0 ~ /^PROCESS-NAME,/) weight = 7;
+              else if ($0 ~ /^URL-REGEX,/) weight = 8;
+              else if ($0 ~ /^USER-AGENT,/) weight = 9;
+              else if ($0 ~ /^GEOIP,/) weight = 10;
+              else if ($0 ~ /^AND,/) weight = 11;
+              else if ($0 ~ /^OR,/) weight = 12;
+              else if ($0 ~ /^NOT,/) weight = 13;
+              else if ($0 ~ /^DEST-PORT,/) weight = 14;
+              
+              print weight " " $0;
+            }' "$file" | sort -k1,1n -k2,2 | cut -d' ' -f2- > "$file.tmp" && mv "$file.tmp" "$file"
+          done
+
+      # =========================================================================
+      # Step 5: 初始化各平台目录（已移出 sing-box）
+      # =========================================================================
+      - name: Init Directory
+        run: |
+          set -euo pipefail
+          rm -rf repo/{Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge,mihomo}
+          mkdir -p repo/{Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge,mihomo}
+
+      # =========================================================================
+      # Step 6: mihomo 平台格式处理
+      # =========================================================================
+      - name: Platform - mihomo
+        run: |
+          set -euo pipefail
+          for file in repo/Ruleset/*.list; do
+            [ -f "$file" ] || continue
+            fname=$(basename "$file")
+            
+            awk '
+              /^USER-AGENT,/ || /^URL-REGEX,/ { next }
+              /^DOMAIN-WILDCARD,\*\./ { sub(/^\*\./, "", $2); print "DOMAIN-SUFFIX," $2; next }
+              /^DOMAIN-WILDCARD,/ { next }
+              { print }
+            ' FS=, OFS=, "$file" > "repo/mihomo/$fname"
+            
+            lcnt=$(wc -l < "repo/mihomo/$fname")
+            sed -i "1i\# 规则名称: ${fname%.*}\n# 规则统计: $lcnt\n" "repo/mihomo/$fname"
+          done
+
+      # =========================================================================
+      # Step 7: Egern 平台格式转换（.list → .yaml 结构）
+      # =========================================================================
+      - name: Platform - Egern
+        run: |
+          set -euo pipefail
+          for file in repo/Ruleset/*.list; do
+            [ -f "$file" ] || continue
+            fname=$(basename "$file" .list)
+            out="repo/Egern/$fname.yaml"
+
+            awk -v name="$fname" '
+              BEGIN { 
+                print "# 规则名称: " name; print "# 规则统计: {{COUNT}}"; print "";
+                types["DOMAIN"]="domain_set"; types["DOMAIN-SUFFIX"]="domain_suffix_set";
+                types["DOMAIN-KEYWORD"]="domain_keyword_set"; types["DOMAIN-WILDCARD"]="domain_wildcard_set";
+                types["IP-CIDR"]="ip_cidr_set"; types["IP-CIDR6"]="ip_cidr6_set"; types["IP-ASN"]="asn_set";
+                types["URL-REGEX"]="url_regex_set"; types["DEST-PORT"]="dest_port_set"; types["GEOIP"]="geoip_set";
+              }
+              /^USER-AGENT,/ || /^PROCESS-NAME,/ || /^AND,/ || /^OR,/ || /^NOT,/ { next }
+              {
+                split($0, arr, ","); type=arr[1]; val=arr[2];
+                if (!(type in types)) next;
+                if (!(type in headed)) { print types[type] ":"; headed[type]=1 }
+                print "  - " val;
+              }
+            ' "$file" > "$out"
+            
+            if grep -q "no-resolve" "$file"; then sed -i '1i\no_resolve: true' "$out"; fi
+            egern_cnt=$(grep -c '^  - ' "$out" || true)
+            sed -i "s/{{COUNT}}/$egern_cnt/" "$out"
+          done
+
+      # =========================================================================
+      # Step 8: Loon 平台格式处理
+      # =========================================================================
+      - name: Platform - Loon
+        run: |
+          set -euo pipefail
+          for file in repo/Ruleset/*.list; do
+            [ -f "$file" ] || continue
+            fname=$(basename "$file")
+            
+            awk '!/^PROCESS-NAME,/' "$file" > "repo/Loon/$fname"
+            
+            lcnt=$(wc -l < "repo/Loon/$fname")
+            sed -i "1i\# 规则名称: ${fname%.*}\n# 规则统计: $lcnt\n" "repo/Loon/$fname"
+          done
+
+      # =========================================================================
+      # Step 9: QuantumultX 平台格式转换
+      # =========================================================================
+      - name: Platform - QuantumultX
+        run: |
+          set -euo pipefail
+          for file in repo/Ruleset/*.list; do
+            [ -f "$file" ] || continue
+            fname=$(basename "$file" .list)
+            out="repo/QuantumultX/$fname.list"
+            
+            awk -v policy="$fname" '
+              /^PROCESS-NAME,/ || /^AND,/ || /^OR,/ || /^NOT,/ || /^DEST-PORT,/ || /^URL-REGEX,/ { next }
+              {
+                sub(/^DOMAIN,/, "HOST,"); sub(/^DOMAIN-SUFFIX,/, "HOST-SUFFIX,");
+                sub(/^DOMAIN-KEYWORD,/, "HOST-KEYWORD,"); sub(/^DOMAIN-WILDCARD,/, "HOST-WILDCARD,");
+                sub(/^IP-CIDR6,/, "IP6-CIDR,"); sub(/,no-resolve/, "");
+                print $0 "," policy;
+              }
+            ' "$file" > "$out"
+            
+            lcnt=$(wc -l < "$out")
+            sed -i "1i\# 规则名称: $fname\n# 规则统计: $lcnt\n" "$out"
+          done
+          cd repo/QuantumultX && (cp Ads_DiDiChuXing.list DDCX.snippet 2>/dev/null || true)
+
+      # =========================================================================
+      # Step 10: Shadowrocket 平台格式处理
+      # =========================================================================
+      - name: Platform - Shadowrocket
+        run: |
+          set -euo pipefail
+          for file in repo/Ruleset/*.list; do
+            [ -f "$file" ] || continue
+            fname=$(basename "$file")
+            
+            awk '!/^PROCESS-NAME,/' "$file" > "repo/Shadowrocket/$fname"
+            
+            lcnt=$(wc -l < "repo/Shadowrocket/$fname")
+            sed -i "1i\# 规则名称: ${fname%.*}\n# 规则统计: $lcnt\n" "repo/Shadowrocket/$fname"
+          done
+
+      # =========================================================================
+      # Step 11: Stash 平台格式处理
+      # =========================================================================
+      - name: Platform - Stash
+        run: |
+          set -euo pipefail
+          for file in repo/Ruleset/*.list; do
+            [ -f "$file" ] || continue
+            fname=$(basename "$file")
+            
+            awk '!/^(USER-AGENT|URL-REGEX|AND|OR|NOT),/' "$file" > "repo/Stash/$fname"
+            
+            lcnt=$(wc -l < "repo/Stash/$fname")
+            sed -i "1i\# 规则名称: ${fname%.*}\n# 规则统计: $lcnt\n" "repo/Stash/$fname"
+          done
+
+      # =========================================================================
+      # Step 12: Surge 平台格式处理
+      # =========================================================================
+      - name: Platform - Surge
+        run: |
+          set -euo pipefail
+          for file in repo/Ruleset/*.list; do
+            [ -f "$file" ] || continue
+            fname=$(basename "$file")
+            
+            cp "$file" "repo/Surge/$fname"
+            
+            lcnt=$(wc -l < "repo/Surge/$fname")
+            sed -i "1i\# 规则名称: ${fname%.*}\n# 规则统计: $lcnt\n" "repo/Surge/$fname"
+          done
+          
+          # 清理临时的基础规则源目录
+          rm -rf repo/Ruleset
+
+      # =========================================================================
+      # Step 13: 提交并推送变更
+      # =========================================================================
+      - name: Push Update
+        run: |
+          cd repo
+          if [[ -n $(git status -s) ]]; then
+            git config --local user.email "${{ github.actor }}@users.noreply.github.com"
+            git config --local user.name "${{ github.actor }}"
+            git add -A
+
+            CHANGED_FILES=$(git diff --cached --name-only | grep '^Surge/' | xargs -I {} basename {} .list | sed 's/^/- /' || true)
+            
+            if [[ -z "$CHANGED_FILES" ]]; then
+              CHANGED_FILES="- Ruleset updated"
+            fi
+
+            CURRENT_DATE=$(TZ='Asia/Shanghai' date +'%Y-%m-%d')
+
+            git commit -m "Update Rulesets:
+          $CHANGED_FILES
+          ---
+          Time: $CURRENT_DATE"
+            git push origin main
+          else
+            echo "No changes to commit."
+          fi
+
+      # =========================================================================
+      # Step 14: 清理历史 Workflow 运行记录，仅保留最近 2 次
+      # =========================================================================
+      - name: Cleanup Workflow
+        uses: Mattraks/delete-workflow-runs@main
+        with:
+          retain_days: 0
+          keep_minimum_runs: 2
