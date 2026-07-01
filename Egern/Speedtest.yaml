@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 3253
+# 规则统计: 3254
 
 domain_set:
   - 1010.hkspeedtest.com
@@ -20,6 +20,7 @@ domain_set:
   - airspeed.airwavesinternet.com
   - akrd-speedtest.loni.org
   - albuquerque-speedtest.sacredwindcommunications.com
+  - albynynp-ookla01.gonetspeed.com
   - aldlmi-speedtest-ookla-01.st.charter.com
   - alln-ks-st.highlinefast.com
   - altoonaspeedtest.crowsnestbb.net
