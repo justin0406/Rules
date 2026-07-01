@@ -1,5 +1,5 @@
 # 规则名称: ChinaIP
-# 规则统计: 6186
+# 规则统计: 6185
 
 IP-CIDR,1.1.8.0/24
 IP-CIDR,1.116.0.0/15
@@ -6052,8 +6052,6 @@ IP-CIDR6,2a0e:aa07:e148::/48
 IP-CIDR6,2a0e:aa07:e280::/47
 IP-CIDR6,2a0e:aa07:e284::/46
 IP-CIDR6,2a0e:aa07:e288::/46
-IP-CIDR6,2a0e:aa07:e288::/47
-IP-CIDR6,2a0e:aa07:e28a::/48
 IP-CIDR6,2a0e:aa07:e28d::/48
 IP-CIDR6,2a0e:aa07:e28e::/48
 IP-CIDR6,2a0e:aa07:f0d0::/46
@@ -6100,6 +6098,7 @@ IP-CIDR6,2a0f:1cc5:6a0::/47
 IP-CIDR6,2a0f:1cc5:6a0::/48
 IP-CIDR6,2a0f:1cc5:f00::/45
 IP-CIDR6,2a0f:1cc5:f08::/47
+IP-CIDR6,2a0f:1cc5:f09::/48
 IP-CIDR6,2a0f:1cc5:fff::/48
 IP-CIDR6,2a0f:1cc6:b110::/47
 IP-CIDR6,2a0f:1cc6:b210::/47
