@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 3254
+# 规则统计: 3257
 
 HOST,1010.hkspeedtest.com,Speedtest
 HOST,172673828273027382738738.de,Speedtest
@@ -405,6 +405,7 @@ HOST,ookla-ams.avur.no,Speedtest
 HOST,ookla-anc.seroficom.com,Speedtest
 HOST,ookla-atl.gigsouth.com,Speedtest
 HOST,ookla-autazes.amazoniasat-isp.com.br,Speedtest
+HOST,ookla-ber.evolushost.com,Speedtest
 HOST,ookla-crw.wvnet.edu,Speedtest
 HOST,ookla-dfw.gigsouth.com,Speedtest
 HOST,ookla-estepona.aerioncloud.com,Speedtest
@@ -2032,6 +2033,7 @@ HOST,speedtest.sg.hsp.net.id,Speedtest
 HOST,speedtest.sg220.sgp.sg.ctcsci.com,Speedtest
 HOST,speedtest.sgbroadband.in,Speedtest
 HOST,speedtest.shtrueinternet.com,Speedtest
+HOST,speedtest.sidicoimbratelecom.com.br,Speedtest
 HOST,speedtest.sin.atharva.co.id,Speedtest
 HOST,speedtest.sin.sptrnd.id,Speedtest
 HOST,speedtest.sinetonline.net,Speedtest
@@ -2284,6 +2286,7 @@ HOST,speedtest.zeer.com.br,Speedtest
 HOST,speedtest.zenex5ive.com,Speedtest
 HOST,speedtest.zentrointernet.com,Speedtest
 HOST,speedtest.zerospace.cloud,Speedtest
+HOST,speedtest.zetrikcloud.com,Speedtest
 HOST,speedtest.zivlinaa.metronetinc.com,Speedtest
 HOST,speedtest.zl.osso.network,Speedtest
 HOST,speedtest.zoominternet.net,Speedtest

@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8170
+# 规则统计: 8171
 
 HOST,ccmdl.adobe.com,GFW
 HOST,cloud.oracle.com,GFW
@@ -7481,6 +7481,7 @@ HOST-SUFFIX,webrtc.org,GFW
 HOST-SUFFIX,webrush.net,GFW
 HOST-SUFFIX,webs-tv.net,GFW
 HOST-SUFFIX,websdr.org,GFW
+HOST-SUFFIX,webshare.io,GFW
 HOST-SUFFIX,website.new,GFW
 HOST-SUFFIX,websitepulse.com,GFW
 HOST-SUFFIX,websnapr.com,GFW

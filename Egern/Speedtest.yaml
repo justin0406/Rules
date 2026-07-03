@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 3254
+# 规则统计: 3257
 
 domain_set:
   - 1010.hkspeedtest.com
@@ -406,6 +406,7 @@ domain_set:
   - ookla-anc.seroficom.com
   - ookla-atl.gigsouth.com
   - ookla-autazes.amazoniasat-isp.com.br
+  - ookla-ber.evolushost.com
   - ookla-crw.wvnet.edu
   - ookla-dfw.gigsouth.com
   - ookla-estepona.aerioncloud.com
@@ -2033,6 +2034,7 @@ domain_set:
   - speedtest.sg220.sgp.sg.ctcsci.com
   - speedtest.sgbroadband.in
   - speedtest.shtrueinternet.com
+  - speedtest.sidicoimbratelecom.com.br
   - speedtest.sin.atharva.co.id
   - speedtest.sin.sptrnd.id
   - speedtest.sinetonline.net
@@ -2285,6 +2287,7 @@ domain_set:
   - speedtest.zenex5ive.com
   - speedtest.zentrointernet.com
   - speedtest.zerospace.cloud
+  - speedtest.zetrikcloud.com
   - speedtest.zivlinaa.metronetinc.com
   - speedtest.zl.osso.network
   - speedtest.zoominternet.net
