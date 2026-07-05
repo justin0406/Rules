@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: AI
-# 规则统计: 170
+# 规则统计: 171
 
 domain_set:
   - ai.google.dev
@@ -88,6 +88,7 @@ domain_suffix_set:
   - claudemcpcontent.com
   - claudeusercontent.com
   - client-api.arkoselabs.com
+  - clients6.google.com
   - clientstream.launchdarkly.com
   - clipdrop.co
   - cloudcode-pa.googleapis.com
