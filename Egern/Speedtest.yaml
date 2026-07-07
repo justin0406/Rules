@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 3257
+# 规则统计: 3262
 
 domain_set:
   - 1010.hkspeedtest.com
@@ -1026,6 +1026,7 @@ domain_set:
   - speedtest-hkg.retn.net
   - speedtest-hob.launtel.net.au
   - speedtest-hobart.optusnet.com.au
+  - speedtest-huachuca.cochise.net
   - speedtest-hv-1.zoominternet.net
   - speedtest-iad.acreto.net
   - speedtest-iad.dish-wireless.com
@@ -1656,6 +1657,7 @@ domain_set:
   - speedtest.inoc.net
   - speedtest.inovewifi.com
   - speedtest.inovewifi.com.br
+  - speedtest.instantsupport.co.in
   - speedtest.internet.one
   - speedtest.internetbolaget.nu
   - speedtest.internetsubway.com
@@ -1715,6 +1717,7 @@ domain_set:
   - speedtest.ktis.net
   - speedtest.kuducom.com
   - speedtest.kufnet.at
+  - speedtest.kyouma.net
   - speedtest.la2.gigabitnow.com
   - speedtest.la3eq.fdcservers.net
   - speedtest.lagrangeremcisp.net
@@ -2331,6 +2334,7 @@ domain_set:
   - speedtest018.telecomitalia.it
   - speedtest019.telecomitalia.it
   - speedtest02.bluestreamfiber.net
+  - speedtest02.cochise.net
   - speedtest02.coppernet.net
   - speedtest02.htp-tel.de
   - speedtest02.ikbnet.at
@@ -2955,6 +2959,7 @@ domain_set:
   - test.internetliontelecom.com.br
   - test.intred.it
   - test.logae.net.br
+  - test.mycloudvps.net
   - test.rconnects.com
   - test.rnfibra.com.br
   - test.royalgirl.de
