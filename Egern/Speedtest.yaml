@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 3262
+# 规则统计: 3267
 
 domain_set:
   - 1010.hkspeedtest.com
@@ -1212,6 +1212,7 @@ domain_set:
   - speedtest-txg.infinirc.net
   - speedtest-uk.the.hosting
   - speedtest-utc.northland.net
+  - speedtest-val.masmovil.com
   - speedtest-valdagno.wifiweb.it
   - speedtest-van.beanfield.com
   - speedtest-vi.wifiweb.it
@@ -1496,6 +1497,7 @@ domain_set:
   - speedtest.ehv.vodafone.nl
   - speedtest.eidnet.org
   - speedtest.einet.etc.br
+  - speedtest.eletrochip.net.br
   - speedtest.elsynet.net
   - speedtest.elxireit.in
   - speedtest.embrasnet.com.br
@@ -2302,6 +2304,7 @@ domain_set:
   - speedtest005.telecomitalia.it
   - speedtest01-cty-gfld-ma-prod.gcet.net
   - speedtest01-mxp.egisnet.it
+  - speedtest01.adl1.spintel.net.au
   - speedtest01.ams6.solcon.nl
   - speedtest01.ber.server.camp
   - speedtest01.bluestreamfiber.net
@@ -2362,6 +2365,7 @@ domain_set:
   - speedtest1.chi.nxlink.com
   - speedtest1.cirbn.net
   - speedtest1.claro.cr
+  - speedtest1.conecta-3.es
   - speedtest1.ctstelecom.com
   - speedtest1.digimobil.es
   - speedtest1.dpdfsd.com
@@ -3098,6 +3102,7 @@ domain_set:
   - velocidade.milaninnet.com.br
   - velocidade.ndtelecom.com.br
   - velocidade.netshowtelecom.com.br
+  - velocidade.newclicktelecom.com.br
   - velocidade.niktelecom.com.br
   - velocidade.oxetelecomce.com.br
   - velocidade.phinfortelecom.com.br
