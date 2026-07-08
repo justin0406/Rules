@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: AI
-# 规则统计: 171
+# 规则统计: 172
 
 domain_set:
   - ai.google.dev
@@ -60,6 +60,7 @@ domain_set:
   - trae-api-sg.mchost.guru
 domain_suffix_set:
   - ai.com
+  - aicode.googleapis.com
   - aistudio.google.com
   - algolia.net
   - android.chat.openai.com

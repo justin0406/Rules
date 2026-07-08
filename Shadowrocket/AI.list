@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 173
+# 规则统计: 174
 
 DOMAIN,ai.google.dev
 DOMAIN,aida.googleapis.com
@@ -57,6 +57,7 @@ DOMAIN,static.cloudflareinsights.com
 DOMAIN,sydney.bing.com
 DOMAIN,trae-api-sg.mchost.guru
 DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,aicode.googleapis.com
 DOMAIN-SUFFIX,aistudio.google.com
 DOMAIN-SUFFIX,algolia.net
 DOMAIN-SUFFIX,android.chat.openai.com

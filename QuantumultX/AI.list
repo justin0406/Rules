@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 170
+# 规则统计: 171
 
 HOST,ai.google.dev,AI
 HOST,aida.googleapis.com,AI
@@ -57,6 +57,7 @@ HOST,static.cloudflareinsights.com,AI
 HOST,sydney.bing.com,AI
 HOST,trae-api-sg.mchost.guru,AI
 HOST-SUFFIX,ai.com,AI
+HOST-SUFFIX,aicode.googleapis.com,AI
 HOST-SUFFIX,aistudio.google.com,AI
 HOST-SUFFIX,algolia.net,AI
 HOST-SUFFIX,android.chat.openai.com,AI
