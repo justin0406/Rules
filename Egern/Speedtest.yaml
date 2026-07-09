@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 3267
+# 规则统计: 3269
 
 domain_set:
   - 1010.hkspeedtest.com
@@ -70,6 +70,7 @@ domain_set:
   - cesu-hz.zjtelecom.com.cn
   - cesu-nb.zjtelecom.com.cn
   - ch1.chtm.hinet.net
+  - chd.softechinfosol.com
   - chdspd.myinternet.services
   - chi-speedtest.net.sangoma.net
   - chi-speedtest.shifthosting.com
@@ -1836,6 +1837,7 @@ domain_set:
   - speedtest.myakka.com
   - speedtest.myarena.ru
   - speedtest.mycvecfiber.com
+  - speedtest.myion.in
   - speedtest.myrepublic.com.sg
   - speedtest.mysispl.com
   - speedtest.mysmbs.com
