@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 3269
+# 规则统计: 3270
 
 domain_set:
   - 1010.hkspeedtest.com
@@ -147,6 +147,7 @@ domain_set:
   - fast.blackbearfiber.com
   - fast.kabi.tk
   - fastme.ir
+  - fetkt1.seed.net.tw
   - fetnt1.seed.net.tw
   - fetsz1.seed.net.tw
   - fetyl1.seed.net.tw
