@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 3270
+# 规则统计: 3271
 
 domain_set:
   - 1010.hkspeedtest.com
@@ -1025,6 +1025,7 @@ domain_set:
   - speedtest-geelong.optusnet.com.au
   - speedtest-goldcoast.optusnet.com.au
   - speedtest-gwn24.tele-ag.de
+  - speedtest-hk.tgb-host.com
   - speedtest-hkg.retn.net
   - speedtest-hob.launtel.net.au
   - speedtest-hobart.optusnet.com.au
