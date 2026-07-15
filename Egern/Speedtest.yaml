@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 3271
+# 规则统计: 3272
 
 domain_set:
   - 1010.hkspeedtest.com
@@ -1991,6 +1991,7 @@ domain_set:
   - speedtest.quadro.net
   - speedtest.rackoona.com
   - speedtest.raftarnet.com
+  - speedtest.rajeshcable.com
   - speedtest.readingsd.org
   - speedtest.reconn.ru
   - speedtest.redactus.co.uk

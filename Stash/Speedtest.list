@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 3271
+# 规则统计: 3272
 
 DOMAIN,1010.hkspeedtest.com
 DOMAIN,172673828273027382738738.de
@@ -1990,6 +1990,7 @@ DOMAIN,speedtest.qld.edgeix.net.au
 DOMAIN,speedtest.quadro.net
 DOMAIN,speedtest.rackoona.com
 DOMAIN,speedtest.raftarnet.com
+DOMAIN,speedtest.rajeshcable.com
 DOMAIN,speedtest.readingsd.org
 DOMAIN,speedtest.reconn.ru
 DOMAIN,speedtest.redactus.co.uk
