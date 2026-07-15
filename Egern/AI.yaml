@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: AI
-# 规则统计: 172
+# 规则统计: 173
 
 domain_set:
   - ai.google.dev
@@ -82,6 +82,7 @@ domain_suffix_set:
   - chat.openai.com
   - chatgpt.com
   - chatgpt.livekit.cloud
+  - chatgpt.site
   - clau.de
   - claude.ai
   - claude.com
