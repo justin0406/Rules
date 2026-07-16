@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 3272
+# 规则统计: 3276
 
 domain_set:
   - 1010.hkspeedtest.com
@@ -739,6 +739,7 @@ domain_set:
   - spdookla10g0201.noanet.net
   - spdt.voenetworks.com
   - spdtes.phoenix.net.tr
+  - spdtest.omegatelecom.net.br
   - spdtestkpr.myinternet.services
   - spdtst-southbend.fourway.net
   - spdtst.iad.xenyth.net
@@ -2777,6 +2778,8 @@ domain_set:
   - st1.stratusnet.com
   - st1.tbaytel.net
   - st1.tzulo.com
+  - st1.worldfibernet.com
+  - st1alguazas.borecom.com
   - st2-lax.panaops.com
   - st2-msn.5nines.com
   - st2.3c1b.com
@@ -3129,6 +3132,7 @@ domain_set:
   - velocimetro.govistabr.com.br
   - velocimetro.proveinter.com.br
   - velocimetro.speednetworks.com.br
+  - velocimetro.stylosnet.com.br
   - velocimetro.wiretelecom.com.br
   - velocimetro.wspeednet.com.br
   - velocimetrostm.interlig.net
