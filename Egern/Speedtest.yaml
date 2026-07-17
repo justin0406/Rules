@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 3276
+# 规则统计: 3278
 
 domain_set:
   - 1010.hkspeedtest.com
@@ -200,6 +200,7 @@ domain_set:
   - hkthspeedtest02.telstraglobal.net
   - hl-speed.twmbroadband.com
   - hmb-tc.wsqm.telekom-dienste.de
+  - hmc-speedtest.northstate.net
   - hoshiyomi.ratatoskr.org
   - hs13.aratwifi.com.tr
   - hs14.aratwifi.com.tr
@@ -2459,6 +2460,7 @@ domain_set:
   - speedtest2.grm.net
   - speedtest2.htcnetracer.com
   - speedtest2.hurontel.on.ca
+  - speedtest2.il.mycci.net
   - speedtest2.infotech-services.at
   - speedtest2.keyubu.com
   - speedtest2.lightningfibre.net.uk
