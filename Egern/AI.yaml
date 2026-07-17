@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: AI
-# 规则统计: 173
+# 规则统计: 176
 
 domain_set:
   - ai.google.dev
@@ -65,6 +65,7 @@ domain_suffix_set:
   - algolia.net
   - android.chat.openai.com
   - anthropic.com
+  - api.revenuecat.com
   - api.statsig.com
   - app.launchdarkly.com
   - apple-relay.akamaized.net
@@ -147,6 +148,7 @@ domain_suffix_set:
   - perplexity.ai
   - perplexity.com
   - poe.com
+  - pool.ntp.org
   - pplx.ai
   - proactivebackend-pa.googleapis.com
   - prodregistryv2.org
@@ -178,6 +180,7 @@ ip_cidr6_set:
   - 2607:6BC0::/32
   - 2607:6bc0::/48
 asn_set:
+  - 13335
   - 20473
   - 399358
 url_regex_set:

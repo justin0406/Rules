@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 175
+# 规则统计: 178
 
 DOMAIN,ai.google.dev
 DOMAIN,aida.googleapis.com
@@ -62,6 +62,7 @@ DOMAIN-SUFFIX,aistudio.google.com
 DOMAIN-SUFFIX,algolia.net
 DOMAIN-SUFFIX,android.chat.openai.com
 DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,api.revenuecat.com
 DOMAIN-SUFFIX,api.statsig.com
 DOMAIN-SUFFIX,app.launchdarkly.com
 DOMAIN-SUFFIX,apple-relay.akamaized.net
@@ -144,6 +145,7 @@ DOMAIN-SUFFIX,openart.ai
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,perplexity.com
 DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,pool.ntp.org
 DOMAIN-SUFFIX,pplx.ai
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,prodregistryv2.org
@@ -171,6 +173,7 @@ IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
 IP-CIDR6,2607:6BC0::/32,no-resolve
 IP-CIDR6,2607:6bc0::/48,no-resolve
+IP-ASN,13335,no-resolve
 IP-ASN,20473,no-resolve
 IP-ASN,399358,no-resolve
 URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+

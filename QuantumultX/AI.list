@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 172
+# 规则统计: 175
 
 HOST,ai.google.dev,AI
 HOST,aida.googleapis.com,AI
@@ -62,6 +62,7 @@ HOST-SUFFIX,aistudio.google.com,AI
 HOST-SUFFIX,algolia.net,AI
 HOST-SUFFIX,android.chat.openai.com,AI
 HOST-SUFFIX,anthropic.com,AI
+HOST-SUFFIX,api.revenuecat.com,AI
 HOST-SUFFIX,api.statsig.com,AI
 HOST-SUFFIX,app.launchdarkly.com,AI
 HOST-SUFFIX,apple-relay.akamaized.net,AI
@@ -144,6 +145,7 @@ HOST-SUFFIX,openart.ai,AI
 HOST-SUFFIX,perplexity.ai,AI
 HOST-SUFFIX,perplexity.com,AI
 HOST-SUFFIX,poe.com,AI
+HOST-SUFFIX,pool.ntp.org,AI
 HOST-SUFFIX,pplx.ai,AI
 HOST-SUFFIX,proactivebackend-pa.googleapis.com,AI
 HOST-SUFFIX,prodregistryv2.org,AI
@@ -171,5 +173,6 @@ IP-CIDR,24.199.123.28/32,AI
 IP-CIDR,64.23.132.171/32,AI
 IP6-CIDR,2607:6BC0::/32,AI
 IP6-CIDR,2607:6bc0::/48,AI
+IP-ASN,13335,AI
 IP-ASN,20473,AI
 IP-ASN,399358,AI
