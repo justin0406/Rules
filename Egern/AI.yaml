@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: AI
-# 规则统计: 176
+# 规则统计: 177
 
 domain_set:
   - ai.google.dev
@@ -105,6 +105,7 @@ domain_suffix_set:
   - events.statsigapi.net
   - featureassets.org
   - featuregates.org
+  - firebaseinstallations.googleapis.com
   - forwarder.workos.com
   - g.ai
   - gateway.icloud.com

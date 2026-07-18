@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 175
+# 规则统计: 176
 
 HOST,ai.google.dev,AI
 HOST,aida.googleapis.com,AI
@@ -102,6 +102,7 @@ HOST-SUFFIX,events.launchdarkly.com,AI
 HOST-SUFFIX,events.statsigapi.net,AI
 HOST-SUFFIX,featureassets.org,AI
 HOST-SUFFIX,featuregates.org,AI
+HOST-SUFFIX,firebaseinstallations.googleapis.com,AI
 HOST-SUFFIX,forwarder.workos.com,AI
 HOST-SUFFIX,g.ai,AI
 HOST-SUFFIX,gateway.icloud.com,AI

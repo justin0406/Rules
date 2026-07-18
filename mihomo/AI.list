@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 177
+# 规则统计: 178
 
 DOMAIN,ai.google.dev
 DOMAIN,aida.googleapis.com
@@ -102,6 +102,7 @@ DOMAIN-SUFFIX,events.launchdarkly.com
 DOMAIN-SUFFIX,events.statsigapi.net
 DOMAIN-SUFFIX,featureassets.org
 DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,firebaseinstallations.googleapis.com
 DOMAIN-SUFFIX,forwarder.workos.com
 DOMAIN-SUFFIX,g.ai
 DOMAIN-SUFFIX,gateway.icloud.com
