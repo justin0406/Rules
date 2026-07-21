@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8171
+# 规则统计: 8173
 
 HOST,ccmdl.adobe.com,GFW
 HOST,cloud.oracle.com,GFW
@@ -1371,6 +1371,7 @@ HOST-SUFFIX,cixiaoya.club,GFW
 HOST-SUFFIX,ck101.com,GFW
 HOST-SUFFIX,cla-assistant.io,GFW
 HOST-SUFFIX,clarionproject.org,GFW
+HOST-SUFFIX,clashyun.com,GFW
 HOST-SUFFIX,classicalguitarblog.net,GFW
 HOST-SUFFIX,claude.ai,GFW
 HOST-SUFFIX,claude.com,GFW
@@ -6423,6 +6424,7 @@ HOST-SUFFIX,synergyse.com,GFW
 HOST-SUFFIX,syosetu.com,GFW
 HOST-SUFFIX,sysctl-explorer.net,GFW
 HOST-SUFFIX,sysresccd.org,GFW
+HOST-SUFFIX,sysub.com,GFW
 HOST-SUFFIX,sytes.net,GFW
 HOST-SUFFIX,syx86.com,GFW
 HOST-SUFFIX,szbbs.net,GFW

@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: GFW
-# 规则统计: 8170
+# 规则统计: 8172
 
 domain_set:
   - ccmdl.adobe.com
@@ -1374,6 +1374,7 @@ domain_suffix_set:
   - ck101.com
   - cla-assistant.io
   - clarionproject.org
+  - clashyun.com
   - classicalguitarblog.net
   - claude.ai
   - claude.com
@@ -6426,6 +6427,7 @@ domain_suffix_set:
   - syosetu.com
   - sysctl-explorer.net
   - sysresccd.org
+  - sysub.com
   - sytes.net
   - syx86.com
   - szbbs.net
