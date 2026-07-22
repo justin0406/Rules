@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8174
+# 规则统计: 8175
 
 HOST,ccmdl.adobe.com,GFW
 HOST,cloud.oracle.com,GFW
@@ -6805,6 +6805,7 @@ HOST-SUFFIX,togetter.com,GFW
 HOST-SUFFIX,toh.info,GFW
 HOST-SUFFIX,token.im,GFW
 HOST-SUFFIX,tokenlon.im,GFW
+HOST-SUFFIX,tokenplus.app,GFW
 HOST-SUFFIX,tokto-motion.net,GFW
 HOST-SUFFIX,tokyo-247.com,GFW
 HOST-SUFFIX,tokyo-hot.com,GFW

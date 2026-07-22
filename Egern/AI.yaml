@@ -1,10 +1,13 @@
 no_resolve: true
 # 规则名称: AI
-# 规则统计: 177
+# 规则统计: 211
 
 domain_set:
+  - ai-gateway.vercel.sh
   - ai.google.dev
+  - aicode.googleapis.com
   - aida.googleapis.com
+  - aiplatform.googleapis.com
   - aisandbox-pa.googleapis.com
   - aistudio.google.com
   - alkalicore-pa.clients6.google.com
@@ -16,6 +19,7 @@ domain_set:
   - antigravity.google
   - api.github.com
   - api.githubcopilot.com
+  - api.hyperbolic.xyz
   - api.jetbrains.ai
   - api.x.ai
   - apple-relay.apple.com
@@ -33,38 +37,56 @@ domain_set:
   - copilot.microsoft.com
   - cp4.cloudflare.com
   - daily-cloudcode-pa.googleapis.com
+  - daily-cloudcode-pa.sandbox.googleapis.com
   - deepmind.com
   - deepmind.google
   - gateway.ai.cloudflare.com
   - geller-pa.googleapis.com
+  - gemini.google
   - gemini.google.com
   - generativeai.google
   - generativelanguage.googleapis.com
   - gspe1-ssl.ls.apple.com
   - host.livekit.cloud
   - imagine.meta.com
+  - integrate.api.nvidia.com
+  - jules.google
   - jules.google.com
+  - labs.google
   - makersuite.google.com
+  - models.inference.ai.azure.com
+  - notebooklm.google
+  - notebooklm.google.com
   - openai-api.arkoselabs.com
   - openai.com.cdn.cloudflare.net
   - openaiapi-site.azureedge.net
   - openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+  - openaicom.imgix.net
   - openaicomproductionae4b.blob.core.windows.net
   - openrouter.ai
+  - pplx-res.cloudinary.com
   - proactivebackend-pa.googleapis.com
   - production-openaicom-storage.azureedge.net
   - robinfrontend-pa.googleapis.com
+  - router.huggingface.co
   - servd-anthropic-website.b-cdn.net
   - static.cloudflareinsights.com
   - sydney.bing.com
+  - token-plan-ams.xiaomimimo.com
+  - token-plan-sgp.xiaomimimo.com
   - trae-api-sg.mchost.guru
+  - turn.livekit.cloud
+  - webchannel-alkalimakersuite-pa.clients6.google.com
 domain_suffix_set:
+  - agnes-ai.com
   - ai.com
   - aicode.googleapis.com
   - aistudio.google.com
   - algolia.net
   - android.chat.openai.com
   - anthropic.com
+  - antigravity-unleash.goog
+  - antigravity.google
   - api.revenuecat.com
   - api.statsig.com
   - app.launchdarkly.com
@@ -78,6 +100,7 @@ domain_suffix_set:
   - auth0.openai.com
   - bard.google.com
   - cdn.workos.com
+  - cerebras.ai
   - challenges.cloudflare.com
   - chat.com
   - chat.openai.com
@@ -96,6 +119,7 @@ domain_suffix_set:
   - clipdrop.co
   - cloudcode-pa.googleapis.com
   - cp4.cloudflare.com
+  - crixet.com
   - ct.sendgrid.net
   - deepmind.com
   - deepmind.google
@@ -106,6 +130,7 @@ domain_suffix_set:
   - featureassets.org
   - featuregates.org
   - firebaseinstallations.googleapis.com
+  - fireworks.ai
   - forwarder.workos.com
   - g.ai
   - gateway.icloud.com
@@ -122,6 +147,7 @@ domain_suffix_set:
   - gspe1-ssl.ls.apple.com
   - guzzoni.apple.com
   - host.livekit.cloud
+  - hyperbolic.ai
   - identrust.com
   - images.workoscdn.com
   - intercom.io
@@ -129,11 +155,14 @@ domain_suffix_set:
   - ios.chat.openai.com
   - jasper.ai
   - jetbrains.ai
+  - jina.ai
   - js.intercomcdn.com
   - js.stripe.com
+  - kiro.dev
   - launchdarkly.com
   - makersuite.google.com
   - meta.ai
+  - minimax.io
   - mistral.ai
   - notebooklm.google
   - notebooklm.google.com
@@ -146,6 +175,7 @@ domain_suffix_set:
   - openaiapi-site.azureedge.net
   - openaicom.imgix.net
   - openart.ai
+  - openrouter.ai
   - perplexity.ai
   - perplexity.com
   - poe.com
@@ -163,11 +193,15 @@ domain_suffix_set:
   - statsigapi.net
   - stripe.com
   - tcr9i.chat.openai.com
+  - together.ai
+  - tokenflux.ai
   - trae.ai
   - turn.livekit.cloud
+  - voyageai.com
   - workos.com
   - workos.imgix.net
   - x.ai
+  - z.ai
 domain_keyword_set:
   - alkalimakersuite-pa.clients6.google.com
   - openai
