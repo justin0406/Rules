@@ -75,7 +75,7 @@ jobs:
             
             ["Speedtest"]="
               https://ruleset.skk.moe/List/domainset/speedtest.conf
-              https://git.repcz.link/https://kelee.one/Tool/Loon/Lsr/SpeedtestInternational.lsr
+              https://git.repcz.link/kelee.one/Tool/Loon/Lsr/SpeedtestInternational.lsr
             "
             
             ["AI"]="
@@ -83,7 +83,7 @@ jobs:
               https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf
               https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/AI.list
               https://raw.githubusercontent.com/EAlyce/conf/refs/heads/main/Rule/OpenAI.list
-              https://git.repcz.link/https://kelee.one/Tool/Loon/Lsr/AI.lsr
+              https://git.repcz.link/kelee.one/Tool/Loon/Lsr/AI.lsr
             "
             
             ["AppleProxy"]="
