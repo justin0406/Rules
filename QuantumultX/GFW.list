@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8173
+# 规则统计: 8174
 
 HOST,ccmdl.adobe.com,GFW
 HOST,cloud.oracle.com,GFW
@@ -7982,6 +7982,7 @@ HOST-SUFFIX,zendesk.com,GFW
 HOST-SUFFIX,zengjinyan.org,GFW
 HOST-SUFFIX,zenmate.com,GFW
 HOST-SUFFIX,zenmate.com.ru,GFW
+HOST-SUFFIX,zenmux.ai,GFW
 HOST-SUFFIX,zenn.dev,GFW
 HOST-SUFFIX,zerochan.net,GFW
 HOST-SUFFIX,zerohedge.com,GFW

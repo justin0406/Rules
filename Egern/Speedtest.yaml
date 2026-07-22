@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 3280
+# 规则统计: 3284
 
 domain_set:
   - 1010.hkspeedtest.com
@@ -354,6 +354,7 @@ domain_set:
   - myspeed.giantcomm.com
   - myspeedtest.atcbroadband.com
   - navegaooklafortaleza.navegamais.com.br
+  - navi-mumbai-speedtest.wsnl-isp.net
   - ncc-speed.kbro.com.tw
   - neolinktt-speed.net
   - net-ookla-dc.p.foundation
@@ -693,6 +694,7 @@ domain_set:
   - sp1.voyageurinternet.ca
   - sp1.wiprabroadband.in
   - sp1.worldfibernet.com
+  - sp2.clouddesktop.in
   - sp2.fibreair.in
   - sp2.janusnetworks.com
   - sp2.navigabene.it
@@ -1630,6 +1632,7 @@ domain_set:
   - speedtest.host.com.tw
   - speedtest.hostabil.net
   - speedtest.hostdzire.com
+  - speedtest.hostgrap.com
   - speedtest.hostimux.com
   - speedtest.hynetwifi.it
   - speedtest.hyperwave.uk
@@ -1778,6 +1781,7 @@ domain_set:
   - speedtest.mad2.edgoo.net
   - speedtest.maisnetfibra.net.br
   - speedtest.markahost.com.tr
+  - speedtest.marshallfibernet.com
   - speedtest.maryno.net
   - speedtest.massivemesh.com
   - speedtest.masteritsupport.com
