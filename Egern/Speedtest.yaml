@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 3284
+# 规则统计: 3287
 
 domain_set:
   - 1010.hkspeedtest.com
@@ -1534,6 +1534,7 @@ domain_set:
   - speedtest.fiber91.com
   - speedtest.fibercast.net
   - speedtest.fibercomm.net
+  - speedtest.fiberlink.com.pe
   - speedtest.fiberlink.net.ua
   - speedtest.fiberlinknetwork.net
   - speedtest.fiberlync.net
@@ -2369,6 +2370,7 @@ domain_set:
   - speedtest1-sttlwawb.as20055.net
   - speedtest1.acentek.net
   - speedtest1.alpinecom.net
+  - speedtest1.atl1-us.gozfly.net
   - speedtest1.atlantisnet.com.tr
   - speedtest1.avatel.es
   - speedtest1.axes.com.br
@@ -2379,6 +2381,7 @@ domain_set:
   - speedtest1.claro.cr
   - speedtest1.conecta-3.es
   - speedtest1.ctstelecom.com
+  - speedtest1.dfw1-us.gozfly.net
   - speedtest1.digimobil.es
   - speedtest1.dpdfsd.com
   - speedtest1.dreamtel.in
