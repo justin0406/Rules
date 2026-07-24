@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 17921
+# 规则统计: 17923
 
 domain_set:
   - 083link.brsserver.com.br
@@ -2560,6 +2560,7 @@ domain_set:
   - ookla1.arptelecom.net.br
   - ookla1.avonet.cz
   - ookla1.bestgo.pl
+  - ookla1.btd.co.id
   - ookla1.ccspublichost.com
   - ookla1.clearrate.com
   - ookla1.comporium.net
@@ -5223,6 +5224,7 @@ domain_set:
   - speedserver.tv9.net.ua
   - speedserver.wipet.com
   - speedsetif.algerietelecom.dz
+  - speedsg.genznet.id
   - speedshm1.jioconnect.com
   - speedsin.phoenixnap.com
   - speedsin.phoenixnap.com.prod.hosts.ooklaserver.net
