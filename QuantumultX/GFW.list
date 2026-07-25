@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8175
+# 规则统计: 8177
 
 HOST,ccmdl.adobe.com,GFW
 HOST,cloud.oracle.com,GFW
@@ -1346,6 +1346,7 @@ HOST-SUFFIX,ciciai.com,GFW
 HOST-SUFFIX,cienen.com,GFW
 HOST-SUFFIX,cineastentreff.de,GFW
 HOST-SUFFIX,cipfg.org,GFW
+HOST-SUFFIX,circle19.org,GFW
 HOST-SUFFIX,circleci.com,GFW
 HOST-SUFFIX,circlethebayfortibet.org,GFW
 HOST-SUFFIX,cirosantilli.com,GFW
@@ -3938,6 +3939,7 @@ HOST-SUFFIX,kanzhongguo.com,GFW
 HOST-SUFFIX,kanzhongguo.eu,GFW
 HOST-SUFFIX,kaotic.com,GFW
 HOST-SUFFIX,karayou.com,GFW
+HOST-SUFFIX,kards.com,GFW
 HOST-SUFFIX,karkhung.com,GFW
 HOST-SUFFIX,karmapa-teachings.org,GFW
 HOST-SUFFIX,karmapa.org,GFW

@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: GFW
-# 规则统计: 8174
+# 规则统计: 8176
 
 domain_set:
   - ccmdl.adobe.com
@@ -1349,6 +1349,7 @@ domain_suffix_set:
   - cienen.com
   - cineastentreff.de
   - cipfg.org
+  - circle19.org
   - circleci.com
   - circlethebayfortibet.org
   - cirosantilli.com
@@ -3941,6 +3942,7 @@ domain_suffix_set:
   - kanzhongguo.eu
   - kaotic.com
   - karayou.com
+  - kards.com
   - karkhung.com
   - karmapa-teachings.org
   - karmapa.org

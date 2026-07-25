@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 17923
+# 规则统计: 17924
 
 domain_set:
   - 083link.brsserver.com.br
@@ -6438,6 +6438,7 @@ domain_set:
   - speedtest.advantun.com
   - speedtest.advps.org
   - speedtest.aeneas.com
+  - speedtest.aerloop.com
   - speedtest.aermaxnet.com
   - speedtest.aerofibra.com.br
   - speedtest.aeronetonline.in
