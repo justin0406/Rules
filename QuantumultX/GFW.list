@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8177
+# 规则统计: 8178
 
 HOST,ccmdl.adobe.com,GFW
 HOST,cloud.oracle.com,GFW
@@ -6893,6 +6893,7 @@ HOST-SUFFIX,truth101.co.tv,GFW
 HOST-SUFFIX,truthontour.org,GFW
 HOST-SUFFIX,truthsocial.com,GFW
 HOST-SUFFIX,truveo.com,GFW
+HOST-SUFFIX,tryai.dev,GFW
 HOST-SUFFIX,trycloudflare.com,GFW
 HOST-SUFFIX,tryheart.jp,GFW
 HOST-SUFFIX,tsctv.net,GFW

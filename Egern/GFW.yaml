@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: GFW
-# 规则统计: 8176
+# 规则统计: 8177
 
 domain_set:
   - ccmdl.adobe.com
@@ -6896,6 +6896,7 @@ domain_suffix_set:
   - truthontour.org
   - truthsocial.com
   - truveo.com
+  - tryai.dev
   - trycloudflare.com
   - tryheart.jp
   - tsctv.net

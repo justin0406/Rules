@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 17924
+# 规则统计: 17925
 
 domain_set:
   - 083link.brsserver.com.br
@@ -2885,6 +2885,7 @@ domain_set:
   - puntonet.telecomml.info
   - purbalingga-spd.ihore.id
   - purtel39.purtel.com
+  - purtel70.purtel.com
   - purwakarta.citalang.my.id
   - purwokerto.speedtest.telkom.net.id
   - puteaux3.d2m.c2d.liveservices.fr
