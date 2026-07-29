@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: GFW
-# 规则统计: 8177
+# 规则统计: 8178
 
 domain_set:
   - ccmdl.adobe.com
@@ -558,6 +558,7 @@ domain_suffix_set:
   - atlaspost.com
   - atlassian.com
   - atlassian.net
+  - atmeta.com
   - atnext.com
   - atom.com
   - au

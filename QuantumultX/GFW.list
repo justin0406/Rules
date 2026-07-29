@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8178
+# 规则统计: 8179
 
 HOST,ccmdl.adobe.com,GFW
 HOST,cloud.oracle.com,GFW
@@ -555,6 +555,7 @@ HOST-SUFFIX,atlanta168.com,GFW
 HOST-SUFFIX,atlaspost.com,GFW
 HOST-SUFFIX,atlassian.com,GFW
 HOST-SUFFIX,atlassian.net,GFW
+HOST-SUFFIX,atmeta.com,GFW
 HOST-SUFFIX,atnext.com,GFW
 HOST-SUFFIX,atom.com,GFW
 HOST-SUFFIX,au,GFW
