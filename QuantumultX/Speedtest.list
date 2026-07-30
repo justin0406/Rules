@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 17925
+# 规则统计: 17929
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -2437,6 +2437,7 @@ HOST,ookla.purelink.nz,Speedtest
 HOST,ookla.pvu.as6453.net,Speedtest
 HOST,ookla.pye.as6453.net,Speedtest
 HOST,ookla.qsi.network,Speedtest
+HOST,ookla.radishnetworks.net,Speedtest
 HOST,ookla.rbn.gr,Speedtest
 HOST,ookla.rcatelecom.com.br,Speedtest
 HOST,ookla.redebandalarga.net.br,Speedtest
@@ -4352,6 +4353,7 @@ HOST,speed.foxnetwork.net.br,Speedtest
 HOST,speed.fozfibra.com.br,Speedtest
 HOST,speed.freedom.com.do,Speedtest
 HOST,speed.freelifeconect.com.br,Speedtest
+HOST,speed.fs-it.systems,Speedtest
 HOST,speed.fullnetce.com.br,Speedtest
 HOST,speed.fusaoredes.com.br,Speedtest
 HOST,speed.fusetelecom.com,Speedtest
@@ -8753,6 +8755,7 @@ HOST,speedtest.homenet.je,Speedtest
 HOST,speedtest.homenet.ua,Speedtest
 HOST,speedtest.homenett.com.br,Speedtest
 HOST,speedtest.homespace.com.ua,Speedtest
+HOST,speedtest.homestube.de,Speedtest
 HOST,speedtest.hometel.pk,Speedtest
 HOST,speedtest.honest.net,Speedtest
 HOST,speedtest.hopnet.com.br,Speedtest
@@ -12261,6 +12264,7 @@ HOST,speedtest.ua-cat.net,Speedtest
 HOST,speedtest.uacity.net,Speedtest
 HOST,speedtest.uainet.net.br,Speedtest
 HOST,speedtest.uaizenet.com.br,Speedtest
+HOST,speedtest.uania.cloud,Speedtest
 HOST,speedtest.uar.net,Speedtest
 HOST,speedtest.ubbi.net.br,Speedtest
 HOST,speedtest.ubc.ca,Speedtest

@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 17925
+# 规则统计: 17929
 
 domain_set:
   - 083link.brsserver.com.br
@@ -2439,6 +2439,7 @@ domain_set:
   - ookla.pvu.as6453.net
   - ookla.pye.as6453.net
   - ookla.qsi.network
+  - ookla.radishnetworks.net
   - ookla.rbn.gr
   - ookla.rcatelecom.com.br
   - ookla.redebandalarga.net.br
@@ -4354,6 +4355,7 @@ domain_set:
   - speed.fozfibra.com.br
   - speed.freedom.com.do
   - speed.freelifeconect.com.br
+  - speed.fs-it.systems
   - speed.fullnetce.com.br
   - speed.fusaoredes.com.br
   - speed.fusetelecom.com
@@ -8755,6 +8757,7 @@ domain_set:
   - speedtest.homenet.ua
   - speedtest.homenett.com.br
   - speedtest.homespace.com.ua
+  - speedtest.homestube.de
   - speedtest.hometel.pk
   - speedtest.honest.net
   - speedtest.hopnet.com.br
@@ -12263,6 +12266,7 @@ domain_set:
   - speedtest.uacity.net
   - speedtest.uainet.net.br
   - speedtest.uaizenet.com.br
+  - speedtest.uania.cloud
   - speedtest.uar.net
   - speedtest.ubbi.net.br
   - speedtest.ubc.ca
