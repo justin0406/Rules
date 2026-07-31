@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8179
+# 规则统计: 8181
 
 HOST,ccmdl.adobe.com,GFW
 HOST,cloud.oracle.com,GFW
@@ -4099,6 +4099,7 @@ HOST-SUFFIX,lester850.info,GFW
 HOST-SUFFIX,letou.com,GFW
 HOST-SUFFIX,letscorp.net,GFW
 HOST-SUFFIX,letsencrypt.org,GFW
+HOST-SUFFIX,level-plus.net,GFW
 HOST-SUFFIX,lexica.art,GFW
 HOST-SUFFIX,lflink.com,GFW
 HOST-SUFFIX,lflinkup.com,GFW
@@ -7231,6 +7232,7 @@ HOST-SUFFIX,uyghurtribunal.com,GFW
 HOST-SUFFIX,uygur.fc2web.com,GFW
 HOST-SUFFIX,uygur.org,GFW
 HOST-SUFFIX,uymaarip.com,GFW
+HOST-SUFFIX,v.recipes,GFW
 HOST-SUFFIX,v.roucdn,GFW
 HOST-SUFFIX,v2.help,GFW
 HOST-SUFFIX,v2.hysteria.network,GFW

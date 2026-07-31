@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 17929
+# 规则统计: 17931
 
 domain_set:
   - 083link.brsserver.com.br
@@ -2294,6 +2294,7 @@ domain_set:
   - ookla.interalfa.net
   - ookla.interouro.net.br
   - ookla.intimedia.net.id
+  - ookla.intracex.de
   - ookla.iparatodos.com.ar
   - ookla.iphost.net
   - ookla.iptelecom.it
@@ -12869,6 +12870,7 @@ domain_set:
   - speedtest.xxlnet.nl
   - speedtest.xxs-speedtest-zxxy.me
   - speedtest.xyber.link
+  - speedtest.xytor.cloud
   - speedtest.xzoom.com.br
   - speedtest.yachay.pe
   - speedtest.yacolo.com
