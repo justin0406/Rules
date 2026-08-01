@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 17931
+# 规则统计: 17933
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -22,6 +22,7 @@ HOST,40gspeedtest.mnsi.net,Speedtest
 HOST,4mnet.brsserver.com.br,Speedtest
 HOST,77.testdebit.info,Speedtest
 HOST,7facile.brsserver.com.br,Speedtest
+HOST,7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe,Speedtest
 HOST,7starinternet.com,Speedtest
 HOST,a-speedtest.brasildigital.net.br,Speedtest
 HOST,a.speedtest.souuni.com,Speedtest
@@ -2948,6 +2949,7 @@ HOST,redwood-va.speedtest.shentel.net,Speedtest
 HOST,reflector.aberythmic.com,Speedtest
 HOST,reflector.aberythmic.com.prod.hosts.ooklaserver.net,Speedtest
 HOST,regisnet.net.br,Speedtest
+HOST,reikonteste.reikoninternet.com.br,Speedtest
 HOST,reisbhub.pimoony.com,Speedtest
 HOST,reisnoida.pimoony.com,Speedtest
 HOST,ren1.speedtest.mire.sfr.net,Speedtest

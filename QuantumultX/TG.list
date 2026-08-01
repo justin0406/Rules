@@ -1,6 +1,7 @@
 # 规则名称: TG
-# 规则统计: 34
+# 规则统计: 35
 
+HOST,7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe,TG
 HOST-SUFFIX,cdn-telegram.org,TG
 HOST-SUFFIX,graph.org,TG
 HOST-SUFFIX,legra.ph,TG

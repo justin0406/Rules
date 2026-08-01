@@ -1,8 +1,9 @@
 no_resolve: true
 # 规则名称: AI
-# 规则统计: 211
+# 规则统计: 212
 
 domain_set:
+  - 7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe
   - ai-gateway.vercel.sh
   - ai.google.dev
   - aicode.googleapis.com

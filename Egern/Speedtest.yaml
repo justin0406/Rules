@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 17931
+# 规则统计: 17933
 
 domain_set:
   - 083link.brsserver.com.br
@@ -24,6 +24,7 @@ domain_set:
   - 4mnet.brsserver.com.br
   - 77.testdebit.info
   - 7facile.brsserver.com.br
+  - 7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe
   - 7starinternet.com
   - a-speedtest.brasildigital.net.br
   - a.speedtest.souuni.com
@@ -2950,6 +2951,7 @@ domain_set:
   - reflector.aberythmic.com
   - reflector.aberythmic.com.prod.hosts.ooklaserver.net
   - regisnet.net.br
+  - reikonteste.reikoninternet.com.br
   - reisbhub.pimoony.com
   - reisnoida.pimoony.com
   - ren1.speedtest.mire.sfr.net
