@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8181
+# 规则统计: 8182
 
 DOMAIN,7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe
 DOMAIN,ccmdl.adobe.com
@@ -4958,6 +4958,7 @@ DOMAIN-SUFFIX,ntdtv.jp
 DOMAIN-SUFFIX,ntdtv.org
 DOMAIN-SUFFIX,ntdtv.ru
 DOMAIN-SUFFIX,ntdtvla.com
+DOMAIN-SUFFIX,nthlink.com
 DOMAIN-SUFFIX,ntrfun.com
 DOMAIN-SUFFIX,ntu.edu.tw
 DOMAIN-SUFFIX,nu.nl

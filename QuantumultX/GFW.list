@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8182
+# 规则统计: 8183
 
 HOST,7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -4958,6 +4958,7 @@ HOST-SUFFIX,ntdtv.jp,GFW
 HOST-SUFFIX,ntdtv.org,GFW
 HOST-SUFFIX,ntdtv.ru,GFW
 HOST-SUFFIX,ntdtvla.com,GFW
+HOST-SUFFIX,nthlink.com,GFW
 HOST-SUFFIX,ntrfun.com,GFW
 HOST-SUFFIX,ntu.edu.tw,GFW
 HOST-SUFFIX,nu.nl,GFW

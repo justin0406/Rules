@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: GFW
-# 规则统计: 8181
+# 规则统计: 8182
 
 domain_set:
   - 7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe
@@ -4961,6 +4961,7 @@ domain_suffix_set:
   - ntdtv.org
   - ntdtv.ru
   - ntdtvla.com
+  - nthlink.com
   - ntrfun.com
   - ntu.edu.tw
   - nu.nl
