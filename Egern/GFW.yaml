@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: GFW
-# 规则统计: 8182
+# 规则统计: 8181
 
 domain_set:
   - 7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe
@@ -1199,6 +1199,7 @@ domain_suffix_set:
   - centerforhumanreprod.com
   - centralnation.com
   - centurys.net
+  - cerebras.ai
   - certificate-transparency.org
   - certificate.revocationcheck.com
   - cex.io
@@ -1338,6 +1339,7 @@ domain_suffix_set:
   - chromercise.com
   - chromestatus.com
   - chromium.org
+  - cht.com.tw
   - chuang-yen.org
   - chubold.com
   - chubun.com
@@ -4593,7 +4595,6 @@ domain_suffix_set:
   - mousebreaker.com
   - movements.org
   - moviefap.com
-  - mozilla.ai
   - mozilla.com
   - mozilla.org
   - moztw.org
@@ -5627,7 +5628,6 @@ domain_suffix_set:
   - radio.garden
   - radioaustralia.net.au
   - radiohilight.net
-  - radiojar.com
   - radioline.co
   - radiotime.com
   - radiovaticana.org
@@ -7697,7 +7697,6 @@ domain_suffix_set:
   - www.antd.org
   - www.aolnews.com
   - www.bing.com
-  - www.clashverge.dev
   - www.cmoinc.org
   - www.dmm.com
   - www.eastturkistan.net

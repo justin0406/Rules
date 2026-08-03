@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8183
+# 规则统计: 8182
 
 HOST,7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -1196,6 +1196,7 @@ HOST-SUFFIX,centauro.com.br,GFW
 HOST-SUFFIX,centerforhumanreprod.com,GFW
 HOST-SUFFIX,centralnation.com,GFW
 HOST-SUFFIX,centurys.net,GFW
+HOST-SUFFIX,cerebras.ai,GFW
 HOST-SUFFIX,certificate-transparency.org,GFW
 HOST-SUFFIX,certificate.revocationcheck.com,GFW
 HOST-SUFFIX,cex.io,GFW
@@ -1335,6 +1336,7 @@ HOST-SUFFIX,chromeexperiments.com,GFW
 HOST-SUFFIX,chromercise.com,GFW
 HOST-SUFFIX,chromestatus.com,GFW
 HOST-SUFFIX,chromium.org,GFW
+HOST-SUFFIX,cht.com.tw,GFW
 HOST-SUFFIX,chuang-yen.org,GFW
 HOST-SUFFIX,chubold.com,GFW
 HOST-SUFFIX,chubun.com,GFW
@@ -4590,7 +4592,6 @@ HOST-SUFFIX,motor4ik.ru,GFW
 HOST-SUFFIX,mousebreaker.com,GFW
 HOST-SUFFIX,movements.org,GFW
 HOST-SUFFIX,moviefap.com,GFW
-HOST-SUFFIX,mozilla.ai,GFW
 HOST-SUFFIX,mozilla.com,GFW
 HOST-SUFFIX,mozilla.org,GFW
 HOST-SUFFIX,moztw.org,GFW
@@ -5624,7 +5625,6 @@ HOST-SUFFIX,radio.co,GFW
 HOST-SUFFIX,radio.garden,GFW
 HOST-SUFFIX,radioaustralia.net.au,GFW
 HOST-SUFFIX,radiohilight.net,GFW
-HOST-SUFFIX,radiojar.com,GFW
 HOST-SUFFIX,radioline.co,GFW
 HOST-SUFFIX,radiotime.com,GFW
 HOST-SUFFIX,radiovaticana.org,GFW
@@ -7694,7 +7694,6 @@ HOST-SUFFIX,www.ajsands.com,GFW
 HOST-SUFFIX,www.antd.org,GFW
 HOST-SUFFIX,www.aolnews.com,GFW
 HOST-SUFFIX,www.bing.com,GFW
-HOST-SUFFIX,www.clashverge.dev,GFW
 HOST-SUFFIX,www.cmoinc.org,GFW
 HOST-SUFFIX,www.dmm.com,GFW
 HOST-SUFFIX,www.eastturkistan.net,GFW
