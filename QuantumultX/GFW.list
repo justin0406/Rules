@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8182
+# 规则统计: 8183
 
 HOST,7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -6869,6 +6869,7 @@ HOST-SUFFIX,trade.longportapp.com,GFW
 HOST-SUFFIX,tradeup.com,GFW
 HOST-SUFFIX,tradingview.com,GFW
 HOST-SUFFIX,traffichaus.com,GFW
+HOST-SUFFIX,trainingpeaks.com,GFW
 HOST-SUFFIX,trakt.tv,GFW
 HOST-SUFFIX,translate.goog,GFW
 HOST-SUFFIX,transparency.org,GFW

@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 17933
+# 规则统计: 17936
 
 domain_set:
   - 083link.brsserver.com.br
@@ -7003,6 +7003,7 @@ domain_set:
   - speedtest.bmkv.net
   - speedtest.bn.by
   - speedtest.bna.inter.com.ve
+  - speedtest.bne.ozvps.com.au
   - speedtest.bnet-bd.com
   - speedtest.bnet.com.br
   - speedtest.bnet.id
@@ -9971,6 +9972,7 @@ domain_set:
   - speedtest.mikrotik-latino.com
   - speedtest.mikrotiksa.com
   - speedtest.mila.is
+  - speedtest.milanfiber.co.tz
   - speedtest.milaninternet.com
   - speedtest.milbr.net
   - speedtest.milink1.com
@@ -11160,6 +11162,7 @@ domain_set:
   - speedtest.remc1.net
   - speedtest.renocagroupsrl.com
   - speedtest.resoundnetworks.com
+  - speedtest.reticule.in
   - speedtest.revolutionbroadband.net
   - speedtest.reycom.cr
   - speedtest.rfchost.net
