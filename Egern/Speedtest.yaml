@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 17936
+# 规则统计: 17937
 
 domain_set:
   - 083link.brsserver.com.br
@@ -11386,6 +11386,7 @@ domain_set:
   - speedtest.servitelecomsrl.com
   - speedtest.servitelsoluciones.com
   - speedtest.servitronicperu.com
+  - speedtest.sesfiber.com.br
   - speedtest.setelin.co
   - speedtest.setservice.bg
   - speedtest.setwifi.com.br
