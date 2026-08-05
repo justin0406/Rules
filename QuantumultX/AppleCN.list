@@ -1,7 +1,7 @@
 # 规则名称: AppleCN
 # 规则统计: 294
 
-HOST,7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe,AppleCN
+HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,AppleCN
 HOST,aod.itunes.apple.com,extended-matching,AppleCN
 HOST,api-edge.apps.apple.com,extended-matching,AppleCN
 HOST,api.apps.apple.com,extended-matching,AppleCN
