@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 17938
+# 规则统计: 17939
 
 domain_set:
   - 083link.brsserver.com.br
@@ -8213,6 +8213,7 @@ domain_set:
   - speedtest.fibrasanjuan.com.ar
   - speedtest.fibrasil.com.br
   - speedtest.fibraslp.com
+  - speedtest.fibrat.es
   - speedtest.fibratel.com.pe
   - speedtest.fibratelecom.ec
   - speedtest.fibratelecomgo.com.br

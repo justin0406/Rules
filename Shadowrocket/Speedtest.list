@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 17938
+# 规则统计: 17939
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -8211,6 +8211,7 @@ DOMAIN,speedtest.fibrapro.cl
 DOMAIN,speedtest.fibrasanjuan.com.ar
 DOMAIN,speedtest.fibrasil.com.br
 DOMAIN,speedtest.fibraslp.com
+DOMAIN,speedtest.fibrat.es
 DOMAIN,speedtest.fibratel.com.pe
 DOMAIN,speedtest.fibratelecom.ec
 DOMAIN,speedtest.fibratelecomgo.com.br
