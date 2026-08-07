@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8182
+# 规则统计: 8180
 
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN,ccmdl.adobe.com
@@ -563,7 +563,6 @@ DOMAIN-SUFFIX,au
 DOMAIN-SUFFIX,auctions.yahoo.co.jp
 DOMAIN-SUFFIX,audacy.com
 DOMAIN-SUFFIX,audionow.com
-DOMAIN-SUFFIX,auntology.fandom.com
 DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,authorizeddns.net
 DOMAIN-SUFFIX,authorizeddns.org
@@ -3377,7 +3376,6 @@ DOMAIN-SUFFIX,homedepot.com
 DOMAIN-SUFFIX,homeperversion.com
 DOMAIN-SUFFIX,homeservershow.com
 DOMAIN-SUFFIX,honeynet.org
-DOMAIN-SUFFIX,hongkong.fandom.com
 DOMAIN-SUFFIX,hongkongfp.com
 DOMAIN-SUFFIX,hongmeimei.com
 DOMAIN-SUFFIX,hongzhi.li

@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8183
+# 规则统计: 8181
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -563,7 +563,6 @@ HOST-SUFFIX,au,GFW
 HOST-SUFFIX,auctions.yahoo.co.jp,GFW
 HOST-SUFFIX,audacy.com,GFW
 HOST-SUFFIX,audionow.com,GFW
-HOST-SUFFIX,auntology.fandom.com,GFW
 HOST-SUFFIX,auth0.com,GFW
 HOST-SUFFIX,authorizeddns.net,GFW
 HOST-SUFFIX,authorizeddns.org,GFW
@@ -3377,7 +3376,6 @@ HOST-SUFFIX,homedepot.com,GFW
 HOST-SUFFIX,homeperversion.com,GFW
 HOST-SUFFIX,homeservershow.com,GFW
 HOST-SUFFIX,honeynet.org,GFW
-HOST-SUFFIX,hongkong.fandom.com,GFW
 HOST-SUFFIX,hongkongfp.com,GFW
 HOST-SUFFIX,hongmeimei.com,GFW
 HOST-SUFFIX,hongzhi.li,GFW
