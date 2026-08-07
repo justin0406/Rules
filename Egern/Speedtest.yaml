@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 17939
+# 规则统计: 17940
 
 domain_set:
   - 083link.brsserver.com.br
@@ -12258,6 +12258,7 @@ domain_set:
   - speedtest.tvnet.if.ua
   - speedtest.tvnetlago.com
   - speedtest.tvon.pk
+  - speedtest.tvtcable.com
   - speedtest.twds.com.tw
   - speedtest.twerion.net
   - speedtest.twf.net.br
