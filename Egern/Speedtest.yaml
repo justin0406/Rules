@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 17940
+# 规则统计: 17943
 
 domain_set:
   - 083link.brsserver.com.br
@@ -5624,6 +5624,7 @@ domain_set:
   - speedtest-i20.wtconnect.com
   - speedtest-iad.acreto.net
   - speedtest-iad.dish-wireless.com
+  - speedtest-iad.sectrify.com
   - speedtest-ib.masmovil.com
   - speedtest-ica.as273143.net
   - speedtest-ict.ideatek.com
@@ -6144,6 +6145,7 @@ domain_set:
   - speedtest-sin.melbicom.net
   - speedtest-sjc.acreto.net
   - speedtest-sjc.dish-wireless.com
+  - speedtest-sjc.sectrify.com
   - speedtest-skh.amanna.net.id
   - speedtest-skn1.3bb.co.th
   - speedtest-slmn.jiex.co.id
@@ -11670,6 +11672,7 @@ domain_set:
   - speedtest.spectrumvoip.com
   - speedtest.speedboost.com.br
   - speedtest.speedcloud.li
+  - speedtest.speedcom.in
   - speedtest.speedconnect.net.br
   - speedtest.speedconnectpa.net.br
   - speedtest.speedenet.com.br
