@@ -1,5 +1,5 @@
 # 规则名称: CN
-# 规则统计: 870
+# 规则统计: 871
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,CN
 HOST,acg.tv,CN
@@ -208,6 +208,7 @@ HOST-SUFFIX,cailianpress.com,CN
 HOST-SUFFIX,cainiao.com,CN
 HOST-SUFFIX,cainiaoyizhan.com,CN
 HOST-SUFFIX,caiyunapp.com,CN
+HOST-SUFFIX,caiyuncdn.com,CN
 HOST-SUFFIX,camera360.com,CN
 HOST-SUFFIX,camscanner.com,CN
 HOST-SUFFIX,ccb.com,CN

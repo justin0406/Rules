@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: CN
-# 规则统计: 867
+# 规则统计: 868
 
 domain_set:
   - 7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -211,6 +211,7 @@ domain_suffix_set:
   - cainiao.com
   - cainiaoyizhan.com
   - caiyunapp.com
+  - caiyuncdn.com
   - camera360.com
   - camscanner.com
   - ccb.com
