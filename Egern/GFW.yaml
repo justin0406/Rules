@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: GFW
-# 规则统计: 8180
+# 规则统计: 8184
 
 domain_set:
   - 7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -278,6 +278,7 @@ domain_suffix_set:
   - ai.google
   - ai.studio
   - aicoin.com
+  - aihub.top
   - aimoon.com
   - aiosearch.com
   - aiph.net
@@ -654,6 +655,7 @@ domain_suffix_set:
   - bartender.dowjones.com
   - barton.de
   - bartvpn.com
+  - basemaps.arcgis.com
   - bastillepost.com
   - bayvoice.net
   - baywords.com
@@ -2081,6 +2083,7 @@ domain_suffix_set:
   - eroticsaloon.net
   - es
   - esg.t91y.com
+  - esim.redteago.com
   - eslite.com
   - esmtp.biz
   - esurance.com
@@ -2121,6 +2124,7 @@ domain_suffix_set:
   - expatshield.com
   - expecthim.com
   - expekt.com
+  - experience.arcgis.com
   - experts-univers.com
   - explainthis.io
   - exploader.net

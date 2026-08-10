@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 17943
+# 规则统计: 17944
 
 domain_set:
   - 083link.brsserver.com.br
@@ -6539,6 +6539,7 @@ domain_set:
   - speedtest.aky.cl
   - speedtest.alaife.net.br
   - speedtest.alanhouse.com.br
+  - speedtest.alanyanet.com.tr
   - speedtest.alastyr.com
   - speedtest.albanytel.com
   - speedtest.albatroznetwork.com.br

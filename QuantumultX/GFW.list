@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8181
+# 规则统计: 8185
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -275,6 +275,7 @@ HOST-SUFFIX,ai.dev,GFW
 HOST-SUFFIX,ai.google,GFW
 HOST-SUFFIX,ai.studio,GFW
 HOST-SUFFIX,aicoin.com,GFW
+HOST-SUFFIX,aihub.top,GFW
 HOST-SUFFIX,aimoon.com,GFW
 HOST-SUFFIX,aiosearch.com,GFW
 HOST-SUFFIX,aiph.net,GFW
@@ -651,6 +652,7 @@ HOST-SUFFIX,barnabu.co.uk,GFW
 HOST-SUFFIX,bartender.dowjones.com,GFW
 HOST-SUFFIX,barton.de,GFW
 HOST-SUFFIX,bartvpn.com,GFW
+HOST-SUFFIX,basemaps.arcgis.com,GFW
 HOST-SUFFIX,bastillepost.com,GFW
 HOST-SUFFIX,bayvoice.net,GFW
 HOST-SUFFIX,baywords.com,GFW
@@ -2078,6 +2080,7 @@ HOST-SUFFIX,eroterest.net,GFW
 HOST-SUFFIX,eroticsaloon.net,GFW
 HOST-SUFFIX,es,GFW
 HOST-SUFFIX,esg.t91y.com,GFW
+HOST-SUFFIX,esim.redteago.com,GFW
 HOST-SUFFIX,eslite.com,GFW
 HOST-SUFFIX,esmtp.biz,GFW
 HOST-SUFFIX,esurance.com,GFW
@@ -2118,6 +2121,7 @@ HOST-SUFFIX,exmormon.org,GFW
 HOST-SUFFIX,expatshield.com,GFW
 HOST-SUFFIX,expecthim.com,GFW
 HOST-SUFFIX,expekt.com,GFW
+HOST-SUFFIX,experience.arcgis.com,GFW
 HOST-SUFFIX,experts-univers.com,GFW
 HOST-SUFFIX,explainthis.io,GFW
 HOST-SUFFIX,exploader.net,GFW
