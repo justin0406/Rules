@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8185
+# 规则统计: 8186
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -1771,6 +1771,7 @@ HOST-SUFFIX,disp.cc,GFW
 HOST-SUFFIX,disqus.com,GFW
 HOST-SUFFIX,distrowatch.com,GFW
 HOST-SUFFIX,dit-inc.us,GFW
+HOST-SUFFIX,divdyn.com,GFW
 HOST-SUFFIX,diyin.org,GFW
 HOST-SUFFIX,dizhidizhi.com,GFW
 HOST-SUFFIX,dizhuzhishang.com,GFW
