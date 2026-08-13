@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 17947
+# 规则统计: 17950
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -3074,6 +3074,7 @@ HOST,sea.speedtest.gslnetworks.com,Speedtest
 HOST,sea.speedtest.gslnetworks.com.prod.hosts.ooklaserver.net,Speedtest
 HOST,sea.st.spacecore.pro,Speedtest
 HOST,sea.st.spacecore.pro.prod.hosts.ooklaserver.net,Speedtest
+HOST,seacaftest.aptalaska.net,Speedtest
 HOST,seattle.speedtest.centurylink.net,Speedtest
 HOST,seawa00-speedtest.etstelco.com,Speedtest
 HOST,seawa00-speedtest.etstelco.com.prod.hosts.ooklaserver.net,Speedtest
@@ -7120,6 +7121,7 @@ HOST,speedtest.c.is,Speedtest
 HOST,speedtest.c32broadband.com,Speedtest
 HOST,speedtest.c7fibra.com.br,Speedtest
 HOST,speedtest.ca-tr.kamatera.com,Speedtest
+HOST,speedtest.ca1.colobix.com,Speedtest
 HOST,speedtest.cabelnet.com.gt,Speedtest
 HOST,speedtest.cablearequipa.com,Speedtest
 HOST,speedtest.cableatlantico.com,Speedtest
@@ -14026,6 +14028,7 @@ HOST,speedtest3.primetelecom.ro,Speedtest
 HOST,speedtest3.provedorbelnet.com.br,Speedtest
 HOST,speedtest3.provedornetmacro.com.br,Speedtest
 HOST,speedtest3.ptcl.net,Speedtest
+HOST,speedtest3.ptd.net,Speedtest
 HOST,speedtest3.puntonet.ec,Speedtest
 HOST,speedtest3.radiobrastelecom.com.br,Speedtest
 HOST,speedtest3.sam-isp.com,Speedtest
