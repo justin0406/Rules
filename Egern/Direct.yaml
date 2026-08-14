@@ -1,5 +1,5 @@
 # 规则名称: Direct
-# 规则统计: 181
+# 规则统计: 182
 
 domain_set:
   - 127.skk.moe
@@ -69,6 +69,7 @@ domain_suffix_set:
   - cinematik.net
   - cinemaz.to
   - classix-unlimited.co.uk
+  - collegeboard.org
   - comicat.org
   - concertos.live
   - dicmusic.club

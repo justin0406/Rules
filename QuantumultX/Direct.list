@@ -1,5 +1,5 @@
 # 规则名称: Direct
-# 规则统计: 182
+# 规则统计: 183
 
 HOST,127.skk.moe,Direct
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,Direct
@@ -67,6 +67,7 @@ HOST-SUFFIX,cinemageddon.net,Direct
 HOST-SUFFIX,cinematik.net,Direct
 HOST-SUFFIX,cinemaz.to,Direct
 HOST-SUFFIX,classix-unlimited.co.uk,Direct
+HOST-SUFFIX,collegeboard.org,Direct
 HOST-SUFFIX,comicat.org,Direct
 HOST-SUFFIX,concertos.live,Direct
 HOST-SUFFIX,dicmusic.club,Direct

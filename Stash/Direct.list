@@ -1,5 +1,5 @@
 # 规则名称: Direct
-# 规则统计: 217
+# 规则统计: 218
 
 DOMAIN,127.skk.moe
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -67,6 +67,7 @@ DOMAIN-SUFFIX,cinemageddon.net
 DOMAIN-SUFFIX,cinematik.net
 DOMAIN-SUFFIX,cinemaz.to
 DOMAIN-SUFFIX,classix-unlimited.co.uk
+DOMAIN-SUFFIX,collegeboard.org
 DOMAIN-SUFFIX,comicat.org
 DOMAIN-SUFFIX,concertos.live
 DOMAIN-SUFFIX,dicmusic.club
