@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 17950
+# 规则统计: 17953
 
 domain_set:
   - 083link.brsserver.com.br
@@ -247,6 +247,7 @@ domain_set:
   - bekasi.speedtest.telkom.net.id
   - belem.infrateam.com.br
   - bengkulu.speedtest.telkom.net.id
+  - ber-tc.wsqm.telekom-dienste.de
   - ber.wsqm.telekom-dienste.de
   - beruritelecom.brsserver.com.br
   - bet-srv-spdprd-001.verointernet.com.br
@@ -12418,6 +12419,7 @@ domain_set:
   - speedtest.us.novoserve.com
   - speedtest.us.openinfra.com
   - speedtest.us310.lax.us.ctcsci.com
+  - speedtest.usc-dfw1.pllx.net
   - speedtest.useaeiou.com.br
   - speedtest.usetelecom.com.br
   - speedtest.usinternet.com
@@ -17399,6 +17401,7 @@ domain_set:
   - velocidade.suppernet.com.br
   - velocidade.svcomrs.com.br
   - velocidade.tecnetms.com.br
+  - velocidade.tecsattelecom.com.br
   - velocidade.tecsattelecom.net.br
   - velocidade.tele1.net.br
   - velocidade.teleon.com.br

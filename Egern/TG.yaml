@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: TG
-# 规则统计: 35
+# 规则统计: 34
 
 domain_set:
   - 7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -20,7 +20,6 @@ domain_suffix_set:
   - tg.dev
   - tx.me
 ip_cidr_set:
-  - 139.59.210.98/32
   - 149.154.160.0/20
   - 185.76.151.0/24
   - 194.221.250.50/32

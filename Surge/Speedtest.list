@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 17950
+# 规则统计: 17953
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -245,6 +245,7 @@ DOMAIN,bekasi.citalang.net
 DOMAIN,bekasi.speedtest.telkom.net.id
 DOMAIN,belem.infrateam.com.br
 DOMAIN,bengkulu.speedtest.telkom.net.id
+DOMAIN,ber-tc.wsqm.telekom-dienste.de
 DOMAIN,ber.wsqm.telekom-dienste.de
 DOMAIN,beruritelecom.brsserver.com.br
 DOMAIN,bet-srv-spdprd-001.verointernet.com.br
@@ -12416,6 +12417,7 @@ DOMAIN,speedtest.us.mirhosting.net
 DOMAIN,speedtest.us.novoserve.com
 DOMAIN,speedtest.us.openinfra.com
 DOMAIN,speedtest.us310.lax.us.ctcsci.com
+DOMAIN,speedtest.usc-dfw1.pllx.net
 DOMAIN,speedtest.useaeiou.com.br
 DOMAIN,speedtest.usetelecom.com.br
 DOMAIN,speedtest.usinternet.com
@@ -17397,6 +17399,7 @@ DOMAIN,velocidade.storcknet.com.br
 DOMAIN,velocidade.suppernet.com.br
 DOMAIN,velocidade.svcomrs.com.br
 DOMAIN,velocidade.tecnetms.com.br
+DOMAIN,velocidade.tecsattelecom.com.br
 DOMAIN,velocidade.tecsattelecom.net.br
 DOMAIN,velocidade.tele1.net.br
 DOMAIN,velocidade.teleon.com.br
