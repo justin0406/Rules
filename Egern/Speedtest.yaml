@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 17953
+# 规则统计: 17957
 
 domain_set:
   - 083link.brsserver.com.br
@@ -3149,6 +3149,7 @@ domain_set:
   - sfosfookla.wiline.com
   - sfosj0096paxiospeedtestserver01.wiline.com
   - sfosj0096speedtestserver01.wiline.com
+  - sfosj0096speedtestserver02.wiline.com
   - sfp-speedtest.globe.com.ph
   - sfp1.servlink.com.br
   - sg-bgp-speedtest.nearoute.io
@@ -7767,6 +7768,7 @@ domain_set:
   - speedtest.dicanet.com.br
   - speedtest.didimnet.com.tr
   - speedtest.differnet.es
+  - speedtest.difusi.id
   - speedtest.diganetfibra.com.br
   - speedtest.digcarmo.com.br
   - speedtest.digi-belgium.be
@@ -12236,6 +12238,7 @@ domain_set:
   - speedtest.tunenet.dk
   - speedtest.tunisietelecom.tn
   - speedtest.tupnet.com.br
+  - speedtest.turbo.net.tr
   - speedtest.turbo10.com.br
   - speedtest.turbocentralnet.com.br
   - speedtest.turbocom.net.br
@@ -12736,6 +12739,7 @@ domain_set:
   - speedtest.whidbey.net
   - speedtest.white.com.do
   - speedtest.whiteprovider.net
+  - speedtest.whizcomms.com.sg
   - speedtest.whizdigital.id
   - speedtest.whn.com.pk
   - speedtest.wi-tech.it

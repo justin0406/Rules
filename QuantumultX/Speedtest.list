@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 17953
+# 规则统计: 17957
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -3147,6 +3147,7 @@ HOST,sfosf0003paxiospeedtestserver01.wiline.com,Speedtest
 HOST,sfosfookla.wiline.com,Speedtest
 HOST,sfosj0096paxiospeedtestserver01.wiline.com,Speedtest
 HOST,sfosj0096speedtestserver01.wiline.com,Speedtest
+HOST,sfosj0096speedtestserver02.wiline.com,Speedtest
 HOST,sfp-speedtest.globe.com.ph,Speedtest
 HOST,sfp1.servlink.com.br,Speedtest
 HOST,sg-bgp-speedtest.nearoute.io,Speedtest
@@ -7765,6 +7766,7 @@ HOST,speedtest.diasnet.com.br,Speedtest
 HOST,speedtest.dicanet.com.br,Speedtest
 HOST,speedtest.didimnet.com.tr,Speedtest
 HOST,speedtest.differnet.es,Speedtest
+HOST,speedtest.difusi.id,Speedtest
 HOST,speedtest.diganetfibra.com.br,Speedtest
 HOST,speedtest.digcarmo.com.br,Speedtest
 HOST,speedtest.digi-belgium.be,Speedtest
@@ -12234,6 +12236,7 @@ HOST,speedtest.tunaslink.net.id,Speedtest
 HOST,speedtest.tunenet.dk,Speedtest
 HOST,speedtest.tunisietelecom.tn,Speedtest
 HOST,speedtest.tupnet.com.br,Speedtest
+HOST,speedtest.turbo.net.tr,Speedtest
 HOST,speedtest.turbo10.com.br,Speedtest
 HOST,speedtest.turbocentralnet.com.br,Speedtest
 HOST,speedtest.turbocom.net.br,Speedtest
@@ -12734,6 +12737,7 @@ HOST,speedtest.wfredes.com.br,Speedtest
 HOST,speedtest.whidbey.net,Speedtest
 HOST,speedtest.white.com.do,Speedtest
 HOST,speedtest.whiteprovider.net,Speedtest
+HOST,speedtest.whizcomms.com.sg,Speedtest
 HOST,speedtest.whizdigital.id,Speedtest
 HOST,speedtest.whn.com.pk,Speedtest
 HOST,speedtest.wi-tech.it,Speedtest

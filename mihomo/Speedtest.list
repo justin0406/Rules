@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 17953
+# 规则统计: 17957
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -3147,6 +3147,7 @@ DOMAIN,sfosf0003paxiospeedtestserver01.wiline.com
 DOMAIN,sfosfookla.wiline.com
 DOMAIN,sfosj0096paxiospeedtestserver01.wiline.com
 DOMAIN,sfosj0096speedtestserver01.wiline.com
+DOMAIN,sfosj0096speedtestserver02.wiline.com
 DOMAIN,sfp-speedtest.globe.com.ph
 DOMAIN,sfp1.servlink.com.br
 DOMAIN,sg-bgp-speedtest.nearoute.io
@@ -7765,6 +7766,7 @@ DOMAIN,speedtest.diasnet.com.br
 DOMAIN,speedtest.dicanet.com.br
 DOMAIN,speedtest.didimnet.com.tr
 DOMAIN,speedtest.differnet.es
+DOMAIN,speedtest.difusi.id
 DOMAIN,speedtest.diganetfibra.com.br
 DOMAIN,speedtest.digcarmo.com.br
 DOMAIN,speedtest.digi-belgium.be
@@ -12234,6 +12236,7 @@ DOMAIN,speedtest.tunaslink.net.id
 DOMAIN,speedtest.tunenet.dk
 DOMAIN,speedtest.tunisietelecom.tn
 DOMAIN,speedtest.tupnet.com.br
+DOMAIN,speedtest.turbo.net.tr
 DOMAIN,speedtest.turbo10.com.br
 DOMAIN,speedtest.turbocentralnet.com.br
 DOMAIN,speedtest.turbocom.net.br
@@ -12734,6 +12737,7 @@ DOMAIN,speedtest.wfredes.com.br
 DOMAIN,speedtest.whidbey.net
 DOMAIN,speedtest.white.com.do
 DOMAIN,speedtest.whiteprovider.net
+DOMAIN,speedtest.whizcomms.com.sg
 DOMAIN,speedtest.whizdigital.id
 DOMAIN,speedtest.whn.com.pk
 DOMAIN,speedtest.wi-tech.it
