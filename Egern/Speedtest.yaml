@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 17957
+# 规则统计: 17959
 
 domain_set:
   - 083link.brsserver.com.br
@@ -4952,6 +4952,7 @@ domain_set:
   - speed10ge.velloznet.com.br
   - speed11.gonetspeed.com
   - speed12.gonetspeed.com
+  - speed13.gonetspeed.com
   - speed1teste.netzon.com.br
   - speed2-nossa.nossainternet.com.br
   - speed2-tv.e-max.sk
@@ -7919,6 +7920,7 @@ domain_set:
   - speedtest.echonet.co.in
   - speedtest.echouganda.co.ug
   - speedtest.eclipsetelecom.net.br
+  - speedtest.ecmnet.com.br
   - speedtest.ecom.net.do
   - speedtest.econetdobrasil.com.br
   - speedtest.econtel.com.ec
