@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 17959
+# 规则统计: 17960
 
 domain_set:
   - 083link.brsserver.com.br
@@ -1895,6 +1895,7 @@ domain_set:
   - node1.sndcbroadband.com
   - node1.speedtest.netgti.com.br
   - node2.sndcbroadband.com
+  - nohar.softechinfosol.com
   - noida-sptest.ishancloud.com
   - noidasp.renubroadband.com
   - noidaspeedtest.onremote.in

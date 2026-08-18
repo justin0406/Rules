@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 17959
+# 规则统计: 17960
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -1893,6 +1893,7 @@ DOMAIN,node01-eulon-free.tropicalgames.net
 DOMAIN,node1.sndcbroadband.com
 DOMAIN,node1.speedtest.netgti.com.br
 DOMAIN,node2.sndcbroadband.com
+DOMAIN,nohar.softechinfosol.com
 DOMAIN,noida-sptest.ishancloud.com
 DOMAIN,noidasp.renubroadband.com
 DOMAIN,noidaspeedtest.onremote.in

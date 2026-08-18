@@ -1,5 +1,5 @@
 # 规则名称: ChinaIP
-# 规则统计: 5816
+# 规则统计: 5817
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,ChinaIP
 IP-CIDR,1.1.8.0/24,ChinaIP
@@ -809,6 +809,7 @@ IP-CIDR,103.8.33.0/24,ChinaIP
 IP-CIDR,103.8.34.0/23,ChinaIP
 IP-CIDR,103.8.52.0/22,ChinaIP
 IP-CIDR,103.8.68.0/22,ChinaIP
+IP-CIDR,103.81.120.0/24,ChinaIP
 IP-CIDR,103.81.123.0/24,ChinaIP
 IP-CIDR,103.81.200.0/22,ChinaIP
 IP-CIDR,103.81.4.0/22,ChinaIP

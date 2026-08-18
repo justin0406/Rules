@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8185
+# 规则统计: 8186
 
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN,ccmdl.adobe.com
@@ -4198,6 +4198,7 @@ DOMAIN-SUFFIX,livemint.com
 DOMAIN-SUFFIX,livestation.com
 DOMAIN-SUFFIX,livestream.com
 DOMAIN-SUFFIX,livevideo.com
+DOMAIN-SUFFIX,livingatlas.arcgis.com
 DOMAIN-SUFFIX,livingonline.us
 DOMAIN-SUFFIX,livingstream.com
 DOMAIN-SUFFIX,liwangyang.com
