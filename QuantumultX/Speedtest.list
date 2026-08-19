@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 17960
+# 规则统计: 17961
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -9821,6 +9821,7 @@ HOST,speedtest.masteronline.com.br,Speedtest
 HOST,speedtest.masterturbonet.com.br,Speedtest
 HOST,speedtest.matrix-net.pl,Speedtest
 HOST,speedtest.matrixdata.nl,Speedtest
+HOST,speedtest.matrixtelecon.com.br,Speedtest
 HOST,speedtest.matriztelecom.com.br,Speedtest
 HOST,speedtest.mattel.mr,Speedtest
 HOST,speedtest.maumere.telkomsel.com,Speedtest

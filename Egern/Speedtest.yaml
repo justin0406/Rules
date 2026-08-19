@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 17960
+# 规则统计: 17961
 
 domain_set:
   - 083link.brsserver.com.br
@@ -9823,6 +9823,7 @@ domain_set:
   - speedtest.masterturbonet.com.br
   - speedtest.matrix-net.pl
   - speedtest.matrixdata.nl
+  - speedtest.matrixtelecon.com.br
   - speedtest.matriztelecom.com.br
   - speedtest.mattel.mr
   - speedtest.maumere.telkomsel.com
