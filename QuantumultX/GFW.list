@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8188
+# 规则统计: 8189
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -5049,6 +5049,7 @@ HOST-SUFFIX,okpool.me,GFW
 HOST-SUFFIX,okx.com,GFW
 HOST-SUFFIX,old-cat.net,GFW
 HOST-SUFFIX,old.honeynet.org,GFW
+HOST-SUFFIX,oldmapsonline.org,GFW
 HOST-SUFFIX,olehdtv.com,GFW
 HOST-SUFFIX,olelive.com,GFW
 HOST-SUFFIX,olevod.com,GFW

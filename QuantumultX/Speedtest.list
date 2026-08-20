@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 17961
+# 规则统计: 17962
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -9686,6 +9686,7 @@ HOST,speedtest.longlines.com,Speedtest
 HOST,speedtest.lonisite.info,Speedtest
 HOST,speedtest.loonet.com.br,Speedtest
 HOST,speedtest.loopnet.net.br,Speedtest
+HOST,speedtest.lorscheid-edv.de,Speedtest
 HOST,speedtest.lospuertosnetworks.com.ve,Speedtest
 HOST,speedtest.lovelandpulse.com,Speedtest
 HOST,speedtest.loviz.com.vc,Speedtest

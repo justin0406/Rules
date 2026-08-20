@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 17961
+# 规则统计: 17962
 
 domain_set:
   - 083link.brsserver.com.br
@@ -9688,6 +9688,7 @@ domain_set:
   - speedtest.lonisite.info
   - speedtest.loonet.com.br
   - speedtest.loopnet.net.br
+  - speedtest.lorscheid-edv.de
   - speedtest.lospuertosnetworks.com.ve
   - speedtest.lovelandpulse.com
   - speedtest.loviz.com.vc
