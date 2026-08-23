@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: GFW
-# 规则统计: 8190
+# 规则统计: 8194
 
 domain_set:
   - 7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -3300,6 +3300,7 @@ domain_suffix_set:
   - himemix.net
   - hindustantimes.com
   - hinet.net
+  - historylines.net
   - hitbtc.com
   - hitomi.la
   - hive.blog
@@ -3999,6 +4000,7 @@ domain_suffix_set:
   - kisscos.net
   - kissjav.com
   - kiwi.kz
+  - kiwix.org
   - kk-whys.co.jp
   - kkbox.com
   - kknews.cc
@@ -4373,6 +4375,7 @@ domain_suffix_set:
   - mayoclinic.org
   - mcadforums.com
   - mcaf.ee
+  - mceindex.com
   - mcfog.com
   - mcreasite.com
   - mcusercontent.com
@@ -5884,6 +5887,7 @@ domain_suffix_set:
   - say2.info
   - sb
   - sb-cd.com
+  - sb.sb
   - sbme.me
   - sbs.com.au
   - sbti.unun.dev

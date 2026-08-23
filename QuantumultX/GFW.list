@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8191
+# 规则统计: 8195
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -3297,6 +3297,7 @@ HOST-SUFFIX,himemix.com,GFW
 HOST-SUFFIX,himemix.net,GFW
 HOST-SUFFIX,hindustantimes.com,GFW
 HOST-SUFFIX,hinet.net,GFW
+HOST-SUFFIX,historylines.net,GFW
 HOST-SUFFIX,hitbtc.com,GFW
 HOST-SUFFIX,hitomi.la,GFW
 HOST-SUFFIX,hive.blog,GFW
@@ -3996,6 +3997,7 @@ HOST-SUFFIX,kissbbao.cn,GFW
 HOST-SUFFIX,kisscos.net,GFW
 HOST-SUFFIX,kissjav.com,GFW
 HOST-SUFFIX,kiwi.kz,GFW
+HOST-SUFFIX,kiwix.org,GFW
 HOST-SUFFIX,kk-whys.co.jp,GFW
 HOST-SUFFIX,kkbox.com,GFW
 HOST-SUFFIX,kknews.cc,GFW
@@ -4370,6 +4372,7 @@ HOST-SUFFIX,mayimayi.com,GFW
 HOST-SUFFIX,mayoclinic.org,GFW
 HOST-SUFFIX,mcadforums.com,GFW
 HOST-SUFFIX,mcaf.ee,GFW
+HOST-SUFFIX,mceindex.com,GFW
 HOST-SUFFIX,mcfog.com,GFW
 HOST-SUFFIX,mcreasite.com,GFW
 HOST-SUFFIX,mcusercontent.com,GFW
@@ -5881,6 +5884,7 @@ HOST-SUFFIX,savevid.com,GFW
 HOST-SUFFIX,say2.info,GFW
 HOST-SUFFIX,sb,GFW
 HOST-SUFFIX,sb-cd.com,GFW
+HOST-SUFFIX,sb.sb,GFW
 HOST-SUFFIX,sbme.me,GFW
 HOST-SUFFIX,sbs.com.au,GFW
 HOST-SUFFIX,sbti.unun.dev,GFW
