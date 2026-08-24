@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18433
+# 规则统计: 18440
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -7964,6 +7964,7 @@ HOST,speedtest.dflash.com.br,Speedtest
 HOST,speedtest.dfltelecom.com.br,Speedtest
 HOST,speedtest.dfn.net,Speedtest
 HOST,speedtest.dfn.nl,Speedtest
+HOST,speedtest.dfw.fdcservers.net,Speedtest
 HOST,speedtest.dfw1.sonic.net,Speedtest
 HOST,speedtest.dfw2.sonic.net,Speedtest
 HOST,speedtest.dg-net.pl,Speedtest
@@ -8044,6 +8045,7 @@ HOST,speedtest.dkwireless.co.za,Speedtest
 HOST,speedtest.dl.gtel.in,Speedtest
 HOST,speedtest.dlgtpl.net,Speedtest
 HOST,speedtest.dllstx97.metronetinc.com,Speedtest
+HOST,speedtest.dme.fdcservers.net,Speedtest
 HOST,speedtest.dna.net.id,Speedtest
 HOST,speedtest.dne.vodacombusiness.co.za,Speedtest
 HOST,speedtest.dnepro.net,Speedtest
@@ -8564,6 +8566,7 @@ HOST,speedtest.foxcell.net,Speedtest
 HOST,speedtest.foxnettelecom.net.br,Speedtest
 HOST,speedtest.foxtel.in,Speedtest
 HOST,speedtest.foxtelecom.es,Speedtest
+HOST,speedtest.fr8.fdcservers.net,Speedtest
 HOST,speedtest.fra.plusnet.de,Speedtest
 HOST,speedtest.fra01.datascheune.de,Speedtest
 HOST,speedtest.fra01.fusionflare.cloud,Speedtest
@@ -8981,6 +8984,7 @@ HOST,speedtest.hk.chinamobile.com,Speedtest
 HOST,speedtest.hk210.hkg.cn.ctcsci.com,Speedtest
 HOST,speedtest.hk210.hkg.cn.ctcsci.com.prod.hosts.ooklaserver.net,Speedtest
 HOST,speedtest.hk212.hkg.cn.nerocloud.io,Speedtest
+HOST,speedtest.hkg.fdcservers.net,Speedtest
 HOST,speedtest.hkg01.node.as9516.com,Speedtest
 HOST,speedtest.hlinknet.com,Speedtest
 HOST,speedtest.hlucin.net,Speedtest
@@ -10014,6 +10018,7 @@ HOST,speedtest.macpaw.com,Speedtest
 HOST,speedtest.macronet.eu,Speedtest
 HOST,speedtest.macrosat.pl,Speedtest
 HOST,speedtest.macrosignal.net,Speedtest
+HOST,speedtest.mad.fdcservers.net,Speedtest
 HOST,speedtest.mad2.edgoo.net,Speedtest
 HOST,speedtest.madcom.al,Speedtest
 HOST,speedtest.madiun.ldp.net.id,Speedtest
@@ -11031,6 +11036,7 @@ HOST,speedtest.ozot.com.au,Speedtest
 HOST,speedtest.p1.mhn.cloud,Speedtest
 HOST,speedtest.p7s1.net,Speedtest
 HOST,speedtest.pa.net.py,Speedtest
+HOST,speedtest.pa10.fdcservers.net,Speedtest
 HOST,speedtest.pa5.as198831.net,Speedtest
 HOST,speedtest.paalnet.com.ec,Speedtest
 HOST,speedtest.pacelinknetwork.com,Speedtest
@@ -11668,6 +11674,7 @@ HOST,speedtest.sdt.goa2.airnetnetworks.com,Speedtest
 HOST,speedtest.sdvcomm.in,Speedtest
 HOST,speedtest.sea.accretive-networks.net,Speedtest
 HOST,speedtest.sea.accretive-networks.net.prod.hosts.ooklaserver.net,Speedtest
+HOST,speedtest.sea.fdcservers.net,Speedtest
 HOST,speedtest.sea1.hivelocity.net,Speedtest
 HOST,speedtest.sea1.nitelusa.net,Speedtest
 HOST,speedtest.seafiber.com.br,Speedtest

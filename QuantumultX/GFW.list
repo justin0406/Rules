@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8195
+# 规则统计: 8197
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -452,6 +452,7 @@ HOST-SUFFIX,api.palworldgame.com,GFW
 HOST-SUFFIX,api.proxlet.com,GFW
 HOST-SUFFIX,api.pureapk.com,GFW
 HOST-SUFFIX,api.recaptcha.net,GFW
+HOST-SUFFIX,api.shuaiapi.com,GFW
 HOST-SUFFIX,api.steampowered.com,GFW
 HOST-SUFFIX,api5.futunn.com,GFW
 HOST-SUFFIX,apiary.io,GFW
@@ -7751,6 +7752,7 @@ HOST-SUFFIX,x1949x.com,GFW
 HOST-SUFFIX,x24hr.com,GFW
 HOST-SUFFIX,x365x.com,GFW
 HOST-SUFFIX,x3guide.com,GFW
+HOST-SUFFIX,x86.fr,GFW
 HOST-SUFFIX,xanga.com,GFW
 HOST-SUFFIX,xbabe.com,GFW
 HOST-SUFFIX,xbookcn.com,GFW

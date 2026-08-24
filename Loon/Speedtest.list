@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18433
+# 规则统计: 18440
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -7964,6 +7964,7 @@ DOMAIN,speedtest.dflash.com.br
 DOMAIN,speedtest.dfltelecom.com.br
 DOMAIN,speedtest.dfn.net
 DOMAIN,speedtest.dfn.nl
+DOMAIN,speedtest.dfw.fdcservers.net
 DOMAIN,speedtest.dfw1.sonic.net
 DOMAIN,speedtest.dfw2.sonic.net
 DOMAIN,speedtest.dg-net.pl
@@ -8044,6 +8045,7 @@ DOMAIN,speedtest.dkwireless.co.za
 DOMAIN,speedtest.dl.gtel.in
 DOMAIN,speedtest.dlgtpl.net
 DOMAIN,speedtest.dllstx97.metronetinc.com
+DOMAIN,speedtest.dme.fdcservers.net
 DOMAIN,speedtest.dna.net.id
 DOMAIN,speedtest.dne.vodacombusiness.co.za
 DOMAIN,speedtest.dnepro.net
@@ -8564,6 +8566,7 @@ DOMAIN,speedtest.foxcell.net
 DOMAIN,speedtest.foxnettelecom.net.br
 DOMAIN,speedtest.foxtel.in
 DOMAIN,speedtest.foxtelecom.es
+DOMAIN,speedtest.fr8.fdcservers.net
 DOMAIN,speedtest.fra.plusnet.de
 DOMAIN,speedtest.fra01.datascheune.de
 DOMAIN,speedtest.fra01.fusionflare.cloud
@@ -8981,6 +8984,7 @@ DOMAIN,speedtest.hk.chinamobile.com
 DOMAIN,speedtest.hk210.hkg.cn.ctcsci.com
 DOMAIN,speedtest.hk210.hkg.cn.ctcsci.com.prod.hosts.ooklaserver.net
 DOMAIN,speedtest.hk212.hkg.cn.nerocloud.io
+DOMAIN,speedtest.hkg.fdcservers.net
 DOMAIN,speedtest.hkg01.node.as9516.com
 DOMAIN,speedtest.hlinknet.com
 DOMAIN,speedtest.hlucin.net
@@ -10014,6 +10018,7 @@ DOMAIN,speedtest.macpaw.com
 DOMAIN,speedtest.macronet.eu
 DOMAIN,speedtest.macrosat.pl
 DOMAIN,speedtest.macrosignal.net
+DOMAIN,speedtest.mad.fdcservers.net
 DOMAIN,speedtest.mad2.edgoo.net
 DOMAIN,speedtest.madcom.al
 DOMAIN,speedtest.madiun.ldp.net.id
@@ -11031,6 +11036,7 @@ DOMAIN,speedtest.ozot.com.au
 DOMAIN,speedtest.p1.mhn.cloud
 DOMAIN,speedtest.p7s1.net
 DOMAIN,speedtest.pa.net.py
+DOMAIN,speedtest.pa10.fdcservers.net
 DOMAIN,speedtest.pa5.as198831.net
 DOMAIN,speedtest.paalnet.com.ec
 DOMAIN,speedtest.pacelinknetwork.com
@@ -11668,6 +11674,7 @@ DOMAIN,speedtest.sdt.goa2.airnetnetworks.com
 DOMAIN,speedtest.sdvcomm.in
 DOMAIN,speedtest.sea.accretive-networks.net
 DOMAIN,speedtest.sea.accretive-networks.net.prod.hosts.ooklaserver.net
+DOMAIN,speedtest.sea.fdcservers.net
 DOMAIN,speedtest.sea1.hivelocity.net
 DOMAIN,speedtest.sea1.nitelusa.net
 DOMAIN,speedtest.seafiber.com.br

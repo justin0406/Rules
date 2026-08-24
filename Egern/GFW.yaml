@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: GFW
-# 规则统计: 8194
+# 规则统计: 8196
 
 domain_set:
   - 7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -455,6 +455,7 @@ domain_suffix_set:
   - api.proxlet.com
   - api.pureapk.com
   - api.recaptcha.net
+  - api.shuaiapi.com
   - api.steampowered.com
   - api5.futunn.com
   - apiary.io
@@ -7754,6 +7755,7 @@ domain_suffix_set:
   - x24hr.com
   - x365x.com
   - x3guide.com
+  - x86.fr
   - xanga.com
   - xbabe.com
   - xbookcn.com

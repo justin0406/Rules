@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18433
+# 规则统计: 18440
 
 domain_set:
   - 083link.brsserver.com.br
@@ -7966,6 +7966,7 @@ domain_set:
   - speedtest.dfltelecom.com.br
   - speedtest.dfn.net
   - speedtest.dfn.nl
+  - speedtest.dfw.fdcservers.net
   - speedtest.dfw1.sonic.net
   - speedtest.dfw2.sonic.net
   - speedtest.dg-net.pl
@@ -8046,6 +8047,7 @@ domain_set:
   - speedtest.dl.gtel.in
   - speedtest.dlgtpl.net
   - speedtest.dllstx97.metronetinc.com
+  - speedtest.dme.fdcservers.net
   - speedtest.dna.net.id
   - speedtest.dne.vodacombusiness.co.za
   - speedtest.dnepro.net
@@ -8566,6 +8568,7 @@ domain_set:
   - speedtest.foxnettelecom.net.br
   - speedtest.foxtel.in
   - speedtest.foxtelecom.es
+  - speedtest.fr8.fdcservers.net
   - speedtest.fra.plusnet.de
   - speedtest.fra01.datascheune.de
   - speedtest.fra01.fusionflare.cloud
@@ -8983,6 +8986,7 @@ domain_set:
   - speedtest.hk210.hkg.cn.ctcsci.com
   - speedtest.hk210.hkg.cn.ctcsci.com.prod.hosts.ooklaserver.net
   - speedtest.hk212.hkg.cn.nerocloud.io
+  - speedtest.hkg.fdcservers.net
   - speedtest.hkg01.node.as9516.com
   - speedtest.hlinknet.com
   - speedtest.hlucin.net
@@ -10016,6 +10020,7 @@ domain_set:
   - speedtest.macronet.eu
   - speedtest.macrosat.pl
   - speedtest.macrosignal.net
+  - speedtest.mad.fdcservers.net
   - speedtest.mad2.edgoo.net
   - speedtest.madcom.al
   - speedtest.madiun.ldp.net.id
@@ -11033,6 +11038,7 @@ domain_set:
   - speedtest.p1.mhn.cloud
   - speedtest.p7s1.net
   - speedtest.pa.net.py
+  - speedtest.pa10.fdcservers.net
   - speedtest.pa5.as198831.net
   - speedtest.paalnet.com.ec
   - speedtest.pacelinknetwork.com
@@ -11670,6 +11676,7 @@ domain_set:
   - speedtest.sdvcomm.in
   - speedtest.sea.accretive-networks.net
   - speedtest.sea.accretive-networks.net.prod.hosts.ooklaserver.net
+  - speedtest.sea.fdcservers.net
   - speedtest.sea1.hivelocity.net
   - speedtest.sea1.nitelusa.net
   - speedtest.seafiber.com.br
