@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18440
+# 规则统计: 18442
 
 domain_set:
   - 083link.brsserver.com.br
@@ -7903,6 +7903,7 @@ domain_set:
   - speedtest.datatrans.hu
   - speedtest.dathannetworks.com
   - speedtest.datonofibra.com
+  - speedtest.datos101.com
   - speedtest.datoshn.net
   - speedtest.davannetwork.com
   - speedtest.davion.kz
@@ -9079,6 +9080,7 @@ domain_set:
   - speedtest.i9net.net.br
   - speedtest.i9telecomms.com.br
   - speedtest.iacunet.com.br
+  - speedtest.iad.fdcservers.net
   - speedtest.iad01.wdc.pilotfiber.com
   - speedtest.iba.ng.canalbox.net
   - speedtest.ibertic.es
