@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18442
+# 规则统计: 18445
 
 domain_set:
   - 083link.brsserver.com.br
@@ -3934,6 +3934,7 @@ domain_set:
   - spch1.chinguitel.mr
   - spcpt1.networkplatforms.co.za
   - spd-01.ma1.fullfibre.systems
+  - spd-100g-ookla.stelogy.io
   - spd-10g-bhz.horizontes.net.br
   - spd-alt-araguaia.pedranet.com.br
   - spd-ayt.scms-tech.co.th
@@ -5798,6 +5799,7 @@ domain_set:
   - speedtest-intl.xl.co.id.prod.hosts.ooklaserver.net
   - speedtest-iowa.airstreamcomm.net
   - speedtest-iqui.grupogtd.com
+  - speedtest-ir-fra03.as207740.de
   - speedtest-is.airnet.bg
   - speedtest-is.rcs-rds.ro
   - speedtest-isando-pri.rsaweb.co.za
@@ -8687,6 +8689,7 @@ domain_set:
   - speedtest.gfibra.com.br
   - speedtest.gftelecom.net.br
   - speedtest.ggamaur.net
+  - speedtest.ggcmedia.net
   - speedtest.ghatailonline.net
   - speedtest.ghofi.com.cy
   - speedtest.ght.provsolutions.com.br

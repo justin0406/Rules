@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18442
+# 规则统计: 18445
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -3932,6 +3932,7 @@ HOST,spcav1.nexlogic.ph,Speedtest
 HOST,spch1.chinguitel.mr,Speedtest
 HOST,spcpt1.networkplatforms.co.za,Speedtest
 HOST,spd-01.ma1.fullfibre.systems,Speedtest
+HOST,spd-100g-ookla.stelogy.io,Speedtest
 HOST,spd-10g-bhz.horizontes.net.br,Speedtest
 HOST,spd-alt-araguaia.pedranet.com.br,Speedtest
 HOST,spd-ayt.scms-tech.co.th,Speedtest
@@ -5796,6 +5797,7 @@ HOST,speedtest-intl.xl.co.id,Speedtest
 HOST,speedtest-intl.xl.co.id.prod.hosts.ooklaserver.net,Speedtest
 HOST,speedtest-iowa.airstreamcomm.net,Speedtest
 HOST,speedtest-iqui.grupogtd.com,Speedtest
+HOST,speedtest-ir-fra03.as207740.de,Speedtest
 HOST,speedtest-is.airnet.bg,Speedtest
 HOST,speedtest-is.rcs-rds.ro,Speedtest
 HOST,speedtest-isando-pri.rsaweb.co.za,Speedtest
@@ -8685,6 +8687,7 @@ HOST,speedtest.getwireless.net,Speedtest
 HOST,speedtest.gfibra.com.br,Speedtest
 HOST,speedtest.gftelecom.net.br,Speedtest
 HOST,speedtest.ggamaur.net,Speedtest
+HOST,speedtest.ggcmedia.net,Speedtest
 HOST,speedtest.ghatailonline.net,Speedtest
 HOST,speedtest.ghofi.com.cy,Speedtest
 HOST,speedtest.ght.provsolutions.com.br,Speedtest
