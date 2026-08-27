@@ -1,5 +1,5 @@
 # 规则名称: AppleCN
-# 规则统计: 294
+# 规则统计: 295
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,AppleCN
 HOST,aod.itunes.apple.com,extended-matching,AppleCN
@@ -150,6 +150,7 @@ HOST-SUFFIX,gsp4-cn.ls.apple.com,AppleCN
 HOST-SUFFIX,gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net,AppleCN
 HOST-SUFFIX,gsp5-cn.ls.apple.com,AppleCN
 HOST-SUFFIX,gsp85-cn-ssl.ls.apple.com,AppleCN
+HOST-SUFFIX,gspe11-2-cn-ssl.ls.apple.com,AppleCN
 HOST-SUFFIX,gspe19-2-cn-ssl.ls-apple.com.akadns.net,AppleCN
 HOST-SUFFIX,gspe19-2-cn-ssl.ls.apple.com,AppleCN
 HOST-SUFFIX,gspe19-cn-ssl.ls.apple.com,AppleCN

@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18445
+# 规则统计: 18446
 
 domain_set:
   - 083link.brsserver.com.br
@@ -10437,6 +10437,7 @@ domain_set:
   - speedtest.multpontostelecom.com.br
   - speedtest.mum.excitel.in
   - speedtest.mum.expl.in
+  - speedtest.mum.skynetmp.com
   - speedtest.mum.vodafoneidea.com
   - speedtest.mumbai.auspice.in
   - speedtest.mumbai.charotarbroadband.in
