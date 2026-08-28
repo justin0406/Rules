@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8197
+# 规则统计: 8198
 
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN,ccmdl.adobe.com
@@ -7685,6 +7685,7 @@ DOMAIN-SUFFIX,wpoforum.com
 DOMAIN-SUFFIX,wqyd.org
 DOMAIN-SUFFIX,wrchina.org
 DOMAIN-SUFFIX,wretch.cc
+DOMAIN-SUFFIX,write.as
 DOMAIN-SUFFIX,writesonic.com
 DOMAIN-SUFFIX,ws
 DOMAIN-SUFFIX,wsj.com
