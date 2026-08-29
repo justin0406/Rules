@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18446
+# 规则统计: 18449
 
 domain_set:
   - 083link.brsserver.com.br
@@ -2499,6 +2499,7 @@ domain_set:
   - ookla.plusnetfibra.com.br
   - ookla.plusnetfoz.com.br
   - ookla.pnfibra.com.br
+  - ookla.premierdc.com.tr
   - ookla.protecnonetworks.com
   - ookla.provedorsmart.com.br
   - ookla.pt.net
@@ -13422,6 +13423,7 @@ domain_set:
   - speedtest01.lifecell.com.ua
   - speedtest01.maxtelecom.com.br
   - speedtest01.megaflexweb.com.br
+  - speedtest01.mel01.nexthop.net.au
   - speedtest01.mel1.spintel.net.au
   - speedtest01.mheks.com.br
   - speedtest01.netbarra.net.br
@@ -13459,6 +13461,7 @@ domain_set:
   - speedtest01.stiegeler.com
   - speedtest01.succeed.net
   - speedtest01.suddenlink.net
+  - speedtest01.syd01.nexthop.net.au
   - speedtest01.syd1.spintel.net.au
   - speedtest01.tek.net.tr
   - speedtest01.tellecom.com.br

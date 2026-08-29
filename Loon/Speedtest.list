@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18446
+# 规则统计: 18449
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -2497,6 +2497,7 @@ DOMAIN,ookla.plexfibra.com.br
 DOMAIN,ookla.plusnetfibra.com.br
 DOMAIN,ookla.plusnetfoz.com.br
 DOMAIN,ookla.pnfibra.com.br
+DOMAIN,ookla.premierdc.com.tr
 DOMAIN,ookla.protecnonetworks.com
 DOMAIN,ookla.provedorsmart.com.br
 DOMAIN,ookla.pt.net
@@ -13420,6 +13421,7 @@ DOMAIN,speedtest01.jwflash.com
 DOMAIN,speedtest01.lifecell.com.ua
 DOMAIN,speedtest01.maxtelecom.com.br
 DOMAIN,speedtest01.megaflexweb.com.br
+DOMAIN,speedtest01.mel01.nexthop.net.au
 DOMAIN,speedtest01.mel1.spintel.net.au
 DOMAIN,speedtest01.mheks.com.br
 DOMAIN,speedtest01.netbarra.net.br
@@ -13457,6 +13459,7 @@ DOMAIN,speedtest01.srv.snjsca.alticeusa.net
 DOMAIN,speedtest01.stiegeler.com
 DOMAIN,speedtest01.succeed.net
 DOMAIN,speedtest01.suddenlink.net
+DOMAIN,speedtest01.syd01.nexthop.net.au
 DOMAIN,speedtest01.syd1.spintel.net.au
 DOMAIN,speedtest01.tek.net.tr
 DOMAIN,speedtest01.tellecom.com.br
