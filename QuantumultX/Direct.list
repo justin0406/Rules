@@ -1,5 +1,5 @@
 # 规则名称: Direct
-# 规则统计: 183
+# 规则统计: 184
 
 HOST,127.skk.moe,Direct
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,Direct
@@ -11,6 +11,7 @@ HOST,hotspot.cslwifi.com,Direct
 HOST,injections.adguard.org,Direct
 HOST,instant.arubanetworks.com,Direct
 HOST,local.adguard.org,Direct
+HOST,mirrorlist.cdn.skk.moe,Direct
 HOST,mobile.hotspot,Direct
 HOST,ntt.setup,Direct
 HOST,pi.hole,Direct

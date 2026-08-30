@@ -1,5 +1,5 @@
 # 规则名称: Direct
-# 规则统计: 182
+# 规则统计: 183
 
 domain_set:
   - 127.skk.moe
@@ -12,6 +12,7 @@ domain_set:
   - injections.adguard.org
   - instant.arubanetworks.com
   - local.adguard.org
+  - mirrorlist.cdn.skk.moe
   - mobile.hotspot
   - ntt.setup
   - pi.hole

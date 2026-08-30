@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18449
+# 规则统计: 18451
 
 domain_set:
   - 083link.brsserver.com.br
@@ -531,6 +531,7 @@ domain_set:
   - cn01.hpc-rivr.um.si
   - cnetmedia.my.id
   - cnk1speedtest.turktelekom.com.tr
+  - cns-speedtest.duckdns.org
   - coa-1.speedtest.bbhost.com.br
   - coatzacoalcos.speedtest.totalplay.com.mx
   - colocity.speedtest.gslnetworks.com
@@ -15523,6 +15524,7 @@ domain_set:
   - spt-lpb1.edgeuno.com
   - spt-mex1.edgeuno.com
   - spt-mia.edgeuno.com
+  - spt-noc.umal-nds.com
   - spt-nyc.as13786.net
   - spt-poa1.edgeuno.com
   - spt-qro1.edgeuno.com

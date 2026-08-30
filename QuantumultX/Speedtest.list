@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18449
+# 规则统计: 18451
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -529,6 +529,7 @@ HOST,cmt-velocimetro.lv.network,Speedtest
 HOST,cn01.hpc-rivr.um.si,Speedtest
 HOST,cnetmedia.my.id,Speedtest
 HOST,cnk1speedtest.turktelekom.com.tr,Speedtest
+HOST,cns-speedtest.duckdns.org,Speedtest
 HOST,coa-1.speedtest.bbhost.com.br,Speedtest
 HOST,coatzacoalcos.speedtest.totalplay.com.mx,Speedtest
 HOST,colocity.speedtest.gslnetworks.com,Speedtest
@@ -15521,6 +15522,7 @@ HOST,spt-lon1.edgeuno.com.prod.hosts.ooklaserver.net,Speedtest
 HOST,spt-lpb1.edgeuno.com,Speedtest
 HOST,spt-mex1.edgeuno.com,Speedtest
 HOST,spt-mia.edgeuno.com,Speedtest
+HOST,spt-noc.umal-nds.com,Speedtest
 HOST,spt-nyc.as13786.net,Speedtest
 HOST,spt-poa1.edgeuno.com,Speedtest
 HOST,spt-qro1.edgeuno.com,Speedtest
