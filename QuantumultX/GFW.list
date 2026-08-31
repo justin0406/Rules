@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8198
+# 规则统计: 8200
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -2655,6 +2655,7 @@ HOST-SUFFIX,getjetso.com,GFW
 HOST-SUFFIX,getlantern.org,GFW
 HOST-SUFFIX,getmalus.com,GFW
 HOST-SUFFIX,getmdl.io,GFW
+HOST-SUFFIX,getmonero.org,GFW
 HOST-SUFFIX,getoutline.org,GFW
 HOST-SUFFIX,getsession.org,GFW
 HOST-SUFFIX,getsocialscope.com,GFW
@@ -4874,6 +4875,7 @@ HOST-SUFFIX,nic.cz.cc,GFW
 HOST-SUFFIX,nic.google,GFW
 HOST-SUFFIX,nic.gov,GFW
 HOST-SUFFIX,nicehash.com,GFW
+HOST-SUFFIX,nicoseiga.jp,GFW
 HOST-SUFFIX,nicovideo.jp,GFW
 HOST-SUFFIX,nighost.org,GFW
 HOST-SUFFIX,nightlife141.com,GFW

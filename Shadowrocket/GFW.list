@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8198
+# 规则统计: 8200
 
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN,ccmdl.adobe.com
@@ -2655,6 +2655,7 @@ DOMAIN-SUFFIX,getjetso.com
 DOMAIN-SUFFIX,getlantern.org
 DOMAIN-SUFFIX,getmalus.com
 DOMAIN-SUFFIX,getmdl.io
+DOMAIN-SUFFIX,getmonero.org
 DOMAIN-SUFFIX,getoutline.org
 DOMAIN-SUFFIX,getsession.org
 DOMAIN-SUFFIX,getsocialscope.com
@@ -4874,6 +4875,7 @@ DOMAIN-SUFFIX,nic.cz.cc
 DOMAIN-SUFFIX,nic.google
 DOMAIN-SUFFIX,nic.gov
 DOMAIN-SUFFIX,nicehash.com
+DOMAIN-SUFFIX,nicoseiga.jp
 DOMAIN-SUFFIX,nicovideo.jp
 DOMAIN-SUFFIX,nighost.org
 DOMAIN-SUFFIX,nightlife141.com

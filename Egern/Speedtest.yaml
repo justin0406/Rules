@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18451
+# 规则统计: 18454
 
 domain_set:
   - 083link.brsserver.com.br
@@ -7883,6 +7883,7 @@ domain_set:
   - speedtest.darksystems.hu
   - speedtest.darnet.eu
   - speedtest.dascacable.com
+  - speedtest.dashcloudly.com
   - speedtest.dat-com.com.ve
   - speedtest.datacenter.eu
   - speedtest.datacomtelecom.com.br
@@ -9723,6 +9724,7 @@ domain_set:
   - speedtest.krishnait.net
   - speedtest.kronline.net
   - speedtest.kronosnetwork.com.br
+  - speedtest.krottisrv.net
   - speedtest.ks-itsolutions.com
   - speedtest.ksfibra.net.br
   - speedtest.ksiezyc.pl
@@ -12130,6 +12132,7 @@ domain_set:
   - speedtest.stix.do
   - speedtest.stknet.com.br
   - speedtest.stnet.in
+  - speedtest.stormclient.xyz
   - speedtest.stormfiber.com
   - speedtest.stormhost.eu
   - speedtest.stormtelecom.com.br
