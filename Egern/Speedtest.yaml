@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18454
+# 规则统计: 18456
 
 domain_set:
   - 083link.brsserver.com.br
@@ -8090,6 +8090,7 @@ domain_set:
   - speedtest.dreamvps.com
   - speedtest.drei.at
   - speedtest.drie-host.nl
+  - speedtest.drw2.launtel.net.au
   - speedtest.dscw.fr
   - speedtest.dserverhosting.com
   - speedtest.dsgroupmedia.com
@@ -14519,6 +14520,7 @@ domain_set:
   - speedtest4.indosatooredoo.com
   - speedtest4.inspire.net.nz
   - speedtest4.jlm.net.id
+  - speedtest4.lepida.it
   - speedtest4.lintas.net.id
   - speedtest4.lytefiber.com
   - speedtest4.mts.rs
