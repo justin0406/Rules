@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18456
+# 规则统计: 18459
 
 domain_set:
   - 083link.brsserver.com.br
@@ -4911,6 +4911,7 @@ domain_set:
   - speed.tvctepa.com
   - speed.tvskat.net
   - speed.twspeed.com.br
+  - speed.uberlinktelecom.com.br
   - speed.ubifi.in
   - speed.udx.icscoe.jp
   - speed.uk.lon.m247.ro
@@ -6402,6 +6403,7 @@ domain_set:
   - speedtest-tesa.coelhotecnologia.com.br
   - speedtest-tf.masmovil.com
   - speedtest-thn.krystal.uk
+  - speedtest-thn.uk.airbytes.network
   - speedtest-thno.mundopacifico.cl
   - speedtest-tij100g.transtelco.net
   - speedtest-timon1.megalinkpiaui.com.br
@@ -15765,6 +15767,7 @@ domain_set:
   - st-cum.adslsystem.net
   - st-denizli-1.turksatkablo.com.tr
   - st-denver.sumofiber.com
+  - st-edirne-1.turksatkablo.com.tr
   - st-ekm.extranet.co.in
   - st-erzincan-1.turksatkablo.com.tr
   - st-erzurum-1.turksatkablo.com.tr

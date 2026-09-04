@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18456
+# 规则统计: 18459
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -4909,6 +4909,7 @@ DOMAIN,speed.tvcabo.ao
 DOMAIN,speed.tvctepa.com
 DOMAIN,speed.tvskat.net
 DOMAIN,speed.twspeed.com.br
+DOMAIN,speed.uberlinktelecom.com.br
 DOMAIN,speed.ubifi.in
 DOMAIN,speed.udx.icscoe.jp
 DOMAIN,speed.uk.lon.m247.ro
@@ -6400,6 +6401,7 @@ DOMAIN,speedtest-tequis.wantelco.com
 DOMAIN,speedtest-tesa.coelhotecnologia.com.br
 DOMAIN,speedtest-tf.masmovil.com
 DOMAIN,speedtest-thn.krystal.uk
+DOMAIN,speedtest-thn.uk.airbytes.network
 DOMAIN,speedtest-thno.mundopacifico.cl
 DOMAIN,speedtest-tij100g.transtelco.net
 DOMAIN,speedtest-timon1.megalinkpiaui.com.br
@@ -15763,6 +15765,7 @@ DOMAIN,st-cordoba-coe1.cablevisionfibertel.com.ar
 DOMAIN,st-cum.adslsystem.net
 DOMAIN,st-denizli-1.turksatkablo.com.tr
 DOMAIN,st-denver.sumofiber.com
+DOMAIN,st-edirne-1.turksatkablo.com.tr
 DOMAIN,st-ekm.extranet.co.in
 DOMAIN,st-erzincan-1.turksatkablo.com.tr
 DOMAIN,st-erzurum-1.turksatkablo.com.tr

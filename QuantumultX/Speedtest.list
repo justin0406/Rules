@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18456
+# 规则统计: 18459
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -4909,6 +4909,7 @@ HOST,speed.tvcabo.ao,Speedtest
 HOST,speed.tvctepa.com,Speedtest
 HOST,speed.tvskat.net,Speedtest
 HOST,speed.twspeed.com.br,Speedtest
+HOST,speed.uberlinktelecom.com.br,Speedtest
 HOST,speed.ubifi.in,Speedtest
 HOST,speed.udx.icscoe.jp,Speedtest
 HOST,speed.uk.lon.m247.ro,Speedtest
@@ -6400,6 +6401,7 @@ HOST,speedtest-tequis.wantelco.com,Speedtest
 HOST,speedtest-tesa.coelhotecnologia.com.br,Speedtest
 HOST,speedtest-tf.masmovil.com,Speedtest
 HOST,speedtest-thn.krystal.uk,Speedtest
+HOST,speedtest-thn.uk.airbytes.network,Speedtest
 HOST,speedtest-thno.mundopacifico.cl,Speedtest
 HOST,speedtest-tij100g.transtelco.net,Speedtest
 HOST,speedtest-timon1.megalinkpiaui.com.br,Speedtest
@@ -15763,6 +15765,7 @@ HOST,st-cordoba-coe1.cablevisionfibertel.com.ar,Speedtest
 HOST,st-cum.adslsystem.net,Speedtest
 HOST,st-denizli-1.turksatkablo.com.tr,Speedtest
 HOST,st-denver.sumofiber.com,Speedtest
+HOST,st-edirne-1.turksatkablo.com.tr,Speedtest
 HOST,st-ekm.extranet.co.in,Speedtest
 HOST,st-erzincan-1.turksatkablo.com.tr,Speedtest
 HOST,st-erzurum-1.turksatkablo.com.tr,Speedtest
