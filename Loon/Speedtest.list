@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18459
+# 规则统计: 18461
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -679,6 +679,7 @@ DOMAIN,diy1speedtest.turktelekom.com.tr
 DOMAIN,diyarbakir.hizinitestet.com
 DOMAIN,dlhiooklaspeed1.jioconnect.com
 DOMAIN,dlhiooklaspeed2.jioconnect.com
+DOMAIN,dlls-speedtest.northstate.net
 DOMAIN,dllstx-ookla1.vyvebroadband.net
 DOMAIN,dlstxook.speedtest.sbcglobal.net
 DOMAIN,dlv3-1.speedtest.idv.tw
@@ -12929,6 +12930,7 @@ DOMAIN,speedtest.vipnetx.net
 DOMAIN,speedtest.viponline.inf.br
 DOMAIN,speedtest.vipsnet.com.br
 DOMAIN,speedtest.virtex.com.br
+DOMAIN,speedtest.virtical.cloud
 DOMAIN,speedtest.virtualconnect.net.br
 DOMAIN,speedtest.virtualnetmg.com.br
 DOMAIN,speedtest.virtualnetprovedor.com.br

@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8200
+# 规则统计: 8202
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -1569,6 +1569,7 @@ HOST-SUFFIX,csuchen.de,GFW
 HOST-SUFFIX,csw.org.uk,GFW
 HOST-SUFFIX,ct.org.tw,GFW
 HOST-SUFFIX,ctao.org,GFW
+HOST-SUFFIX,ctee.com.tw,GFW
 HOST-SUFFIX,ctfriend.net,GFW
 HOST-SUFFIX,ctinets.com,GFW
 HOST-SUFFIX,ctinews.com,GFW
@@ -4175,6 +4176,7 @@ HOST-SUFFIX,linkuswell.com,GFW
 HOST-SUFFIX,linpie.com,GFW
 HOST-SUFFIX,linux.do,GFW
 HOST-SUFFIX,linux.org.hk,GFW
+HOST-SUFFIX,linux.sb,GFW
 HOST-SUFFIX,linuxtoy.org,GFW
 HOST-SUFFIX,lionsroar.com,GFW
 HOST-SUFFIX,lipuman.com,GFW
