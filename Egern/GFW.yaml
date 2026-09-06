@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: GFW
-# 规则统计: 8201
+# 规则统计: 8207
 
 domain_set:
   - 7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -3251,6 +3251,7 @@ domain_suffix_set:
   - helpzhuling.org
   - hembed.com
   - hentai.to
+  - hentai.tv
   - hentaifox.com
   - hentaipaw.com
   - hentaiplay.net
@@ -5789,6 +5790,7 @@ domain_suffix_set:
   - roboflow.com
   - roboforex.com
   - robustnessiskey.com
+  - roc-taiwan.org
   - rocket-inc.net
   - rocket.chat
   - rocketbbs.com
@@ -5806,6 +5808,7 @@ domain_suffix_set:
   - rottentomatoes.com
   - rou.video
   - roucdn.link
+  - roushuwo.com
   - rpglogs.com
   - rs
   - rsdlmonitor.com
@@ -6473,6 +6476,7 @@ domain_suffix_set:
   - tagwa.org.au
   - tagwalk.com
   - tahr.org.tw
+  - taiav.com
   - tailfin.cc
   - tails.net
   - tailwindcss.com
@@ -6485,6 +6489,7 @@ domain_suffix_set:
   - taiwancon.com
   - taiwandaily.net
   - taiwandc.org
+  - taiwanembassy.org
   - taiwanhot.net
   - taiwanjustice.com
   - taiwanjustice.net
@@ -7699,6 +7704,7 @@ domain_suffix_set:
   - wsj.net
   - wsjhk.com
   - wtbn.org
+  - wtfpass.com
   - wtfpeople.com
   - wuerkaixi.com
   - wufafangwen.com
