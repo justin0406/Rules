@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 211
+# 规则统计: 212
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,AI
 HOST,ai-gateway.vercel.sh,AI
@@ -119,6 +119,7 @@ HOST-SUFFIX,cloudcode-pa.googleapis.com,AI
 HOST-SUFFIX,cp4.cloudflare.com,AI
 HOST-SUFFIX,crixet.com,AI
 HOST-SUFFIX,ct.sendgrid.net,AI
+HOST-SUFFIX,cursor.sh,AI
 HOST-SUFFIX,deepmind.com,AI
 HOST-SUFFIX,deepmind.google,AI
 HOST-SUFFIX,desktop.chat.openai.com,AI
