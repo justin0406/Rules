@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18697
+# 规则统计: 18698
 
 domain_set:
   - 083link.brsserver.com.br
@@ -7017,6 +7017,7 @@ domain_set:
   - speedtest.as203446.net
   - speedtest.as206125.net
   - speedtest.as210667.net
+  - speedtest.as210699.net
   - speedtest.as211678.net
   - speedtest.as211733.fr
   - speedtest.as212683.net
