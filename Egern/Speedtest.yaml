@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18698
+# 规则统计: 18700
 
 domain_set:
   - 083link.brsserver.com.br
@@ -9108,6 +9108,7 @@ domain_set:
   - speedtest.hivedatacenter.com
   - speedtest.hizhosting.com
   - speedtest.hjnet.com.br
+  - speedtest.hk.aixxycode.id
   - speedtest.hk.chinamobile.com
   - speedtest.hk210.hkg.cn.ctcsci.com
   - speedtest.hk210.hkg.cn.ctcsci.com.prod.hosts.ooklaserver.net
@@ -11917,6 +11918,7 @@ domain_set:
   - speedtest.sfanetwork.com.py
   - speedtest.sfp.inter.com.ve
   - speedtest.sfrtelecom.com.br
+  - speedtest.sg.aixxycode.id
   - speedtest.sg.fdcservers.net
   - speedtest.sg.hsp.net.id
   - speedtest.sg.hsp.net.id.prod.hosts.ooklaserver.net

@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18698
+# 规则统计: 18700
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -9106,6 +9106,7 @@ HOST,speedtest.hitechbroadband.in,Speedtest
 HOST,speedtest.hivedatacenter.com,Speedtest
 HOST,speedtest.hizhosting.com,Speedtest
 HOST,speedtest.hjnet.com.br,Speedtest
+HOST,speedtest.hk.aixxycode.id,Speedtest
 HOST,speedtest.hk.chinamobile.com,Speedtest
 HOST,speedtest.hk210.hkg.cn.ctcsci.com,Speedtest
 HOST,speedtest.hk210.hkg.cn.ctcsci.com.prod.hosts.ooklaserver.net,Speedtest
@@ -11915,6 +11916,7 @@ HOST,speedtest.sewan.fr,Speedtest
 HOST,speedtest.sfanetwork.com.py,Speedtest
 HOST,speedtest.sfp.inter.com.ve,Speedtest
 HOST,speedtest.sfrtelecom.com.br,Speedtest
+HOST,speedtest.sg.aixxycode.id,Speedtest
 HOST,speedtest.sg.fdcservers.net,Speedtest
 HOST,speedtest.sg.hsp.net.id,Speedtest
 HOST,speedtest.sg.hsp.net.id.prod.hosts.ooklaserver.net,Speedtest
