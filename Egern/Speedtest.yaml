@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18700
+# 规则统计: 18703
 
 domain_set:
   - 083link.brsserver.com.br
@@ -4515,6 +4515,7 @@ domain_set:
   - speed.fhnet.net.br
   - speed.fibearwave.dpdns.org
   - speed.fiber-homenetwork.com
+  - speed.fiber23.it
   - speed.fibernetgta.com
   - speed.fibersolutionfttx.com.br
   - speed.fibervipinternetbandalarga.com.br
@@ -11055,6 +11056,7 @@ domain_set:
   - speedtest.ny.sptrnd.id
   - speedtest.nyc.elcro.digital
   - speedtest.o3-telecom.com
+  - speedtest.oa.net
   - speedtest.oacys.com
   - speedtest.oarisnetwork.com.br
   - speedtest.oax.megared.net.mx
@@ -11556,6 +11558,7 @@ domain_set:
   - speedtest.quick.com.br
   - speedtest.quick.inf.br
   - speedtest.quicklinknetworks.in
+  - speedtest.quickqc.nl
   - speedtest.quisnet.do
   - speedtest.qwk.net
   - speedtest.qzt.fiberbro.com
