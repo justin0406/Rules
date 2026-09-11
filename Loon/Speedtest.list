@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18703
+# 规则统计: 18707
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -472,6 +472,7 @@ DOMAIN,chennai.rainbowisp.com
 DOMAIN,chennaispeedtest.spectra.co
 DOMAIN,cheyenne.speedtest.centurylink.net
 DOMAIN,chi-speedtest.net.sangoma.net
+DOMAIN,chi-speedtest.northstate.net
 DOMAIN,chi-speedtest.shifthosting.com
 DOMAIN,chi.speedtest.clouvider.net
 DOMAIN,chicago.il.speedtest.frontier.com
@@ -2198,6 +2199,7 @@ DOMAIN,ookla.alsavanetwork.com
 DOMAIN,ookla.alyrica.net
 DOMAIN,ookla.amatelecom.com.br
 DOMAIN,ookla.amazoniasat-isp.com.br
+DOMAIN,ookla.ams.atharva.co.id
 DOMAIN,ookla.apex.net.id
 DOMAIN,ookla.aptalaska.net
 DOMAIN,ookla.apuacom.it
@@ -2800,6 +2802,7 @@ DOMAIN,ooklaspeedtest-rajkot.nileshnetworks.com
 DOMAIN,ooklaspeedtest.aquatelecom.org
 DOMAIN,ooklaspeedtest.as198053.net
 DOMAIN,ooklaspeedtest.connexa.net.id
+DOMAIN,ooklaspeedtest.d-pcomm.com
 DOMAIN,ooklaspeedtest.fiberbandalarga.net.br
 DOMAIN,ooklaspeedtest.gracebroadband.com
 DOMAIN,ooklaspeedtest.langate.ua
@@ -3524,6 +3527,7 @@ DOMAIN,sp1-cleveland.tachus.com
 DOMAIN,sp1-conroe.tachus.com
 DOMAIN,sp1-crosby.tachus.com
 DOMAIN,sp1-dayton.tachus.com
+DOMAIN,sp1-de.delska.com
 DOMAIN,sp1-highlands.tachus.com
 DOMAIN,sp1-huffman.tachus.com
 DOMAIN,sp1-humble.tachus.com

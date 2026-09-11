@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18703
+# 规则统计: 18707
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -472,6 +472,7 @@ HOST,chennai.rainbowisp.com,Speedtest
 HOST,chennaispeedtest.spectra.co,Speedtest
 HOST,cheyenne.speedtest.centurylink.net,Speedtest
 HOST,chi-speedtest.net.sangoma.net,Speedtest
+HOST,chi-speedtest.northstate.net,Speedtest
 HOST,chi-speedtest.shifthosting.com,Speedtest
 HOST,chi.speedtest.clouvider.net,Speedtest
 HOST,chicago.il.speedtest.frontier.com,Speedtest
@@ -2198,6 +2199,7 @@ HOST,ookla.alsavanetwork.com,Speedtest
 HOST,ookla.alyrica.net,Speedtest
 HOST,ookla.amatelecom.com.br,Speedtest
 HOST,ookla.amazoniasat-isp.com.br,Speedtest
+HOST,ookla.ams.atharva.co.id,Speedtest
 HOST,ookla.apex.net.id,Speedtest
 HOST,ookla.aptalaska.net,Speedtest
 HOST,ookla.apuacom.it,Speedtest
@@ -2800,6 +2802,7 @@ HOST,ooklaspeedtest-rajkot.nileshnetworks.com,Speedtest
 HOST,ooklaspeedtest.aquatelecom.org,Speedtest
 HOST,ooklaspeedtest.as198053.net,Speedtest
 HOST,ooklaspeedtest.connexa.net.id,Speedtest
+HOST,ooklaspeedtest.d-pcomm.com,Speedtest
 HOST,ooklaspeedtest.fiberbandalarga.net.br,Speedtest
 HOST,ooklaspeedtest.gracebroadband.com,Speedtest
 HOST,ooklaspeedtest.langate.ua,Speedtest
@@ -3524,6 +3527,7 @@ HOST,sp1-cleveland.tachus.com,Speedtest
 HOST,sp1-conroe.tachus.com,Speedtest
 HOST,sp1-crosby.tachus.com,Speedtest
 HOST,sp1-dayton.tachus.com,Speedtest
+HOST,sp1-de.delska.com,Speedtest
 HOST,sp1-highlands.tachus.com,Speedtest
 HOST,sp1-huffman.tachus.com,Speedtest
 HOST,sp1-humble.tachus.com,Speedtest

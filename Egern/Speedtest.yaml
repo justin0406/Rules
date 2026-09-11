@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18703
+# 规则统计: 18707
 
 domain_set:
   - 083link.brsserver.com.br
@@ -474,6 +474,7 @@ domain_set:
   - chennaispeedtest.spectra.co
   - cheyenne.speedtest.centurylink.net
   - chi-speedtest.net.sangoma.net
+  - chi-speedtest.northstate.net
   - chi-speedtest.shifthosting.com
   - chi.speedtest.clouvider.net
   - chicago.il.speedtest.frontier.com
@@ -2200,6 +2201,7 @@ domain_set:
   - ookla.alyrica.net
   - ookla.amatelecom.com.br
   - ookla.amazoniasat-isp.com.br
+  - ookla.ams.atharva.co.id
   - ookla.apex.net.id
   - ookla.aptalaska.net
   - ookla.apuacom.it
@@ -2802,6 +2804,7 @@ domain_set:
   - ooklaspeedtest.aquatelecom.org
   - ooklaspeedtest.as198053.net
   - ooklaspeedtest.connexa.net.id
+  - ooklaspeedtest.d-pcomm.com
   - ooklaspeedtest.fiberbandalarga.net.br
   - ooklaspeedtest.gracebroadband.com
   - ooklaspeedtest.langate.ua
@@ -3526,6 +3529,7 @@ domain_set:
   - sp1-conroe.tachus.com
   - sp1-crosby.tachus.com
   - sp1-dayton.tachus.com
+  - sp1-de.delska.com
   - sp1-highlands.tachus.com
   - sp1-huffman.tachus.com
   - sp1-humble.tachus.com
