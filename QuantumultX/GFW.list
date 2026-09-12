@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8208
+# 规则统计: 8192
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -441,12 +441,9 @@ HOST-SUFFIX,apartments.com,GFW
 HOST-SUFFIX,apat1989.org,GFW
 HOST-SUFFIX,apernet.io,GFW
 HOST-SUFFIX,apetube.com,GFW
-HOST-SUFFIX,api-gl.lbkrs.com,GFW
 HOST-SUFFIX,api-secure.recaptcha.net,GFW
 HOST-SUFFIX,api-verify.recaptcha.net,GFW
 HOST-SUFFIX,api.ai,GFW
-HOST-SUFFIX,api.futunn.com,GFW
-HOST-SUFFIX,api.lbkrs.com,GFW
 HOST-SUFFIX,api.moomoobull.com,GFW
 HOST-SUFFIX,api.palworldgame.com,GFW
 HOST-SUFFIX,api.proxlet.com,GFW
@@ -454,7 +451,6 @@ HOST-SUFFIX,api.pureapk.com,GFW
 HOST-SUFFIX,api.recaptcha.net,GFW
 HOST-SUFFIX,api.shuaiapi.com,GFW
 HOST-SUFFIX,api.steampowered.com,GFW
-HOST-SUFFIX,api5.futunn.com,GFW
 HOST-SUFFIX,apiary.io,GFW
 HOST-SUFFIX,apibay.org,GFW
 HOST-SUFFIX,apigee.com,GFW
@@ -1169,7 +1165,6 @@ HOST-SUFFIX,cdjp.org,GFW
 HOST-SUFFIX,cdn-images.mailchimp.com,GFW
 HOST-SUFFIX,cdn-telegram.org,GFW
 HOST-SUFFIX,cdn.arstechnica.net,GFW
-HOST-SUFFIX,cdn.futustatic.com,GFW
 HOST-SUFFIX,cdn.jwplayer.com,GFW
 HOST-SUFFIX,cdn.printfriendly.com,GFW
 HOST-SUFFIX,cdn.registerdisney.go.com,GFW
@@ -1436,7 +1431,6 @@ HOST-SUFFIX,cn.fmnnow.com,GFW
 HOST-SUFFIX,cn.sandscotaicentral.com,GFW
 HOST-SUFFIX,cn.shafaqna.com,GFW
 HOST-SUFFIX,cn.theaustralian.com.au,GFW
-HOST-SUFFIX,cn.uptodown.com,GFW
 HOST-SUFFIX,cn6.eu,GFW
 HOST-SUFFIX,cna.com.tw,GFW
 HOST-SUFFIX,cnabc.com,GFW
@@ -1870,7 +1864,6 @@ HOST-SUFFIX,dowjones.io,GFW
 HOST-SUFFIX,downdetector.com,GFW
 HOST-SUFFIX,downdetectorapi.com,GFW
 HOST-SUFFIX,download.dappcdn.com,GFW
-HOST-SUFFIX,download.futunn.com,GFW
 HOST-SUFFIX,dphk.org,GFW
 HOST-SUFFIX,dpool.top,GFW
 HOST-SUFFIX,dpp.org.tw,GFW
@@ -4283,7 +4276,6 @@ HOST-SUFFIX,lynxjs.org,GFW
 HOST-SUFFIX,lzjscript.com,GFW
 HOST-SUFFIX,lzmtnews.org,GFW
 HOST-SUFFIX,m-sport.co.uk,GFW
-HOST-SUFFIX,m.hkgalden.com,GFW
 HOST-SUFFIX,m.me,GFW
 HOST-SUFFIX,m.moegirl.org,GFW
 HOST-SUFFIX,m.plixi.com,GFW
@@ -5114,12 +5106,8 @@ HOST-SUFFIX,open.firstory.me,GFW
 HOST-SUFFIX,openai.com,GFW
 HOST-SUFFIX,openallweb.com,GFW
 HOST-SUFFIX,openapi-quote.longbridge.cn,GFW
-HOST-SUFFIX,openapi-quote.longbridge.com,GFW
 HOST-SUFFIX,openapi-trade.longbridge.cn,GFW
-HOST-SUFFIX,openapi-trade.longbridge.com,GFW
-HOST-SUFFIX,openapi.futunn.com,GFW
 HOST-SUFFIX,openapi.longbridge.cn,GFW
-HOST-SUFFIX,openapi.longbridge.com,GFW
 HOST-SUFFIX,openart.ai,GFW
 HOST-SUFFIX,openbase.com,GFW
 HOST-SUFFIX,opencollective.com,GFW
@@ -5604,11 +5592,10 @@ HOST-SUFFIX,qoos.com,GFW
 HOST-SUFFIX,qpoe.com,GFW
 HOST-SUFFIX,qq.co.za,GFW
 HOST-SUFFIX,qstatus.com,GFW
-HOST-SUFFIX,qtcard.futunn.com,GFW
-HOST-SUFFIX,qtcardfthk.futufin.com,GFW
 HOST-SUFFIX,qtrac.eu,GFW
 HOST-SUFFIX,qtweeter.com,GFW
 HOST-SUFFIX,quad9.net,GFW
+HOST-SUFFIX,quakemachinex.com,GFW
 HOST-SUFFIX,quannengshen.org,GFW
 HOST-SUFFIX,quantumbooter.net,GFW
 HOST-SUFFIX,quay.io,GFW
@@ -6420,7 +6407,6 @@ HOST-SUFFIX,supervpn.net,GFW
 HOST-SUFFIX,superzooi.com,GFW
 HOST-SUFFIX,supjav.com,GFW
 HOST-SUFFIX,suppig.net,GFW
-HOST-SUFFIX,support.futunn.com,GFW
 HOST-SUFFIX,supremecourt.gov,GFW
 HOST-SUFFIX,suprememastertv.com,GFW
 HOST-SUFFIX,surfeasy.com,GFW
@@ -6886,8 +6872,6 @@ HOST-SUFFIX,tparents.org,GFW
 HOST-SUFFIX,tpi.org.tw,GFW
 HOST-SUFFIX,tr,GFW
 HOST-SUFFIX,tracfone.com,GFW
-HOST-SUFFIX,trade.futunn.com,GFW
-HOST-SUFFIX,trade.longportapp.com,GFW
 HOST-SUFFIX,tradeup.com,GFW
 HOST-SUFFIX,tradingview.com,GFW
 HOST-SUFFIX,traffichaus.com,GFW

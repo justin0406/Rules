@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: GFW
-# 规则统计: 8207
+# 规则统计: 8191
 
 domain_set:
   - 7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -444,12 +444,9 @@ domain_suffix_set:
   - apat1989.org
   - apernet.io
   - apetube.com
-  - api-gl.lbkrs.com
   - api-secure.recaptcha.net
   - api-verify.recaptcha.net
   - api.ai
-  - api.futunn.com
-  - api.lbkrs.com
   - api.moomoobull.com
   - api.palworldgame.com
   - api.proxlet.com
@@ -457,7 +454,6 @@ domain_suffix_set:
   - api.recaptcha.net
   - api.shuaiapi.com
   - api.steampowered.com
-  - api5.futunn.com
   - apiary.io
   - apibay.org
   - apigee.com
@@ -1172,7 +1168,6 @@ domain_suffix_set:
   - cdn-images.mailchimp.com
   - cdn-telegram.org
   - cdn.arstechnica.net
-  - cdn.futustatic.com
   - cdn.jwplayer.com
   - cdn.printfriendly.com
   - cdn.registerdisney.go.com
@@ -1439,7 +1434,6 @@ domain_suffix_set:
   - cn.sandscotaicentral.com
   - cn.shafaqna.com
   - cn.theaustralian.com.au
-  - cn.uptodown.com
   - cn6.eu
   - cna.com.tw
   - cnabc.com
@@ -1873,7 +1867,6 @@ domain_suffix_set:
   - downdetector.com
   - downdetectorapi.com
   - download.dappcdn.com
-  - download.futunn.com
   - dphk.org
   - dpool.top
   - dpp.org.tw
@@ -4286,7 +4279,6 @@ domain_suffix_set:
   - lzjscript.com
   - lzmtnews.org
   - m-sport.co.uk
-  - m.hkgalden.com
   - m.me
   - m.moegirl.org
   - m.plixi.com
@@ -5117,12 +5109,8 @@ domain_suffix_set:
   - openai.com
   - openallweb.com
   - openapi-quote.longbridge.cn
-  - openapi-quote.longbridge.com
   - openapi-trade.longbridge.cn
-  - openapi-trade.longbridge.com
-  - openapi.futunn.com
   - openapi.longbridge.cn
-  - openapi.longbridge.com
   - openart.ai
   - openbase.com
   - opencollective.com
@@ -5607,11 +5595,10 @@ domain_suffix_set:
   - qpoe.com
   - qq.co.za
   - qstatus.com
-  - qtcard.futunn.com
-  - qtcardfthk.futufin.com
   - qtrac.eu
   - qtweeter.com
   - quad9.net
+  - quakemachinex.com
   - quannengshen.org
   - quantumbooter.net
   - quay.io
@@ -6423,7 +6410,6 @@ domain_suffix_set:
   - superzooi.com
   - supjav.com
   - suppig.net
-  - support.futunn.com
   - supremecourt.gov
   - suprememastertv.com
   - surfeasy.com
@@ -6889,8 +6875,6 @@ domain_suffix_set:
   - tpi.org.tw
   - tr
   - tracfone.com
-  - trade.futunn.com
-  - trade.longportapp.com
   - tradeup.com
   - tradingview.com
   - traffichaus.com

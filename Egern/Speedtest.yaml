@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18707
+# 规则统计: 18709
 
 domain_set:
   - 083link.brsserver.com.br
@@ -11676,6 +11676,7 @@ domain_set:
   - speedtest.remc1.net
   - speedtest.renocagroupsrl.com
   - speedtest.resoundnetworks.com
+  - speedtest.respawnhost.com
   - speedtest.reticule.in
   - speedtest.revolutionbroadband.net
   - speedtest.reycom.cr
@@ -16019,6 +16020,7 @@ domain_set:
   - st-lwr.midco.net
   - st-m2.owlcore.com.br
   - st-manisa-1.turksatkablo.com.tr
+  - st-mersin-1.turksatkablo.com.tr
   - st-mot.midco.net
   - st-oma-1.binary.net
   - st-ookla.virtualiza.me
