@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18709
+# 规则统计: 18710
 
 domain_set:
   - 083link.brsserver.com.br
@@ -10836,6 +10836,7 @@ domain_set:
   - speedtest.netpoint.az
   - speedtest.netpointspeed.com.br
   - speedtest.netpol.eu
+  - speedtest.netpool.in
   - speedtest.netpro.net.br
   - speedtest.netprolb.com
   - speedtest.netrack.ru
