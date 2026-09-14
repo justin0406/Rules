@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18710
+# 规则统计: 18711
 
 domain_set:
   - 083link.brsserver.com.br
@@ -3232,6 +3232,7 @@ domain_set:
   - serv1.nossanettelecom.net.br
   - serv19.a2jnetwork.in
   - serv3.a2jnetwork.in
+  - serv8.a2jnetwork.in
   - server-25671.prod.hosts.ooklaserver.net
   - server-64772.prod.hosts.ooklaserver.net
   - server-7755.prod.hosts.ooklaserver.net

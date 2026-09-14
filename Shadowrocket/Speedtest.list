@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18710
+# 规则统计: 18711
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -3230,6 +3230,7 @@ DOMAIN,serv1.a2jnetwork.in
 DOMAIN,serv1.nossanettelecom.net.br
 DOMAIN,serv19.a2jnetwork.in
 DOMAIN,serv3.a2jnetwork.in
+DOMAIN,serv8.a2jnetwork.in
 DOMAIN,server-25671.prod.hosts.ooklaserver.net
 DOMAIN,server-64772.prod.hosts.ooklaserver.net
 DOMAIN,server-7755.prod.hosts.ooklaserver.net

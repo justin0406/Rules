@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18710
+# 规则统计: 18711
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -3230,6 +3230,7 @@ HOST,serv1.a2jnetwork.in,Speedtest
 HOST,serv1.nossanettelecom.net.br,Speedtest
 HOST,serv19.a2jnetwork.in,Speedtest
 HOST,serv3.a2jnetwork.in,Speedtest
+HOST,serv8.a2jnetwork.in,Speedtest
 HOST,server-25671.prod.hosts.ooklaserver.net,Speedtest
 HOST,server-64772.prod.hosts.ooklaserver.net,Speedtest
 HOST,server-7755.prod.hosts.ooklaserver.net,Speedtest
