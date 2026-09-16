@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18711
+# 规则统计: 18712
 
 domain_set:
   - 083link.brsserver.com.br
@@ -11868,6 +11868,7 @@ domain_set:
   - speedtest.sdvcomm.in
   - speedtest.sea.accretive-networks.net
   - speedtest.sea.accretive-networks.net.prod.hosts.ooklaserver.net
+  - speedtest.sea.aixxycode.id
   - speedtest.sea.fdcservers.net
   - speedtest.sea1.hivelocity.net
   - speedtest.sea1.nitelusa.net
