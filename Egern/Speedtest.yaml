@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18712
+# 规则统计: 18713
 
 domain_set:
   - 083link.brsserver.com.br
@@ -13432,6 +13432,7 @@ domain_set:
   - speedtest.wsinternet.com.br
   - speedtest.wsnet.com.br
   - speedtest.wsnetfibra.com.br
+  - speedtest.wsp.net.br
   - speedtest.wstelecom.net
   - speedtest.wtccommunications.ca
   - speedtest.wtcks.com
