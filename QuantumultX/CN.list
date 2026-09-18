@@ -1,5 +1,5 @@
 # 规则名称: CN
-# 规则统计: 871
+# 规则统计: 872
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,CN
 HOST,acg.tv,CN
@@ -667,6 +667,7 @@ HOST-SUFFIX,qzone.com,CN
 HOST-SUFFIX,realme.com,CN
 HOST-SUFFIX,realmebbs.com,CN
 HOST-SUFFIX,realmemobile.com,CN
+HOST-SUFFIX,rednotecdn.com,CN
 HOST-SUFFIX,roblox.cn,CN
 HOST-SUFFIX,robloxdev.cn,CN
 HOST-SUFFIX,ronghub.com,CN

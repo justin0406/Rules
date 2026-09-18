@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18713
+# 规则统计: 18718
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -3078,6 +3078,7 @@ HOST,reisnoida.pimoony.com,Speedtest
 HOST,ren1.speedtest.mire.sfr.net,Speedtest
 HOST,reno-speedtest.commnetbroadband.com,Speedtest
 HOST,renonv-speedtest-ookla-01.st.charter.com,Speedtest
+HOST,reunion3.d2m.c2d.liveservices.fr,Speedtest
 HOST,reunion3.speedtest.orange.fr,Speedtest
 HOST,reyconnect.ddns.net,Speedtest
 HOST,reynosa.speedtest.totalplay.com.mx,Speedtest
@@ -9183,6 +9184,7 @@ HOST,speedtest.huetoca.megared.net.mx,Speedtest
 HOST,speedtest.hugstelecom.com,Speedtest
 HOST,speedtest.humboldtutilities.com,Speedtest
 HOST,speedtest.hunterfiber.com,Speedtest
+HOST,speedtest.huxleycommunications.net,Speedtest
 HOST,speedtest.hvfree.net,Speedtest
 HOST,speedtest.hvmultiplay.co,Speedtest
 HOST,speedtest.hyd.excitel.in,Speedtest
@@ -10011,6 +10013,7 @@ HOST,speedtest.likenetpe.net.br,Speedtest
 HOST,speedtest.likenettelecom.com.br,Speedtest
 HOST,speedtest.lim.pe.pit.net,Speedtest
 HOST,speedtest.lima1.mifibra.pe,Speedtest
+HOST,speedtest.limericknetworks.com,Speedtest
 HOST,speedtest.limericktechnologies.com,Speedtest
 HOST,speedtest.limesol.com,Speedtest
 HOST,speedtest.limnet.com.ua,Speedtest
@@ -10449,6 +10452,7 @@ HOST,speedtest.minsk.amigo.by,Speedtest
 HOST,speedtest.minsktelecom.by,Speedtest
 HOST,speedtest.miplhr.com,Speedtest
 HOST,speedtest.mirainternet.com.br,Speedtest
+HOST,speedtest.miriquidi-net.works,Speedtest
 HOST,speedtest.mirror.digitalpacific.com.au,Speedtest
 HOST,speedtest.mirror.serversaustralia.com.au,Speedtest
 HOST,speedtest.mirtv.uz.ua,Speedtest
@@ -15348,6 +15352,7 @@ HOST,speedtestmtn.nayatel.com,Speedtest
 HOST,speedtestmtr.mtmbali.com,Speedtest
 HOST,speedtestmtr.muxbroadband.com,Speedtest
 HOST,speedtestmulticraft.multifi.in,Speedtest
+HOST,speedtestmum.actcorp.in,Speedtest
 HOST,speedtestmum.citynet.co.in,Speedtest
 HOST,speedtestmum.mahabalnet.in,Speedtest
 HOST,speedtestmum.meghbelabroadband.in,Speedtest

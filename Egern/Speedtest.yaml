@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18713
+# 规则统计: 18718
 
 domain_set:
   - 083link.brsserver.com.br
@@ -3080,6 +3080,7 @@ domain_set:
   - ren1.speedtest.mire.sfr.net
   - reno-speedtest.commnetbroadband.com
   - renonv-speedtest-ookla-01.st.charter.com
+  - reunion3.d2m.c2d.liveservices.fr
   - reunion3.speedtest.orange.fr
   - reyconnect.ddns.net
   - reynosa.speedtest.totalplay.com.mx
@@ -9185,6 +9186,7 @@ domain_set:
   - speedtest.hugstelecom.com
   - speedtest.humboldtutilities.com
   - speedtest.hunterfiber.com
+  - speedtest.huxleycommunications.net
   - speedtest.hvfree.net
   - speedtest.hvmultiplay.co
   - speedtest.hyd.excitel.in
@@ -10013,6 +10015,7 @@ domain_set:
   - speedtest.likenettelecom.com.br
   - speedtest.lim.pe.pit.net
   - speedtest.lima1.mifibra.pe
+  - speedtest.limericknetworks.com
   - speedtest.limericktechnologies.com
   - speedtest.limesol.com
   - speedtest.limnet.com.ua
@@ -10451,6 +10454,7 @@ domain_set:
   - speedtest.minsktelecom.by
   - speedtest.miplhr.com
   - speedtest.mirainternet.com.br
+  - speedtest.miriquidi-net.works
   - speedtest.mirror.digitalpacific.com.au
   - speedtest.mirror.serversaustralia.com.au
   - speedtest.mirtv.uz.ua
@@ -15350,6 +15354,7 @@ domain_set:
   - speedtestmtr.mtmbali.com
   - speedtestmtr.muxbroadband.com
   - speedtestmulticraft.multifi.in
+  - speedtestmum.actcorp.in
   - speedtestmum.citynet.co.in
   - speedtestmum.mahabalnet.in
   - speedtestmum.meghbelabroadband.in
