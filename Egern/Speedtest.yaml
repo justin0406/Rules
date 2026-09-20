@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18719
+# 规则统计: 18721
 
 domain_set:
   - 083link.brsserver.com.br
@@ -9652,6 +9652,7 @@ domain_set:
   - speedtest.jaronet.cz
   - speedtest.jartel.net.id
   - speedtest.jas.summitiig.net
+  - speedtest.jasmyrahnetworks.com
   - speedtest.jatayu.id
   - speedtest.jatelecompe.com.br
   - speedtest.jatimnet.com.br
@@ -13069,6 +13070,7 @@ domain_set:
   - speedtest.velonet.com.ar
   - speedtest.veloo.com.br
   - speedtest.velosch.net.br
+  - speedtest.velosonet.com.br
   - speedtest.veloxnetwork.net.br
   - speedtest.veloxr.in
   - speedtest.veloznetaju.com.br
