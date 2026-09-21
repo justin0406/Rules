@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 212
+# 规则统计: 223
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,AI
 HOST,ai-gateway.vercel.sh,AI
@@ -21,16 +21,19 @@ HOST,api.githubcopilot.com,AI
 HOST,api.hyperbolic.xyz,AI
 HOST,api.jetbrains.ai,AI
 HOST,api.x.ai,AI
+HOST,api.zed.dev,AI
 HOST,apple-relay.apple.com,AI
 HOST,apple-relay.cloudflare.com,AI
 HOST,apple-relay.fastly-edge.com,AI
 HOST,bard.google.com,AI
 HOST,browser-intake-datadoghq.com,AI
 HOST,browser-intake-us5-datadoghq.com,AI
+HOST,cdn.delta.dev,AI
 HOST,cdn.usefathom.com,AI
 HOST,chat.mistral.ai,AI
 HOST,chat.openai.com.cdn.cloudflare.net,AI
 HOST,chatgpt.livekit.cloud,AI
+HOST,cloud.zed.dev,AI
 HOST,console.mistral.ai,AI
 HOST,copilot-proxy.githubusercontent.com,AI
 HOST,copilot.microsoft.com,AI
@@ -39,6 +42,7 @@ HOST,daily-cloudcode-pa.googleapis.com,AI
 HOST,daily-cloudcode-pa.sandbox.googleapis.com,AI
 HOST,deepmind.com,AI
 HOST,deepmind.google,AI
+HOST,delta.zed.dev,AI
 HOST,gateway.ai.cloudflare.com,AI
 HOST,geller-pa.googleapis.com,AI
 HOST,gemini.google,AI
@@ -76,6 +80,7 @@ HOST,token-plan-sgp.xiaomimimo.com,AI
 HOST,trae-api-sg.mchost.guru,AI
 HOST,turn.livekit.cloud,AI
 HOST,webchannel-alkalimakersuite-pa.clients6.google.com,AI
+HOST,zed-us-east-1-zed-production.c15t.dev,AI
 HOST-SUFFIX,agnes-ai.com,AI
 HOST-SUFFIX,ai.com,AI
 HOST-SUFFIX,aicode.googleapis.com,AI
@@ -114,8 +119,10 @@ HOST-SUFFIX,claudeusercontent.com,AI
 HOST-SUFFIX,client-api.arkoselabs.com,AI
 HOST-SUFFIX,clients6.google.com,AI
 HOST-SUFFIX,clientstream.launchdarkly.com,AI
+HOST-SUFFIX,cline.bot,AI
 HOST-SUFFIX,clipdrop.co,AI
 HOST-SUFFIX,cloudcode-pa.googleapis.com,AI
+HOST-SUFFIX,commandcode.ai,AI
 HOST-SUFFIX,cp4.cloudflare.com,AI
 HOST-SUFFIX,crixet.com,AI
 HOST-SUFFIX,ct.sendgrid.net,AI
@@ -123,6 +130,7 @@ HOST-SUFFIX,cursor.sh,AI
 HOST-SUFFIX,deepmind.com,AI
 HOST-SUFFIX,deepmind.google,AI
 HOST-SUFFIX,desktop.chat.openai.com,AI
+HOST-SUFFIX,devin.ai,AI
 HOST-SUFFIX,dify.ai,AI
 HOST-SUFFIX,events.launchdarkly.com,AI
 HOST-SUFFIX,events.statsigapi.net,AI
@@ -170,10 +178,12 @@ HOST-SUFFIX,o33249.ingest.sentry.io,AI
 HOST-SUFFIX,oaistatic.com,AI
 HOST-SUFFIX,oaiusercontent.com,AI
 HOST-SUFFIX,observeit.net,AI
+HOST-SUFFIX,ollama.com,AI
 HOST-SUFFIX,openai.com,AI
 HOST-SUFFIX,openaiapi-site.azureedge.net,AI
 HOST-SUFFIX,openaicom.imgix.net,AI
 HOST-SUFFIX,openart.ai,AI
+HOST-SUFFIX,opencode.ai,AI
 HOST-SUFFIX,openrouter.ai,AI
 HOST-SUFFIX,perplexity.ai,AI
 HOST-SUFFIX,perplexity.com,AI
@@ -196,6 +206,7 @@ HOST-SUFFIX,together.ai,AI
 HOST-SUFFIX,tokenflux.ai,AI
 HOST-SUFFIX,trae.ai,AI
 HOST-SUFFIX,turn.livekit.cloud,AI
+HOST-SUFFIX,typesafe.ai,AI
 HOST-SUFFIX,voyageai.com,AI
 HOST-SUFFIX,workos.com,AI
 HOST-SUFFIX,workos.imgix.net,AI
