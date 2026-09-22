@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8193
+# 规则统计: 8194
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -1313,6 +1313,7 @@ HOST-SUFFIX,chinesegay.org,GFW
 HOST-SUFFIX,chinesen.de,GFW
 HOST-SUFFIX,chinesenews.net.au,GFW
 HOST-SUFFIX,chinesepen.org,GFW
+HOST-SUFFIX,chineseposters.net,GFW
 HOST-SUFFIX,chineseradioseattle.com,GFW
 HOST-SUFFIX,chinesetalks.net,GFW
 HOST-SUFFIX,chineseupress.com,GFW
