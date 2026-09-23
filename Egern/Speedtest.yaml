@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18721
+# 规则统计: 18725
 
 domain_set:
   - 083link.brsserver.com.br
@@ -2503,6 +2503,7 @@ domain_set:
   - ookla.omda.analogi.net.id
   - ookla.oneconect.com.br
   - ookla.onenet.net.br
+  - ookla.onivia.net
   - ookla.onixnet.net.br
   - ookla.ooredoo.com.kw
   - ookla.opticaltel.com
@@ -2522,6 +2523,7 @@ domain_set:
   - ookla.pgnetprovedor.net.br
   - ookla.pgs.net.br
   - ookla.pgservicos.com.br
+  - ookla.pgservicos.net.br
   - ookla.phxnet.com.br
   - ookla.playmaisreverso.net.br
   - ookla.plexfibra.com.br
@@ -5529,6 +5531,7 @@ domain_set:
   - speedtest-2.brconecta.com.br
   - speedtest-2.cgates.lt
   - speedtest-2.farahnet.net.lb
+  - speedtest-2.hynetwifi.it
   - speedtest-2.roxservices.net
   - speedtest-2.winext.hu
   - speedtest-3.cgates.lt
@@ -13847,6 +13850,7 @@ domain_set:
   - speedtest1.claro.cr
   - speedtest1.clearnetworx.net
   - speedtest1.cnet.pe
+  - speedtest1.co-fi.es
   - speedtest1.compusoftinternet.com.br
   - speedtest1.comunet.com.br
   - speedtest1.conecta-3.es

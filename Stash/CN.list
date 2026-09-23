@@ -868,6 +868,6 @@ DOMAIN-SUFFIX,zui.com
 DOMAIN-SUFFIX,zuimeitianqi.com
 DOMAIN-SUFFIX,zuoyebang.com
 DOMAIN-SUFFIX,zybang.com
-DOMAIN-WILDCARD,*.qhimgs?.com
+DOMAIN-WILDCARD,qhimgs?.com
 IP-CIDR,140.205.1.0/24,no-resolve
 IP-CIDR,162.14.0.0/18,no-resolve

@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18721
+# 规则统计: 18725
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -2501,6 +2501,7 @@ DOMAIN,ookla.olin.es
 DOMAIN,ookla.omda.analogi.net.id
 DOMAIN,ookla.oneconect.com.br
 DOMAIN,ookla.onenet.net.br
+DOMAIN,ookla.onivia.net
 DOMAIN,ookla.onixnet.net.br
 DOMAIN,ookla.ooredoo.com.kw
 DOMAIN,ookla.opticaltel.com
@@ -2520,6 +2521,7 @@ DOMAIN,ookla.permata.net.id
 DOMAIN,ookla.pgnetprovedor.net.br
 DOMAIN,ookla.pgs.net.br
 DOMAIN,ookla.pgservicos.com.br
+DOMAIN,ookla.pgservicos.net.br
 DOMAIN,ookla.phxnet.com.br
 DOMAIN,ookla.playmaisreverso.net.br
 DOMAIN,ookla.plexfibra.com.br
@@ -5527,6 +5529,7 @@ DOMAIN,speedtest-10gb.serverhouse.co.uk
 DOMAIN,speedtest-2.brconecta.com.br
 DOMAIN,speedtest-2.cgates.lt
 DOMAIN,speedtest-2.farahnet.net.lb
+DOMAIN,speedtest-2.hynetwifi.it
 DOMAIN,speedtest-2.roxservices.net
 DOMAIN,speedtest-2.winext.hu
 DOMAIN,speedtest-3.cgates.lt
@@ -13845,6 +13848,7 @@ DOMAIN,speedtest1.claro.com.ni
 DOMAIN,speedtest1.claro.cr
 DOMAIN,speedtest1.clearnetworx.net
 DOMAIN,speedtest1.cnet.pe
+DOMAIN,speedtest1.co-fi.es
 DOMAIN,speedtest1.compusoftinternet.com.br
 DOMAIN,speedtest1.comunet.com.br
 DOMAIN,speedtest1.conecta-3.es

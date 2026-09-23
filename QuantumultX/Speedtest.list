@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18721
+# 规则统计: 18725
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -2501,6 +2501,7 @@ HOST,ookla.olin.es,Speedtest
 HOST,ookla.omda.analogi.net.id,Speedtest
 HOST,ookla.oneconect.com.br,Speedtest
 HOST,ookla.onenet.net.br,Speedtest
+HOST,ookla.onivia.net,Speedtest
 HOST,ookla.onixnet.net.br,Speedtest
 HOST,ookla.ooredoo.com.kw,Speedtest
 HOST,ookla.opticaltel.com,Speedtest
@@ -2520,6 +2521,7 @@ HOST,ookla.permata.net.id,Speedtest
 HOST,ookla.pgnetprovedor.net.br,Speedtest
 HOST,ookla.pgs.net.br,Speedtest
 HOST,ookla.pgservicos.com.br,Speedtest
+HOST,ookla.pgservicos.net.br,Speedtest
 HOST,ookla.phxnet.com.br,Speedtest
 HOST,ookla.playmaisreverso.net.br,Speedtest
 HOST,ookla.plexfibra.com.br,Speedtest
@@ -5527,6 +5529,7 @@ HOST,speedtest-10gb.serverhouse.co.uk,Speedtest
 HOST,speedtest-2.brconecta.com.br,Speedtest
 HOST,speedtest-2.cgates.lt,Speedtest
 HOST,speedtest-2.farahnet.net.lb,Speedtest
+HOST,speedtest-2.hynetwifi.it,Speedtest
 HOST,speedtest-2.roxservices.net,Speedtest
 HOST,speedtest-2.winext.hu,Speedtest
 HOST,speedtest-3.cgates.lt,Speedtest
@@ -13845,6 +13848,7 @@ HOST,speedtest1.claro.com.ni,Speedtest
 HOST,speedtest1.claro.cr,Speedtest
 HOST,speedtest1.clearnetworx.net,Speedtest
 HOST,speedtest1.cnet.pe,Speedtest
+HOST,speedtest1.co-fi.es,Speedtest
 HOST,speedtest1.compusoftinternet.com.br,Speedtest
 HOST,speedtest1.comunet.com.br,Speedtest
 HOST,speedtest1.conecta-3.es,Speedtest
