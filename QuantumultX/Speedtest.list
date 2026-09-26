@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18725
+# 规则统计: 18730
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -3089,6 +3089,7 @@ HOST,rhaspd2.mci.ir,Speedtest
 HOST,riley.as48070.net,Speedtest
 HOST,rimouski.speedtest.telus.com,Speedtest
 HOST,riorancho1.cabospeed.com,Speedtest
+HOST,riospeedtest.rconnects.com,Speedtest
 HOST,risenettelecom.brsserver.com.br,Speedtest
 HOST,riznetwork.jsn-lmg.my.id,Speedtest
 HOST,rj01teste.rjtet.com.br,Speedtest
@@ -4004,6 +4005,7 @@ HOST,spd-pub-mi-01-01.fastwebnet.it,Speedtest
 HOST,spd-pub-rm-01-01.fastwebnet.it,Speedtest
 HOST,spd-ska.scms-tech.co.th,Speedtest
 HOST,spd-sndacawa.wyyerd.io,Speedtest
+HOST,spd-sndgcajw.wyyerd.io,Speedtest
 HOST,spd-srt.scms-tech.co.th,Speedtest
 HOST,spd-srt.trueinternet.co.th,Speedtest
 HOST,spd-sub.datautama.net.id,Speedtest
@@ -8423,6 +8425,7 @@ HOST,speedtest.extratel.net.ua,Speedtest
 HOST,speedtest.extremanetwork.com.br,Speedtest
 HOST,speedtest.extremefiber.net,Speedtest
 HOST,speedtest.extremenetwork.com.br,Speedtest
+HOST,speedtest.eyeit.com.br,Speedtest
 HOST,speedtest.eyg01.nl,Speedtest
 HOST,speedtest.ezcanet.com,Speedtest
 HOST,speedtest.ezecom.com.kh,Speedtest
@@ -8801,6 +8804,7 @@ HOST,speedtest.gelicon.ru,Speedtest
 HOST,speedtest.gemnet.mn,Speedtest
 HOST,speedtest.generacja.pl,Speedtest
 HOST,speedtest.geneseo.com,Speedtest
+HOST,speedtest.genxbroadband.com,Speedtest
 HOST,speedtest.genznet.id,Speedtest
 HOST,speedtest.geolink.com.pe,Speedtest
 HOST,speedtest.geracaonet.com.br,Speedtest
@@ -15878,6 +15882,7 @@ HOST,spts.connectpedreiras.com.br,Speedtest
 HOST,spts1.idinternet.com.br,Speedtest
 HOST,sptserver-sglq.fibramax.ec,Speedtest
 HOST,sptst.cloudtelecom.net.br,Speedtest
+HOST,sptst1.ntua.net,Speedtest
 HOST,spttc2.taiwanmobile.com,Speedtest
 HOST,spttc2.taiwanmobile.com.prod.hosts.ooklaserver.net,Speedtest
 HOST,spttn2.taiwanmobile.com,Speedtest

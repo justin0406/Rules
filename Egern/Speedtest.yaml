@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18725
+# 规则统计: 18730
 
 domain_set:
   - 083link.brsserver.com.br
@@ -3091,6 +3091,7 @@ domain_set:
   - riley.as48070.net
   - rimouski.speedtest.telus.com
   - riorancho1.cabospeed.com
+  - riospeedtest.rconnects.com
   - risenettelecom.brsserver.com.br
   - riznetwork.jsn-lmg.my.id
   - rj01teste.rjtet.com.br
@@ -4006,6 +4007,7 @@ domain_set:
   - spd-pub-rm-01-01.fastwebnet.it
   - spd-ska.scms-tech.co.th
   - spd-sndacawa.wyyerd.io
+  - spd-sndgcajw.wyyerd.io
   - spd-srt.scms-tech.co.th
   - spd-srt.trueinternet.co.th
   - spd-sub.datautama.net.id
@@ -8425,6 +8427,7 @@ domain_set:
   - speedtest.extremanetwork.com.br
   - speedtest.extremefiber.net
   - speedtest.extremenetwork.com.br
+  - speedtest.eyeit.com.br
   - speedtest.eyg01.nl
   - speedtest.ezcanet.com
   - speedtest.ezecom.com.kh
@@ -8803,6 +8806,7 @@ domain_set:
   - speedtest.gemnet.mn
   - speedtest.generacja.pl
   - speedtest.geneseo.com
+  - speedtest.genxbroadband.com
   - speedtest.genznet.id
   - speedtest.geolink.com.pe
   - speedtest.geracaonet.com.br
@@ -15880,6 +15884,7 @@ domain_set:
   - spts1.idinternet.com.br
   - sptserver-sglq.fibramax.ec
   - sptst.cloudtelecom.net.br
+  - sptst1.ntua.net
   - spttc2.taiwanmobile.com
   - spttc2.taiwanmobile.com.prod.hosts.ooklaserver.net
   - spttn2.taiwanmobile.com

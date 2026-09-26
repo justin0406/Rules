@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18725
+# 规则统计: 18730
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -3089,6 +3089,7 @@ DOMAIN,rhaspd2.mci.ir
 DOMAIN,riley.as48070.net
 DOMAIN,rimouski.speedtest.telus.com
 DOMAIN,riorancho1.cabospeed.com
+DOMAIN,riospeedtest.rconnects.com
 DOMAIN,risenettelecom.brsserver.com.br
 DOMAIN,riznetwork.jsn-lmg.my.id
 DOMAIN,rj01teste.rjtet.com.br
@@ -4004,6 +4005,7 @@ DOMAIN,spd-pub-mi-01-01.fastwebnet.it
 DOMAIN,spd-pub-rm-01-01.fastwebnet.it
 DOMAIN,spd-ska.scms-tech.co.th
 DOMAIN,spd-sndacawa.wyyerd.io
+DOMAIN,spd-sndgcajw.wyyerd.io
 DOMAIN,spd-srt.scms-tech.co.th
 DOMAIN,spd-srt.trueinternet.co.th
 DOMAIN,spd-sub.datautama.net.id
@@ -8423,6 +8425,7 @@ DOMAIN,speedtest.extratel.net.ua
 DOMAIN,speedtest.extremanetwork.com.br
 DOMAIN,speedtest.extremefiber.net
 DOMAIN,speedtest.extremenetwork.com.br
+DOMAIN,speedtest.eyeit.com.br
 DOMAIN,speedtest.eyg01.nl
 DOMAIN,speedtest.ezcanet.com
 DOMAIN,speedtest.ezecom.com.kh
@@ -8801,6 +8804,7 @@ DOMAIN,speedtest.gelicon.ru
 DOMAIN,speedtest.gemnet.mn
 DOMAIN,speedtest.generacja.pl
 DOMAIN,speedtest.geneseo.com
+DOMAIN,speedtest.genxbroadband.com
 DOMAIN,speedtest.genznet.id
 DOMAIN,speedtest.geolink.com.pe
 DOMAIN,speedtest.geracaonet.com.br
@@ -15878,6 +15882,7 @@ DOMAIN,spts.connectpedreiras.com.br
 DOMAIN,spts1.idinternet.com.br
 DOMAIN,sptserver-sglq.fibramax.ec
 DOMAIN,sptst.cloudtelecom.net.br
+DOMAIN,sptst1.ntua.net
 DOMAIN,spttc2.taiwanmobile.com
 DOMAIN,spttc2.taiwanmobile.com.prod.hosts.ooklaserver.net
 DOMAIN,spttn2.taiwanmobile.com
