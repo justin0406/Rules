@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8194
+# 规则统计: 8197
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -1060,6 +1060,7 @@ HOST-SUFFIX,byteoversea.com,GFW
 HOST-SUFFIX,c-est-simple.com,GFW
 HOST-SUFFIX,c-span.org,GFW
 HOST-SUFFIX,c-spanvideo.org,GFW
+HOST-SUFFIX,c.go-mpulse.net,GFW
 HOST-SUFFIX,c.mi.com,GFW
 HOST-SUFFIX,c100tibet.org,GFW
 HOST-SUFFIX,c2cx.com,GFW
@@ -5590,6 +5591,7 @@ HOST-SUFFIX,qiwen.lu,GFW
 HOST-SUFFIX,qixianglu.cn,GFW
 HOST-SUFFIX,qkshare.com,GFW
 HOST-SUFFIX,qmp4.com,GFW
+HOST-SUFFIX,qobuz.com,GFW
 HOST-SUFFIX,qoos.com,GFW
 HOST-SUFFIX,qpoe.com,GFW
 HOST-SUFFIX,qq.co.za,GFW
@@ -7264,6 +7266,7 @@ HOST-SUFFIX,vanpeople.com,GFW
 HOST-SUFFIX,vansky.com,GFW
 HOST-SUFFIX,vaticannews.va,GFW
 HOST-SUFFIX,vatn.org,GFW
+HOST-SUFFIX,vava8.com,GFW
 HOST-SUFFIX,vcf-online.org,GFW
 HOST-SUFFIX,vcfbuilder.org,GFW
 HOST-SUFFIX,vds.rightster.com,GFW

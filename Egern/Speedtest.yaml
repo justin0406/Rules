@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18730
+# 规则统计: 18732
 
 domain_set:
   - 083link.brsserver.com.br
@@ -2571,6 +2571,7 @@ domain_set:
   - ookla.smartlinks.in
   - ookla.smi.net.id
   - ookla.snt.utwente.nl
+  - ookla.soc.atharva.co.id
   - ookla.socialnet.com.br
   - ookla.solucaors.com.br
   - ookla.souvipnet.com.br
@@ -5779,6 +5780,7 @@ domain_set:
   - speedtest-dpr.domonet.ua
   - speedtest-dps.abinet.id
   - speedtest-dps.xl.co.id
+  - speedtest-dsm.cowboyhosting.com
   - speedtest-dyl.asiacell.com
   - speedtest-east.eastlink.ca
   - speedtest-eastburwood.optusnet.com.au

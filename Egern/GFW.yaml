@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: GFW
-# 规则统计: 8193
+# 规则统计: 8196
 
 domain_set:
   - 7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -1063,6 +1063,7 @@ domain_suffix_set:
   - c-est-simple.com
   - c-span.org
   - c-spanvideo.org
+  - c.go-mpulse.net
   - c.mi.com
   - c100tibet.org
   - c2cx.com
@@ -5593,6 +5594,7 @@ domain_suffix_set:
   - qixianglu.cn
   - qkshare.com
   - qmp4.com
+  - qobuz.com
   - qoos.com
   - qpoe.com
   - qq.co.za
@@ -7267,6 +7269,7 @@ domain_suffix_set:
   - vansky.com
   - vaticannews.va
   - vatn.org
+  - vava8.com
   - vcf-online.org
   - vcfbuilder.org
   - vds.rightster.com
