@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18732
+# 规则统计: 18733
 
 domain_set:
   - 083link.brsserver.com.br
@@ -18394,6 +18394,7 @@ domain_set:
   - velocimetro.simtelecomslz.com
   - velocimetro.sinaldoceu.com.br
   - velocimetro.sma.lv.network
+  - velocimetro.smartmovel.net
   - velocimetro.solartelecom.com.br
   - velocimetro.speednetprovedorpe.com.br
   - velocimetro.speednetworks.com.br
