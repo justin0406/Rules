@@ -1,5 +1,5 @@
 # 规则名称: CN
-# 规则统计: 873
+# 规则统计: 874
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,CN
 HOST,acg.tv,CN
@@ -22,6 +22,7 @@ HOST,media.cdn.queniuqe.com,CN
 HOST,ocsp.globalsign.com,CN
 HOST,ocsp2.globalsign.com,CN
 HOST,res.viayoo.com,CN
+HOST,time.xtracloud.net,CN
 HOST,url.cn,CN
 HOST,viayoo.com,CN
 HOST,www.intel.cn,CN

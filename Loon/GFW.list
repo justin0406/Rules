@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8197
+# 规则统计: 8198
 
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN,ccmdl.adobe.com
@@ -6824,6 +6824,7 @@ DOMAIN-SUFFIX,toh.info
 DOMAIN-SUFFIX,token.im
 DOMAIN-SUFFIX,tokenlon.im
 DOMAIN-SUFFIX,tokenplus.app
+DOMAIN-SUFFIX,tokens.ci
 DOMAIN-SUFFIX,tokto-motion.net
 DOMAIN-SUFFIX,tokyo-247.com
 DOMAIN-SUFFIX,tokyo-hot.com

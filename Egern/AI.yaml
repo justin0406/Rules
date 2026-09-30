@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: AI
-# 规则统计: 359
+# 规则统计: 360
 
 domain_set:
   - 7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -207,6 +207,7 @@ domain_set:
   - static.cloudflareinsights.com
   - sydney.bing.com
   - tinker.thinkingmachines.dev
+  - titles.prod.mos.microsoft.com
   - token-plan-ams.xiaomimimo.com
   - token-plan-sgp.xiaomimimo.com
   - token-plan.ap-southeast-1.maas.aliyuncs.com
