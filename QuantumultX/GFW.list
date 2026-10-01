@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8198
+# 规则统计: 8200
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -2545,6 +2545,7 @@ HOST-SUFFIX,fututrade.com,GFW
 HOST-SUFFIX,fututrustee.com,GFW
 HOST-SUFFIX,fux.com,GFW
 HOST-SUFFIX,fuyin.net,GFW
+HOST-SUFFIX,fuyin116.com,GFW
 HOST-SUFFIX,fuyindiantai.org,GFW
 HOST-SUFFIX,fuyu.org.tw,GFW
 HOST-SUFFIX,fw.cm,GFW
@@ -4637,6 +4638,7 @@ HOST-SUFFIX,multiupload.com,GFW
 HOST-SUFFIX,mummysgold.com,GFW
 HOST-SUFFIX,murmur.tw,GFW
 HOST-SUFFIX,muscdn.com,GFW
+HOST-SUFFIX,muse.ai,GFW
 HOST-SUFFIX,music.amazon.com,GFW
 HOST-SUFFIX,musicade.net,GFW
 HOST-SUFFIX,musical.ly,GFW

@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18734
+# 规则统计: 18736
 
 domain_set:
   - 083link.brsserver.com.br
@@ -11485,6 +11485,7 @@ domain_set:
   - speedtest.prnetweb.com.br
   - speedtest.probasec.sk
   - speedtest.process.com.br
+  - speedtest.procloud.ru
   - speedtest.profiber.net.br
   - speedtest.profibra.com.ar
   - speedtest.profissionalinformatica.com.br
@@ -15035,6 +15036,7 @@ domain_set:
   - speedtestcharallave.tuconnext.com
   - speedtestchd.netplus.co.in
   - speedtestchennai.tataplayfiber.co.in
+  - speedtestchi.cytranet.net
   - speedtestchih.nidix.mx
   - speedtestchn.actcorp.in
   - speedtestchv1.airtel.in
