@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8200
+# 规则统计: 8201
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -7444,6 +7444,7 @@ HOST-SUFFIX,waiwaier.com,GFW
 HOST-SUFFIX,wakatime.com,GFW
 HOST-SUFFIX,walletconnect.com,GFW
 HOST-SUFFIX,walletconnect.org,GFW
+HOST-SUFFIX,wallhaven.cc,GFW
 HOST-SUFFIX,wallmama.com,GFW
 HOST-SUFFIX,wallornot.org,GFW
 HOST-SUFFIX,wallpapercasa.com,GFW

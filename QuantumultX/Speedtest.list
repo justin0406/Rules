@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18736
+# 规则统计: 18738
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -3548,6 +3548,7 @@ HOST,sp1-mtbelvieu.tachus.com,Speedtest
 HOST,sp1-mum.youbroadband.in,Speedtest
 HOST,sp1-newcaney.tachus.com,Speedtest
 HOST,sp1-newwaverly.tachus.com,Speedtest
+HOST,sp1-nl.delska.com,Speedtest
 HOST,sp1-oakridge.tachus.com,Speedtest
 HOST,sp1-porter.tachus.com,Speedtest
 HOST,sp1-pune.youbroadband.in,Speedtest
@@ -6972,6 +6973,7 @@ HOST,speedtest.apfutura.net,Speedtest
 HOST,speedtest.aplikadata.id,Speedtest
 HOST,speedtest.aplitt.net,Speedtest
 HOST,speedtest.apnet-rr.com.br,Speedtest
+HOST,speedtest.apnetbv.com.br,Speedtest
 HOST,speedtest.apnetwork.la,Speedtest
 HOST,speedtest.apnic.net,Speedtest
 HOST,speedtest.apodaca.izzi.mx,Speedtest

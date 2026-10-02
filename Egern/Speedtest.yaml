@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18736
+# 规则统计: 18738
 
 domain_set:
   - 083link.brsserver.com.br
@@ -3550,6 +3550,7 @@ domain_set:
   - sp1-mum.youbroadband.in
   - sp1-newcaney.tachus.com
   - sp1-newwaverly.tachus.com
+  - sp1-nl.delska.com
   - sp1-oakridge.tachus.com
   - sp1-porter.tachus.com
   - sp1-pune.youbroadband.in
@@ -6974,6 +6975,7 @@ domain_set:
   - speedtest.aplikadata.id
   - speedtest.aplitt.net
   - speedtest.apnet-rr.com.br
+  - speedtest.apnetbv.com.br
   - speedtest.apnetwork.la
   - speedtest.apnic.net
   - speedtest.apodaca.izzi.mx

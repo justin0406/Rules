@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18736
+# 规则统计: 18738
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -3548,6 +3548,7 @@ DOMAIN,sp1-mtbelvieu.tachus.com
 DOMAIN,sp1-mum.youbroadband.in
 DOMAIN,sp1-newcaney.tachus.com
 DOMAIN,sp1-newwaverly.tachus.com
+DOMAIN,sp1-nl.delska.com
 DOMAIN,sp1-oakridge.tachus.com
 DOMAIN,sp1-porter.tachus.com
 DOMAIN,sp1-pune.youbroadband.in
@@ -6972,6 +6973,7 @@ DOMAIN,speedtest.apfutura.net
 DOMAIN,speedtest.aplikadata.id
 DOMAIN,speedtest.aplitt.net
 DOMAIN,speedtest.apnet-rr.com.br
+DOMAIN,speedtest.apnetbv.com.br
 DOMAIN,speedtest.apnetwork.la
 DOMAIN,speedtest.apnic.net
 DOMAIN,speedtest.apodaca.izzi.mx
