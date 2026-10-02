@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18738
+# 规则统计: 18739
 
 domain_set:
   - 083link.brsserver.com.br
@@ -18705,6 +18705,7 @@ domain_suffix_set:
   - speedtest.seattle.wa.limewave.net
   - speedtest.secv.com
   - speedtest.serverside.com
+  - speedtest.sg
   - speedtest.shentel.net
   - speedtest.singnet.com.sg
   - speedtest.soraxus.com

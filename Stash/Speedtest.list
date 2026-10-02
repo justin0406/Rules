@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18738
+# 规则统计: 18739
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -18702,6 +18702,7 @@ DOMAIN-SUFFIX,speedtest.sbcglobal.net
 DOMAIN-SUFFIX,speedtest.seattle.wa.limewave.net
 DOMAIN-SUFFIX,speedtest.secv.com
 DOMAIN-SUFFIX,speedtest.serverside.com
+DOMAIN-SUFFIX,speedtest.sg
 DOMAIN-SUFFIX,speedtest.shentel.net
 DOMAIN-SUFFIX,speedtest.singnet.com.sg
 DOMAIN-SUFFIX,speedtest.soraxus.com
