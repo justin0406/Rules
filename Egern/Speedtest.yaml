@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18739
+# 规则统计: 18741
 
 domain_set:
   - 083link.brsserver.com.br
@@ -5764,6 +5764,7 @@ domain_set:
   - speedtest-de.sonnleitner-it.de
   - speedtest-de.unihost.com
   - speedtest-de.webdade.com
+  - speedtest-de1.expresshost.cloud
   - speedtest-delhi.xtremefiber.in
   - speedtest-delicias.nidix.mx
   - speedtest-demak.demak.online
@@ -7137,6 +7138,7 @@ domain_set:
   - speedtest.aztelekom.az
   - speedtest.azturk.net
   - speedtest.b2.mhn.cloud
+  - speedtest.b3online.es
   - speedtest.b3telecom.com.br
   - speedtest.babanettelecom.com.br
   - speedtest.babilon-m.com

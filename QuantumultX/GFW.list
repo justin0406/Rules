@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8201
+# 规则统计: 8202
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -6074,6 +6074,7 @@ HOST-SUFFIX,simpleswap.io,GFW
 HOST-SUFFIX,simplex.chat,GFW
 HOST-SUFFIX,sina.com.hk,GFW
 HOST-SUFFIX,sinchew.com.my,GFW
+HOST-SUFFIX,sing-box.sagernet.org,GFW
 HOST-SUFFIX,singaporepools.com.sg,GFW
 HOST-SUFFIX,singfortibet.com,GFW
 HOST-SUFFIX,singlelogin.se,GFW
