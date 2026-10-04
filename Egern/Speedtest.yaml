@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18741
+# 规则统计: 18742
 
 domain_set:
   - 083link.brsserver.com.br
@@ -17715,6 +17715,7 @@ domain_set:
   - toluca.speedtest.totalplay.com.mx
   - tonetspeedtest.ddns.net
   - toplannet.ravisystems.com.br
+  - topnet.brsserver.com.br
   - tor-speedtest.net.sangoma.net
   - tor11speedtest01.srvr.bell.ca
   - tor21spd01.srvr.bell.ca

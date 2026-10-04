@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18741
+# 规则统计: 18742
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -17713,6 +17713,7 @@ DOMAIN,toledopalmas.brsserver.com.br
 DOMAIN,toluca.speedtest.totalplay.com.mx
 DOMAIN,tonetspeedtest.ddns.net
 DOMAIN,toplannet.ravisystems.com.br
+DOMAIN,topnet.brsserver.com.br
 DOMAIN,tor-speedtest.net.sangoma.net
 DOMAIN,tor11speedtest01.srvr.bell.ca
 DOMAIN,tor21spd01.srvr.bell.ca

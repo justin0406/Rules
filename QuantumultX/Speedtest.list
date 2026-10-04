@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18741
+# 规则统计: 18742
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -17713,6 +17713,7 @@ HOST,toledopalmas.brsserver.com.br,Speedtest
 HOST,toluca.speedtest.totalplay.com.mx,Speedtest
 HOST,tonetspeedtest.ddns.net,Speedtest
 HOST,toplannet.ravisystems.com.br,Speedtest
+HOST,topnet.brsserver.com.br,Speedtest
 HOST,tor-speedtest.net.sangoma.net,Speedtest
 HOST,tor11speedtest01.srvr.bell.ca,Speedtest
 HOST,tor21spd01.srvr.bell.ca,Speedtest
