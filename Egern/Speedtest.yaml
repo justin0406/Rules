@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18742
+# 规则统计: 18743
 
 domain_set:
   - 083link.brsserver.com.br
@@ -5062,6 +5062,7 @@ domain_set:
   - speed01.hipernet-telecom.com.br
   - speed01.infoima.com.br
   - speed01.lasotel.net
+  - speed01.mil01.cmp.hb-bkbn.net
   - speed01.netcaster.us
   - speed01.netsat.in
   - speed01.netven.in
