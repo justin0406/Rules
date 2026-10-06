@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 18743
+# 规则统计: 18746
 
 domain_set:
   - 083link.brsserver.com.br
@@ -4152,6 +4152,7 @@ domain_set:
   - spdt.encnusantara.net
   - spdt.fibranetba.com.br
   - spdt.intelekt.cv.ua
+  - spdt.lanxus.com.br
   - spdt.micho.com.mx
   - spdt.plustv.tv.br
   - spdt.pristonplay.com.br
@@ -4344,6 +4345,7 @@ domain_set:
   - speed.ade.aussiebroadband.com.au
   - speed.afrianz.biz.id
   - speed.agapetechfibre.co.ke
+  - speed.airmaxbroadband.com
   - speed.airplanenettelecom.com.br
   - speed.airwavescommunication.in
   - speed.airwavesinternet.com
@@ -8763,6 +8765,7 @@ domain_set:
   - speedtest.g3pi.com.br
   - speedtest.g4internet.com.br
   - speedtest.g4netfibra.com.br
+  - speedtest.g5nortetelecom.com.br
   - speedtest.g9.net.br
   - speedtest.gabontelecom.ga
   - speedtest.gabysantos.com.br

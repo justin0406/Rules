@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 18743
+# 规则统计: 18746
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -4150,6 +4150,7 @@ DOMAIN,spdt.digitalfibraotica.com.br
 DOMAIN,spdt.encnusantara.net
 DOMAIN,spdt.fibranetba.com.br
 DOMAIN,spdt.intelekt.cv.ua
+DOMAIN,spdt.lanxus.com.br
 DOMAIN,spdt.micho.com.mx
 DOMAIN,spdt.plustv.tv.br
 DOMAIN,spdt.pristonplay.com.br
@@ -4342,6 +4343,7 @@ DOMAIN,speed.actaccess.net
 DOMAIN,speed.ade.aussiebroadband.com.au
 DOMAIN,speed.afrianz.biz.id
 DOMAIN,speed.agapetechfibre.co.ke
+DOMAIN,speed.airmaxbroadband.com
 DOMAIN,speed.airplanenettelecom.com.br
 DOMAIN,speed.airwavescommunication.in
 DOMAIN,speed.airwavesinternet.com
@@ -8761,6 +8763,7 @@ DOMAIN,speedtest.g3netfibra.com.br
 DOMAIN,speedtest.g3pi.com.br
 DOMAIN,speedtest.g4internet.com.br
 DOMAIN,speedtest.g4netfibra.com.br
+DOMAIN,speedtest.g5nortetelecom.com.br
 DOMAIN,speedtest.g9.net.br
 DOMAIN,speedtest.gabontelecom.ga
 DOMAIN,speedtest.gabysantos.com.br
