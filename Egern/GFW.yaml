@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: GFW
-# 规则统计: 8201
+# 规则统计: 8230
 
 domain_set:
   - 7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -278,6 +278,7 @@ domain_suffix_set:
   - ai.google
   - ai.studio
   - aicoin.com
+  - aidc.com.tw
   - aihub.top
   - aimoon.com
   - aiosearch.com
@@ -930,6 +931,7 @@ domain_suffix_set:
   - bloombergview.com
   - bloomfortune.com
   - blubrry.com
+  - blue-plus.net
   - blueangellive.com
   - bmdru.com
   - bmfinn.com
@@ -969,6 +971,7 @@ domain_suffix_set:
   - boxunclub.com
   - boyangu.com
   - boyfriendtv.com
+  - boylove.cc
   - boysfood.com
   - boysmaster.com
   - br.st
@@ -1528,6 +1531,7 @@ domain_suffix_set:
   - covenantswatch.org.tw
   - coveralls.io
   - coze.com
+  - cpc.com.tw
   - cpj.org
   - cpu-monkey.com
   - cpuid.com
@@ -1561,6 +1565,7 @@ domain_suffix_set:
   - crypto.com
   - cryptocompare.com
   - cryptographyengineering.com
+  - csc.com.tw
   - csdparty.com
   - csis.org
   - csmonitor.com
@@ -1737,6 +1742,7 @@ domain_suffix_set:
   - devv.ai
   - dfas.mil
   - dfn.org
+  - dh.net
   - dharamsalanet.com
   - dharmakara.net
   - dhcp.biz
@@ -2120,6 +2126,7 @@ domain_suffix_set:
   - exchristian.hk
   - excite.co.jp
   - exhentai.org
+  - eximbank.com.tw
   - exmo.com
   - exmormon.org
   - expatshield.com
@@ -3249,6 +3256,7 @@ domain_suffix_set:
   - hembed.com
   - hentai.to
   - hentai.tv
+  - hentaiclub.net
   - hentaifox.com
   - hentaipaw.com
   - hentaiplay.net
@@ -3538,6 +3546,7 @@ domain_suffix_set:
   - ibytedtos.com
   - icams.com
   - icann.org
+  - icdf.org.tw
   - icedrive.net
   - icerocket.com
   - icfcdn.com
@@ -3695,6 +3704,7 @@ domain_suffix_set:
   - iownyour.org
   - ip-scan.adspower.net
   - ip138.com
+  - ipac.global
   - ipalter.com
   - ipdefenseforum.com
   - ipfire.org
@@ -3809,6 +3819,7 @@ domain_suffix_set:
   - javakiba.org
   - javbus.co
   - javbus.com
+  - javchu.com
   - javdb.com
   - javdove.com
   - javfinder.ai
@@ -3980,6 +3991,7 @@ domain_suffix_set:
   - kg
   - khabdha.org
   - khatrimaza.org
+  - khc.edu.tw
   - khmusic.com.tw
   - kichiku-doujinko.com
   - kick.com
@@ -4063,6 +4075,7 @@ domain_suffix_set:
   - lamayeshe.com
   - lamnia.co.uk
   - lamrim.com
+  - landbank.com.tw
   - landofhope.tv
   - lantern.io
   - lanterncn.cn
@@ -4359,6 +4372,7 @@ domain_suffix_set:
   - material.io
   - mathable.io
   - mathiew-badimon.com
+  - matichon.co.th
   - matome-plus.com
   - matome-plus.net
   - matrix.org
@@ -4513,12 +4527,15 @@ domain_suffix_set:
   - minzhuzhanxian.com
   - minzhuzhongguo.org
   - miraheze.org
+  - mirdc.org.tw
   - miroguide.com
   - mirror.xyz
   - mirrorbooks.com
   - mirrormedia.com.tw
   - mirrormedia.mg
+  - missav.ai
   - missav.com
+  - missav.live
   - missav.ws
   - missav123.com
   - misskey.io
@@ -4560,6 +4577,7 @@ domain_suffix_set:
   - modrinth.com
   - moeerolibrary.com
   - moegirl.org
+  - moeli-desu.com
   - moeload.com
   - moeshare.cc
   - mofaxiehui.com
@@ -4752,6 +4770,7 @@ domain_suffix_set:
   - nationalinterest.org
   - nationalreview.com
   - nationsonline.org
+  - nationthailand.com
   - nationwide.com
   - naughtyamerica.com
   - naver.com
@@ -4964,6 +4983,7 @@ domain_suffix_set:
   - ns3.name
   - nsfwr34.com
   - nssurge.com
+  - nstc.org.tw
   - ntd.tv
   - ntdtv.ca
   - ntdtv.co.kr
@@ -5405,6 +5425,7 @@ domain_suffix_set:
   - pokerstars.com
   - pokerstars.net
   - pokerstrategy.com
+  - poland.tw
   - politicalchina.org
   - politicalconsultation.org
   - politiscales.net
@@ -5592,6 +5613,7 @@ domain_suffix_set:
   - qianmo.tw
   - qidian.ca
   - qienkuen.org
+  - qingse.one
   - qiwen.lu
   - qixianglu.cn
   - qkshare.com
@@ -5790,6 +5812,7 @@ domain_suffix_set:
   - rocketcdn.me
   - rocks
   - rocksdb.org
+  - rocmgov.org
   - rojo.com
   - rolfoundation.org
   - rolia.net
@@ -6588,6 +6611,7 @@ domain_suffix_set:
   - textnow.me
   - tfbnw.net
   - tfc-taiwan.org.tw
+  - tfd.org.tw
   - tfhub.dev
   - tfiflve.com
   - tg-me.com
@@ -6926,6 +6950,7 @@ domain_suffix_set:
   - tsunagarumon.com
   - tt
   - tt1069.com
+  - ttl.com.tw
   - tttan.com
   - ttv.com.tw
   - ttvnw.net
@@ -7024,6 +7049,7 @@ domain_suffix_set:
   - tweez.net
   - twelve.today
   - twerkingbutt.com
+  - twfhcsec.com.tw
   - twftp.org
   - twgov.tw
   - twgreatdaily.com
@@ -7100,6 +7126,7 @@ domain_suffix_set:
   - twyac.org
   - tx.me
   - txxx.com
+  - tybio.com.tw
   - tycool.com
   - typekit.net
   - typepad.com
@@ -7425,6 +7452,7 @@ domain_suffix_set:
   - vrmtr.com
   - vrporn.com
   - vrsmash.com
+  - vscc.org.tw
   - vtunnel.com
   - vuku.cc
   - vultryhw.com
@@ -7862,6 +7890,7 @@ domain_suffix_set:
   - xvideos.com
   - xvideos.es
   - xvinlink.com
+  - xx.net
   - xxbbx.com
   - xxlmovies.com
   - xxuz.com
