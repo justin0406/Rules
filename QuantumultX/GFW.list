@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8231
+# 规则统计: 8234
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -480,6 +480,7 @@ HOST-SUFFIX,appdownloader.net,GFW
 HOST-SUFFIX,appledaily.com,GFW
 HOST-SUFFIX,appledaily.com.hk,GFW
 HOST-SUFFIX,appledaily.com.tw,GFW
+HOST-SUFFIX,approveit.today,GFW
 HOST-SUFFIX,apps.evozi.com,GFW
 HOST-SUFFIX,appshopper.com,GFW
 HOST-SUFFIX,appsocks.net,GFW
@@ -6446,6 +6447,7 @@ HOST-SUFFIX,surfsharkdns.com,GFW
 HOST-SUFFIX,surge-activation.com,GFW
 HOST-SUFFIX,suroot.com,GFW
 HOST-SUFFIX,surrenderat20.net,GFW
+HOST-SUFFIX,surveymonkey.com,GFW
 HOST-SUFFIX,sustainability.google,GFW
 HOST-SUFFIX,suyangg.com,GFW
 HOST-SUFFIX,suyingtv.com,GFW
@@ -7295,6 +7297,7 @@ HOST-SUFFIX,vanilla-jp.com,GFW
 HOST-SUFFIX,vanityfair.com,GFW
 HOST-SUFFIX,vanpeople.com,GFW
 HOST-SUFFIX,vansky.com,GFW
+HOST-SUFFIX,vanta.com,GFW
 HOST-SUFFIX,vaticannews.va,GFW
 HOST-SUFFIX,vatn.org,GFW
 HOST-SUFFIX,vava8.com,GFW
