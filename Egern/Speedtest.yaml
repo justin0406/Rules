@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 19224
+# 规则统计: 19229
 
 domain_set:
   - 083link.brsserver.com.br
@@ -1147,6 +1147,7 @@ domain_set:
   - ilo-speedtest.globe.com.ph
   - imnet.brsserver.com.br
   - impactusspeedtest.com.br
+  - imrteixeira.brsserver.com.br
   - imu2-speedtest.globe.com.ph
   - inbbhaldwani.speedtest.bhaukaalbaba.com
   - ind-nperf.verizon.net
@@ -1421,6 +1422,7 @@ domain_set:
   - kzkdooklaspeed1.jioconnect.com
   - kzmspd2.mci.ir
   - kzn-speedtest.metrofibre.co.za
+  - kzspeedtest01.aunalytics.com
   - l2ss-speedtest.airnetworktelecom.com
   - la-ookla.geolinks.com
   - la-ookla.geolinks.com.prod.hosts.ooklaserver.net
@@ -8190,6 +8192,7 @@ domain_set:
   - speedtest.d1.bharatdatacenter.com
   - speedtest.daancommunications.com
   - speedtest.dabliutech.net.br
+  - speedtest.dacomfibra.com
   - speedtest.dahoranet.com.br
   - speedtest.dakshbroadband.com
   - speedtest.dal.hivelocity.net
@@ -11374,6 +11377,7 @@ domain_set:
   - speedtest.nvnetwork.com.br
   - speedtest.nvtel.com.br
   - speedtest.nwi.com.br
+  - speedtest.nwlab.org
   - speedtest.nxt-telecom.com
   - speedtest.ny.sptrnd.id
   - speedtest.nyc.elcro.digital
@@ -19063,6 +19067,7 @@ domain_set:
   - wplsp.hutch.lk
   - wrbg-speedtest-02.brightspeed.com
   - wrg.speedtest.gci.net
+  - wrlcc.synology.me
   - wrlinkvelocidade.wrlink.com.br
   - wro-o1.speedtest.orange.pl
   - wrsw-speedtest-02.brightspeed.com

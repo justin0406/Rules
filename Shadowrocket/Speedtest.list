@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19224
+# 规则统计: 19229
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -1145,6 +1145,7 @@ DOMAIN,iji-srv-spdprd-001.verointernet.com.br
 DOMAIN,ilo-speedtest.globe.com.ph
 DOMAIN,imnet.brsserver.com.br
 DOMAIN,impactusspeedtest.com.br
+DOMAIN,imrteixeira.brsserver.com.br
 DOMAIN,imu2-speedtest.globe.com.ph
 DOMAIN,inbbhaldwani.speedtest.bhaukaalbaba.com
 DOMAIN,ind-nperf.verizon.net
@@ -1419,6 +1420,7 @@ DOMAIN,kyspeedtest0.digicelbroadband.com
 DOMAIN,kzkdooklaspeed1.jioconnect.com
 DOMAIN,kzmspd2.mci.ir
 DOMAIN,kzn-speedtest.metrofibre.co.za
+DOMAIN,kzspeedtest01.aunalytics.com
 DOMAIN,l2ss-speedtest.airnetworktelecom.com
 DOMAIN,la-ookla.geolinks.com
 DOMAIN,la-ookla.geolinks.com.prod.hosts.ooklaserver.net
@@ -8188,6 +8190,7 @@ DOMAIN,speedtest.cznet.cz
 DOMAIN,speedtest.d1.bharatdatacenter.com
 DOMAIN,speedtest.daancommunications.com
 DOMAIN,speedtest.dabliutech.net.br
+DOMAIN,speedtest.dacomfibra.com
 DOMAIN,speedtest.dahoranet.com.br
 DOMAIN,speedtest.dakshbroadband.com
 DOMAIN,speedtest.dal.hivelocity.net
@@ -11372,6 +11375,7 @@ DOMAIN,speedtest.nvlinternational.com.pe
 DOMAIN,speedtest.nvnetwork.com.br
 DOMAIN,speedtest.nvtel.com.br
 DOMAIN,speedtest.nwi.com.br
+DOMAIN,speedtest.nwlab.org
 DOMAIN,speedtest.nxt-telecom.com
 DOMAIN,speedtest.ny.sptrnd.id
 DOMAIN,speedtest.nyc.elcro.digital
@@ -19061,6 +19065,7 @@ DOMAIN,wpa-speed.magna5.com
 DOMAIN,wplsp.hutch.lk
 DOMAIN,wrbg-speedtest-02.brightspeed.com
 DOMAIN,wrg.speedtest.gci.net
+DOMAIN,wrlcc.synology.me
 DOMAIN,wrlinkvelocidade.wrlink.com.br
 DOMAIN,wro-o1.speedtest.orange.pl
 DOMAIN,wrsw-speedtest-02.brightspeed.com

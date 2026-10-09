@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19224
+# 规则统计: 19229
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -1145,6 +1145,7 @@ HOST,iji-srv-spdprd-001.verointernet.com.br,Speedtest
 HOST,ilo-speedtest.globe.com.ph,Speedtest
 HOST,imnet.brsserver.com.br,Speedtest
 HOST,impactusspeedtest.com.br,Speedtest
+HOST,imrteixeira.brsserver.com.br,Speedtest
 HOST,imu2-speedtest.globe.com.ph,Speedtest
 HOST,inbbhaldwani.speedtest.bhaukaalbaba.com,Speedtest
 HOST,ind-nperf.verizon.net,Speedtest
@@ -1419,6 +1420,7 @@ HOST,kyspeedtest0.digicelbroadband.com,Speedtest
 HOST,kzkdooklaspeed1.jioconnect.com,Speedtest
 HOST,kzmspd2.mci.ir,Speedtest
 HOST,kzn-speedtest.metrofibre.co.za,Speedtest
+HOST,kzspeedtest01.aunalytics.com,Speedtest
 HOST,l2ss-speedtest.airnetworktelecom.com,Speedtest
 HOST,la-ookla.geolinks.com,Speedtest
 HOST,la-ookla.geolinks.com.prod.hosts.ooklaserver.net,Speedtest
@@ -8188,6 +8190,7 @@ HOST,speedtest.cznet.cz,Speedtest
 HOST,speedtest.d1.bharatdatacenter.com,Speedtest
 HOST,speedtest.daancommunications.com,Speedtest
 HOST,speedtest.dabliutech.net.br,Speedtest
+HOST,speedtest.dacomfibra.com,Speedtest
 HOST,speedtest.dahoranet.com.br,Speedtest
 HOST,speedtest.dakshbroadband.com,Speedtest
 HOST,speedtest.dal.hivelocity.net,Speedtest
@@ -11372,6 +11375,7 @@ HOST,speedtest.nvlinternational.com.pe,Speedtest
 HOST,speedtest.nvnetwork.com.br,Speedtest
 HOST,speedtest.nvtel.com.br,Speedtest
 HOST,speedtest.nwi.com.br,Speedtest
+HOST,speedtest.nwlab.org,Speedtest
 HOST,speedtest.nxt-telecom.com,Speedtest
 HOST,speedtest.ny.sptrnd.id,Speedtest
 HOST,speedtest.nyc.elcro.digital,Speedtest
@@ -19061,6 +19065,7 @@ HOST,wpa-speed.magna5.com,Speedtest
 HOST,wplsp.hutch.lk,Speedtest
 HOST,wrbg-speedtest-02.brightspeed.com,Speedtest
 HOST,wrg.speedtest.gci.net,Speedtest
+HOST,wrlcc.synology.me,Speedtest
 HOST,wrlinkvelocidade.wrlink.com.br,Speedtest
 HOST,wro-o1.speedtest.orange.pl,Speedtest
 HOST,wrsw-speedtest-02.brightspeed.com,Speedtest
