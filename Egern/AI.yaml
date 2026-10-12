@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: AI
-# 规则统计: 360
+# 规则统计: 327
 
 domain_set:
   - 7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -17,9 +17,6 @@ domain_set:
   - aki.io
   - alkalicore-pa.clients6.google.com
   - alkalimakersuite-pa.clients6.google.com
-  - anthropic-com.ghost.io
-  - anthropic.auth0.com
-  - anthropic.com.cdn.cloudflare.net
   - antigravity-unleash.goog
   - antigravity.google
   - api-gateway.merge.dev
@@ -121,7 +118,6 @@ domain_set:
   - apple-relay.fastly-edge.com
   - bard.google.com
   - browser-intake-datadoghq.com
-  - browser-intake-us5-datadoghq.com
   - cc.freemodel.dev
   - cdn.delta.dev
   - cdn.usefathom.com
@@ -158,6 +154,7 @@ domain_set:
   - imagine.meta.com
   - infer.flow7.org
   - inference.baseten.co
+  - inference.codeium.com
   - inference.coralbricks.ai
   - inference.do-ai.run
   - inference.generativeai.us-chicago-1.oci.oraclecloud.com
@@ -203,7 +200,8 @@ domain_set:
   - router.huggingface.co
   - router.neosmith.ai
   - router.requesty.ai
-  - servd-anthropic-website.b-cdn.net
+  - server.codeium.com
+  - server.self-serve.windsurf.com
   - static.cloudflareinsights.com
   - sydney.bing.com
   - tinker.thinkingmachines.dev
@@ -224,59 +222,46 @@ domain_suffix_set:
   - aicode.googleapis.com
   - aistudio.google.com
   - algolia.net
-  - android.chat.openai.com
   - anthropic.com
   - antigravity-unleash.goog
   - antigravity.google
   - api.revenuecat.com
   - api.statsig.com
-  - app.launchdarkly.com
+  - apis.google.com
   - apple-relay.akamaized.net
   - apple-relay.apple.com
   - apple-relay.cloudflare.com
   - apple-relay.fastly-edge.com
   - apps.mzstatic.com
-  - auth.openai.com
   - auth0.com
-  - auth0.openai.com
   - bard.google.com
-  - cdn.workos.com
   - cerebras.ai
   - challenges.cloudflare.com
   - chat.com
-  - chat.openai.com
   - chatgpt.com
   - chatgpt.livekit.cloud
   - chatgpt.site
   - clau.de
   - claude.ai
   - claude.com
-  - claudemcpclient.com
-  - claudemcpcontent.com
   - claudeusercontent.com
   - client-api.arkoselabs.com
   - clients6.google.com
-  - clientstream.launchdarkly.com
   - cline.bot
   - clipdrop.co
   - cloudcode-pa.googleapis.com
   - commandcode.ai
   - cp4.cloudflare.com
   - crixet.com
-  - ct.sendgrid.net
   - cursor.sh
   - deepmind.com
   - deepmind.google
-  - desktop.chat.openai.com
   - devin.ai
   - dify.ai
-  - events.launchdarkly.com
   - events.statsigapi.net
-  - featureassets.org
   - featuregates.org
   - firebaseinstallations.googleapis.com
   - fireworks.ai
-  - forwarder.workos.com
   - g.ai
   - gateway.icloud.com
   - geller-pa.googleapis.com
@@ -295,15 +280,11 @@ domain_suffix_set:
   - host.livekit.cloud
   - hyperbolic.ai
   - identrust.com
-  - images.workoscdn.com
   - intercom.io
   - intercomcdn.com
-  - ios.chat.openai.com
   - jasper.ai
   - jetbrains.ai
   - jina.ai
-  - js.intercomcdn.com
-  - js.stripe.com
   - kiro.dev
   - launchdarkly.com
   - makersuite.google.com
@@ -312,8 +293,6 @@ domain_suffix_set:
   - mistral.ai
   - notebooklm.google
   - notebooklm.google.com
-  - o207216.ingest.sentry.io
-  - o33249.ingest.sentry.io
   - oaistatic.com
   - oaiusercontent.com
   - observeit.net
@@ -330,25 +309,17 @@ domain_suffix_set:
   - pool.ntp.org
   - pplx.ai
   - proactivebackend-pa.googleapis.com
-  - prodregistryv2.org
-  - rum.browser-intake-datadoghq.com
   - segment.io
   - sentry.io
-  - setup.auth.openai.com
-  - setup.workos.com
+  - smoot.apple.com
   - sora.com
-  - statsig.com
-  - statsigapi.net
   - stripe.com
-  - tcr9i.chat.openai.com
   - together.ai
   - tokenflux.ai
   - trae.ai
   - turn.livekit.cloud
   - typesafe.ai
   - voyageai.com
-  - workos.com
-  - workos.imgix.net
   - x.ai
   - z.ai
 domain_keyword_set:
@@ -356,16 +327,12 @@ domain_keyword_set:
   - openai
 ip_cidr_set:
   - 129.146.3.78/32
-  - 160.79.104.0/21
   - 160.79.104.0/23
   - 24.199.123.28/32
   - 64.23.132.171/32
 ip_cidr6_set:
-  - 2607:6BC0::/32
   - 2607:6bc0::/48
 asn_set:
-  - 13335
   - 20473
-  - 399358
 url_regex_set:
   - https://www\.google\.com/.*continue=https://gemini\.google\.com.+
