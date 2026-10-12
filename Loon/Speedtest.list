@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19231
+# 规则统计: 19232
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -16489,6 +16489,7 @@ DOMAIN,st-mot.midco.net
 DOMAIN,st-oma-1.binary.net
 DOMAIN,st-ookla.adamdighionlinebd.com
 DOMAIN,st-ookla.virtualiza.me
+DOMAIN,st-ookla.zas.virtualiza.me
 DOMAIN,st-pzo.adslsystem.net
 DOMAIN,st-quissama.workbandalarga.net.br
 DOMAIN,st-rc.midco.net

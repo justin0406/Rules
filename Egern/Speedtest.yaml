@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 19231
+# 规则统计: 19232
 
 domain_set:
   - 083link.brsserver.com.br
@@ -16491,6 +16491,7 @@ domain_set:
   - st-oma-1.binary.net
   - st-ookla.adamdighionlinebd.com
   - st-ookla.virtualiza.me
+  - st-ookla.zas.virtualiza.me
   - st-pzo.adslsystem.net
   - st-quissama.workbandalarga.net.br
   - st-rc.midco.net
