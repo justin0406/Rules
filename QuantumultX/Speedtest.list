@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19232
+# 规则统计: 19233
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -15227,6 +15227,7 @@ HOST,speedtest5.jlm.net.id,Speedtest
 HOST,speedtest5.lintas.net.id,Speedtest
 HOST,speedtest5.mada.ps,Speedtest
 HOST,speedtest5.mtn.com.gh,Speedtest
+HOST,speedtest5.mywnz.com,Speedtest
 HOST,speedtest5.nmsurf.com,Speedtest
 HOST,speedtest5.ooredoo.tn,Speedtest
 HOST,speedtest5.point-broadband.com,Speedtest

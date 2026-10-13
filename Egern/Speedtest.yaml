@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 19232
+# 规则统计: 19233
 
 domain_set:
   - 083link.brsserver.com.br
@@ -15229,6 +15229,7 @@ domain_set:
   - speedtest5.lintas.net.id
   - speedtest5.mada.ps
   - speedtest5.mtn.com.gh
+  - speedtest5.mywnz.com
   - speedtest5.nmsurf.com
   - speedtest5.ooredoo.tn
   - speedtest5.point-broadband.com
