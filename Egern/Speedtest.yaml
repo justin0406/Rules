@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 19233
+# 规则统计: 19234
 
 domain_set:
   - 083link.brsserver.com.br
@@ -2260,6 +2260,7 @@ domain_set:
   - ookla.aratelecom.net.br
   - ookla.araujotelecom.com.br
   - ookla.arenahitech.com.br
+  - ookla.argsment.com
   - ookla.arktelecom.net.br
   - ookla.as138965.net
   - ookla.as400442.net

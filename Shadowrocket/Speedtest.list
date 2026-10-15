@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19233
+# 规则统计: 19234
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -2258,6 +2258,7 @@ DOMAIN,ookla.apuacom.it
 DOMAIN,ookla.aratelecom.net.br
 DOMAIN,ookla.araujotelecom.com.br
 DOMAIN,ookla.arenahitech.com.br
+DOMAIN,ookla.argsment.com
 DOMAIN,ookla.arktelecom.net.br
 DOMAIN,ookla.as138965.net
 DOMAIN,ookla.as400442.net
