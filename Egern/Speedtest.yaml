@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 19234
+# 规则统计: 19236
 
 domain_set:
   - 083link.brsserver.com.br
@@ -9632,6 +9632,7 @@ domain_set:
   - speedtest.infornetms.com.br
   - speedtest.inforr.com.br
   - speedtest.infortec.net.br
+  - speedtest.infortectelecom.net.br
   - speedtest.infortectelecom.rec.br
   - speedtest.inforwaysbma.com.br
   - speedtest.infosystemtelecom.com.br
@@ -13241,6 +13242,7 @@ domain_set:
   - speedtest.udigital.co.in
   - speedtest.ueix.net
   - speedtest.uepg.br
+  - speedtest.ufinet.co.cr
   - speedtest.ufinet.com.ar
   - speedtest.ufinet.com.gt
   - speedtest.ufinet.com.mx
