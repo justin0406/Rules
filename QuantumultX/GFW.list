@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8234
+# 规则统计: 8237
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -160,6 +160,7 @@ HOST-SUFFIX,7capture.com,GFW
 HOST-SUFFIX,7cow.com,GFW
 HOST-SUFFIX,7mmtv.me,GFW
 HOST-SUFFIX,7mmtv.tv,GFW
+HOST-SUFFIX,7x24hrs.com,GFW
 HOST-SUFFIX,8-d.com,GFW
 HOST-SUFFIX,85cc.net,GFW
 HOST-SUFFIX,85cc.us,GFW
@@ -4446,7 +4447,9 @@ HOST-SUFFIX,merlinblog.xyz,GFW
 HOST-SUFFIX,meshrep.com,GFW
 HOST-SUFFIX,mesotw.com,GFW
 HOST-SUFFIX,messenger.com,GFW
+HOST-SUFFIX,meta.ai,GFW
 HOST-SUFFIX,meta.com,GFW
+HOST-SUFFIX,metaaivm.com,GFW
 HOST-SUFFIX,metacafe.com,GFW
 HOST-SUFFIX,metacritic.com,GFW
 HOST-SUFFIX,metacubex.one,GFW

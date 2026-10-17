@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 19236
+# 规则统计: 19239
 
 domain_set:
   - 083link.brsserver.com.br
@@ -3048,6 +3048,7 @@ domain_set:
   - prescott1.cabospeed.com
   - presov.mcom.sk
   - pretoria.spdtst.saix.net
+  - pri-r450-speedtest.metrocomm.com
   - private.brsserver.com.br
   - probolinggo.snt.my.id
   - prodqos-bis.bektel.com
@@ -8752,6 +8753,7 @@ domain_set:
   - speedtest.fiberlink.com.pe
   - speedtest.fiberlink.net.ua
   - speedtest.fiberlinknetwork.net
+  - speedtest.fiberlinksolutionsltd.co.ke
   - speedtest.fiberlinktelecom.net.br
   - speedtest.fiberlync.net
   - speedtest.fibermax.com.ar
@@ -14689,6 +14691,7 @@ domain_set:
   - speedtest2.circlebwirelessllc.com
   - speedtest2.clearnetworx.net
   - speedtest2.cloud.az
+  - speedtest2.co-fi.es
   - speedtest2.colsecor.com.ar
   - speedtest2.compu-semmm.com
   - speedtest2.compusoftinternet.com.br
