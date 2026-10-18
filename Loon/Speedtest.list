@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19239
+# 规则统计: 19245
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -673,6 +673,7 @@ DOMAIN,de-ffm1-ookla-01.wemacom.net
 DOMAIN,de-fra2-lg1.level66.network
 DOMAIN,de-lg.h2.nexus
 DOMAIN,de-speedtest.digitalexample.com
+DOMAIN,de.riospeed.com
 DOMAIN,de.speedtest.waicore.com
 DOMAIN,de.st.spacecore.pro
 DOMAIN,deb-speedtest.zt.hu
@@ -2153,6 +2154,8 @@ DOMAIN,ookla-chm01.movistar.pe
 DOMAIN,ookla-cr.salt.ch
 DOMAIN,ookla-crw.wvnet.edu
 DOMAIN,ookla-cus01.movistar.pe
+DOMAIN,ookla-dc3.services.proxad.net
+DOMAIN,ookla-dc5.services.proxad.net
 DOMAIN,ookla-dfw.gigsouth.com
 DOMAIN,ookla-dps.blip.co.id
 DOMAIN,ookla-estepona.aerioncloud.com
@@ -2171,6 +2174,7 @@ DOMAIN,ookla-lmg.gmdp.net.id
 DOMAIN,ookla-lol01.movistar.pe
 DOMAIN,ookla-london.briantbroadband.com
 DOMAIN,ookla-london01.tropicalgames.net
+DOMAIN,ookla-lyo.services.proxad.net
 DOMAIN,ookla-met.c2.gr
 DOMAIN,ookla-mgm.gigsouth.com
 DOMAIN,ookla-mgw.wvnet.edu
@@ -2180,6 +2184,7 @@ DOMAIN,ookla-mia.gigsouth.com
 DOMAIN,ookla-mil.seeweb.it
 DOMAIN,ookla-mir01.movistar.pe
 DOMAIN,ookla-mispeed.rackgenius.com
+DOMAIN,ookla-mrs.services.proxad.net
 DOMAIN,ookla-muhsinin.morizt.id
 DOMAIN,ookla-ns.orbithsa.com
 DOMAIN,ookla-osl.net.avur.no
@@ -19103,6 +19108,7 @@ DOMAIN,yogyakarta.speedtest.telkom.net.id
 DOMAIN,yourspeed.allwest.com
 DOMAIN,ysj-speedtest.xplore.ca
 DOMAIN,yumbo.fibranetplus.com
+DOMAIN,yyc-speedtest.xeronetworks.co.uk
 DOMAIN,yyc-speedtest.xplore.ca
 DOMAIN,yyc-speedtest02.xplore.ca
 DOMAIN,yyz-speedtest.xplore.ca

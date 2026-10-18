@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 19239
+# 规则统计: 19245
 
 domain_set:
   - 083link.brsserver.com.br
@@ -675,6 +675,7 @@ domain_set:
   - de-fra2-lg1.level66.network
   - de-lg.h2.nexus
   - de-speedtest.digitalexample.com
+  - de.riospeed.com
   - de.speedtest.waicore.com
   - de.st.spacecore.pro
   - deb-speedtest.zt.hu
@@ -2155,6 +2156,8 @@ domain_set:
   - ookla-cr.salt.ch
   - ookla-crw.wvnet.edu
   - ookla-cus01.movistar.pe
+  - ookla-dc3.services.proxad.net
+  - ookla-dc5.services.proxad.net
   - ookla-dfw.gigsouth.com
   - ookla-dps.blip.co.id
   - ookla-estepona.aerioncloud.com
@@ -2173,6 +2176,7 @@ domain_set:
   - ookla-lol01.movistar.pe
   - ookla-london.briantbroadband.com
   - ookla-london01.tropicalgames.net
+  - ookla-lyo.services.proxad.net
   - ookla-met.c2.gr
   - ookla-mgm.gigsouth.com
   - ookla-mgw.wvnet.edu
@@ -2182,6 +2186,7 @@ domain_set:
   - ookla-mil.seeweb.it
   - ookla-mir01.movistar.pe
   - ookla-mispeed.rackgenius.com
+  - ookla-mrs.services.proxad.net
   - ookla-muhsinin.morizt.id
   - ookla-ns.orbithsa.com
   - ookla-osl.net.avur.no
@@ -19105,6 +19110,7 @@ domain_set:
   - yourspeed.allwest.com
   - ysj-speedtest.xplore.ca
   - yumbo.fibranetplus.com
+  - yyc-speedtest.xeronetworks.co.uk
   - yyc-speedtest.xplore.ca
   - yyc-speedtest02.xplore.ca
   - yyz-speedtest.xplore.ca
