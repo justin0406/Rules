@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8237
+# 规则统计: 8238
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -4950,6 +4950,7 @@ HOST-SUFFIX,nordvpn.com,GFW
 HOST-SUFFIX,nos.nl,GFW
 HOST-SUFFIX,note.com,GFW
 HOST-SUFFIX,notepad-plus-plus.org,GFW
+HOST-SUFFIX,notion.com,GFW
 HOST-SUFFIX,notion.site,GFW
 HOST-SUFFIX,notion.so,GFW
 HOST-SUFFIX,nottinghampost.com,GFW
