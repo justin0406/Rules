@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19246
+# 规则统计: 19248
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -3105,6 +3105,7 @@ DOMAIN,qnm-speedtest.viettelidc.com.vn
 DOMAIN,qoeookla-dnvr-01.sys.comcast.net
 DOMAIN,qoeookla-mimi-01.sys.comcast.net
 DOMAIN,qoeookla-ncst-01.sys.comcast.net
+DOMAIN,qoeookla-rmnd-01.sys.comcast.net
 DOMAIN,qoeookla-scla-01.sys.comcast.net
 DOMAIN,qro.speedtest.altafibra.mx
 DOMAIN,qro.speedtest.warian.net
@@ -17047,6 +17048,7 @@ DOMAIN,swift-dog.akl.acsdata.net.nz
 DOMAIN,swis.cc
 DOMAIN,sy5.test.gslnetworks.com.au
 DOMAIN,syd.speedtest.contabo.net
+DOMAIN,syd.speedtest.pttnz.net
 DOMAIN,syd1.speedtest.telstra.net
 DOMAIN,sydgs2speed4.wireline.com.au
 DOMAIN,sydspeedtest.rackdog.com

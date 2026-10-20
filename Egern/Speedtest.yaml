@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 19246
+# 规则统计: 19248
 
 domain_set:
   - 083link.brsserver.com.br
@@ -3107,6 +3107,7 @@ domain_set:
   - qoeookla-dnvr-01.sys.comcast.net
   - qoeookla-mimi-01.sys.comcast.net
   - qoeookla-ncst-01.sys.comcast.net
+  - qoeookla-rmnd-01.sys.comcast.net
   - qoeookla-scla-01.sys.comcast.net
   - qro.speedtest.altafibra.mx
   - qro.speedtest.warian.net
@@ -17049,6 +17050,7 @@ domain_set:
   - swis.cc
   - sy5.test.gslnetworks.com.au
   - syd.speedtest.contabo.net
+  - syd.speedtest.pttnz.net
   - syd1.speedtest.telstra.net
   - sydgs2speed4.wireline.com.au
   - sydspeedtest.rackdog.com
