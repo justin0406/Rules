@@ -1,5 +1,5 @@
 # 规则名称: CN
-# 规则统计: 874
+# 规则统计: 875
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,CN
 HOST,acg.tv,CN
@@ -140,6 +140,7 @@ HOST-SUFFIX,aliyuncs.com,CN
 HOST-SUFFIX,aliyundrive.com,CN
 HOST-SUFFIX,aliyundrive.net,CN
 HOST-SUFFIX,amap.com,CN
+HOST-SUFFIX,amemv.com,CN
 HOST-SUFFIX,anjuke.com,CN
 HOST-SUFFIX,anticheatexpert.com,CN
 HOST-SUFFIX,antpcdn.com,CN
