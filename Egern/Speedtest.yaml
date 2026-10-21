@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 19248
+# 规则统计: 19249
 
 domain_set:
   - 083link.brsserver.com.br
@@ -4232,6 +4232,7 @@ domain_set:
   - spdf.fastpath.gr
   - spdfox.vcnet.com.br
   - spdfra.cndd.net
+  - spdgnet.gnetserver.com.br
   - spdha.getlinks.net.pk
   - spdms.mytpn.net
   - spdms.twincher.ru
