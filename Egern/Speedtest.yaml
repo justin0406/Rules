@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 19249
+# 规则统计: 19253
 
 domain_set:
   - 083link.brsserver.com.br
@@ -2253,6 +2253,7 @@ domain_set:
   - ookla.airbridgebroadband.com
   - ookla.akton.hr
   - ookla.alcloud.com.br
+  - ookla.alida.it
   - ookla.aljeel.ly
   - ookla.alsavanetwork.com
   - ookla.alyrica.net
@@ -2982,6 +2983,7 @@ domain_set:
   - perf-01.ixn.as42689.net
   - perf-01.ixn.as42689.net.prod.hosts.ooklaserver.net
   - perf.keyyo.net
+  - perf1.moji1.sapi.net
   - peshawar-speedtest.cyber.net.pk
   - pfspeedtest.mangonet.com.ve
   - pgs-bhb-spd-246.pegasuswave.in
@@ -6322,6 +6324,7 @@ domain_set:
   - speedtest-neira.visionsatelital.com.co
   - speedtest-net-fra.dispaisy.systems
   - speedtest-net.artcom.pl
+  - speedtest-net.hyprnode.de
   - speedtest-net.mk.de
   - speedtest-net.rfc.pl
   - speedtest-net.xjtlu.edu.cn
@@ -18271,6 +18274,7 @@ domain_set:
   - tvomaszona2.sergioqos.com
   - two.speed.airc.it
   - twq.myspeed.net.sa
+  - tx.speedtest.openinfra.com
   - txda.speedtest.pavlovmedia.net
   - txdllsspeedtest01.mybluepeak.net
   - txg-speedtest.infinirc.com

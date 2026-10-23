@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19249
+# 规则统计: 19253
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -2251,6 +2251,7 @@ DOMAIN,ookla.aipinternetspeedtest.com.br
 DOMAIN,ookla.airbridgebroadband.com
 DOMAIN,ookla.akton.hr
 DOMAIN,ookla.alcloud.com.br
+DOMAIN,ookla.alida.it
 DOMAIN,ookla.aljeel.ly
 DOMAIN,ookla.alsavanetwork.com
 DOMAIN,ookla.alyrica.net
@@ -2980,6 +2981,7 @@ DOMAIN,peregrine.smithville.com
 DOMAIN,perf-01.ixn.as42689.net
 DOMAIN,perf-01.ixn.as42689.net.prod.hosts.ooklaserver.net
 DOMAIN,perf.keyyo.net
+DOMAIN,perf1.moji1.sapi.net
 DOMAIN,peshawar-speedtest.cyber.net.pk
 DOMAIN,pfspeedtest.mangonet.com.ve
 DOMAIN,pgs-bhb-spd-246.pegasuswave.in
@@ -6320,6 +6322,7 @@ DOMAIN,speedtest-nd.netgroup.ua
 DOMAIN,speedtest-neira.visionsatelital.com.co
 DOMAIN,speedtest-net-fra.dispaisy.systems
 DOMAIN,speedtest-net.artcom.pl
+DOMAIN,speedtest-net.hyprnode.de
 DOMAIN,speedtest-net.mk.de
 DOMAIN,speedtest-net.rfc.pl
 DOMAIN,speedtest-net.xjtlu.edu.cn
@@ -18269,6 +18272,7 @@ DOMAIN,tvomaszona1.sergioqos.com
 DOMAIN,tvomaszona2.sergioqos.com
 DOMAIN,two.speed.airc.it
 DOMAIN,twq.myspeed.net.sa
+DOMAIN,tx.speedtest.openinfra.com
 DOMAIN,txda.speedtest.pavlovmedia.net
 DOMAIN,txdllsspeedtest01.mybluepeak.net
 DOMAIN,txg-speedtest.infinirc.com
