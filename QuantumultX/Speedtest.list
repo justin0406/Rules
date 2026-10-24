@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19253
+# 规则统计: 19255
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -6161,6 +6161,7 @@ HOST,speedtest-ldn.voxtelecom.co.za,Speedtest
 HOST,speedtest-lebak.as.net.id,Speedtest
 HOST,speedtest-lecheria.fibextelecom.net,Speedtest
 HOST,speedtest-lem.henet.com.br,Speedtest
+HOST,speedtest-lenexa.resoundnetworks.com,Speedtest
 HOST,speedtest-lgmt.mynextlight.net,Speedtest
 HOST,speedtest-lgs.ultrat.com.br,Speedtest
 HOST,speedtest-lhr-01.pdx.net.uk,Speedtest
@@ -11451,6 +11452,7 @@ HOST,speedtest.onelink.net.ve,Speedtest
 HOST,speedtest.onemax.com,Speedtest
 HOST,speedtest.onetechtelecom.net.br,Speedtest
 HOST,speedtest.onetelecom.psi.br,Speedtest
+HOST,speedtest.onetouchexpress.com,Speedtest
 HOST,speedtest.onetsystem.net,Speedtest
 HOST,speedtest.onfiber.com.mx,Speedtest
 HOST,speedtest.onfibernet.com.br,Speedtest

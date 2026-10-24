@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8238
+# 规则统计: 8240
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -1504,6 +1504,7 @@ HOST-SUFFIX,compileheart.com,GFW
 HOST-SUFFIX,compress.to,GFW
 HOST-SUFFIX,connect.facebook.net,GFW
 HOST-SUFFIX,conoha.jp,GFW
+HOST-SUFFIX,console.typesafe.ai,GFW
 HOST-SUFFIX,constitutionalism.solutions,GFW
 HOST-SUFFIX,contactmagazine.net,GFW
 HOST-SUFFIX,contests.twilio.com,GFW
@@ -2573,6 +2574,7 @@ HOST-SUFFIX,g.kfd.me,GFW
 HOST-SUFFIX,g0v.social,GFW
 HOST-SUFFIX,g2.com,GFW
 HOST-SUFFIX,g6hentai.com,GFW
+HOST-SUFFIX,ga.jspm.io,GFW
 HOST-SUFFIX,gab.com,GFW
 HOST-SUFFIX,gabocorp.com,GFW
 HOST-SUFFIX,gaeproxy.com,GFW

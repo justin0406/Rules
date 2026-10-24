@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 19253
+# 规则统计: 19255
 
 domain_set:
   - 083link.brsserver.com.br
@@ -6163,6 +6163,7 @@ domain_set:
   - speedtest-lebak.as.net.id
   - speedtest-lecheria.fibextelecom.net
   - speedtest-lem.henet.com.br
+  - speedtest-lenexa.resoundnetworks.com
   - speedtest-lgmt.mynextlight.net
   - speedtest-lgs.ultrat.com.br
   - speedtest-lhr-01.pdx.net.uk
@@ -11453,6 +11454,7 @@ domain_set:
   - speedtest.onemax.com
   - speedtest.onetechtelecom.net.br
   - speedtest.onetelecom.psi.br
+  - speedtest.onetouchexpress.com
   - speedtest.onetsystem.net
   - speedtest.onfiber.com.mx
   - speedtest.onfibernet.com.br
