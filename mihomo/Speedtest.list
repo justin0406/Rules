@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19255
+# 规则统计: 19259
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -2487,6 +2487,7 @@ DOMAIN,ookla.liganett.net.br
 DOMAIN,ookla.ligueja.net.br
 DOMAIN,ookla.linknetaracruz.net.br
 DOMAIN,ookla.liv.net.id
+DOMAIN,ookla.lodestarnetworks.co.uk
 DOMAIN,ookla.logininternet.com.br
 DOMAIN,ookla.loglink.com.br
 DOMAIN,ookla.lrnetbandalarga.net.br
@@ -4388,6 +4389,7 @@ DOMAIN,speed-ookla.net-uno.net
 DOMAIN,speed-ookla1.ljdc1.lx.hipernet.si
 DOMAIN,speed-oriente.movistar-sv.net
 DOMAIN,speed-oso.viuinternet.com.br
+DOMAIN,speed-pd.dispaisy.systems
 DOMAIN,speed-pdg-01.ioh.co.id
 DOMAIN,speed-pgd-01.ioh.co.id
 DOMAIN,speed-pgd-02.ioh.co.id
@@ -5374,6 +5376,7 @@ DOMAIN,speedbhzfibra.tripleplay.network
 DOMAIN,speedbks.genznet.id
 DOMAIN,speedblr.benvar.in
 DOMAIN,speedblr.ginternet.in
+DOMAIN,speedbng.n-tel.in
 DOMAIN,speedbodrum.fizynet.com.tr
 DOMAIN,speedbogor.genznet.id
 DOMAIN,speedbot.g20telecom.net
@@ -13049,6 +13052,7 @@ DOMAIN,speedtest.ths.connectfibre.co.uk.prod.hosts.ooklaserver.net
 DOMAIN,speedtest.thsprovider.com.br
 DOMAIN,speedtest.thundernetwork.net.bd
 DOMAIN,speedtest.thundertecnologia.com.br
+DOMAIN,speedtest.thyrakles.de
 DOMAIN,speedtest.tiagosilvaprovedores.com.br
 DOMAIN,speedtest.tiangbersama.com
 DOMAIN,speedtest.ticcol.com

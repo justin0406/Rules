@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8240
+# 规则统计: 8247
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -29,6 +29,7 @@ HOST-SUFFIX,10musume.com,GFW
 HOST-SUFFIX,111666.best,GFW
 HOST-SUFFIX,123av.com,GFW
 HOST-SUFFIX,123av.me,GFW
+HOST-SUFFIX,123av.org,GFW
 HOST-SUFFIX,123rf.com,GFW
 HOST-SUFFIX,12bet.com,GFW
 HOST-SUFFIX,12vpn.com,GFW
@@ -3998,6 +3999,7 @@ HOST-SUFFIX,kichiku-doujinko.com,GFW
 HOST-SUFFIX,kick.com,GFW
 HOST-SUFFIX,kik.com,GFW
 HOST-SUFFIX,killwall.com,GFW
+HOST-SUFFIX,kimootoko.net,GFW
 HOST-SUFFIX,kindle4rss.com,GFW
 HOST-SUFFIX,kindleren.com,GFW
 HOST-SUFFIX,kingdomsalvation.org,GFW
@@ -4526,6 +4528,7 @@ HOST-SUFFIX,miniclip.com,GFW
 HOST-SUFFIX,miniforum.org,GFW
 HOST-SUFFIX,miningpoolhub.com,GFW
 HOST-SUFFIX,ministrybooks.org,GFW
+HOST-SUFFIX,minkch.com,GFW
 HOST-SUFFIX,minzhuhua.net,GFW
 HOST-SUFFIX,minzhuzhanxian.com,GFW
 HOST-SUFFIX,minzhuzhongguo.org,GFW
@@ -4625,6 +4628,7 @@ HOST-SUFFIX,motiyun.com,GFW
 HOST-SUFFIX,motor4ik.ru,GFW
 HOST-SUFFIX,mousebreaker.com,GFW
 HOST-SUFFIX,movements.org,GFW
+HOST-SUFFIX,movie.eroterest.net,GFW
 HOST-SUFFIX,moviefap.com,GFW
 HOST-SUFFIX,mozilla.com,GFW
 HOST-SUFFIX,mozilla.org,GFW
@@ -4926,6 +4930,7 @@ HOST-SUFFIX,nj.com,GFW
 HOST-SUFFIX,njactb.org,GFW
 HOST-SUFFIX,njav.com,GFW
 HOST-SUFFIX,njav.tv,GFW
+HOST-SUFFIX,njavtv.com,GFW
 HOST-SUFFIX,njuice.com,GFW
 HOST-SUFFIX,nl,GFW
 HOST-SUFFIX,nlfreevpn.com,GFW
@@ -5417,6 +5422,7 @@ HOST-SUFFIX,plusbb.com,GFW
 HOST-SUFFIX,pm,GFW
 HOST-SUFFIX,pmatehunter.com,GFW
 HOST-SUFFIX,pmates.com,GFW
+HOST-SUFFIX,po-kaki-to.com,GFW
 HOST-SUFFIX,po2b.com,GFW
 HOST-SUFFIX,pobieramy.top,GFW
 HOST-SUFFIX,podbean.com,GFW
@@ -8115,6 +8121,7 @@ HOST-SUFFIX,zoozle.net,GFW
 HOST-SUFFIX,zophar.net,GFW
 HOST-SUFFIX,zorrovpn.com,GFW
 HOST-SUFFIX,zozotown.com,GFW
+HOST-SUFFIX,zozovideo.com,GFW
 HOST-SUFFIX,zpn.im,GFW
 HOST-SUFFIX,zsdxzk.com,GFW
 HOST-SUFFIX,zspeeder.me,GFW

@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 19255
+# 规则统计: 19259
 
 domain_set:
   - 083link.brsserver.com.br
@@ -2489,6 +2489,7 @@ domain_set:
   - ookla.ligueja.net.br
   - ookla.linknetaracruz.net.br
   - ookla.liv.net.id
+  - ookla.lodestarnetworks.co.uk
   - ookla.logininternet.com.br
   - ookla.loglink.com.br
   - ookla.lrnetbandalarga.net.br
@@ -4390,6 +4391,7 @@ domain_set:
   - speed-ookla1.ljdc1.lx.hipernet.si
   - speed-oriente.movistar-sv.net
   - speed-oso.viuinternet.com.br
+  - speed-pd.dispaisy.systems
   - speed-pdg-01.ioh.co.id
   - speed-pgd-01.ioh.co.id
   - speed-pgd-02.ioh.co.id
@@ -5376,6 +5378,7 @@ domain_set:
   - speedbks.genznet.id
   - speedblr.benvar.in
   - speedblr.ginternet.in
+  - speedbng.n-tel.in
   - speedbodrum.fizynet.com.tr
   - speedbogor.genznet.id
   - speedbot.g20telecom.net
@@ -13051,6 +13054,7 @@ domain_set:
   - speedtest.thsprovider.com.br
   - speedtest.thundernetwork.net.bd
   - speedtest.thundertecnologia.com.br
+  - speedtest.thyrakles.de
   - speedtest.tiagosilvaprovedores.com.br
   - speedtest.tiangbersama.com
   - speedtest.ticcol.com

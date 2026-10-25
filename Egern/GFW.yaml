@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: GFW
-# 规则统计: 8239
+# 规则统计: 8246
 
 domain_set:
   - 7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -32,6 +32,7 @@ domain_suffix_set:
   - 111666.best
   - 123av.com
   - 123av.me
+  - 123av.org
   - 123rf.com
   - 12bet.com
   - 12vpn.com
@@ -4001,6 +4002,7 @@ domain_suffix_set:
   - kick.com
   - kik.com
   - killwall.com
+  - kimootoko.net
   - kindle4rss.com
   - kindleren.com
   - kingdomsalvation.org
@@ -4529,6 +4531,7 @@ domain_suffix_set:
   - miniforum.org
   - miningpoolhub.com
   - ministrybooks.org
+  - minkch.com
   - minzhuhua.net
   - minzhuzhanxian.com
   - minzhuzhongguo.org
@@ -4628,6 +4631,7 @@ domain_suffix_set:
   - motor4ik.ru
   - mousebreaker.com
   - movements.org
+  - movie.eroterest.net
   - moviefap.com
   - mozilla.com
   - mozilla.org
@@ -4929,6 +4933,7 @@ domain_suffix_set:
   - njactb.org
   - njav.com
   - njav.tv
+  - njavtv.com
   - njuice.com
   - nl
   - nlfreevpn.com
@@ -5420,6 +5425,7 @@ domain_suffix_set:
   - pm
   - pmatehunter.com
   - pmates.com
+  - po-kaki-to.com
   - po2b.com
   - pobieramy.top
   - podbean.com
@@ -8118,6 +8124,7 @@ domain_suffix_set:
   - zophar.net
   - zorrovpn.com
   - zozotown.com
+  - zozovideo.com
   - zpn.im
   - zsdxzk.com
   - zspeeder.me

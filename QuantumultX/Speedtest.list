@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19255
+# 规则统计: 19259
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -2487,6 +2487,7 @@ HOST,ookla.liganett.net.br,Speedtest
 HOST,ookla.ligueja.net.br,Speedtest
 HOST,ookla.linknetaracruz.net.br,Speedtest
 HOST,ookla.liv.net.id,Speedtest
+HOST,ookla.lodestarnetworks.co.uk,Speedtest
 HOST,ookla.logininternet.com.br,Speedtest
 HOST,ookla.loglink.com.br,Speedtest
 HOST,ookla.lrnetbandalarga.net.br,Speedtest
@@ -4388,6 +4389,7 @@ HOST,speed-ookla.net-uno.net,Speedtest
 HOST,speed-ookla1.ljdc1.lx.hipernet.si,Speedtest
 HOST,speed-oriente.movistar-sv.net,Speedtest
 HOST,speed-oso.viuinternet.com.br,Speedtest
+HOST,speed-pd.dispaisy.systems,Speedtest
 HOST,speed-pdg-01.ioh.co.id,Speedtest
 HOST,speed-pgd-01.ioh.co.id,Speedtest
 HOST,speed-pgd-02.ioh.co.id,Speedtest
@@ -5374,6 +5376,7 @@ HOST,speedbhzfibra.tripleplay.network,Speedtest
 HOST,speedbks.genznet.id,Speedtest
 HOST,speedblr.benvar.in,Speedtest
 HOST,speedblr.ginternet.in,Speedtest
+HOST,speedbng.n-tel.in,Speedtest
 HOST,speedbodrum.fizynet.com.tr,Speedtest
 HOST,speedbogor.genznet.id,Speedtest
 HOST,speedbot.g20telecom.net,Speedtest
@@ -13049,6 +13052,7 @@ HOST,speedtest.ths.connectfibre.co.uk.prod.hosts.ooklaserver.net,Speedtest
 HOST,speedtest.thsprovider.com.br,Speedtest
 HOST,speedtest.thundernetwork.net.bd,Speedtest
 HOST,speedtest.thundertecnologia.com.br,Speedtest
+HOST,speedtest.thyrakles.de,Speedtest
 HOST,speedtest.tiagosilvaprovedores.com.br,Speedtest
 HOST,speedtest.tiangbersama.com,Speedtest
 HOST,speedtest.ticcol.com,Speedtest
