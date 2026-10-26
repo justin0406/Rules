@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19259
+# 规则统计: 19260
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -152,6 +152,7 @@ DOMAIN,arslantel.online
 DOMAIN,arspeed.phirelink.com
 DOMAIN,asanet.brsserver.com.br
 DOMAIN,asanet1.brsserver.com.br
+DOMAIN,asanettelecom1.brsserver.com.br
 DOMAIN,asbn-speedtest.northstate.net
 DOMAIN,ash-sharq-speedtest.saudi.net.sa
 DOMAIN,ash.speedtest.clouvider.net
