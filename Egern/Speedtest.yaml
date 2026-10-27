@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 19260
+# 规则统计: 19261
 
 domain_set:
   - 083link.brsserver.com.br
@@ -13447,6 +13447,7 @@ domain_set:
   - speedtest.vcnet.com.br
   - speedtest.vcnetwork.com.br
   - speedtest.vdnet.com.br
+  - speedtest.vdns.it
   - speedtest.vechir.ua
   - speedtest.vectorcommunications.net
   - speedtest.vedanetworks.in
