@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19263
+# 规则统计: 19264
 
 no_resolve: true
 domain_set:
@@ -5007,6 +5007,7 @@ domain_set:
   - 'speed.simplux.xyz'
   - 'speed.sjminternet.com.br'
   - 'speed.sjnettelecom.com.br'
+  - 'speed.skk.moe'
   - 'speed.skm.com.ua'
   - 'speed.sky-digital.in'
   - 'speed.skymedia.mn'
