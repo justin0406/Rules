@@ -905,7 +905,7 @@ jobs:
               else
                 tot=$(cat "$p"/*.list | grep -vcE '^[[:space:]]*(#.*)?$' || true)
               fi
-              cnt=$(ls "$p"/* 2>/dev/null | wc -l | tr -d ' ')
+              cnt=$(find "$p" -maxdepth 1 -type f 2>/dev/null | wc -l | tr -d ' ')
               echo "| $p | ${tot:-0} | $cnt |"
             done
 
