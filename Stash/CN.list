@@ -1,5 +1,5 @@
 # 规则名称: CN
-# 规则统计: 872
+# 规则统计: 875
 
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN,acg.tv
@@ -873,3 +873,6 @@ DOMAIN-SUFFIX,zybang.com
 DOMAIN-WILDCARD,qhimgs?.com
 IP-CIDR,140.205.1.0/24,no-resolve
 IP-CIDR,162.14.0.0/18,no-resolve
+USER-AGENT,%E4%BC%98%E9%85%B7*
+USER-AGENT,%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*
+USER-AGENT,TeslaMap

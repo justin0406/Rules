@@ -3,25 +3,42 @@ name: Clear Commits
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+concurrency:
+  group: clear-commits
+  cancel-in-progress: false
+
 jobs:
   build:
-    runs-on: windows-latest
+    # 纯 git 操作，用 Linux runner 即可：Windows 单价是 Linux 的 1.67 倍，
+    # 且 run 默认走 PowerShell，与本脚本的 bash 语义不符
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v7.0.1
         with:
           ref: main
+
       - name: Configure Git
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git checkout --orphan clearhistory
-          git branch -D main
-          git checkout --orphan main
+          set -euo pipefail
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      - name: Rebuild history
+        run: |
+          set -euo pipefail
+          git checkout --orphan clean-main
+          git rm -rf --cached . >/dev/null
           git add .
           git commit -m "Rebuild"
-          git push -f -u origin main
+          git push -f -u origin clean-main:main
+
       - name: Cleanup Workflow
-        uses: Mattraks/delete-workflow-runs@main
+        if: always()
+        uses: Mattraks/delete-workflow-runs@v2.1.0
         with:
           retain_days: 0
           keep_minimum_runs: 0

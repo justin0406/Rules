@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 326
+# 规则统计: 330
 
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN,agentrouter.org
@@ -327,3 +327,7 @@ IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
 IP-CIDR6,2607:6bc0::/48,no-resolve
 IP-ASN,20473,no-resolve
+URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
+AND,((DOMAIN-KEYWORD,antigravity-auto-updater-),(DOMAIN-SUFFIX,run.app))
+AND,((DOMAIN-KEYWORD,chatgpt-async-webps-prod-),(DOMAIN-SUFFIX,webpubsub.azure.com))
+AND,((DOMAIN-KEYWORD,openaicom-api-),(DOMAIN-SUFFIX,azurefd.net))
