@@ -163,6 +163,20 @@ jobs:
           done
           wait
 
+          # 仓库内置补充规则：上游没有、但需要长期稳定存在的条目。
+          # 放在 .github/extra/<集合>.list，文件名必须与集合同名；
+          # 追加后由下一步统一去重排序，与上游重复不会产生冗余。
+          for extra in repo/.github/extra/*.list; do
+            [[ -e "$extra" ]] || continue
+            extra_name="$(basename "$extra" .list)"
+            if [[ ! -f "repo/Ruleset/${extra_name}.list" ]]; then
+              echo "::error::extra ruleset '${extra_name}' has no matching upstream set"
+              exit 1
+            fi
+            cat "$extra" >> "repo/Ruleset/${extra_name}.list"
+            echo "Applied extra rules from $(basename "$extra")"
+          done
+
           # 空规则集视为致命错误：宁可让任务失败，也不要提交空文件覆盖用户订阅
           for f in repo/Ruleset/*.list; do
             if ! grep -q '[^[:space:]]' "$f"; then

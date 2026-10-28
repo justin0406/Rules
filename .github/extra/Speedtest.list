@@ -1,0 +1,9 @@
+# 仓库内置补充规则
+#
+# 上游没有、但需要长期稳定存在的条目写在这里，构建时追加到同名上游集合之后
+# 再统一标准化（去重、排序）。文件名必须与 Merge.yml 中 RULESET_SETS 的集合同名。
+#
+# 用法：新增一行「类型,值」，例如 DOMAIN,example.com
+
+# speed.skk.moe —— skk.moe 自建的测速页面，上游 speedtest.conf 未收录
+DOMAIN,speed.skk.moe
