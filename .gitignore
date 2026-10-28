@@ -1,2 +1,4 @@
 .DS_Store
 
+# 构建中间产物，绝不入库
+Ruleset/
