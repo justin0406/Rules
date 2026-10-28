@@ -9,10 +9,10 @@ api-domain-360859ed	https://raw.githubusercontent.com/Elysian-Realme/FuGfConfig/
 apple_cdn-91c4155c	https://ruleset.skk.moe/List/domainset/apple_cdn.conf	2026-10-28T13:41:44Z	ok
 apple_cn-56cc0693	https://ruleset.skk.moe/List/non_ip/apple_cn.conf	2026-10-28T13:41:44Z	ok
 apple_intelligence-dce3401e	https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf	2026-10-28T13:41:44Z	ok
-cdn-58295c4f	https://ruleset.skk.moe/List/domainset/cdn.conf	2026-10-28T13:41:43Z	ok
+cdn-58295c4f	https://ruleset.skk.moe/List/domainset/cdn.conf	2026-10-28T18:18:06Z	ok
 cdn-6b4bc457	https://ruleset.skk.moe/List/non_ip/cdn.conf	2026-10-28T13:41:44Z	ok
 cdn-domain-f5a41817	https://raw.githubusercontent.com/Elysian-Realme/FuGfConfig/main/ConfigFile/Surge/Apple/cdn-domain.list	2026-10-28T13:41:44Z	ok
-china_ip-be263250	https://ruleset.skk.moe/List/ip/china_ip.conf	2026-10-28T13:41:43Z	ok
+china_ip-be263250	https://ruleset.skk.moe/List/ip/china_ip.conf	2026-10-28T18:18:06Z	ok
 china_ip_ipv6-96c451d8	https://ruleset.skk.moe/List/ip/china_ip_ipv6.conf	2026-10-28T13:41:44Z	ok
 cncidr-b4419558	https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt	2026-10-28T13:41:44Z	ok
 direct-a22fdbee	https://ruleset.skk.moe/List/non_ip/direct.conf	2026-10-28T13:41:43Z	ok
