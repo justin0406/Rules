@@ -1,6 +1,6 @@
 no_resolve: true
 # 规则名称: Speedtest
-# 规则统计: 19261
+# 规则统计: 19263
 
 domain_set:
   - 083link.brsserver.com.br
@@ -10270,6 +10270,7 @@ domain_set:
   - speedtest.leaonet.com.br
   - speedtest.leapdigitals.com
   - speedtest.lecc.co.ls
+  - speedtest.lecrintv.com
   - speedtest.ledinfortelecom.com.br
   - speedtest.leer.jonasdevries.de
   - speedtest.leetits.com
@@ -16404,6 +16405,7 @@ domain_set:
   - srv01-okl-dne.kyivstar.ua
   - srv01-okl-kv.kyivstar.ua
   - srv01-okl-lvv.kyivstar.ua
+  - srv01-speedtest-pa5.ptr.corenix.fr
   - srv01-speedtest.aonet.com.br
   - srv02-sjdm.imj-wanklik.com
   - srv1.5.net.mk
