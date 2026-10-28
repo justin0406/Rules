@@ -121,6 +121,7 @@ jobs:
                 cat <<'EOF'
           https://ruleset.skk.moe/List/domainset/speedtest.conf
           https://git.repcz.link/kelee.one/Tool/Loon/Lsr/SpeedtestInternational.lsr
+          local:.github/sources/Speedtest.list
           EOF
                 ;;
               AI)
@@ -198,6 +199,21 @@ jobs:
                 url="${url#"${url%%[![:space:]]*}"}"   # 去前导空白（heredoc 缩进）
                 [ -n "$url" ] || continue
 
+                # 本地源：写成 local:<repo 内路径>。不下载、不进快照（内容本来就跟着 git 走），
+                # 其余流程与上游源完全一样——同一条去重排序流水线，没有旁路
+                case "$url" in
+                  local:*)
+                    src="repo/${url#local:}"
+                    if [[ ! -s "$src" ]]; then
+                      echo "::error::本地源不存在或为空：$url"
+                      exit 1
+                    fi
+                    cat "$src" >> "$output_file"
+                    printf '\n' >> "$output_file"
+                    continue
+                    ;;
+                esac
+
                 slug=$(slug_for "$url")
                 cache="$CACHE_DIR/${slug}.txt"
                 part="$WORK/${slug}.part"
@@ -242,20 +258,6 @@ jobs:
           hard_fail=""
           for p in $pids; do wait "$p" || hard_fail=1; done
           [[ -z "$hard_fail" ]] || exit 1
-
-          # 仓库内置补充规则：上游没有、但需要长期稳定存在的条目。
-          # 放在 .github/extra/<集合>.list，文件名必须与集合同名；
-          # 追加后由下一步统一去重排序，与上游重复不会产生冗余。
-          for extra in repo/.github/extra/*.list; do
-            [[ -e "$extra" ]] || continue
-            extra_name="$(basename "$extra" .list)"
-            if [[ ! -f "repo/Ruleset/${extra_name}.list" ]]; then
-              echo "::error::extra ruleset '${extra_name}' has no matching upstream set"
-              exit 1
-            fi
-            cat "$extra" >> "repo/Ruleset/${extra_name}.list"
-            echo "Applied extra rules from $(basename "$extra")"
-          done
 
           # 重建 manifest（按 slug 排序，diff 才稳定）
           cat "$WORK"/*.tsv | sort -t "$(printf '\t')" -k1,1 > "$CACHE_DIR/manifest.tsv"

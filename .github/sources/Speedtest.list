@@ -1,0 +1,10 @@
+# 本地规则源
+#
+# 上游没有、但需要长期稳定存在的条目写在这里。它就是一个普通的源：
+# 在 Merge.yml 的源表里用 local:.github/sources/<文件名>.list 引用，
+# 和上游源一样参与标准化（去重、排序），重复条目不会产生冗余。
+#
+# 新增集合：建一个同名文件，再在对应集合的源表里加一行 local: 引用即可。
+
+# speed.skk.moe —— skk.moe 自建的测速页面，上游 speedtest.conf 未收录
+DOMAIN,speed.skk.moe

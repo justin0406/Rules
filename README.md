@@ -45,15 +45,26 @@ https://raw.githubusercontent.com/justin0406/Rules/main/<平台>/<集合>.<后�
 - **Shadowrocket**（2026-10-28 起）：该客户端没有公开的官方规则语法文档，无法验证适配是否正确，不再维护。
 - **Stash**（2026-10-28 起）：不再产出。
 
-## 补充规则
+## 本地规则源
 
-上游没有、但需要长期存在的条目，写在 `.github/extra/<集合名>.list`（例如 `.github/extra/Speedtest.list`）。构建时按文件名追加到同名上游集合，再统一去重排序，因此与上游重复不会产生冗余；文件名必须与工作流里的集合同名，否则构建直接报错。
+上游没有、但需要长期存在的条目，写成 `.github/sources/<集合名>.list`，然后在 `Merge.yml` 对应集合的源表里加一行引用：
 
-目前已有的补充：
+```
+Speedtest)
+  cat <<'EOF'
+https://ruleset.skk.moe/List/domainset/speedtest.conf
+https://git.repcz.link/kelee.one/Tool/Loon/Lsr/SpeedtestInternational.lsr
+local:.github/sources/Speedtest.list
+EOF
+```
 
-| 集合 | 条目 | 原因 |
-|---|---|---|
-| Speedtest | `DOMAIN,speed.skk.moe` | skk.moe 自建测速页，上游 `speedtest.conf` 未收录 |
+`local:` 是本地源的写法（路径相对仓库根）。它和上游源走**同一条**流水线：一样参与标准化、去重、排序，重复条目不会产生冗余；区别只是不下载、不进 `upstream-cache` 快照——内容本来就跟 git 一起版本化了。文件不存在或为空会直接构建失败，不会静默略过。
+
+目前已有的本地源：
+
+| 文件 | 内容 |
+|---|---|
+| `.github/sources/Speedtest.list` | `DOMAIN,speed.skk.moe`（skk 自建测速页，上游 `speedtest.conf` 未收录） |
 
 ## 维护
 
