@@ -211,9 +211,16 @@ jobs:
                 fi
 
                 if [[ -z "$reason" ]]; then
-                  mv "$part" "$cache"
+                  # 内容没变就保留旧时间戳：否则每次运行都会产生一个「只改了 manifest 时间」
+                  # 的空提交，历史里全是噪音
+                  if [[ -f "$cache" ]] && cmp -s "$part" "$cache"; then
+                    ts="$(last_ok_of "$slug")"
+                  else
+                    mv "$part" "$cache"
+                    ts="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+                  fi
                   printf '%s\t%s\t%s\tok\n' \
-                    "$slug" "$url" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$WORK/${slug}.tsv"
+                    "$slug" "$url" "$ts" > "$WORK/${slug}.tsv"
                 elif [[ -f "$cache" ]]; then
                   # 沿用最近一次成功的内容；时间戳保持旧值，一眼能看出快照有多旧
                   printf '%s\t%s\t%s\t%s\n' \
@@ -789,7 +796,13 @@ jobs:
             | xargs -r -I{} basename {} .list | sed 's/^/- /' || true)
 
           if [[ -z "$CHANGED_SETS" ]]; then
-            CHANGED_SETS="- 平台结构更新"
+            CACHE_CHANGED=$(git diff --cached --name-only -- '.github/upstream-cache/*.txt' \
+              | wc -l | tr -d ' ')
+            if [[ "$CACHE_CHANGED" -gt 0 ]]; then
+              CHANGED_SETS="- 上游快照更新 ${CACHE_CHANGED} 个源（产物内容未变）"
+            else
+              CHANGED_SETS="- 平台结构更新"
+            fi
           fi
 
           CURRENT_DATE=$(TZ='Asia/Shanghai' date +'%Y-%m-%d')
@@ -897,14 +910,14 @@ jobs:
             echo ""
             echo "### 上游快照"
             echo ""
-            echo "```"
+            printf '%s\n' '```'   # 反引号必须单引号包住：双引号里会被当成命令替换
             if [[ -f .github/upstream-cache/manifest.tsv ]]; then
-              awk -F'\t' '{ printf "%-10s %-46s %s\n", $4, $3, $2 }' \
+              awk -F'\t' '{ printf "%-8s %-44s %s\n", $4, $3, $2 }' \
                 .github/upstream-cache/manifest.tsv
             else
               echo "(无)"
             fi
-            echo "```"
+            printf '%s\n' '```'
           } >> "$S"
 
       # =========================================================================
