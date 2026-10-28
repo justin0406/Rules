@@ -5,6 +5,7 @@ on:
 
 permissions:
   contents: write
+  actions: write # 删除历史运行记录需要（Mattraks/delete-workflow-runs）
 
 concurrency:
   group: clear-commits

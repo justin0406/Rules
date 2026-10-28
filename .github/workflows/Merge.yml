@@ -22,6 +22,7 @@ on:
 # 推送需要写权限。显式声明，避免仓库默认只读 GITHUB_TOKEN 导致 git push 失败。
 permissions:
   contents: write
+  actions: write # 删除历史运行记录需要（Mattraks/delete-workflow-runs）
 
 # 排队而不是并发：避免两次运行同时 push 造成半写或 push 竞态。
 concurrency:
