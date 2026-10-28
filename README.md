@@ -45,6 +45,23 @@ https://raw.githubusercontent.com/justin0406/Rules/main/<平台>/<集合>.<后�
 - **Shadowrocket**（2026-10-28 起）：该客户端没有公开的官方规则语法文档，无法验证适配是否正确，不再维护。
 - **Stash**（2026-10-28 起）：不再产出。
 
+## 本地验证
+
+改完 workflow 或规则源，推送前跑一次：
+
+```
+scripts/verify.sh
+```
+
+它做三件事：`actionlint`（含 `shellcheck`，校验 workflow 语义与内嵌脚本）→ 在临时副本里按顺序跑一遍构建 → 报告「推送后 CI 会提交哪些文件」。**不碰当前工作区**：构建在临时目录进行，失败也不会留下半成品。
+
+```
+scripts/verify.sh -q    # 只看结论
+scripts/verify.sh -k    # 保留临时目录，排查用
+```
+
+依赖：`bash` 4+、`actionlint`、`shellcheck`、`curl`、`python3`（Lint 需要 PyYAML，缺失时脚本自建 venv）。
+
 ## 本地规则源
 
 上游没有、但需要长期存在的条目，写成 `.github/sources/<集合名>.list`，然后在 `Merge.yml` 对应集合的源表里加一行引用：
