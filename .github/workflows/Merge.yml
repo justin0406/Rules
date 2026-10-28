@@ -2,15 +2,16 @@
 # 规则集自动构建工作流（多平台适配版）
 # 每天 0:05 和 12:05 (UTC) 自动运行，从上游源下载规则并转换为多平台格式
 #
-# 产出平台：Surge / Loon / Stash / QuantumultX / mihomo / Egern
-#           （Shadowrocket 已于 2026-10-28 移除，不再产出）
+# 产出平台：Surge / Loon / QuantumultX / mihomo / Egern
+#           （Shadowrocket、Stash 已分别于 2026-10-28 移除，不再产出）
 #
 # 维护提示：
 #   * 新增/删除平台：改 Step 4「初始化平台目录」与对应的 Platform 步骤
 #   * 平台能力差异集中体现为「删哪些规则类型」，均在各 Platform 步骤开头注明依据
 #   * 任何格式/字段/计数问题由 Step 10「Lint artifacts」在推送前拦截
-#   * 脚本刻意保持 bash 3.2 兼容（不用关联数组 / mapfile / GNU sed -i），
-#     便于在 macOS 上本地复跑整个构建
+#   * bash 基线：CI 用 ubuntu-24.04 自带的 bash 5.x；本地复跑建议用
+#     /opt/homebrew/bin/bash（macOS 自带仍是 3.2）。因此可以使用 bash 4+ 特性，
+#     但仍避免 GNU sed -i / gsed 之类跨平台差异大的写法，保证本地能跑通
 # =============================================================================
 name: Merge
 
@@ -50,7 +51,14 @@ jobs:
           path: repo
 
       # =========================================================================
-      # Step 2: 并发下载上游规则源
+      # Step 2: 并发下载上游规则源（失败时沿用该源最近一次成功的内容）
+      #
+      # 每个上游 URL 在 .github/upstream-cache/ 下有一份快照：
+      #   * 抓取成功 -> 快照被新内容覆盖（快照恒等于「最近一次确认可用」的版本）
+      #   * 抓取失败 -> 用快照内容继续构建，并在摘要/提交消息里标注哪个源降级了
+      #   * 抓取失败且没有快照（新增源从未成功过）-> 直接失败，不猜内容
+      # 目的：上游偶发 5xx、超时、返回 HTML 挑战页时，订阅不会静默缺规则，
+      #       日常构建也不会因为一个第三方源抖动而中断。
       # =========================================================================
       - name: Download upstream sources
         run: |
@@ -61,8 +69,10 @@ jobs:
             exit 1
           fi
 
-          mkdir -p repo/Ruleset
-          rm -f /tmp/failed_sources
+          CACHE_DIR="repo/.github/upstream-cache"
+          WORK=/tmp/dl
+          rm -rf "$WORK"
+          mkdir -p "$CACHE_DIR" "$WORK" repo/Ruleset
 
           RULESET_SETS="Direct CN CDN ChinaIP TG GFW Speedtest AI AppleProxy AppleCN"
 
@@ -145,6 +155,41 @@ jobs:
             esac
           }
 
+          # 短哈希：同名不同源的 basename 靠它区分（sha256sum 与 macOS 的 shasum 都支持）
+          sha8() {
+            if command -v sha256sum >/dev/null 2>&1; then
+              printf '%s' "$1" | sha256sum | cut -c1-8
+            else
+              printf '%s' "$1" | shasum -a 256 | cut -c1-8
+            fi
+          }
+
+          # URL -> 人类可读的快照文件名，例如 china_ip_ipv6-9f8e7d6c.txt
+          slug_for() {
+            local base
+            base=$(printf '%s' "$1" | sed -e 's/[?#].*$//' -e 's|.*/||' \
+                                        -e 's/\.[A-Za-z0-9]*$//' -e 's/[^A-Za-z0-9._-]/_/g')
+            [ -n "$base" ] || base="source"
+            printf '%s-%s\n' "$base" "$(sha8 "$1")"
+          }
+
+          # HTML 挑战页、被截断的响应不能写进快照，否则会把垃圾固化成「最近一次成功」
+          plausible() {
+            local f="$1"
+            [[ -s "$f" ]] || return 1
+            head -c 400 "$f" | grep -qiE '<!doctype|<html|<head|<body' && return 1
+            return 0
+          }
+
+          # 从旧 manifest 里取该源「最近一次成功抓取」的时间
+          last_ok_of() {
+            local slug="$1" ts
+            [ -f "$CACHE_DIR/manifest.tsv" ] || return 0
+            ts=$(awk -F'\t' -v s="$slug" '$1 == s { print $3 }' "$CACHE_DIR/manifest.tsv")
+            printf '%s' "$ts"
+          }
+
+          pids=""
           for name in $RULESET_SETS; do
             (
               output_file="repo/Ruleset/${name}.list"
@@ -152,16 +197,44 @@ jobs:
               while IFS= read -r url; do
                 url="${url#"${url%%[![:space:]]*}"}"   # 去前导空白（heredoc 缩进）
                 [ -n "$url" ] || continue
+
+                slug=$(slug_for "$url")
+                cache="$CACHE_DIR/${slug}.txt"
+                part="$WORK/${slug}.part"
+                reason=""
+
                 if ! curl -fsSL --retry 3 --retry-delay 2 --retry-connrefused \
-                     --connect-timeout 10 --max-time 60 "$url" >> "$output_file"; then
-                  echo "::warning::Failed to download $url"
-                  echo "$name" >> /tmp/failed_sources
+                     --connect-timeout 10 --max-time 60 -o "$part" "$url"; then
+                  reason="下载失败"
+                elif ! plausible "$part"; then
+                  reason="响应不是规则集"
                 fi
-                echo "" >> "$output_file"
+
+                if [[ -z "$reason" ]]; then
+                  mv "$part" "$cache"
+                  printf '%s\t%s\t%s\tok\n' \
+                    "$slug" "$url" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$WORK/${slug}.tsv"
+                elif [[ -f "$cache" ]]; then
+                  # 沿用最近一次成功的内容；时间戳保持旧值，一眼能看出快照有多旧
+                  printf '%s\t%s\t%s\t%s\n' \
+                    "$slug" "$url" "$(last_ok_of "$slug")" "$reason" > "$WORK/${slug}.tsv"
+                else
+                  printf '%s\t%s\t%s\t%s\n' "$slug" "$url" "" "$reason" > "$WORK/${slug}.tsv"
+                  echo "::error::上游不可用且没有可沿用的历史快照：${url}（${reason}）"
+                  exit 1
+                fi
+
+                # 新抓与沿用都从快照读取内容：两条路径产出的中间文件格式完全一致
+                cat "$cache" >> "$output_file"
+                printf '\n' >> "$output_file"
               done <<< "$(urls_for "$name")"
             ) &
+            pids="$pids $!"
           done
-          wait
+
+          hard_fail=""
+          for p in $pids; do wait "$p" || hard_fail=1; done
+          [[ -z "$hard_fail" ]] || exit 1
 
           # 仓库内置补充规则：上游没有、但需要长期稳定存在的条目。
           # 放在 .github/extra/<集合>.list，文件名必须与集合同名；
@@ -177,6 +250,16 @@ jobs:
             echo "Applied extra rules from $(basename "$extra")"
           done
 
+          # 重建 manifest（按 slug 排序，diff 才稳定）
+          cat "$WORK"/*.tsv | sort -t "$(printf '\t')" -k1,1 > "$CACHE_DIR/manifest.tsv"
+
+          # 清掉已不再被引用的旧快照，避免仓库里留孤儿文件
+          for f in "$CACHE_DIR"/*.txt; do
+            [[ -e "$f" ]] || continue
+            slug=$(basename "$f" .txt)
+            grep -q "^${slug}$(printf '\t')" "$CACHE_DIR/manifest.tsv" || rm -f "$f"
+          done
+
           # 空规则集视为致命错误：宁可让任务失败，也不要提交空文件覆盖用户订阅
           for f in repo/Ruleset/*.list; do
             if ! grep -q '[^[:space:]]' "$f"; then
@@ -185,8 +268,21 @@ jobs:
             fi
           done
 
-          if [[ -f /tmp/failed_sources ]]; then
-            echo "::warning::部分源下载失败（已降级发布）: $(sort -u /tmp/failed_sources | tr '\n' ' ')"
+          # 降级报告：写文件供后续步骤（提交消息 / job summary）使用
+          awk -F'\t' '$4 != "ok"' "$CACHE_DIR/manifest.tsv" > "$WORK/degraded.tsv" || true
+          if [[ -s "$WORK/degraded.tsv" ]]; then
+            {
+              echo "以下上游源本次抓取失败，已沿用最近一次成功的快照："
+              echo ""
+              while IFS="$(printf '\t')" read -r slug url ts reason; do
+                echo "- \`${url}\` — ${reason}，快照时间 ${ts:-未知}"
+              done < "$WORK/degraded.tsv"
+            } > /tmp/degraded.md
+            echo "::warning::$(wc -l < "$WORK/degraded.tsv" | tr -d ' ') 个上游源不可用，已沿用历史快照"
+            cat /tmp/degraded.md
+          else
+            : > /tmp/degraded.md
+            echo "全部 $(wc -l < "$CACHE_DIR/manifest.tsv" | tr -d ' ') 个上游源抓取成功"
           fi
 
       # =========================================================================
@@ -270,13 +366,13 @@ jobs:
       - name: Init platform directories
         run: |
           set -euo pipefail
-          PLATFORMS="Surge Loon Stash QuantumultX mihomo Egern"
+          PLATFORMS="Surge Loon QuantumultX mihomo Egern"
           for p in $PLATFORMS; do
             rm -rf "repo/$p"
             mkdir -p "repo/$p"
           done
           # 历史遗留目录：确保不再产出
-          rm -rf repo/Shadowrocket
+          rm -rf repo/Shadowrocket repo/Stash
 
       # =========================================================================
       # Step 5: mihomo
@@ -427,7 +523,7 @@ jobs:
           done
 
       # =========================================================================
-      # Step 8: 直通平台 Surge / Loon / Stash
+      # Step 8: 直通平台 Surge / Loon
       #
       # 依据：
       #   Surge  https://manual.nssurge.com/rules/overview.html
@@ -435,12 +531,9 @@ jobs:
       #   Loon   https://loon0x00.github.io/docs/Rule/domain_rule 等
       #          支持 DOMAIN-WILDCARD / USER-AGENT / URL-REGEX / AND·OR·NOT / no-resolve；
       #          PROCESS-NAME 支持，但仅在 macOS 生效（iOS/tvOS 会忽略进程规则）
-      #   Stash  https://stash.wiki/rules/rule-types
-      #          全类型支持；注意规则集需以 behavior: classical 引用才能生效
-      #          USER-AGENT / URL-REGEX / AND 这类条目
-      #   三者均按标准化后的内容直通，仅追加文件头。
+      #   两者均按标准化后的内容直通，仅追加文件头。
       # =========================================================================
-      - name: Platform - Surge / Loon / Stash
+      - name: Platform - Surge / Loon
         run: |
           set -euo pipefail
 
@@ -461,17 +554,15 @@ jobs:
             add_header "$out" "$fname"
           done
 
-          # Loon / Stash：类型全支持，但都不认识 extended-matching，剥离后原样输出
-          for platform in Loon Stash; do
-            for file in repo/Ruleset/*.list; do
-              [ -f "$file" ] || continue
-              fname=$(basename "$file" .list)
-              out="repo/$platform/$fname.list"
+          # Loon：类型全支持，但不认识 extended-matching，剥离后原样输出
+          for file in repo/Ruleset/*.list; do
+            [ -f "$file" ] || continue
+            fname=$(basename "$file" .list)
+            out="repo/Loon/$fname.list"
 
-              # 剥离后可能出现与已有行完全相同的重复（Surge 里两者语义不同，此处已无区别），去重
-              awk '{ gsub(/,extended-matching/, ""); if (seen[$0]++) next; print }' "$file" > "$out"
-              add_header "$out" "$fname"
-            done
+            # 剥离后可能出现与已有行完全相同的重复（Surge 里两者语义不同，此处已无区别），去重
+            awk '{ gsub(/,extended-matching/, ""); if (seen[$0]++) next; print }' "$file" > "$out"
+            add_header "$out" "$fname"
           done
 
       # =========================================================================
@@ -495,7 +586,7 @@ jobs:
           cd repo
 
           python3 - <<'PY'
-          import glob, os, re, sys
+          import glob, os, re, subprocess, sys
 
           try:
               import yaml
@@ -504,7 +595,7 @@ jobs:
               import yaml
 
           errs = []
-          platforms = ["Surge", "Loon", "Stash", "QuantumultX", "mihomo", "Egern"]
+          platforms = ["Surge", "Loon", "QuantumultX", "mihomo", "Egern"]
           domain_types = {"DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD", "DOMAIN-WILDCARD",
                           "HOST", "HOST-SUFFIX", "HOST-KEYWORD", "HOST-WILDCARD"}
           ip_types = {"IP-CIDR", "IP-CIDR6", "IP6-CIDR", "IP-ASN", "GEOIP"}
@@ -595,6 +686,72 @@ jobs:
                       if " //" in line:
                           errs.append(f"{f}:{i} 残留行内注释: {line.strip()}")
 
+          # ---- 回归闸门：与 HEAD（上一版产物）比较，抓上游异常 ------------------
+          # Lint 的其它检查都是「自洽性」检查：上游把 8000 条规则删到 3000 条时，
+          # 产物依然自洽、依然能通过。所以必须和上一版比一次。
+          def entry_count(path):
+              if path.endswith(".yaml"):
+                  return sum(1 for line in open(path, encoding="utf-8")
+                             if line.startswith("  - "))
+              n = 0
+              for line in open(path, encoding="utf-8"):
+                  s = line.strip()
+                  if not s or s.startswith("#"):
+                      continue
+                  n += 1
+              return n
+
+          def prev_count(path):
+              try:
+                  raw = subprocess.check_output(
+                      ["git", "show", f"HEAD:{path}"],
+                      stderr=subprocess.DEVNULL, text=True)
+              except (subprocess.CalledProcessError, FileNotFoundError):
+                  return None
+              if path.endswith(".yaml"):
+                  return sum(1 for line in raw.splitlines() if line.startswith("  - "))
+              n = 0
+              for line in raw.splitlines():
+                  s = line.strip()
+                  if not s or s.startswith("#"):
+                      continue
+                  n += 1
+              return n
+
+          deltas = open("/tmp/deltas.tsv", "w", encoding="utf-8")
+          for p in platforms:
+              cur_total = prev_total = 0
+              for f in sorted(glob.glob(f"{p}/*")):
+                  cur = entry_count(f)
+                  prev = prev_count(f)
+                  deltas.write(f"{p}\t{os.path.basename(f)}\t"
+                               f"{'' if prev is None else prev}\t{cur}\n")
+                  if prev is None:
+                      continue
+                  cur_total += cur
+                  prev_total += prev
+                  if prev == 0:
+                      continue
+                  drop = (prev - cur) / prev
+                  if drop > 0.10:
+                      errs.append(
+                          f"{f}: 条目数 {prev} → {cur}（-{drop * 100:.1f}%），跌幅超过 10%，疑似上游异常")
+                  elif drop > 0.05:
+                      print(f"::warning:: {f}: 条目数 {prev} → {cur}（-{drop * 100:.1f}%）")
+              if prev_total and cur_total < prev_total * 0.95:
+                  drop = (prev_total - cur_total) / prev_total
+                  errs.append(f"{p}/: 合计 {prev_total} → {cur_total}（-{drop * 100:.1f}%），跌幅超过 5%")
+          deltas.close()
+
+          # 每个集合都必须在每个平台产出 —— 少生成一个平台很难被逐行校验发现
+          expected = ["AI", "AppleCN", "AppleProxy", "CDN", "CN", "ChinaIP",
+                      "Direct", "GFW", "Speedtest", "TG"]
+          for p in platforms:
+              ext = "yaml" if p == "Egern" else "list"
+              for name in expected:
+                  if not os.path.exists(f"{p}/{name}.{ext}"):
+                      errs.append(f"{p}/{name}.{ext} 缺失")
+
           if errs:
               print("\n".join(errs[:80]))
               print(f"\n::error::Lint 失败，共 {len(errs)} 项")
@@ -637,16 +794,125 @@ jobs:
 
           CURRENT_DATE=$(TZ='Asia/Shanghai' date +'%Y-%m-%d')
 
-          git commit -m "Update Rulesets:
-          $CHANGED_SETS
-          ---
-          Time: $CURRENT_DATE"
+          # 有上游降级时，提交消息里留痕，事后翻历史能直接看出哪次是降级发布的
+          {
+            echo "Update Rulesets:"
+            echo "$CHANGED_SETS"
+            echo "---"
+            if [[ -s /tmp/degraded.md ]]; then
+              echo "Upstream fallback: $(wc -l < /tmp/dl/degraded.tsv | tr -d ' ') source(s) reused from cache"
+            fi
+            echo "Time: $CURRENT_DATE"
+          } > /tmp/commit_msg.txt
 
-          # 远端被改动时快速失败，而不是产生半写状态
-          git push origin HEAD:main
+          git commit -F /tmp/commit_msg.txt
+
+          # 人工提交可能抢在前面：rebase 后重试，而不是整轮构建白跑
+          pushed=""
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              pushed=1
+              break
+            fi
+            if [[ "$attempt" -eq 3 ]]; then
+              break
+            fi
+            echo "推送被拒绝，与 origin/main 合入后重试（第 ${attempt} 次）"
+            git fetch --quiet origin main
+            git rebase --quiet origin/main
+            if [[ -n "$(git status --porcelain)" ]]; then
+              echo "::error::rebase 后仍有未提交改动，中止"
+              exit 1
+            fi
+          done
+          if [[ -z "$pushed" ]]; then
+            echo "::error::推送失败（已重试 3 次）"
+            exit 1
+          fi
 
       # =========================================================================
-      # Step 12: 清理历史运行记录，仅保留最近 2 次
+      # Step 12: 运行摘要（无论成败都写，页面上一眼看完聚合结果）
+      # =========================================================================
+      - name: Job summary
+        if: always()
+        run: |
+          set -euo pipefail
+          S="$GITHUB_STEP_SUMMARY"
+          cd repo 2>/dev/null || true
+
+          {
+            echo "## Rules 构建摘要"
+            echo ""
+            if [[ -s /tmp/degraded.md ]]; then
+              echo "### ⚠️ 上游降级"
+              echo ""
+              cat /tmp/degraded.md
+              echo ""
+            else
+              echo "✅ 全部上游源抓取成功"
+              echo ""
+            fi
+
+            echo "### 各集合条目数"
+            echo ""
+            echo "| 集合 | Surge | mihomo | Egern | Loon | QuantumultX | Δ Surge |"
+            echo "|---|---:|---:|---:|---:|---:|---:|"
+            for f in Surge/*.list; do
+              name=$(basename "$f" .list)
+              row="| $name"
+              for p in Surge mihomo Egern Loon QuantumultX; do
+                if [[ "$p" == "Egern" ]]; then
+                  c=$(grep -c '^  - ' "Egern/$name.yaml" || true)
+                else
+                  c=$(grep -vcE '^[[:space:]]*(#.*)?$' "$p/$name.list" || true)
+                fi
+                row="$row | ${c:-0}"
+              done
+              delta=$(awk -F'\t' -v k="Surge" -v n="$name.list" \
+                        '$1 == k && $2 == n && $3 != "" { print $4 - $3 }' /tmp/deltas.tsv 2>/dev/null || true)
+              if [[ -n "${delta:-}" ]]; then
+                if [[ "$delta" -gt 0 ]]; then delta="+$delta"; fi
+                row="$row | $delta |"
+              else
+                row="$row | - |"
+              fi
+              echo "$row"
+            done
+
+            echo ""
+            echo "### 平台合计"
+            echo ""
+            echo "| 平台 | 规则条目 | 文件数 |"
+            echo "|---|---:|---:|"
+            for p in Surge mihomo Egern Loon QuantumultX; do
+              if [[ "$p" == "Egern" ]]; then
+                tot=$(cat Egern/*.yaml | grep -c '^  - ' || true)
+              else
+                tot=$(cat "$p"/*.list | grep -vcE '^[[:space:]]*(#.*)?$' || true)
+              fi
+              cnt=$(ls "$p"/* 2>/dev/null | wc -l | tr -d ' ')
+              echo "| $p | ${tot:-0} | $cnt |"
+            done
+
+            echo ""
+            echo "### 上游快照"
+            echo ""
+            echo "```"
+            if [[ -f .github/upstream-cache/manifest.tsv ]]; then
+              awk -F'\t' '{ printf "%-10s %-46s %s\n", $4, $3, $2 }' \
+                .github/upstream-cache/manifest.tsv
+            else
+              echo "(无)"
+            fi
+            echo "```"
+          } >> "$S"
+
+      # =========================================================================
+      # Step 13: 清理历史运行记录
+      #
+      # keep_minimum_runs: 2 的含义是「当前这次之外再保留 2 次」，实际结果是最多 3 条。
+      # 只清理本工作流的运行记录；Dependabot 的运行记录不在此列。
+      # =========================================================================
       # =========================================================================
       - name: Cleanup Workflow
         if: always()
