@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19264
+# 规则统计: 19266
 
 no_resolve: true
 domain_set:
@@ -5691,6 +5691,7 @@ domain_set:
   - 'speedtest-2.winext.hu'
   - 'speedtest-3.cgates.lt'
   - 'speedtest-3.maxnet.ir'
+  - 'speedtest-34-1g.mustafasevinc.com.tr'
   - 'speedtest-5g.mtn.co.ug'
   - 'speedtest-6.aebc.com'
   - 'speedtest-aba.explorernet.com.br'
@@ -9968,6 +9969,7 @@ domain_set:
   - 'speedtest.jdconect.com.br'
   - 'speedtest.jdimax.com'
   - 'speedtest.jdnet.com.br'
+  - 'speedtest.jdtelecom.com.br'
   - 'speedtest.jeebr.net'
   - 'speedtest.jeefiber.com'
   - 'speedtest.jefferson-afe.com'

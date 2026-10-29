@@ -12,7 +12,7 @@ apple_intelligence-dce3401e	https://ruleset.skk.moe/List/non_ip/apple_intelligen
 cdn-58295c4f	https://ruleset.skk.moe/List/domainset/cdn.conf	2026-10-28T18:18:06Z	ok
 cdn-6b4bc457	https://ruleset.skk.moe/List/non_ip/cdn.conf	2026-10-28T13:41:44Z	ok
 cdn-domain-f5a41817	https://raw.githubusercontent.com/Elysian-Realme/FuGfConfig/main/ConfigFile/Surge/Apple/cdn-domain.list	2026-10-28T13:41:44Z	ok
-china_ip-be263250	https://ruleset.skk.moe/List/ip/china_ip.conf	2026-10-28T18:18:06Z	ok
+china_ip-be263250	https://ruleset.skk.moe/List/ip/china_ip.conf	2026-10-29T05:37:09Z	ok
 china_ip_ipv6-96c451d8	https://ruleset.skk.moe/List/ip/china_ip_ipv6.conf	2026-10-28T13:41:44Z	ok
 cncidr-b4419558	https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt	2026-10-28T13:41:44Z	ok
 direct-a22fdbee	https://ruleset.skk.moe/List/non_ip/direct.conf	2026-10-28T13:41:43Z	ok
@@ -22,7 +22,7 @@ domestic-aa71708f	https://ruleset.skk.moe/List/non_ip/domestic.conf	2026-10-28T1
 gfw-48a4e119	https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt	2026-10-28T13:41:43Z	ok
 global-5ef2951d	https://ruleset.skk.moe/List/non_ip/global.conf	2026-10-28T13:41:44Z	ok
 no-cn-cdn-domain-d6436abb	https://raw.githubusercontent.com/Elysian-Realme/FuGfConfig/main/ConfigFile/Surge/Apple/no-cn-cdn-domain.list	2026-10-28T13:41:43Z	ok
-speedtest-d4a85c60	https://ruleset.skk.moe/List/domainset/speedtest.conf	2026-10-28T13:41:43Z	ok
+speedtest-d4a85c60	https://ruleset.skk.moe/List/domainset/speedtest.conf	2026-10-29T05:37:09Z	ok
 telegram-0204d9b5	https://ruleset.skk.moe/List/ip/telegram.conf	2026-10-28T13:41:44Z	ok
 telegram-fc6ff666	https://ruleset.skk.moe/List/non_ip/telegram.conf	2026-10-28T13:41:43Z	ok
 telegram_asn-f0d45a75	https://ruleset.skk.moe/List/ip/telegram_asn.conf	2026-10-28T13:41:44Z	ok
