@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8247
+# 规则统计: 8248
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -4973,6 +4973,7 @@ HOST-SUFFIX,npm.im,GFW
 HOST-SUFFIX,npm.io,GFW
 HOST-SUFFIX,npmjs.com,GFW
 HOST-SUFFIX,npmjs.org,GFW
+HOST-SUFFIX,npmx.dev,GFW
 HOST-SUFFIX,npnt.me,GFW
 HOST-SUFFIX,npr.org,GFW
 HOST-SUFFIX,nps.gov,GFW

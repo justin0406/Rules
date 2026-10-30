@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8247
+# 规则统计: 8248
 
 no_resolve: true
 domain_set:
@@ -4976,6 +4976,7 @@ domain_suffix_set:
   - 'npm.io'
   - 'npmjs.com'
   - 'npmjs.org'
+  - 'npmx.dev'
   - 'npnt.me'
   - 'npr.org'
   - 'nps.gov'
