@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19266
+# 规则统计: 19267
 
 no_resolve: true
 domain_set:
@@ -9369,6 +9369,7 @@ domain_set:
   - 'speedtest.heuer-und-sack.de'
   - 'speedtest.hfgtelecom.com.br'
   - 'speedtest.hgdata.sk'
+  - 'speedtest.hh.addix.net'
   - 'speedtest.hi-techwls.com.br'
   - 'speedtest.hiboonetworks.com'
   - 'speedtest.hicountry.net'
