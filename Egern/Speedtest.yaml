@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19267
+# 规则统计: 19268
 
 no_resolve: true
 domain_set:
@@ -16759,6 +16759,7 @@ domain_set:
   - 'stdp.cloudbb.com.pk'
   - 'stdpsr2.alus.co.id'
   - 'stdui.colombiamas.net'
+  - 'stealth.net'
   - 'stedmontonwireless.rogers.com'
   - 'stest-bjr.infotechbj.com.br'
   - 'stest-cmo.brasilnet.net.br'

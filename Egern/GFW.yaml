@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8248
+# 规则统计: 8253
 
 no_resolve: true
 domain_set:
@@ -420,6 +420,7 @@ domain_suffix_set:
   - 'ant.design'
   - 'antd.org'
   - 'anthonycalzadilla.com'
+  - 'anthropic.auth0.com'
   - 'anthropic.com'
   - 'anti1984.com'
   - 'antichristendom.com'
@@ -1005,6 +1006,7 @@ domain_suffix_set:
   - 'brucewang.net'
   - 'brutaltgp.com'
   - 'bsky.app'
+  - 'bsky.chat'
   - 'bsky.network'
   - 'bsky.social'
   - 'bt2mag.com'
@@ -1390,7 +1392,10 @@ domain_suffix_set:
   - 'clashyun.com'
   - 'classicalguitarblog.net'
   - 'claude.ai'
+  - 'claude.app'
   - 'claude.com'
+  - 'claudemcpcontent.com'
+  - 'claudeusercontent.com'
   - 'clb.org.hk'
   - 'cldr.unicode.org'
   - 'cleansite.biz'

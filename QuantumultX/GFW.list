@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8248
+# 规则统计: 8253
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -417,6 +417,7 @@ HOST-SUFFIX,answering-islam.org,GFW
 HOST-SUFFIX,ant.design,GFW
 HOST-SUFFIX,antd.org,GFW
 HOST-SUFFIX,anthonycalzadilla.com,GFW
+HOST-SUFFIX,anthropic.auth0.com,GFW
 HOST-SUFFIX,anthropic.com,GFW
 HOST-SUFFIX,anti1984.com,GFW
 HOST-SUFFIX,antichristendom.com,GFW
@@ -1002,6 +1003,7 @@ HOST-SUFFIX,brookings.edu,GFW
 HOST-SUFFIX,brucewang.net,GFW
 HOST-SUFFIX,brutaltgp.com,GFW
 HOST-SUFFIX,bsky.app,GFW
+HOST-SUFFIX,bsky.chat,GFW
 HOST-SUFFIX,bsky.network,GFW
 HOST-SUFFIX,bsky.social,GFW
 HOST-SUFFIX,bt2mag.com,GFW
@@ -1387,7 +1389,10 @@ HOST-SUFFIX,clarionproject.org,GFW
 HOST-SUFFIX,clashyun.com,GFW
 HOST-SUFFIX,classicalguitarblog.net,GFW
 HOST-SUFFIX,claude.ai,GFW
+HOST-SUFFIX,claude.app,GFW
 HOST-SUFFIX,claude.com,GFW
+HOST-SUFFIX,claudemcpcontent.com,GFW
+HOST-SUFFIX,claudeusercontent.com,GFW
 HOST-SUFFIX,clb.org.hk,GFW
 HOST-SUFFIX,cldr.unicode.org,GFW
 HOST-SUFFIX,cleansite.biz,GFW
