@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8253
+# 规则统计: 8256
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -455,6 +455,7 @@ HOST-SUFFIX,api.pureapk.com,GFW
 HOST-SUFFIX,api.recaptcha.net,GFW
 HOST-SUFFIX,api.shuaiapi.com,GFW
 HOST-SUFFIX,api.steampowered.com,GFW
+HOST-SUFFIX,api.themoviedb.org,GFW
 HOST-SUFFIX,apiary.io,GFW
 HOST-SUFFIX,apibay.org,GFW
 HOST-SUFFIX,apigee.com,GFW
@@ -6906,6 +6907,7 @@ HOST-SUFFIX,toroporno.com,GFW
 HOST-SUFFIX,torproject.org,GFW
 HOST-SUFFIX,torrentgalaxy.to,GFW
 HOST-SUFFIX,torrentkitty.tv,GFW
+HOST-SUFFIX,torrentleech.org,GFW
 HOST-SUFFIX,torrentprivacy.com,GFW
 HOST-SUFFIX,torrentproject.se,GFW
 HOST-SUFFIX,torrenty.org,GFW
@@ -8010,6 +8012,7 @@ HOST-SUFFIX,youtubeeducation.com,GFW
 HOST-SUFFIX,youtubegaming.com,GFW
 HOST-SUFFIX,youtubekids.com,GFW
 HOST-SUFFIX,youversion.com,GFW
+HOST-SUFFIX,youversionapi.com,GFW
 HOST-SUFFIX,youwin.com,GFW
 HOST-SUFFIX,youxu.info,GFW
 HOST-SUFFIX,ypncdn.com,GFW
