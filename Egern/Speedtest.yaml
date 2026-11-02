@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19268
+# 规则统计: 19269
 
 no_resolve: true
 domain_set:
@@ -19166,6 +19166,7 @@ domain_suffix_set:
   - 'ookla.rcp.net'
   - 'ookla.surfinternet.com'
   - 'ooklaserver.net'
+  - 'radar.cloudflare.com'
   - 'speed.cloudflare.com'
   - 'speed.googlefiber.net'
   - 'speed.hinet.net'

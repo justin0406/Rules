@@ -8,3 +8,7 @@
 
 # speed.skk.moe —— skk.moe 自建的测速页面，上游 speedtest.conf 未收录
 DOMAIN,speed.skk.moe
+
+# Cloudflare Radar 网络质量测试（radar 页面与 performance.radar 上报）
+# 实际测速流量走 speed.cloudflare.com，上游 speedtest.conf 已收录
+DOMAIN-SUFFIX,radar.cloudflare.com

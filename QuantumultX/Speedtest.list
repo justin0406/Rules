@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19268
+# 规则统计: 19269
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -19163,6 +19163,7 @@ HOST-SUFFIX,ookla.ham1.x-ion.de,Speedtest
 HOST-SUFFIX,ookla.rcp.net,Speedtest
 HOST-SUFFIX,ookla.surfinternet.com,Speedtest
 HOST-SUFFIX,ooklaserver.net,Speedtest
+HOST-SUFFIX,radar.cloudflare.com,Speedtest
 HOST-SUFFIX,speed.cloudflare.com,Speedtest
 HOST-SUFFIX,speed.googlefiber.net,Speedtest
 HOST-SUFFIX,speed.hinet.net,Speedtest
