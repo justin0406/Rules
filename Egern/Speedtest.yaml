@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19269
+# 规则统计: 19270
 
 no_resolve: true
 domain_set:
@@ -8018,6 +8018,7 @@ domain_set:
   - 'speedtest.conectjainternet.com.br'
   - 'speedtest.conectnorte.com.br'
   - 'speedtest.conectplay.com.br'
+  - 'speedtest.conectstelecom.com.br'
   - 'speedtest.conectsul.com.br'
   - 'speedtest.conecttafibra.com.br'
   - 'speedtest.conecttelecom.com.br'
