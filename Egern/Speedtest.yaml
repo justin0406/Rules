@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19270
+# 规则统计: 19272
 
 no_resolve: true
 domain_set:
@@ -5270,6 +5270,7 @@ domain_set:
   - 'speed1.spitfireuk.net'
   - 'speed1.spitfireuk.net.prod.hosts.ooklaserver.net'
   - 'speed1.stafemex.attmex.mx'
+  - 'speed1.supersonicinternet.com'
   - 'speed1.syseleven.net'
   - 'speed1.techdigital.it'
   - 'speed1.teratelecom.com.br'
@@ -9065,6 +9066,7 @@ domain_set:
   - 'speedtest.generacja.pl'
   - 'speedtest.geneseo.com'
   - 'speedtest.genet.ge'
+  - 'speedtest.geniusnetwork.in'
   - 'speedtest.genxbroadband.com'
   - 'speedtest.genznet.id'
   - 'speedtest.geolink.com.pe'
