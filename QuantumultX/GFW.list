@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8256
+# 规则统计: 8257
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -770,6 +770,7 @@ HOST-SUFFIX,bikaa.xyz,GFW
 HOST-SUFFIX,bikac.xyz,GFW
 HOST-SUFFIX,bikaios.xyz,GFW
 HOST-SUFFIX,bild.de,GFW
+HOST-SUFFIX,bilibili.tv,GFW
 HOST-SUFFIX,bilinovel.com,GFW
 HOST-SUFFIX,biliworld.com,GFW
 HOST-SUFFIX,billypan.com,GFW

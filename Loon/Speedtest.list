@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19272
+# 规则统计: 19274
 
 DOMAIN,083link.brsserver.com.br
 DOMAIN,10.speedtesttvzamora.com
@@ -4916,6 +4916,7 @@ DOMAIN,speed.onlinedersm.xyz
 DOMAIN,speed.onlineprovedor.net.br
 DOMAIN,speed.onllinetelecom.com.br
 DOMAIN,speed.onntelecom.com.br
+DOMAIN,speed.open.ad.jp
 DOMAIN,speed.orbitisp.com
 DOMAIN,speed.padumcomputers.in
 DOMAIN,speed.paramirimnet.com.br
@@ -9744,6 +9745,7 @@ DOMAIN,speedtest.interlan.bg
 DOMAIN,speedtest.interlan.cl
 DOMAIN,speedtest.interlan.ro
 DOMAIN,speedtest.interligadosnet.com.br
+DOMAIN,speedtest.interligpro.com.br
 DOMAIN,speedtest.interlink.am
 DOMAIN,speedtest.interlink.net.id
 DOMAIN,speedtest.interlinkfiber.com.br

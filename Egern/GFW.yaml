@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8256
+# 规则统计: 8257
 
 no_resolve: true
 domain_set:
@@ -773,6 +773,7 @@ domain_suffix_set:
   - 'bikac.xyz'
   - 'bikaios.xyz'
   - 'bild.de'
+  - 'bilibili.tv'
   - 'bilinovel.com'
   - 'biliworld.com'
   - 'billypan.com'

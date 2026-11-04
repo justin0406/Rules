@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19272
+# 规则统计: 19274
 
 no_resolve: true
 domain_set:
@@ -4918,6 +4918,7 @@ domain_set:
   - 'speed.onlineprovedor.net.br'
   - 'speed.onllinetelecom.com.br'
   - 'speed.onntelecom.com.br'
+  - 'speed.open.ad.jp'
   - 'speed.orbitisp.com'
   - 'speed.padumcomputers.in'
   - 'speed.paramirimnet.com.br'
@@ -9746,6 +9747,7 @@ domain_set:
   - 'speedtest.interlan.cl'
   - 'speedtest.interlan.ro'
   - 'speedtest.interligadosnet.com.br'
+  - 'speedtest.interligpro.com.br'
   - 'speedtest.interlink.am'
   - 'speedtest.interlink.net.id'
   - 'speedtest.interlinkfiber.com.br'
