@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19274
+# 规则统计: 19276
 
 no_resolve: true
 domain_set:
@@ -898,6 +898,7 @@ domain_set:
   - 'fr-1.node.delton.ovh'
   - 'fr-mrs01.speed.misaka.one'
   - 'fr5.speedtest.gslnetworks.com'
+  - 'fra-de-008.xvperf.net'
   - 'fra-eq5-tptest1.31173.se'
   - 'fra.speedtest.clouvider.net'
   - 'fra.speedtest.csgobans.com'
@@ -2869,6 +2870,7 @@ domain_set:
   - 'ooklaserver10g.inetisp.net'
   - 'ooklaserverngk.trimitra.net.id'
   - 'ooklaservernoc.calfibra.com.ar'
+  - 'ooklaspdtstsvr.zitel.com'
   - 'ooklaspeed.netsv.com.br'
   - 'ooklaspeed.reajnet.com.br'
   - 'ooklaspeed.satcomm.pk'

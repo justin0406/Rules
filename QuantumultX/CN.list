@@ -1,5 +1,5 @@
 # 规则名称: CN
-# 规则统计: 875
+# 规则统计: 876
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,CN
 HOST,acg.tv,CN
@@ -299,6 +299,7 @@ HOST-SUFFIX,didiglobal.com,CN
 HOST-SUFFIX,didistatic.com,CN
 HOST-SUFFIX,digicert.cn,CN
 HOST-SUFFIX,dingtalk.com,CN
+HOST-SUFFIX,dittocdn.com,CN
 HOST-SUFFIX,dizzylab.net,CN
 HOST-SUFFIX,dl.bscstorage.net,CN
 HOST-SUFFIX,dl.delivery.mp.microsoft.com,CN

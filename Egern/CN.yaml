@@ -1,5 +1,5 @@
 # 规则名称: CN
-# 规则统计: 875
+# 规则统计: 876
 
 no_resolve: true
 domain_set:
@@ -302,6 +302,7 @@ domain_suffix_set:
   - 'didistatic.com'
   - 'digicert.cn'
   - 'dingtalk.com'
+  - 'dittocdn.com'
   - 'dizzylab.net'
   - 'dl.bscstorage.net'
   - 'dl.delivery.mp.microsoft.com'
