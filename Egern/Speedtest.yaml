@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19276
+# 规则统计: 19278
 
 no_resolve: true
 domain_set:
@@ -8737,6 +8737,7 @@ domain_set:
   - 'speedtest.fenicyberlink.com'
   - 'speedtest.fenixnet.net.br'
   - 'speedtest.fenixsw.com'
+  - 'speedtest.fenixtelecom.net.br'
   - 'speedtest.fenixtelecomjf.com.br'
   - 'speedtest.fer-net.sk'
   - 'speedtest.ferdonet.sk'
@@ -12910,6 +12911,7 @@ domain_set:
   - 'speedtest.tecsoftnet.com.br'
   - 'speedtest.tecwave.com.br'
   - 'speedtest.teennet.id'
+  - 'speedtest.tefenet.com.br'
   - 'speedtest.teh.megared.net.mx'
   - 'speedtest.tehnoline.hr'
   - 'speedtest.tekgroup.co.za'

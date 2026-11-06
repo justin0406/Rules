@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8257
+# 规则统计: 8256
 
 HOST,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,GFW
 HOST,ccmdl.adobe.com,GFW
@@ -4392,7 +4392,6 @@ HOST-SUFFIX,matters.town,GFW
 HOST-SUFFIX,matthewdgreen.wordpress.com,GFW
 HOST-SUFFIX,mattwilcox.net,GFW
 HOST-SUFFIX,maturejp.com,GFW
-HOST-SUFFIX,maven.neoforged.net,GFW
 HOST-SUFFIX,maven.org,GFW
 HOST-SUFFIX,maxing.jp,GFW
 HOST-SUFFIX,maxjav.com,GFW

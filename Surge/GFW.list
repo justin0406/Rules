@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8257
+# 规则统计: 8256
 
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN,ccmdl.adobe.com
@@ -4392,7 +4392,6 @@ DOMAIN-SUFFIX,matters.town
 DOMAIN-SUFFIX,matthewdgreen.wordpress.com
 DOMAIN-SUFFIX,mattwilcox.net
 DOMAIN-SUFFIX,maturejp.com
-DOMAIN-SUFFIX,maven.neoforged.net
 DOMAIN-SUFFIX,maven.org
 DOMAIN-SUFFIX,maxing.jp
 DOMAIN-SUFFIX,maxjav.com

@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8257
+# 规则统计: 8256
 
 no_resolve: true
 domain_set:
@@ -4395,7 +4395,6 @@ domain_suffix_set:
   - 'matthewdgreen.wordpress.com'
   - 'mattwilcox.net'
   - 'maturejp.com'
-  - 'maven.neoforged.net'
   - 'maven.org'
   - 'maxing.jp'
   - 'maxjav.com'
