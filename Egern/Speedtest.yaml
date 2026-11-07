@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19278
+# 规则统计: 19281
 
 no_resolve: true
 domain_set:
@@ -2844,6 +2844,7 @@ domain_set:
   - 'ooklaserver.cloud.tri.tv.br'
   - 'ooklaserver.cotecal.com.ar'
   - 'ooklaserver.dhoprjkt.biz.id'
+  - 'ooklaserver.dlls.tx.ogital.net'
   - 'ooklaserver.fdwy.nobullnetworks.net'
   - 'ooklaserver.fdwy.nobullnetworks.net.prod.hosts.ooklaserver.net'
   - 'ooklaserver.fjrtelecom.srv.br'
@@ -3115,6 +3116,7 @@ domain_set:
   - 'qoeookla-ncst-01.sys.comcast.net'
   - 'qoeookla-rmnd-01.sys.comcast.net'
   - 'qoeookla-scla-01.sys.comcast.net'
+  - 'qoeookla-seat-01.sys.comcast.net'
   - 'qro.speedtest.altafibra.mx'
   - 'qro.speedtest.warian.net'
   - 'qs220-speed-1.maxumdata.net'
@@ -14231,6 +14233,7 @@ domain_set:
   - 'speedtest1-mtvrwaxf.as20055.net'
   - 'speedtest1-olynwaga.as20055.net'
   - 'speedtest1-ookla.iskon.hr'
+  - 'speedtest1-phnyazjv.as20055.net'
   - 'speedtest1-qncywaxx.as20055.net'
   - 'speedtest1-qupra-ams-nl.ebgp.fi'
   - 'speedtest1-sttlwawb.as20055.net'

@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19278
+# 规则统计: 19281
 
 HOST,083link.brsserver.com.br,Speedtest
 HOST,10.speedtesttvzamora.com,Speedtest
@@ -2842,6 +2842,7 @@ HOST,ooklaserver.citylink.pl,Speedtest
 HOST,ooklaserver.cloud.tri.tv.br,Speedtest
 HOST,ooklaserver.cotecal.com.ar,Speedtest
 HOST,ooklaserver.dhoprjkt.biz.id,Speedtest
+HOST,ooklaserver.dlls.tx.ogital.net,Speedtest
 HOST,ooklaserver.fdwy.nobullnetworks.net,Speedtest
 HOST,ooklaserver.fdwy.nobullnetworks.net.prod.hosts.ooklaserver.net,Speedtest
 HOST,ooklaserver.fjrtelecom.srv.br,Speedtest
@@ -3113,6 +3114,7 @@ HOST,qoeookla-mimi-01.sys.comcast.net,Speedtest
 HOST,qoeookla-ncst-01.sys.comcast.net,Speedtest
 HOST,qoeookla-rmnd-01.sys.comcast.net,Speedtest
 HOST,qoeookla-scla-01.sys.comcast.net,Speedtest
+HOST,qoeookla-seat-01.sys.comcast.net,Speedtest
 HOST,qro.speedtest.altafibra.mx,Speedtest
 HOST,qro.speedtest.warian.net,Speedtest
 HOST,qs220-speed-1.maxumdata.net,Speedtest
@@ -14229,6 +14231,7 @@ HOST,speedtest1-mod.vygr.net,Speedtest
 HOST,speedtest1-mtvrwaxf.as20055.net,Speedtest
 HOST,speedtest1-olynwaga.as20055.net,Speedtest
 HOST,speedtest1-ookla.iskon.hr,Speedtest
+HOST,speedtest1-phnyazjv.as20055.net,Speedtest
 HOST,speedtest1-qncywaxx.as20055.net,Speedtest
 HOST,speedtest1-qupra-ams-nl.ebgp.fi,Speedtest
 HOST,speedtest1-sttlwawb.as20055.net,Speedtest
