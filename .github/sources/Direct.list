@@ -1,0 +1,91 @@
+# 本地规则源
+#
+# 上游没有、但需要长期稳定存在的条目写在这里。它就是一个普通的源：
+# 在 Merge.yml 的源表里用 local:.github/sources/<文件名>.list 引用，
+# 和上游源一样参与标准化（去重、排序），重复条目不会产生冗余。
+
+# 中国 AI 服务商 —— 国内站直连，避免绕道国外代理。
+#
+# 判定方法（2026-11-13 实测）：对每个域名分别用国内 DNS（阿里 223.5.5.5）
+# 与国外 DNS（Cloudflare 1.1.1.1）解析，再用本仓库 ChinaIP 网段判定归属。
+#
+#   * 国内解析到 CN 网段 → 有国内节点 → 直连（本文件收录）
+#   * 国内外解析一致且都在境外 → 纯海外站 → 留在 AI 集合走代理
+#
+# 这条分界很重要：中国厂商普遍是「国内站 + 国际站」双轨，
+# 例如智谱 z.ai（纯海外，国内 DNS 也解析到阿里云国际 8.216.131.x）与
+# bigmodel.cn（国内站）、月之暗面 kimi.ai（纯海外）与 moonshot.cn（国内站）。
+# 按厂商名一刀切会把国际站也拽进直连，反而更慢。
+#
+# 用法：Direct 集合应放在配置的最高优先级，这样这里的直连规则会先于
+# AI 集合命中，不受 DOMAIN-SUFFIX,z.ai 这类粗后缀影响。
+
+# --- 智谱 / Z.ai -----------------------------------------------------------
+# z.ai 为智谱国际站：无国内 GeoDNS 节点（国内外 DNS 都解析到阿里云国际
+# 8.216.131.x），但 2026-11-14 移动宽带实测直连 0.33~0.62s 稳定可用
+# （CMI 对阿里国际链路有优化），与代理路径速度持平——按用户偏好走直连。
+# 后缀覆盖 z.ai 全部子域（zcode / chat 等），不再单列。
+DOMAIN-SUFFIX,z.ai
+DOMAIN-SUFFIX,bigmodel.cn
+DOMAIN-SUFFIX,chatglm.cn
+# chatglm.com 曾在此登记，2026-11-14 移动宽带实测 443 端口四连黑洞
+# （80 通、IP 为阿里云上海，属该 CDN 节点/链路问题而非被墙），访问会黑
+# 到超时；走代理（海外出口 -> 阿里国内节点）反而可达，故移除让其落兜底。
+# chatglm.cn 实测 0.24s 正常，保留。
+
+# --- DeepSeek --------------------------------------------------------------
+DOMAIN-SUFFIX,deepseek.com
+
+# --- 月之暗面 Moonshot / Kimi ----------------------------------------------
+# kimi.ai 纯海外（留 AI 集合），国内站是 .cn / .com
+DOMAIN-SUFFIX,moonshot.cn
+DOMAIN-SUFFIX,kimi.com
+
+# --- 阿里通义 / ModelScope -------------------------------------------------
+# dashscope.aliyuncs.com、tongyi.aliyun.com 已被 CN 集合的 aliyuncs.com /
+# aliyun.com 后缀覆盖，无需重复登记
+DOMAIN-SUFFIX,modelscope.cn
+
+# --- 字节 豆包 / Trae / 火山 -----------------------------------------------
+# ark.cn-beijing.volces.com、doubao.com、seed.bytedance.com 已被 CN 集合覆盖
+DOMAIN-SUFFIX,trae.cn
+DOMAIN-SUFFIX,mchost.guru
+
+# --- 百度文心 --------------------------------------------------------------
+# yiyan / wenxin / qianfan / aip.baidubce.com 已被 CN 集合的 baidu.com 覆盖
+
+# --- 腾讯混元 --------------------------------------------------------------
+# hunyuan.tencent.com 等已被 CN 集合的 tencent.com 覆盖
+
+# --- 讯飞星火 --------------------------------------------------------------
+DOMAIN-SUFFIX,xfyun.cn
+DOMAIN-SUFFIX,xf-yun.com
+
+# --- MiniMax / 海螺 --------------------------------------------------------
+# minimax.io 纯海外（留 AI 集合），国内站是 minimaxi.com
+DOMAIN-SUFFIX,minimaxi.com
+DOMAIN-SUFFIX,hailuoai.com
+
+# --- 阶跃星辰 StepFun ------------------------------------------------------
+# stepfun.ai 纯海外（留 AI 集合），国内站是 stepfun.com
+DOMAIN-SUFFIX,stepfun.com
+
+# --- 百川智能 --------------------------------------------------------------
+DOMAIN-SUFFIX,baichuan-ai.com
+
+# --- 商汤日日新 ------------------------------------------------------------
+DOMAIN-SUFFIX,sensetime.com
+DOMAIN-SUFFIX,sensenova.cn
+
+# --- 零一万物 --------------------------------------------------------------
+DOMAIN-SUFFIX,lingyiwanwu.com
+
+# --- 硅基流动 --------------------------------------------------------------
+# siliconflow.com 纯海外（留 AI 集合），国内站是 siliconflow.cn
+DOMAIN-SUFFIX,siliconflow.cn
+
+# --- 美团 LongCat ----------------------------------------------------------
+DOMAIN-SUFFIX,longcat.chat
+
+# --- 算力 / 其他 -----------------------------------------------------------
+DOMAIN-SUFFIX,suanleme.cn

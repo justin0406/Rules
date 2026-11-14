@@ -1,0 +1,1045 @@
+# =============================================================================
+# 规则集自动构建工作流（多平台适配版）
+# 每天 0:05 和 12:05 (UTC) 自动运行，从上游源下载规则并转换为多平台格式
+#
+# 产出平台：Surge / Loon / QuantumultX / mihomo / Egern
+#           （Shadowrocket、Stash 已分别于 2026-10-28 移除，不再产出）
+#
+# 维护提示：
+#   * 新增/删除平台：改 Step 4「初始化平台目录」与对应的 Platform 步骤
+#   * 平台能力差异集中体现为「删哪些规则类型」，均在各 Platform 步骤开头注明依据
+#   * 任何格式/字段/计数问题由 Step 10「Lint artifacts」在推送前拦截
+#   * bash 基线：CI 用 ubuntu-24.04 自带的 bash 5.x；本地复跑建议用
+#     /opt/homebrew/bin/bash（macOS 自带仍是 3.2）。因此可以使用 bash 4+ 特性，
+#     但仍避免 GNU sed -i / gsed 之类跨平台差异大的写法，保证本地能跑通
+# =============================================================================
+name: Merge
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "5 0,12 * * *"
+
+# 推送需要写权限。显式声明，避免仓库默认只读 GITHUB_TOKEN 导致 git push 失败。
+permissions:
+  contents: write
+  actions: write # 删除历史运行记录需要（Mattraks/delete-workflow-runs）
+
+# 排队而不是并发：避免两次运行同时 push 造成半写或 push 竞态。
+# group 与 ClearCommits.yml 保持一致（repo-write）：后者会 force-push 重建历史，
+# 若两者能同时运行，Merge 的推送会落在被强推覆盖的分支上。
+concurrency:
+  group: repo-write
+  cancel-in-progress: false
+
+jobs:
+  Build:
+    # 固定 24.04 而不是 ubuntu-latest：GitHub 正把 ubuntu-latest 从 24.04 迁往 26.04
+    # （2026-10-19 起，2026-11-19 前完成），awk/sed/sort 行为变化会破坏构建确定性。
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      TZ: "Asia/Shanghai"
+      LC_ALL: C # 让 sort 的排序结果与 locale 无关
+
+    steps:
+      # =========================================================================
+      # Step 1: 检出仓库
+      # =========================================================================
+      - name: Checkout Repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: ${{ github.repository }}
+          path: repo
+
+      # =========================================================================
+      # Step 2: 并发下载上游规则源（失败时沿用该源最近一次成功的内容）
+      #
+      # 每个上游 URL 在 .github/upstream-cache/ 下有一份快照：
+      #   * 抓取成功 -> 快照被新内容覆盖（快照恒等于「最近一次确认可用」的版本）
+      #   * 抓取失败 -> 用快照内容继续构建，并在摘要/提交消息里标注哪个源降级了
+      #   * 抓取失败且没有快照（新增源从未成功过）-> 直接失败，不猜内容
+      # 目的：上游偶发 5xx、超时、返回 HTML 挑战页时，订阅不会静默缺规则，
+      #       日常构建也不会因为一个第三方源抖动而中断。
+      # =========================================================================
+      - name: Download upstream sources
+        run: |
+          set -euo pipefail
+
+          if [[ "${GITHUB_REPOSITORY##*/}" != "Rules" ]]; then
+            echo "::error::This workflow is intended to run in the 'Rules' repository."
+            exit 1
+          fi
+
+          CACHE_DIR="repo/.github/upstream-cache"
+          WORK=/tmp/dl
+          rm -rf "$WORK"
+          mkdir -p "$CACHE_DIR" "$WORK" repo/Ruleset
+
+          RULESET_SETS="Direct CN CDN ChinaIP TG GFW Speedtest AI AppleProxy AppleCN"
+
+          # 每个规则集的上游源（每行一个 URL）
+          urls_for() {
+            case "$1" in
+              Direct)
+                cat <<'EOF'
+          https://ruleset.skk.moe/List/non_ip/direct.conf
+          local:.github/sources/Direct.list
+          local:.github/sources/Direct-CDN.list
+          EOF
+                ;;
+              CN)
+                cat <<'EOF'
+          https://ruleset.skk.moe/List/non_ip/domestic.conf
+          https://ruleset.skk.moe/List/ip/domestic.conf
+          EOF
+                ;;
+              CDN)
+                cat <<'EOF'
+          https://ruleset.skk.moe/List/domainset/cdn.conf
+          https://ruleset.skk.moe/List/non_ip/cdn.conf
+          EOF
+                ;;
+              ChinaIP)
+                cat <<'EOF'
+          https://ruleset.skk.moe/List/ip/china_ip.conf
+          https://ruleset.skk.moe/List/ip/china_ip_ipv6.conf
+          https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt
+          EOF
+                ;;
+              TG)
+                cat <<'EOF'
+          https://ruleset.skk.moe/List/non_ip/telegram.conf
+          https://ruleset.skk.moe/List/ip/telegram.conf
+          https://ruleset.skk.moe/List/ip/telegram_asn.conf
+          EOF
+                ;;
+              GFW)
+                cat <<'EOF'
+          https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+          https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/gfw.txt
+          https://ruleset.skk.moe/List/non_ip/global.conf
+          EOF
+                ;;
+              Speedtest)
+                cat <<'EOF'
+          https://ruleset.skk.moe/List/domainset/speedtest.conf
+          https://git.repcz.link/kelee.one/Tool/Loon/Lsr/SpeedtestInternational.lsr
+          local:.github/sources/Speedtest.list
+          EOF
+                ;;
+              AI)
+                cat <<'EOF'
+          https://ruleset.skk.moe/List/non_ip/ai.conf
+          https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf
+          https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/AI.list
+          https://raw.githubusercontent.com/EAlyce/conf/refs/heads/main/Rule/OpenAI.list
+          https://git.repcz.link/kelee.one/Tool/Loon/Lsr/AI.lsr
+          EOF
+                ;;
+              AppleProxy)
+                cat <<'EOF'
+          https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleProxy/AppleProxy.list
+          https://raw.githubusercontent.com/Elysian-Realme/FuGfConfig/main/ConfigFile/Surge/Apple/no-cn-cdn-domain.list
+          EOF
+                ;;
+              AppleCN)
+                cat <<'EOF'
+          https://raw.githubusercontent.com/Elysian-Realme/FuGfConfig/main/ConfigFile/Surge/Apple/update-domain.list
+          https://raw.githubusercontent.com/Elysian-Realme/FuGfConfig/main/ConfigFile/Surge/Apple/api-domain.list
+          https://raw.githubusercontent.com/Elysian-Realme/FuGfConfig/main/ConfigFile/Surge/Apple/cdn-domain.list
+          https://raw.githubusercontent.com/Elysian-Realme/FuGfConfig/main/ConfigFile/Surge/Apple/domain.list
+          https://ruleset.skk.moe/List/non_ip/apple_cn.conf
+          https://ruleset.skk.moe/List/domainset/apple_cdn.conf
+          local:.github/sources/AppleCN.list
+          EOF
+                ;;
+              *)
+                echo "::error::unknown ruleset: $1" >&2
+                return 1
+                ;;
+            esac
+          }
+
+          # 短哈希：同名不同源的 basename 靠它区分（sha256sum 与 macOS 的 shasum 都支持）
+          sha8() {
+            if command -v sha256sum >/dev/null 2>&1; then
+              printf '%s' "$1" | sha256sum | cut -c1-8
+            else
+              printf '%s' "$1" | shasum -a 256 | cut -c1-8
+            fi
+          }
+
+          # URL -> 人类可读的快照文件名，例如 china_ip_ipv6-9f8e7d6c.txt
+          slug_for() {
+            local base
+            base=$(printf '%s' "$1" | sed -e 's/[?#].*$//' -e 's|.*/||' \
+                                        -e 's/\.[A-Za-z0-9]*$//' -e 's/[^A-Za-z0-9._-]/_/g')
+            [ -n "$base" ] || base="source"
+            printf '%s-%s\n' "$base" "$(sha8 "$1")"
+          }
+
+          # 上游许可：注入产物头部，让许可声明跟着订阅文件走（AGPL/GPL 要求保留署名）。
+          # 许可信息来自各上游仓库的 LICENSE；未声明许可的源如实标注，不臆测。
+          license_for() {
+            case "$1" in
+              *ruleset.skk.moe*) echo "AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)" ;;
+              *Loyalsoldier*)    echo "GPL-3.0" ;;
+              *ACL4SSR*)         echo "CC BY-SA 4.0" ;;
+              *blackmatrix7*)    echo "GPL-2.0" ;;
+              *Elysian-Realme*)  echo "MIT" ;;
+              *fmz200*)          echo "GPL-3.0" ;;
+              *EAlyce*)          echo "MIT" ;;
+              local:*)           echo "本仓库 (AGPL-3.0)" ;;
+              *git.repcz.link*)  echo "未声明" ;;
+              *)                 echo "未声明" ;;
+            esac
+          }
+
+          # HTML 挑战页、被截断的响应不能写进快照，否则会把垃圾固化成「最近一次成功」
+          plausible() {
+            local f="$1"
+            [[ -s "$f" ]] || return 1
+            head -c 400 "$f" | grep -qiE '<!doctype|<html|<head|<body' && return 1
+            return 0
+          }
+
+          # 从旧 manifest 里取该源「最近一次成功抓取」的时间
+          last_ok_of() {
+            local slug="$1" ts
+            [ -f "$CACHE_DIR/manifest.tsv" ] || return 0
+            ts=$(awk -F'\t' -v s="$slug" '$1 == s { print $3 }' "$CACHE_DIR/manifest.tsv")
+            printf '%s' "$ts"
+          }
+
+          pids=""
+          for name in $RULESET_SETS; do
+            (
+              output_file="repo/Ruleset/${name}.list"
+              : > "$output_file"
+              # 该集合的来源与许可，写进产物头部（见各 Platform 步骤的 add_header）
+              meta_file="$WORK/${name}.meta"
+              : > "$meta_file"
+              while IFS= read -r url; do
+                url="${url#"${url%%[![:space:]]*}"}"   # 去前导空白（heredoc 缩进）
+                [ -n "$url" ] || continue
+
+                printf '%s\t%s\n' "$url" "$(license_for "$url")" >> "$meta_file"
+
+                # 本地源：写成 local:<repo 内路径>。不下载、不进快照（内容本来就跟着 git 走），
+                # 其余流程与上游源完全一样——同一条去重排序流水线，没有旁路
+                case "$url" in
+                  local:*)
+                    src="repo/${url#local:}"
+                    if [[ ! -s "$src" ]]; then
+                      echo "::error::本地源不存在或为空：$url"
+                      exit 1
+                    fi
+                    cat "$src" >> "$output_file"
+                    printf '\n' >> "$output_file"
+                    continue
+                    ;;
+                esac
+
+                slug=$(slug_for "$url")
+                cache="$CACHE_DIR/${slug}.txt"
+                part="$WORK/${slug}.part"
+                reason=""
+
+                if ! curl -fsSL --retry 3 --retry-delay 2 --retry-connrefused \
+                     --connect-timeout 10 --max-time 60 -o "$part" "$url"; then
+                  reason="下载失败"
+                elif ! plausible "$part"; then
+                  reason="响应不是规则集"
+                fi
+
+                if [[ -z "$reason" ]]; then
+                  # 内容没变就保留旧时间戳：否则每次运行都会产生一个「只改了 manifest 时间」
+                  # 的空提交，历史里全是噪音
+                  if [[ -f "$cache" ]] && cmp -s "$part" "$cache"; then
+                    ts="$(last_ok_of "$slug")"
+                  else
+                    mv "$part" "$cache"
+                    ts="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+                  fi
+                  printf '%s\t%s\t%s\tok\n' \
+                    "$slug" "$url" "$ts" > "$WORK/${slug}.tsv"
+                elif [[ -f "$cache" ]]; then
+                  # 沿用最近一次成功的内容；时间戳保持旧值，一眼能看出快照有多旧
+                  printf '%s\t%s\t%s\t%s\n' \
+                    "$slug" "$url" "$(last_ok_of "$slug")" "$reason" > "$WORK/${slug}.tsv"
+                else
+                  printf '%s\t%s\t%s\t%s\n' "$slug" "$url" "" "$reason" > "$WORK/${slug}.tsv"
+                  echo "::error::上游不可用且没有可沿用的历史快照：${url}（${reason}）"
+                  exit 1
+                fi
+
+                # 新抓与沿用都从快照读取内容：两条路径产出的中间文件格式完全一致
+                cat "$cache" >> "$output_file"
+                printf '\n' >> "$output_file"
+              done <<< "$(urls_for "$name")"
+            ) &
+            pids="$pids $!"
+          done
+
+          hard_fail=""
+          for p in $pids; do wait "$p" || hard_fail=1; done
+          [[ -z "$hard_fail" ]] || exit 1
+
+          # 重建 manifest（按 slug 排序，diff 才稳定）
+          cat "$WORK"/*.tsv | sort -t "$(printf '\t')" -k1,1 > "$CACHE_DIR/manifest.tsv"
+
+          # 清掉已不再被引用的旧快照，避免仓库里留孤儿文件
+          # 用 awk 按字段精确比较：slug 里的 . 在正则里是任意字符，会误匹配相邻 slug
+          for f in "$CACHE_DIR"/*.txt; do
+            [[ -e "$f" ]] || continue
+            slug=$(basename "$f" .txt)
+            awk -F'\t' -v s="$slug" '$1 == s { found = 1 } END { exit !found }' \
+              "$CACHE_DIR/manifest.tsv" || rm -f "$f"
+          done
+
+          # 空规则集视为致命错误：宁可让任务失败，也不要提交空文件覆盖用户订阅
+          for f in repo/Ruleset/*.list; do
+            if ! grep -q '[^[:space:]]' "$f"; then
+              echo "::error::$(basename "$f") is empty — all upstream sources failed"
+              exit 1
+            fi
+          done
+
+          # 降级报告：写文件供后续步骤（提交消息 / job summary）使用
+          awk -F'\t' '$4 != "ok"' "$CACHE_DIR/manifest.tsv" > "$WORK/degraded.tsv" || true
+          if [[ -s "$WORK/degraded.tsv" ]]; then
+            {
+              echo "以下上游源本次抓取失败，已沿用最近一次成功的快照："
+              echo ""
+              while IFS="$(printf '\t')" read -r slug url ts reason; do
+                echo "- \`${url}\` — ${reason}，快照时间 ${ts:-未知}"
+              done < "$WORK/degraded.tsv"
+            } > /tmp/degraded.md
+            echo "::warning::$(wc -l < "$WORK/degraded.tsv" | tr -d ' ') 个上游源不可用，已沿用历史快照"
+            cat /tmp/degraded.md
+          else
+            : > /tmp/degraded.md
+            echo "全部 $(wc -l < "$CACHE_DIR/manifest.tsv" | tr -d ' ') 个上游源抓取成功"
+          fi
+
+      # =========================================================================
+      # Step 3: 源文件格式标准化 + 去重排序
+      #
+      # 关键修复：清除非跨平台选项（extended-matching / force-remote-dns 等）。
+      # Surge 的 extended-matching 是「同时用 TLS SNI 与 HTTP Host 头参与匹配」的
+      # 匹配范围开关，除 Surge 外没有任何目标平台支持。若不清除，
+      # QuantumultX 会把它当成策略字段，导致整行策略错位。
+      # =========================================================================
+      - name: Normalize Rulesets
+        run: |
+          set -euo pipefail
+
+          for file in repo/Ruleset/*.list; do
+            [ -f "$file" ] || continue
+
+            awk '
+            function sanitize(line,   n, i, opt, type, val, keep, f) {
+              n = split(line, f, ",")
+              if (n < 2) return line
+              type = f[1]
+              val  = f[2]
+              keep = ""
+              for (i = 3; i <= n; i++) {
+                opt = f[i]
+                gsub(/^[ \t]+|[ \t]+$/, "", opt)
+                # no-resolve 只对 IP 类规则有意义，且是唯一跨平台通用的选项
+                if (opt == "no-resolve" && type ~ /^(IP-CIDR|IP-CIDR6|IP-ASN|GEOIP)$/) keep = ",no-resolve"
+                # extended-matching 是 Surge 专有的双头匹配开关，仅 Surge 保留，
+                # 其余平台在各自的 Platform 步骤里剥离
+                else if (opt == "extended-matching" && type ~ /^DOMAIN(-SUFFIX|-KEYWORD|-WILDCARD)?$/) keep = ",extended-matching"
+              }
+              return type "," val keep
+            }
+            { sub(/ \/\/.*$/, "") }
+            /^[[:space:]]*$/ { next }
+            /^[[:space:]]*[#;]/ { next }
+            /ad\.12306\.cn/ { next }      # 上游历史遗留的无效条目
+            /ruleset\.skk\.moe/ { next }  # 过滤自引用域名
+            /^\./ { sub(/^\./, "DOMAIN-SUFFIX,") }
+            !/^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|DOMAIN-WILDCARD|IP-CIDR|IP-CIDR6|IP-ASN|GEOIP|AND|OR|NOT|URL-REGEX|USER-AGENT|PROCESS-NAME|DEST-PORT),/ {
+              if ($0 ~ /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+\/[0-9]+$/) $0 = "IP-CIDR," $0
+              else if ($0 ~ /^[0-9a-fA-F:\/]+$/ && index($0, ":") > 0) $0 = "IP-CIDR6," $0
+              else $0 = "DOMAIN," $0
+            }
+            {
+              # 逻辑规则内含逗号与括号，不能按逗号切分，原样保留
+              if ($0 !~ /^(AND|OR|NOT),/) $0 = sanitize($0)
+              gsub(/, */, ",")
+
+              key = tolower($0)
+              if (seen[key]++) next
+
+              weight = 15
+              if ($0 ~ /^DOMAIN,/) weight = 0
+              else if ($0 ~ /^DOMAIN-SUFFIX,/) weight = 1
+              else if ($0 ~ /^DOMAIN-KEYWORD,/) weight = 2
+              else if ($0 ~ /^DOMAIN-WILDCARD,/) weight = 3
+              else if ($0 ~ /^IP-CIDR,/) weight = 4
+              else if ($0 ~ /^IP-CIDR6,/) weight = 5
+              else if ($0 ~ /^IP-ASN,/) weight = 6
+              else if ($0 ~ /^PROCESS-NAME,/) weight = 7
+              else if ($0 ~ /^URL-REGEX,/) weight = 8
+              else if ($0 ~ /^USER-AGENT,/) weight = 9
+              else if ($0 ~ /^GEOIP,/) weight = 10
+              else if ($0 ~ /^AND,/) weight = 11
+              else if ($0 ~ /^OR,/) weight = 12
+              else if ($0 ~ /^NOT,/) weight = 13
+              else if ($0 ~ /^DEST-PORT,/) weight = 14
+
+              print weight " " $0
+            }' "$file" | sort -k1,1n -k2,2 | cut -d' ' -f2- > "$file.tmp"
+
+            mv "$file.tmp" "$file"
+          done
+
+      # =========================================================================
+      # Step 4: 初始化平台目录
+      #
+      # 产物头部由 scripts/rulehdr.sh 统一生成（五个平台共用同一份实现，
+      # 避免头部格式在五个步骤里各自漂移）。各 Platform 步骤 source 它。
+      # =========================================================================
+      - name: Init platform directories
+        run: |
+          set -euo pipefail
+          PLATFORMS="Surge Loon QuantumultX mihomo Egern"
+          for p in $PLATFORMS; do
+            rm -rf "repo/$p"
+            mkdir -p "repo/$p"
+          done
+          # 历史遗留目录：确保不再产出
+          rm -rf repo/Shadowrocket repo/Stash
+
+      # =========================================================================
+      # Step 5: mihomo
+      #
+      # 能力差异（依据 https://wiki.metacubex.one/config/rules/）：
+      #   * 不支持 USER-AGENT / URL-REGEX（HTTP 层规则）        -> 删除
+      #   * 支持 DOMAIN-WILDCARD，当前版本文档写明支持 * 与 ?。这里仍把含 ? 的
+      #     转成 DOMAIN-REGEX：语义等价，且对只认 * 的旧版本保持兼容。
+      #   * 剥离 extended-matching 后，同一域名可能与原本不带该选项的行重复，
+      #     必须去重（Loon 步骤同理），否则产物里出现重复条目
+      # =========================================================================
+      - name: Platform - mihomo
+        run: |
+          set -euo pipefail
+          . repo/scripts/rulehdr.sh
+
+          for file in repo/Ruleset/*.list; do
+            [ -f "$file" ] || continue
+            fname=$(basename "$file" .list)
+            out="repo/mihomo/$fname.list"
+
+            awk -F, -v OFS=, '
+            function glob2regex(p,   r, i, c, special) {
+              special = ".\\^$|+()[]{}"
+              r = ""
+              for (i = 1; i <= length(p); i++) {
+                c = substr(p, i, 1)
+                if (c == "*") r = r ".*"
+                else if (c == "?") r = r "."
+                else if (index(special, c) > 0) r = r "\\" c
+                else r = r c
+              }
+              return "^" r "$"
+            }
+            { gsub(/,extended-matching/, "") }
+            /^USER-AGENT,/ || /^URL-REGEX,/ { next }
+            # 含 ? 的通配符转正则；赋值给 $0 后再统一走去重，避免这条分支绕过去重
+            /^DOMAIN-WILDCARD,/ && $2 ~ /\?/ { $0 = "DOMAIN-REGEX," glob2regex($2) }
+            { if (seen[$0]++) next; print }' "$file" > "$out"
+
+            add_header "$out" "$fname" "/tmp/dl/$fname.meta"
+          done
+
+      # =========================================================================
+      # Step 6: Egern
+      #
+      # 能力差异（依据 https://egernapp.com/docs/configuration/rules）：
+      #   * 无进程规则                                    -> 删除 PROCESS-NAME
+      #   * 支持 user_agent_set / url_regex_set           -> 保留
+      #   * AND/OR/NOT 的 and_set/or_set/not_set 字段存在，但官方文档只给了顶层
+      #     and/or 的写法、未给规则集内嵌套示例，为不制造无法解析的产物暂不生成
+      #   * 规则集值必须加引号：* 是 YAML 别名指示符，且 url_regex 含反斜杠，
+      #     双引号标量会把 \. 当非法转义 -> 统一用单引号
+      #   * domain_wildcard_set 的文档只以 * 举例，? 是否支持未确认。含 ? 的
+      #     通配符转进 domain_regex_set（该 key 文档确认存在）：若 Egern 不认 ?，
+      #     留在 wildcard 集合里会静默永不匹配；转正则则两种实现下都正确
+      # =========================================================================
+      - name: Platform - Egern
+        run: |
+          set -euo pipefail
+          . repo/scripts/rulehdr.sh
+
+          for file in repo/Ruleset/*.list; do
+            [ -f "$file" ] || continue
+            fname=$(basename "$file" .list)
+            body="repo/Egern/$fname.body"
+            out="repo/Egern/$fname.yaml"
+
+            awk '
+            BEGIN {
+              SQ = sprintf("%c", 39)
+              # 输出顺序固定：与既有产物一致的 set 键顺序，转正则的键放最后
+              order[1] = "domain_set";           types["DOMAIN"]         = order[1]
+              order[2] = "domain_suffix_set";    types["DOMAIN-SUFFIX"]  = order[2]
+              order[3] = "domain_keyword_set";   types["DOMAIN-KEYWORD"] = order[3]
+              order[4] = "domain_wildcard_set";  types["DOMAIN-WILDCARD"] = order[4]
+              order[5] = "ip_cidr_set";          types["IP-CIDR"]        = order[5]
+              order[6] = "ip_cidr6_set";         types["IP-CIDR6"]       = order[6]
+              order[7] = "asn_set";              types["IP-ASN"]         = order[7]
+              order[8] = "geoip_set";            types["GEOIP"]          = order[8]
+              order[9] = "url_regex_set";        types["URL-REGEX"]      = order[9]
+              order[10] = "user_agent_set";      types["USER-AGENT"]     = order[10]
+              order[11] = "dest_port_set";       types["DEST-PORT"]      = order[11]
+              order[12] = "domain_regex_set"   # 由含 ? 的通配符转换而来
+            }
+            # 与 mihomo 步骤同一套 glob->regex 转换，保证两平台对同一条通配符的理解一致
+            function glob2regex(p,   r, i, c, special) {
+              special = ".\\^$|+()[]{}"
+              r = ""
+              for (i = 1; i <= length(p); i++) {
+                c = substr(p, i, 1)
+                if (c == "*") r = r ".*"
+                else if (c == "?") r = r "."
+                else if (index(special, c) > 0) r = r "\\" c
+                else r = r c
+              }
+              return "^" r "$"
+            }
+            { gsub(/,extended-matching/, "") }
+            /^PROCESS-NAME,/ || /^AND,/ || /^OR,/ || /^NOT,/ { next }
+            {
+              split($0, arr, ",")
+              type = arr[1]
+              val  = arr[2]
+              if (!(type in types)) next
+
+              # 含 ? 的通配符转正则集合（? 在 Egern wildcard 里的支持未确认）
+              setname = types[type]
+              if (type == "DOMAIN-WILDCARD" && val ~ /\?/) {
+                setname = "domain_regex_set"
+                val = glob2regex(val)
+              }
+
+              key = setname SUBSEP val
+              if (key in seen) next
+              seen[key] = 1
+
+              # 先按集合缓存，END 里按固定顺序输出：
+              # 若在这里逐条打印，同一集合的键会被别的集合打断，产出重复的 YAML 键
+              gsub(SQ, SQ SQ, val)
+              items[setname, ++count[setname]] = SQ val SQ
+            }
+            END {
+              for (i = 1; i <= 12; i++) {
+                s = order[i]
+                if (!count[s]) continue
+                print s ":"
+                for (j = 1; j <= count[s]; j++) printf "  - %s\n", items[s, j]
+              }
+            }' "$file" > "$body"
+
+            {
+              # no_resolve 是 Egern 规则集文件的合法顶层 key，仅对 IP 类规则生效。
+              # 必须排在头部注释之后、各 set 键之前（YAML 顶层键顺序无关，但放最前面最直观）
+              if grep -q ',no-resolve' "$file"; then echo "no_resolve: true"; fi
+              cat "$body"
+            } > "$out"
+
+            add_header "$out" "$fname" "/tmp/dl/$fname.meta"
+            rm -f "$body"
+          done
+
+      # =========================================================================
+      # Step 7: QuantumultX
+      #
+      # 能力差异（依据官方 sample.conf 的 [filter_local] 段）：
+      #   * 不支持 PROCESS-NAME / AND / OR / NOT / URL-REGEX / DEST-PORT -> 删除
+      #   * 不支持 no-resolve -> 删除（否则会被当成策略名）
+      #   * 策略名由脚本注入为第 3 段，因此绝不能残留任何额外选项字段
+      # =========================================================================
+      - name: Platform - QuantumultX
+        run: |
+          set -euo pipefail
+          . repo/scripts/rulehdr.sh
+
+          for file in repo/Ruleset/*.list; do
+            [ -f "$file" ] || continue
+            fname=$(basename "$file" .list)
+            out="repo/QuantumultX/$fname.list"
+
+            awk -v policy="$fname" -F, -v OFS=, '
+            /^PROCESS-NAME,/ || /^AND,/ || /^OR,/ || /^NOT,/ || /^DEST-PORT,/ || /^URL-REGEX,/ { next }
+            {
+              type = $1
+              if (type == "DOMAIN")              type = "HOST"
+              else if (type == "DOMAIN-SUFFIX")  type = "HOST-SUFFIX"
+              else if (type == "DOMAIN-KEYWORD") type = "HOST-KEYWORD"
+              else if (type == "DOMAIN-WILDCARD") type = "HOST-WILDCARD"
+              else if (type == "IP-CIDR6")       type = "IP6-CIDR"
+
+              print type, $2, policy
+            }' "$file" > "$out"
+
+            add_header "$out" "$fname" "/tmp/dl/$fname.meta"
+          done
+
+      # =========================================================================
+      # Step 8: 直通平台 Surge / Loon
+      #
+      # 依据：
+      #   Surge  https://manual.nssurge.com/rules/overview.html
+      #          独有 extended-matching（同时用 TLS SNI 与 HTTP Host 头匹配），故保留
+      #   Loon   https://loon0x00.github.io/docs/Rule/domain_rule 等
+      #          支持 DOMAIN-WILDCARD / USER-AGENT / URL-REGEX / AND·OR·NOT / no-resolve；
+      #          PROCESS-NAME 支持，但仅在 macOS 生效（iOS/tvOS 会忽略进程规则）
+      #   两者均按标准化后的内容直通，仅追加文件头。
+      # =========================================================================
+      - name: Platform - Surge / Loon
+        run: |
+          set -euo pipefail
+          . repo/scripts/rulehdr.sh
+
+          # Surge：唯一支持 extended-matching 的平台，原样保留该选项
+          for file in repo/Ruleset/*.list; do
+            [ -f "$file" ] || continue
+            fname=$(basename "$file" .list)
+            out="repo/Surge/$fname.list"
+
+            cp "$file" "$out"
+            add_header "$out" "$fname" "/tmp/dl/$fname.meta"
+          done
+
+          # Loon：类型全支持，但不认识 extended-matching，剥离后原样输出
+          for file in repo/Ruleset/*.list; do
+            [ -f "$file" ] || continue
+            fname=$(basename "$file" .list)
+            out="repo/Loon/$fname.list"
+
+            # 剥离后可能出现与已有行完全相同的重复（Surge 里两者语义不同，此处已无区别），去重
+            awk '{ gsub(/,extended-matching/, ""); if (seen[$0]++) next; print }' "$file" > "$out"
+            add_header "$out" "$fname" "/tmp/dl/$fname.meta"
+          done
+
+      # =========================================================================
+      # Step 9: 清理暂存目录
+      #
+      # 必须删除：repo/Ruleset 是内部中间产物，若残留会被 git add -A 一起提交，
+      # 既暴露构建中间状态，也让仓库体积翻倍。
+      # =========================================================================
+      - name: Cleanup staging
+        if: always()
+        run: |
+          set -euo pipefail
+          rm -rf repo/Ruleset
+
+      # =========================================================================
+      # Step 10: 产物 Lint —— 推送前的最后一道闸门
+      # =========================================================================
+      - name: Lint artifacts
+        run: |
+          set -euo pipefail
+          cd repo
+
+          python3 - <<'PY'
+          import glob, os, re, subprocess, sys
+
+          try:
+              import yaml
+          except ImportError:
+              # ubuntu-24.04 的 Python 是 externally-managed（PEP 668），
+              # 不加 --break-system-packages 会直接报错
+              os.system("python3 -m pip install --quiet --break-system-packages pyyaml")
+              import yaml
+
+          errs = []
+          platforms = ["Surge", "Loon", "QuantumultX", "mihomo", "Egern"]
+          domain_types = {"DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD", "DOMAIN-WILDCARD",
+                          "HOST", "HOST-SUFFIX", "HOST-KEYWORD", "HOST-WILDCARD"}
+          ip_types = {"IP-CIDR", "IP-CIDR6", "IP6-CIDR", "IP-ASN", "GEOIP"}
+          bad_domain = re.compile(r"[^A-Za-z0-9._\-]")
+          bad_wildcard = re.compile(r"[^A-Za-z0-9._\-\*\?]")
+
+          for p in platforms:
+              if not glob.glob(f"{p}/*"):
+                  errs.append(f"{p}/ 为空或不存在")
+
+          if os.path.isdir("Shadowrocket"):
+              errs.append("Shadowrocket/ 不应再存在（已停止产出）")
+
+          for f in glob.glob("Egern/*.yaml"):
+              try:
+                  yaml.safe_load(open(f, encoding="utf-8"))
+              except Exception as e:
+                  errs.append(f"{f}: YAML 解析失败: {str(e).splitlines()[0]}")
+
+          for p in platforms:
+              if p == "Egern":
+                  continue
+              is_qx = (p == "QuantumultX")
+              for f in sorted(glob.glob(f"{p}/*.list")):
+                  base = os.path.basename(f)[:-len(".list")]
+                  declared, body = None, 0
+                  for i, line in enumerate(open(f, encoding="utf-8"), 1):
+                      line = line.rstrip("\n")
+                      if not line:
+                          continue
+                      if line.startswith("#"):
+                          m = re.search(r"规则统计[:：]\s*(\d+)", line)
+                          if m:
+                              declared = int(m.group(1))
+                          continue
+                      body += 1
+                      parts = line.split(",")
+                      t = parts[0]
+                      if is_qx:
+                          # QX 每行必须是「类型,值,策略名」，策略名由脚本注入且等于规则集名
+                          if t == "USER-AGENT":
+                              ok = len(parts) >= 3 and parts[-1] == base
+                          else:
+                              ok = len(parts) == 3 and parts[2] == base
+                          if not ok:
+                              errs.append(f"{f}:{i} QX 字段结构异常({len(parts)}): {line}")
+                              continue
+                      elif t in ip_types:
+                          if len(parts) > 3 or (len(parts) == 3 and parts[2] != "no-resolve"):
+                              errs.append(f"{f}:{i} IP 规则含非法选项: {line}")
+                      elif t in domain_types or t in ("IP6-CIDR", "USER-AGENT"):
+                          if t == "USER-AGENT":
+                              pass  # UA 值本身可能含逗号，不做字段数与字符集约束
+                          elif t in domain_types:
+                              # Surge 允许第三段 extended-matching，其它平台不允许任何第三段
+                              ok = (len(parts) == 2) or (
+                                  p == "Surge" and len(parts) == 3 and parts[2] == "extended-matching")
+                              if not ok:
+                                  errs.append(f"{f}:{i} 域名规则字段数异常({len(parts)}): {line}")
+                                  continue
+                              pat = bad_wildcard if t.endswith("WILDCARD") else bad_domain
+                              if pat.search(parts[1]):
+                                  errs.append(f"{f}:{i} 非法域名值: {parts[1]}")
+                          elif len(parts) not in (2, 3):
+                              errs.append(f"{f}:{i} IP 规则字段数异常({len(parts)}): {line}")
+                      if p != "Surge" and "extended-matching" in line:
+                          errs.append(f"{f}:{i} 非 Surge 平台残留专有选项: {line}")
+                  if declared is not None and declared != body:
+                      errs.append(f"{f}: 头部计数 {declared} 与实际 {body} 不一致")
+
+          for f in sorted(glob.glob("Egern/*.yaml")):
+              declared, body = None, 0
+              for line in open(f, encoding="utf-8"):
+                  line = line.rstrip("\n")
+                  if line.startswith("#"):
+                      m = re.search(r"规则统计[:：]\s*(\d+)", line)
+                      if m:
+                          declared = int(m.group(1))
+                      continue
+                  if line.startswith("  - "):
+                      body += 1
+              if declared is not None and declared != body:
+                  errs.append(f"{f}: 头部计数 {declared} 与实际 {body} 不一致")
+
+          for p in platforms:
+              for f in glob.glob(f"{p}/*"):
+                  for i, line in enumerate(open(f, encoding="utf-8"), 1):
+                      if " //" in line:
+                          errs.append(f"{f}:{i} 残留行内注释: {line.strip()}")
+
+          # ---- 许可署名闸门：每个产物都必须带「# 许可:」与「# 来源:」------------
+          # 上游多为 AGPL/GPL，产物离开本仓库后头部注释是唯一的溯源与署名线索，
+          # 少了它等于把别人要求保留的许可声明删掉了。这里只校验存在性。
+          for p in platforms:
+              for f in glob.glob(f"{p}/*"):
+                  head = []
+                  with open(f, encoding="utf-8") as fh:
+                      for line in fh:
+                          if not line.startswith("#"):
+                              break
+                          head.append(line)
+                  blob = "".join(head)
+                  if "# 许可:" not in blob:
+                      errs.append(f"{f}: 头部缺少「# 许可:」字段")
+                  if "# 来源:" not in blob:
+                      errs.append(f"{f}: 头部缺少「# 来源:」字段")
+
+          # ---- 回归闸门：与 HEAD（上一版产物）比较，抓上游异常 ------------------
+          # Lint 的其它检查都是「自洽性」检查：上游把 8000 条规则删到 3000 条时，
+          # 产物依然自洽、依然能通过。所以必须和上一版比一次。
+          def entry_count(path):
+              if path.endswith(".yaml"):
+                  return sum(1 for line in open(path, encoding="utf-8")
+                             if line.startswith("  - "))
+              n = 0
+              for line in open(path, encoding="utf-8"):
+                  s = line.strip()
+                  if not s or s.startswith("#"):
+                      continue
+                  n += 1
+              return n
+
+          def prev_count(path):
+              try:
+                  raw = subprocess.check_output(
+                      ["git", "show", f"HEAD:{path}"],
+                      stderr=subprocess.DEVNULL, text=True)
+              except (subprocess.CalledProcessError, FileNotFoundError):
+                  return None
+              if path.endswith(".yaml"):
+                  return sum(1 for line in raw.splitlines() if line.startswith("  - "))
+              n = 0
+              for line in raw.splitlines():
+                  s = line.strip()
+                  if not s or s.startswith("#"):
+                      continue
+                  n += 1
+              return n
+
+          def prev_duplicates(path):
+              """上一版产物里的重复条目数。
+
+              构建修复（如剥离 extended-matching 后补上去重）会让条目数合法下降，
+              降幅恰好等于原先的重复数。回归闸门必须能区分「上游掉了规则」和
+              「产物不再重复」，否则第一次修复就会被自己拦住。
+              """
+              try:
+                  raw = subprocess.check_output(
+                      ["git", "show", f"HEAD:{path}"],
+                      stderr=subprocess.DEVNULL, text=True)
+              except (subprocess.CalledProcessError, FileNotFoundError):
+                  return 0
+              seen, dup = set(), 0
+              for line in raw.splitlines():
+                  if path.endswith(".yaml"):
+                      if not line.startswith("  - "):
+                          continue
+                  else:
+                      s = line.strip()
+                      if not s or s.startswith("#"):
+                          continue
+                  if line in seen:
+                      dup += 1
+                  else:
+                      seen.add(line)
+              return dup
+
+          deltas = open("/tmp/deltas.tsv", "w", encoding="utf-8")
+          for p in platforms:
+              cur_total = prev_total = 0
+              for f in sorted(glob.glob(f"{p}/*")):
+                  cur = entry_count(f)
+                  prev = prev_count(f)
+                  deltas.write(f"{p}\t{os.path.basename(f)}\t"
+                               f"{'' if prev is None else prev}\t{cur}\n")
+                  if prev is None:
+                      continue
+                  cur_total += cur
+                  prev_total += prev
+                  if prev == 0:
+                      continue
+                  # 上一版里的重复条目不算「真规则」：修复去重造成的降幅应当豁免
+                  dup = prev_duplicates(f)
+                  expected = prev - dup
+                  if cur >= expected:
+                      continue
+                  drop = (expected - cur) / expected
+                  if drop > 0.10:
+                      errs.append(
+                          f"{f}: 条目数 {expected} → {cur}（-{drop * 100:.1f}%），跌幅超过 10%，疑似上游异常"
+                          + (f"（已扣除上一版 {dup} 条重复）" if dup else ""))
+                  elif drop > 0.05:
+                      print(f"::warning:: {f}: 条目数 {expected} → {cur}（-{drop * 100:.1f}%）")
+              # 合计口径同理：把上一版的重复数从基准里扣掉
+              prev_total -= sum(prev_duplicates(f) for f in glob.glob(f"{p}/*"))
+              if prev_total and cur_total < prev_total * 0.95:
+                  drop = (prev_total - cur_total) / prev_total
+                  errs.append(f"{p}/: 合计 {prev_total} → {cur_total}（-{drop * 100:.1f}%），跌幅超过 5%")
+          deltas.close()
+
+          # 每个集合都必须在每个平台产出 —— 少生成一个平台很难被逐行校验发现
+          expected = ["AI", "AppleCN", "AppleProxy", "CDN", "CN", "ChinaIP",
+                      "Direct", "GFW", "Speedtest", "TG"]
+          for p in platforms:
+              ext = "yaml" if p == "Egern" else "list"
+              for name in expected:
+                  if not os.path.exists(f"{p}/{name}.{ext}"):
+                      errs.append(f"{p}/{name}.{ext} 缺失")
+
+          if errs:
+              print("\n".join(errs[:80]))
+              print(f"\n::error::Lint 失败，共 {len(errs)} 项")
+              sys.exit(1)
+
+          print("::notice::Lint 通过")
+          for p in platforms:
+              print(f"  {p}: {len(glob.glob(p + '/*'))} 个文件")
+          PY
+
+      # =========================================================================
+      # Step 11: 提交并推送
+      # =========================================================================
+      - name: Push Update
+        run: |
+          set -euo pipefail
+          cd repo
+
+          # 护栏：内部暂存目录绝不能进入版本库
+          if [[ -e Ruleset ]]; then
+            echo "::error::internal staging directory 'Ruleset/' leaked into the repo — refusing to push"
+            exit 1
+          fi
+
+          if [[ -z "$(git status --porcelain)" ]]; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+
+          CHANGED_SETS=$(git diff --cached --name-only -- 'Surge/*' \
+            | xargs -r -I{} basename {} .list | sed 's/^/- /' || true)
+
+          if [[ -z "$CHANGED_SETS" ]]; then
+            CACHE_CHANGED=$(git diff --cached --name-only -- '.github/upstream-cache/*.txt' \
+              | wc -l | tr -d ' ')
+            if [[ "$CACHE_CHANGED" -gt 0 ]]; then
+              CHANGED_SETS="- 上游快照更新 ${CACHE_CHANGED} 个源（产物内容未变）"
+            else
+              CHANGED_SETS="- 平台结构更新"
+            fi
+          fi
+
+          CURRENT_DATE=$(TZ='Asia/Shanghai' date +'%Y-%m-%d')
+
+          # 有上游降级时，提交消息里留痕，事后翻历史能直接看出哪次是降级发布的
+          {
+            echo "Update Rulesets:"
+            echo "$CHANGED_SETS"
+            echo "---"
+            if [[ -s /tmp/degraded.md ]]; then
+              echo "Upstream fallback: $(wc -l < /tmp/dl/degraded.tsv | tr -d ' ') source(s) reused from cache"
+            fi
+            echo "Time: $CURRENT_DATE"
+          } > /tmp/commit_msg.txt
+
+          git commit -F /tmp/commit_msg.txt
+
+          # 人工提交可能抢在前面：rebase 后重试，而不是整轮构建白跑
+          pushed=""
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              pushed=1
+              break
+            fi
+            if [[ "$attempt" -eq 3 ]]; then
+              break
+            fi
+            echo "推送被拒绝，与 origin/main 合入后重试（第 ${attempt} 次）"
+            git fetch --quiet origin main
+            git rebase --quiet origin/main
+            if [[ -n "$(git status --porcelain)" ]]; then
+              echo "::error::rebase 后仍有未提交改动，中止"
+              exit 1
+            fi
+          done
+          if [[ -z "$pushed" ]]; then
+            echo "::error::推送失败（已重试 3 次）"
+            exit 1
+          fi
+
+      # =========================================================================
+      # Step 12: 运行摘要（无论成败都写，页面上一眼看完聚合结果）
+      # =========================================================================
+      - name: Job summary
+        if: always()
+        run: |
+          set -euo pipefail
+          S="$GITHUB_STEP_SUMMARY"
+          cd repo 2>/dev/null || true
+
+          {
+            echo "## Rules 构建摘要"
+            echo ""
+            if [[ -s /tmp/degraded.md ]]; then
+              echo "### ⚠️ 上游降级"
+              echo ""
+              cat /tmp/degraded.md
+              echo ""
+            else
+              echo "✅ 全部上游源抓取成功"
+              echo ""
+            fi
+
+            echo "### 各集合条目数"
+            echo ""
+            echo "| 集合 | Surge | mihomo | Egern | Loon | QuantumultX | Δ Surge |"
+            echo "|---|---:|---:|---:|---:|---:|---:|"
+            for f in Surge/*.list; do
+              name=$(basename "$f" .list)
+              row="| $name"
+              for p in Surge mihomo Egern Loon QuantumultX; do
+                if [[ "$p" == "Egern" ]]; then
+                  c=$(grep -c '^  - ' "Egern/$name.yaml" || true)
+                else
+                  c=$(grep -vcE '^[[:space:]]*(#.*)?$' "$p/$name.list" || true)
+                fi
+                row="$row | ${c:-0}"
+              done
+              delta=$(awk -F'\t' -v k="Surge" -v n="$name.list" \
+                        '$1 == k && $2 == n && $3 != "" { print $4 - $3 }' /tmp/deltas.tsv 2>/dev/null || true)
+              if [[ -n "${delta:-}" ]]; then
+                if [[ "$delta" -gt 0 ]]; then delta="+$delta"; fi
+                row="$row | $delta |"
+              else
+                row="$row | - |"
+              fi
+              echo "$row"
+            done
+
+            echo ""
+            echo "### 平台合计"
+            echo ""
+            echo "| 平台 | 规则条目 | 文件数 |"
+            echo "|---|---:|---:|"
+            for p in Surge mihomo Egern Loon QuantumultX; do
+              if [[ "$p" == "Egern" ]]; then
+                tot=$(cat Egern/*.yaml | grep -c '^  - ' || true)
+              else
+                tot=$(cat "$p"/*.list | grep -vcE '^[[:space:]]*(#.*)?$' || true)
+              fi
+              cnt=$(find "$p" -maxdepth 1 -type f 2>/dev/null | wc -l | tr -d ' ')
+              echo "| $p | ${tot:-0} | $cnt |"
+            done
+
+            echo ""
+            echo "### 上游快照"
+            echo ""
+            printf '%s\n' '```'   # 反引号必须单引号包住：双引号里会被当成命令替换
+            if [[ -f .github/upstream-cache/manifest.tsv ]]; then
+              awk -F'\t' '{ printf "%-8s %-44s %s\n", $4, $3, $2 }' \
+                .github/upstream-cache/manifest.tsv
+            else
+              echo "(无)"
+            fi
+            printf '%s\n' '```'
+          } >> "$S"
+
+      # =========================================================================
+      # Step 13: 清理历史运行记录
+      #
+      # keep_minimum_runs: 2 的含义是「当前这次之外再保留 2 次」，实际结果是最多 3 条。
+      # 只清理本工作流的运行记录；Dependabot 的运行记录不在此列。
+      # =========================================================================
+      # =========================================================================
+      - name: Cleanup Workflow
+        if: always()
+        uses: Mattraks/delete-workflow-runs@b3018382ca039b53d238908238bd35d1fb14f8ee # v2.1.0
+        with:
+          retain_days: 0
+          keep_minimum_runs: 2

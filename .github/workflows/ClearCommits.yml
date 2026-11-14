@@ -1,0 +1,47 @@
+name: Clear Commits
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write # 删除历史运行记录需要（Mattraks/delete-workflow-runs）
+
+# 与 Merge.yml 共用同一个 group：本工作流会 force-push 重建历史，
+# 若与 Merge 并发，Merge 的推送会落在被覆盖的分支上。
+concurrency:
+  group: repo-write
+  cancel-in-progress: false
+
+jobs:
+  build:
+    # 纯 git 操作，用 Linux runner 即可：Windows 单价是 Linux 的 1.67 倍，
+    # 且 run 默认走 PowerShell，与本脚本的 bash 语义不符
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+
+      - name: Configure Git
+        run: |
+          set -euo pipefail
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      - name: Rebuild history
+        run: |
+          set -euo pipefail
+          git checkout --orphan clean-main
+          git rm -rf --cached . >/dev/null
+          git add .
+          git commit -m "Rebuild"
+          git push -f -u origin clean-main:main
+
+      - name: Cleanup Workflow
+        if: always()
+        uses: Mattraks/delete-workflow-runs@b3018382ca039b53d238908238bd35d1fb14f8ee # v2.1.0
+        with:
+          retain_days: 0
+          keep_minimum_runs: 0

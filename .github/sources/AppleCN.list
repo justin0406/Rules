@@ -1,0 +1,19 @@
+# 本地规则源
+#
+# 上游没有、但需要长期稳定存在的条目写在这里。它就是一个普通的源：
+# 在 Merge.yml 的源表里用 local:.github/sources/<文件名>.list 引用，
+# 和上游源一样参与标准化（去重、排序），重复条目不会产生冗余。
+
+# Apple ID 认证 / 账号 / 激活域名 —— 登录、激活走直连，避免代理出口导致
+# Apple ID 校验失败或激活异常。
+#
+# 注意：上游 api-domain.list / domain.list 已有 DOMAIN-SUFFIX,apple.com 与
+# appleid / gsa 两条后缀，功能上已覆盖以下全部域名。此处登记的意义是兜底与
+# 显式化：上游粗后缀或具体条目被移除时，认证域名仍然留在集合里。
+# appleid / gsa 与上游完全同形（DOMAIN-SUFFIX + extended-matching），
+# 去重后不产生任何冗余输出；其余三个上游未逐条收录，按精确域名登记。
+DOMAIN-SUFFIX,appleid.apple.com,extended-matching
+DOMAIN-SUFFIX,gsa.apple.com,extended-matching
+DOMAIN,idmsa.apple.com
+DOMAIN,account.apple.com
+DOMAIN,albert.apple.com
