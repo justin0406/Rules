@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4786
+# 规则统计: 4788
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)
 # 来源:
 #   - https://ruleset.skk.moe/List/domainset/cdn.conf (AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0))
@@ -2147,6 +2147,7 @@ DOMAIN,media.convertkit.com
 DOMAIN,media.crazyshit.com
 DOMAIN,media.currys.biz
 DOMAIN,media.daily.dev
+DOMAIN,media.datacamp.com
 DOMAIN,media.datacenterdynamics.com
 DOMAIN,media.dev.to
 DOMAIN,media.discordapp.net
@@ -2948,6 +2949,7 @@ DOMAIN,static.javhd.com
 DOMAIN,static.jsbin.com
 DOMAIN,static.jup.ag
 DOMAIN,static.k2s.cc
+DOMAIN,static.karousell.com
 DOMAIN,static.killedbygoogle.com
 DOMAIN,static.klaviyo.com
 DOMAIN,static.kobo.com
