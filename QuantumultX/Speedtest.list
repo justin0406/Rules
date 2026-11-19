@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19299
+# 规则统计: 19301
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)/未声明/本仓库 (AGPL-3.0)
 # 来源:
 #   - https://ruleset.skk.moe/List/domainset/speedtest.conf (AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0))
@@ -3317,6 +3317,7 @@ HOST,secretspeedsterserver2364.cpe.nj.crnrstn.comcast.net,Speedtest
 HOST,seednet-tc1.seed.net.tw,Speedtest
 HOST,seednet-tc1.seed.net.tw.prod.hosts.ooklaserver.net,Speedtest
 HOST,seednet-tn1.seed.net.tw,Speedtest
+HOST,seednet-tp1.seed.net.tw,Speedtest
 HOST,seednet-ty1.seed.net.tw,Speedtest
 HOST,seednet-ty1.seed.net.tw.prod.hosts.ooklaserver.net,Speedtest
 HOST,sem-st-01.kcell.kz,Speedtest
@@ -11521,6 +11522,7 @@ HOST,speedtest.openconnectionrd.com,Speedtest
 HOST,speedtest.openinternet.net.br,Speedtest
 HOST,speedtest.opennetfortaleza.com.br,Speedtest
 HOST,speedtest.opennetpalmas.com.br,Speedtest
+HOST,speedtest.opiquad.it,Speedtest
 HOST,speedtest.optic-communications.com,Speedtest
 HOST,speedtest.opticline.kz,Speedtest
 HOST,speedtest.opticnetworks.com.co,Speedtest
