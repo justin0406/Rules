@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 330
+# 规则统计: 332
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)/GPL-3.0/MIT/未声明
 # 来源:
 #   - https://ruleset.skk.moe/List/non_ip/ai.conf (AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0))
@@ -122,6 +122,7 @@ DOMAIN,apple-relay.apple.com
 DOMAIN,apple-relay.cloudflare.com
 DOMAIN,apple-relay.fastly-edge.com
 DOMAIN,bard.google.com
+DOMAIN,bridge.claudeusercontent.com
 DOMAIN,browser-intake-datadoghq.com
 DOMAIN,cc.freemodel.dev
 DOMAIN,cdn.delta.dev
@@ -129,6 +130,7 @@ DOMAIN,cdn.usefathom.com
 DOMAIN,chat.mistral.ai
 DOMAIN,chat.openai.com.cdn.cloudflare.net
 DOMAIN,chatgpt.livekit.cloud
+DOMAIN,claude.site
 DOMAIN,cloud-api.near.ai
 DOMAIN,cloud.zed.dev
 DOMAIN,coding-intl.dashscope.aliyuncs.com
