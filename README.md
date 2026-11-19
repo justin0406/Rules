@@ -125,6 +125,9 @@ Loon 的 `DOMAIN-WILDCARD` 支持 `*`、`?`、`[...]`（build 1008+），原样�
 | [EAlyce/conf](https://github.com/EAlyce/conf) | MIT | AI |
 | [kelee.one/Tool](https://git.repcz.link/kelee.one/Tool) | 未声明 | AI / Speedtest |
 
+> kelee 的 SpeedtestInternational.lsr / AI.lsr 是 AI 与 Speedtest 集合的主体内容且**未声明许可**：
+> 产物会如实标注「未声明」，再分发前请自行确认上游条款。
+
 每个产物头部都写有 `# 许可:` 与 `# 来源:`，订阅文件离开本仓库后仍可溯源。新增或更换上游时，同步修改 `Merge.yml` 的 `license_for()` 与本表。
 
 ## 构建流水线

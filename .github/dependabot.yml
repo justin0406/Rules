@@ -11,5 +11,10 @@ updates:
       interval: "daily"
       timezone: "Asia/Shanghai"
       time: "08:00"
+    # 每日多个 action 升级合成一个 PR，避免 PR 刷屏
+    groups:
+      actions:
+        patterns:
+          - "*"
     pull-request-branch-name:
       separator: "-"

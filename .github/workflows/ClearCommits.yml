@@ -2,6 +2,11 @@ name: Clear Commits
 
 on:
   workflow_dispatch:
+    inputs:
+      confirm:
+        description: '输入 Rules 确认执行（本工作流会强推重建 main 历史）'
+        required: true
+        default: ''
 
 permissions:
   contents: write
@@ -31,8 +36,21 @@ jobs:
           git config --local user.name "github-actions[bot]"
 
       - name: Rebuild history
+        env:
+          # ${{ }} 直接内插进 run 有脚本注入风险，确认词经 env 传入
+          CONFIRM_INPUT: ${{ github.event.inputs.confirm }}
         run: |
           set -euo pipefail
+          # 护栏（与 Merge.yml 的 basename 判断同源）：强推重建 main 是不可逆操作，
+          # fork 或误触发的仓库必须直接拒绝
+          if [[ "${GITHUB_REPOSITORY##*/}" != "Rules" ]]; then
+            echo "::error::This workflow is intended to run in the 'Rules' repository."
+            exit 1
+          fi
+          if [[ "$CONFIRM_INPUT" != "Rules" ]]; then
+            echo "::error::确认词不正确：请在 workflow_dispatch 的 confirm 输入框填写 Rules"
+            exit 1
+          fi
           git checkout --orphan clean-main
           git rm -rf --cached . >/dev/null
           git add .

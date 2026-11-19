@@ -37,7 +37,10 @@ jobs:
     # 固定 24.04 而不是 ubuntu-latest：GitHub 正把 ubuntu-latest 从 24.04 迁往 26.04
     # （2026-10-19 起，2026-11-19 前完成），awk/sed/sort 行为变化会破坏构建确定性。
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    # 最坏耗时推导：curl --retry 3 = 最多 4 次尝试 × max-time 60s + 2×retry-delay
+    # = 244s/源；AppleCN 有 7 个上游且集合内串行下载 = 约 28.5 分钟。job 上限必须
+    # 覆盖它，否则全源故障时 job 被砍在半途，快照/manifest 处于半更新状态。
+    timeout-minutes: 35
     env:
       TZ: "Asia/Shanghai"
       LC_ALL: C # 让 sort 的排序结果与 locale 无关
@@ -72,7 +75,9 @@ jobs:
           fi
 
           CACHE_DIR="repo/.github/upstream-cache"
-          WORK=/tmp/dl
+          # WORK 派生规则（本文件的唯一定义点）：每个 step 是独立 shell，
+          # 都用 "${RUNNER_TEMP:-/tmp}/dl" 派生同一目录，不写死 /tmp/dl
+          WORK="${RUNNER_TEMP:-/tmp}/dl"
           rm -rf "$WORK"
           mkdir -p "$CACHE_DIR" "$WORK" repo/Ruleset
 
@@ -191,16 +196,21 @@ jobs:
               *fmz200*)          echo "GPL-3.0" ;;
               *EAlyce*)          echo "MIT" ;;
               local:*)           echo "本仓库 (AGPL-3.0)" ;;
-              *git.repcz.link*)  echo "未声明" ;;
               *)                 echo "未声明" ;;
             esac
           }
 
-          # HTML 挑战页、被截断的响应不能写进快照，否则会把垃圾固化成「最近一次成功」
+          # HTML 挑战页、被截断的响应不能写进快照，否则会把垃圾固化成「最近一次成功」。
+          # 除 HTML 探测外再加两道校验：整文件合法 JSON 一定是错误响应（规则集从来
+          # 不是 JSON）；非空行过少的响应（JSON 错误体、纯文本 5xx）不可信。
+          # 两条都保守——真实规则源再小也有几十行，且从不以 JSON 呈现。
           plausible() {
-            local f="$1"
+            local f="$1" lines
             [[ -s "$f" ]] || return 1
             head -c 400 "$f" | grep -qiE '<!doctype|<html|<head|<body' && return 1
+            jq -e . "$f" >/dev/null 2>&1 && return 1
+            lines=$(grep -cv '^[[:space:]]*$' "$f" 2>/dev/null || true)
+            [[ "${lines:-0}" -ge 3 ]] || return 1
             return 0
           }
 
@@ -315,11 +325,11 @@ jobs:
               while IFS="$(printf '\t')" read -r slug url ts reason; do
                 echo "- \`${url}\` — ${reason}，快照时间 ${ts:-未知}"
               done < "$WORK/degraded.tsv"
-            } > /tmp/degraded.md
+            } > "$WORK/degraded.md"
             echo "::warning::$(wc -l < "$WORK/degraded.tsv" | tr -d ' ') 个上游源不可用，已沿用历史快照"
-            cat /tmp/degraded.md
+            cat "$WORK/degraded.md"
           else
-            : > /tmp/degraded.md
+            : > "$WORK/degraded.md"
             echo "全部 $(wc -l < "$CACHE_DIR/manifest.tsv" | tr -d ' ') 个上游源抓取成功"
           fi
 
@@ -334,11 +344,18 @@ jobs:
       - name: Normalize Rulesets
         run: |
           set -euo pipefail
+          # WORK 派生规则见 Step 2 的唯一定义点（每个 step 是独立 shell）
+          WORK="${RUNNER_TEMP:-/tmp}/dl"
+
+          # 被丢弃选项的统计文件：sanitize 丢弃未知选项（如 src-ip / dns-failed）时
+          # 记一行，循环结束后汇总进 job summary——降级要可见，而不是静默改语义
+          rm -f "$WORK/dropped.tsv"
+          touch "$WORK/dropped.tsv"
 
           for file in repo/Ruleset/*.list; do
             [ -f "$file" ] || continue
 
-            awk '
+            awk -v dropfile="$WORK/dropped.tsv" '
             function sanitize(line,   n, i, opt, type, val, keep, f) {
               n = split(line, f, ",")
               if (n < 2) return line
@@ -353,8 +370,12 @@ jobs:
                 # extended-matching 是 Surge 专有的双头匹配开关，仅 Surge 保留，
                 # 其余平台在各自的 Platform 步骤里剥离
                 else if (opt == "extended-matching" && type ~ /^DOMAIN(-SUFFIX|-KEYWORD|-WILDCARD)?$/) keep = ",extended-matching"
+                else if (opt != "" && opt != "no-resolve" && opt != "extended-matching") dropped[opt]++
               }
               return type "," val keep
+            }
+            END {
+              for (o in dropped) printf "%s\t%d\n", o, dropped[o] >> dropfile
             }
             { sub(/ \/\/.*$/, "") }
             /^[[:space:]]*$/ { next }
@@ -398,6 +419,20 @@ jobs:
             mv "$file.tmp" "$file"
           done
 
+          # 丢弃选项汇总写入 job summary（不用 ::warning:: 注解：正常上游若夹带
+          # policy 字段会每次都刷注解；summary 只记录、不告警）
+          if [[ -s "$WORK/dropped.tsv" ]]; then
+            {
+              echo "### 被丢弃的规则选项"
+              echo ""
+              echo "以下选项不在跨平台保留名单内，标准化时被丢弃（降级但可见）："
+              echo ""
+              echo "| 选项 | 行数 |"
+              echo "|---|---:|"
+              awk -F'\t' '{ c[$1]+=$2 } END { for (o in c) printf "| `%s` | %d |\n", o, c[o] }' "$WORK/dropped.tsv"
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
       # =========================================================================
       # Step 4: 初始化平台目录
       #
@@ -428,6 +463,8 @@ jobs:
       - name: Platform - mihomo
         run: |
           set -euo pipefail
+          # WORK 派生规则见 Step 2 的唯一定义点（每个 step 是独立 shell）
+          WORK="${RUNNER_TEMP:-/tmp}/dl"
           . repo/scripts/rulehdr.sh
 
           for file in repo/Ruleset/*.list; do
@@ -454,7 +491,7 @@ jobs:
             /^DOMAIN-WILDCARD,/ && $2 ~ /\?/ { $0 = "DOMAIN-REGEX," glob2regex($2) }
             { if (seen[$0]++) next; print }' "$file" > "$out"
 
-            add_header "$out" "$fname" "/tmp/dl/$fname.meta"
+            add_header "$out" "$fname" "$WORK/$fname.meta"
           done
 
       # =========================================================================
@@ -474,6 +511,8 @@ jobs:
       - name: Platform - Egern
         run: |
           set -euo pipefail
+          # WORK 派生规则见 Step 2 的唯一定义点（每个 step 是独立 shell）
+          WORK="${RUNNER_TEMP:-/tmp}/dl"
           . repo/scripts/rulehdr.sh
 
           for file in repo/Ruleset/*.list; do
@@ -552,7 +591,7 @@ jobs:
               cat "$body"
             } > "$out"
 
-            add_header "$out" "$fname" "/tmp/dl/$fname.meta"
+            add_header "$out" "$fname" "$WORK/$fname.meta"
             rm -f "$body"
           done
 
@@ -567,6 +606,8 @@ jobs:
       - name: Platform - QuantumultX
         run: |
           set -euo pipefail
+          # WORK 派生规则见 Step 2 的唯一定义点（每个 step 是独立 shell）
+          WORK="${RUNNER_TEMP:-/tmp}/dl"
           . repo/scripts/rulehdr.sh
 
           for file in repo/Ruleset/*.list; do
@@ -587,7 +628,7 @@ jobs:
               print type, $2, policy
             }' "$file" > "$out"
 
-            add_header "$out" "$fname" "/tmp/dl/$fname.meta"
+            add_header "$out" "$fname" "$WORK/$fname.meta"
           done
 
       # =========================================================================
@@ -604,6 +645,8 @@ jobs:
       - name: Platform - Surge / Loon
         run: |
           set -euo pipefail
+          # WORK 派生规则见 Step 2 的唯一定义点（每个 step 是独立 shell）
+          WORK="${RUNNER_TEMP:-/tmp}/dl"
           . repo/scripts/rulehdr.sh
 
           # Surge：唯一支持 extended-matching 的平台，原样保留该选项
@@ -613,7 +656,7 @@ jobs:
             out="repo/Surge/$fname.list"
 
             cp "$file" "$out"
-            add_header "$out" "$fname" "/tmp/dl/$fname.meta"
+            add_header "$out" "$fname" "$WORK/$fname.meta"
           done
 
           # Loon：类型全支持，但不认识 extended-matching，剥离后原样输出
@@ -624,7 +667,7 @@ jobs:
 
             # 剥离后可能出现与已有行完全相同的重复（Surge 里两者语义不同，此处已无区别），去重
             awk '{ gsub(/,extended-matching/, ""); if (seen[$0]++) next; print }' "$file" > "$out"
-            add_header "$out" "$fname" "/tmp/dl/$fname.meta"
+            add_header "$out" "$fname" "$WORK/$fname.meta"
           done
 
       # =========================================================================
@@ -645,6 +688,9 @@ jobs:
       - name: Lint artifacts
         run: |
           set -euo pipefail
+          # WORK 派生规则见 Step 2 的唯一定义点（每个 step 是独立 shell）
+          WORK="${RUNNER_TEMP:-/tmp}/dl"
+          export RULES_TMP="$WORK"
           cd repo
 
           python3 - <<'PY'
@@ -767,6 +813,15 @@ jobs:
                   if "# 来源:" not in blob:
                       errs.append(f"{f}: 头部缺少「# 来源:」字段")
 
+          # ---- 平台能力差异闸门：声明删除的类型绝不能出现在产物里 --------------
+          # QX 的能力矩阵（Step 7 注释）声明不支持下列类型；此前是"恰好没出现"，
+          # 靠这层把"恰好"变成"受控"——上游变更导致残留时 lint 直接失败
+          qx_forbidden = re.compile(r"^(PROCESS-NAME|DEST-PORT|URL-REGEX|AND|OR|NOT),")
+          for f in glob.glob("QuantumultX/*"):
+              for i, line in enumerate(open(f, encoding="utf-8"), 1):
+                  if qx_forbidden.search(line):
+                      errs.append(f"{f}:{i} QuantumultX 不支持的类型出现在产物: {line.strip()}")
+
           # ---- 回归闸门：与 HEAD（上一版产物）比较，抓上游异常 ------------------
           # Lint 的其它检查都是「自洽性」检查：上游把 8000 条规则删到 3000 条时，
           # 产物依然自洽、依然能通过。所以必须和上一版比一次。
@@ -827,7 +882,7 @@ jobs:
                       seen.add(line)
               return dup
 
-          deltas = open("/tmp/deltas.tsv", "w", encoding="utf-8")
+          deltas = open(os.path.join(os.environ["RULES_TMP"], "deltas.tsv"), "w", encoding="utf-8")
           for p in platforms:
               cur_total = prev_total = 0
               for f in sorted(glob.glob(f"{p}/*")):
@@ -885,6 +940,8 @@ jobs:
       - name: Push Update
         run: |
           set -euo pipefail
+          # WORK 派生规则见 Step 2 的唯一定义点（每个 step 是独立 shell）
+          WORK="${RUNNER_TEMP:-/tmp}/dl"
           cd repo
 
           # 护栏：内部暂存目录绝不能进入版本库
@@ -922,13 +979,13 @@ jobs:
             echo "Update Rulesets:"
             echo "$CHANGED_SETS"
             echo "---"
-            if [[ -s /tmp/degraded.md ]]; then
-              echo "Upstream fallback: $(wc -l < /tmp/dl/degraded.tsv | tr -d ' ') source(s) reused from cache"
+            if [[ -s "$WORK/degraded.md" ]]; then
+              echo "Upstream fallback: $(wc -l < "$WORK/degraded.tsv" | tr -d ' ') source(s) reused from cache"
             fi
             echo "Time: $CURRENT_DATE"
-          } > /tmp/commit_msg.txt
+          } > "$WORK/commit_msg.txt"
 
-          git commit -F /tmp/commit_msg.txt
+          git commit -F "$WORK/commit_msg.txt"
 
           # 人工提交可能抢在前面：rebase 后重试，而不是整轮构建白跑
           pushed=""
@@ -960,16 +1017,18 @@ jobs:
         if: always()
         run: |
           set -euo pipefail
+          # WORK 派生规则见 Step 2 的唯一定义点（每个 step 是独立 shell）
+          WORK="${RUNNER_TEMP:-/tmp}/dl"
           S="$GITHUB_STEP_SUMMARY"
           cd repo 2>/dev/null || true
 
           {
             echo "## Rules 构建摘要"
             echo ""
-            if [[ -s /tmp/degraded.md ]]; then
+            if [[ -s "$WORK/degraded.md" ]]; then
               echo "### ⚠️ 上游降级"
               echo ""
-              cat /tmp/degraded.md
+              cat "$WORK/degraded.md"
               echo ""
             else
               echo "✅ 全部上游源抓取成功"
@@ -992,7 +1051,7 @@ jobs:
                 row="$row | ${c:-0}"
               done
               delta=$(awk -F'\t' -v k="Surge" -v n="$name.list" \
-                        '$1 == k && $2 == n && $3 != "" { print $4 - $3 }' /tmp/deltas.tsv 2>/dev/null || true)
+                        '$1 == k && $2 == n && $3 != "" { print $4 - $3 }' "$WORK/deltas.tsv" 2>/dev/null || true)
               if [[ -n "${delta:-}" ]]; then
                 if [[ "$delta" -gt 0 ]]; then delta="+$delta"; fi
                 row="$row | $delta |"
