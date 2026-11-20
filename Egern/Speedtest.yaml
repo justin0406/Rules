@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19301
+# 规则统计: 19303
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)/未声明/本仓库 (AGPL-3.0)
 # 来源:
 #   - https://ruleset.skk.moe/List/domainset/speedtest.conf (AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0))
@@ -3316,6 +3316,8 @@ domain_set:
   - 'sec.speedtest.railtel.in'
   - 'secaucus.nj.speedtest.frontier.com'
   - 'secretspeedsterserver2364.cpe.nj.crnrstn.comcast.net'
+  - 'seednet-hc1.seed.net.tw'
+  - 'seednet-ntp2.seed.net.tw'
   - 'seednet-tc1.seed.net.tw'
   - 'seednet-tc1.seed.net.tw.prod.hosts.ooklaserver.net'
   - 'seednet-tn1.seed.net.tw'
