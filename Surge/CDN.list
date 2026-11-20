@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4791
+# 规则统计: 4793
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)
 # 来源:
 #   - https://ruleset.skk.moe/List/domainset/cdn.conf (AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0))
@@ -242,6 +242,7 @@ DOMAIN,assets.mayoclinic.org
 DOMAIN,assets.mcp.corespeed.io
 DOMAIN,assets.media-platform.com
 DOMAIN,assets.monei.com
+DOMAIN,assets.monetizationos.com
 DOMAIN,assets.monica.im
 DOMAIN,assets.mozilla.social
 DOMAIN,assets.msn.com
@@ -3614,6 +3615,7 @@ DOMAIN-SUFFIX,buildkiteusercontent.com
 DOMAIN-SUFFIX,bundle.run
 DOMAIN-SUFFIX,bundle.thimatic-apps.com
 DOMAIN-SUFFIX,bunnycdn.com
+DOMAIN-SUFFIX,butterfly-effect-cdn.dev
 DOMAIN-SUFFIX,bytebucket.org
 DOMAIN-SUFFIX,bytedapm.com
 DOMAIN-SUFFIX,c-dn.net
