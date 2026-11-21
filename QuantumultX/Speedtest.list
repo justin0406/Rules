@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19303
+# 规则统计: 19304
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)/未声明/本仓库 (AGPL-3.0)
 # 来源:
 #   - https://ruleset.skk.moe/List/domainset/speedtest.conf (AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0))
@@ -854,6 +854,7 @@ HOST,fdt.gmdp.net.id,Speedtest
 HOST,ferreiropolis.centralnetfibra2.com.br,Speedtest
 HOST,fesst.iam.ma,Speedtest
 HOST,fetkt1.seed.net.tw,Speedtest
+HOST,fetml1.seed.net.tw,Speedtest
 HOST,fetnt1.seed.net.tw,Speedtest
 HOST,fetnt1.seed.net.tw.prod.hosts.ooklaserver.net,Speedtest
 HOST,fetsz1.seed.net.tw,Speedtest
