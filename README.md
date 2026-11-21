@@ -79,7 +79,7 @@ Loon 的 `DOMAIN-WILDCARD` 支持 `*`、`?`、`[...]`（build 1008+），原样�
 | 顺序要求 | 原因 |
 |---|---|
 | **`Direct` 在 `AI` 之前** | 上游 `AI` 也有 `DOMAIN-SUFFIX,z.ai`（走代理），与本仓库 `Direct` 的同一条目冲突；`Direct` 的 `mchost.guru` / `longcat.chat` 后缀还会捕获 `AI` 里的 `trae-api-sg` / `api.longcat.chat` |
-| **`Direct` 在 `CDN` 之前** | `Direct-CDN` 本地源（1,751 条实测可直连的 CDN 域名）与 CDN 集合天然重叠；Direct 在前时这部分走直连，其余 CDN 条目继续走 CDN 策略 |
+| **`Direct` 在 `CDN` 之前** | `Direct-CDN` 本地源（2,190 条实测可直连的 CDN 域名）与 CDN 集合天然重叠；Direct 在前时这部分走直连，其余 CDN 条目继续走 CDN 策略 |
 | **`AppleCN` 在 `AppleProxy` 之前** | AppleProxy 有 33 条 iTunes/开发者 CDN 条目会被 AppleCN 覆盖（顺序对则直连，符合设计）；反向地 AppleCN 里 `apps` / `updates.cdn-apple` 等 20 条也会被 AppleProxy 后缀覆盖——顺序错了 Apple 国内服务会绕道代理（认证/激活对出口 IP 敏感，走代理实测 503） |
 
 ### `Direct` 集合里的「不可达域名」是设计要求
@@ -199,9 +199,9 @@ EOF
 | `.github/sources/Speedtest.list` | 2 | `DOMAIN,speed.skk.moe`（skk 自建测速页）+ `DOMAIN-SUFFIX,radar.cloudflare.com`（Cloudflare Radar 测速）——上游均未收录 |
 | `.github/sources/AppleCN.list` | 5 | Apple ID 认证域名（`appleid` / `gsa` / `idmsa` / `account` / `albert`）。上游已有 `DOMAIN-SUFFIX,apple.com` 覆盖，此处作兜底与显式化 |
 | `.github/sources/Direct.list` | 21 | 中国 AI 服务商国内站（全为 `DOMAIN-SUFFIX`），判定依据见上节 |
-| `.github/sources/Direct-CDN.list` | 1,751 | CDN 集合中「直连安全」子集（`DOMAIN` 1,507 + `DOMAIN-SUFFIX` 244）。2026-11-14 两轮独立实测确认（`<1.5s`），92 个单轮通过但复测失败的抖动域名已剔除 |
+| `.github/sources/Direct-CDN.list` | 2,190 | CDN 集合中「直连安全」子集。2026-11-14 双轮实测建立（1,751 条），2026-11-21 复核：移除 9 条已转为污染/被墙的条目、新增 448 条新晋双轮确认域名。另有 87 条变慢但可达（1.5~3.5s）与 363 条抖动，均保留 |
 
-> `Direct-CDN.list` 是网络实测快照，会随时间与网络环境过期。建议每隔数月用同样方法（国内 DNS 与国外 DNS 对比 + 大陆宽带直连实测）复核。
+> `Direct-CDN.list` 是网络实测快照，会随时间与网络环境过期。建议每隔一两个月用同样方法（国内 DNS 与国外 DNS 对比 + 大陆宽带直连实测）复核。
 
 ## 已停止产出
 
