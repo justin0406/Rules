@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19306
+# 规则统计: 19307
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)/未声明/本仓库 (AGPL-3.0)
 # 来源:
 #   - https://ruleset.skk.moe/List/domainset/speedtest.conf (AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0))
@@ -1524,6 +1524,7 @@ DOMAIN,lhokseumawe.speedtest.telkom.net.id
 DOMAIN,lhr.prime.net.pk
 DOMAIN,librarian.comstar.ru
 DOMAIN,libre.tygrys.net
+DOMAIN,librespeed-dtw.rackgenius.com
 DOMAIN,librespeed-rs.ir
 DOMAIN,librespeed.a573.net
 DOMAIN,librespeed.lukas-heinrich.com
