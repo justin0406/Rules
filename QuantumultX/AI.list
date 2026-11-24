@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 554
+# 规则统计: 555
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)/GPL-3.0/MIT/未声明
 # 来源:
 #   - https://ruleset.skk.moe/List/non_ip/ai.conf (AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0))
@@ -393,6 +393,7 @@ HOST-SUFFIX,geller-pa.googleapis.com,AI
 HOST-SUFFIX,gemini.google,AI
 HOST-SUFFIX,gemini.google.com,AI
 HOST-SUFFIX,gemini.gstatic.com,AI
+HOST-SUFFIX,gemma.ai,AI
 HOST-SUFFIX,generativeai.google,AI
 HOST-SUFFIX,generativelanguage.googleapis.com,AI
 HOST-SUFFIX,genspark.ai,AI
