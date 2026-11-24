@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19307
+# 规则统计: 19311
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)/未声明/本仓库 (AGPL-3.0)
 # 来源:
 #   - https://ruleset.skk.moe/List/domainset/speedtest.conf (AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0))
@@ -855,6 +855,7 @@ domain_set:
   - 'fdt.gmdp.net.id'
   - 'ferreiropolis.centralnetfibra2.com.br'
   - 'fesst.iam.ma'
+  - 'fetdl2.seed.net.tw'
   - 'fetkt1.seed.net.tw'
   - 'fetml1.seed.net.tw'
   - 'fetnt1.seed.net.tw'
@@ -1524,6 +1525,7 @@ domain_set:
   - 'lhg2-speedtest.globe.com.ph'
   - 'lhokseumawe.speedtest.telkom.net.id'
   - 'lhr.prime.net.pk'
+  - 'lhr.speedtest.rustbanned.net'
   - 'librarian.comstar.ru'
   - 'libre.tygrys.net'
   - 'librespeed-dtw.rackgenius.com'
@@ -5733,6 +5735,7 @@ domain_set:
   - 'speedtest-alanganallur.froze.in'
   - 'speedtest-alb-2.atcnet.net'
   - 'speedtest-albany.greenlightnetworks.com'
+  - 'speedtest-albuquerque.resoundnetworks.com'
   - 'speedtest-alfr.vodafone.pt'
   - 'speedtest-alm-nl.as215248.net'
   - 'speedtest-altavilla.wifiweb.it'
@@ -9584,6 +9587,7 @@ domain_set:
   - 'speedtest.ilhasnet.com.br'
   - 'speedtest.ilim-telecom.ru'
   - 'speedtest.ilinkmm.net'
+  - 'speedtest.ilitha.com'
   - 'speedtest.illatel.pe'
   - 'speedtest.ilnet.com.br'
   - 'speedtest.ilogfibra.com.br'

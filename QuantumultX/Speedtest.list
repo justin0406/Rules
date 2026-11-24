@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19307
+# 规则统计: 19311
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)/未声明/本仓库 (AGPL-3.0)
 # 来源:
 #   - https://ruleset.skk.moe/List/domainset/speedtest.conf (AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0))
@@ -853,6 +853,7 @@ HOST,fd.sunet.se,Speedtest
 HOST,fdt.gmdp.net.id,Speedtest
 HOST,ferreiropolis.centralnetfibra2.com.br,Speedtest
 HOST,fesst.iam.ma,Speedtest
+HOST,fetdl2.seed.net.tw,Speedtest
 HOST,fetkt1.seed.net.tw,Speedtest
 HOST,fetml1.seed.net.tw,Speedtest
 HOST,fetnt1.seed.net.tw,Speedtest
@@ -1522,6 +1523,7 @@ HOST,lhama.catupi.com.br,Speedtest
 HOST,lhg2-speedtest.globe.com.ph,Speedtest
 HOST,lhokseumawe.speedtest.telkom.net.id,Speedtest
 HOST,lhr.prime.net.pk,Speedtest
+HOST,lhr.speedtest.rustbanned.net,Speedtest
 HOST,librarian.comstar.ru,Speedtest
 HOST,libre.tygrys.net,Speedtest
 HOST,librespeed-dtw.rackgenius.com,Speedtest
@@ -5731,6 +5733,7 @@ HOST,speedtest-al-santanadoipanema.provedorsuperconnect.com.br,Speedtest
 HOST,speedtest-alanganallur.froze.in,Speedtest
 HOST,speedtest-alb-2.atcnet.net,Speedtest
 HOST,speedtest-albany.greenlightnetworks.com,Speedtest
+HOST,speedtest-albuquerque.resoundnetworks.com,Speedtest
 HOST,speedtest-alfr.vodafone.pt,Speedtest
 HOST,speedtest-alm-nl.as215248.net,Speedtest
 HOST,speedtest-altavilla.wifiweb.it,Speedtest
@@ -9582,6 +9585,7 @@ HOST,speedtest.ileadict.com,Speedtest
 HOST,speedtest.ilhasnet.com.br,Speedtest
 HOST,speedtest.ilim-telecom.ru,Speedtest
 HOST,speedtest.ilinkmm.net,Speedtest
+HOST,speedtest.ilitha.com,Speedtest
 HOST,speedtest.illatel.pe,Speedtest
 HOST,speedtest.ilnet.com.br,Speedtest
 HOST,speedtest.ilogfibra.com.br,Speedtest
