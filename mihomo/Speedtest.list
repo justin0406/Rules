@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19311
+# 规则统计: 19312
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)/未声明/本仓库 (AGPL-3.0)
 # 来源:
 #   - https://ruleset.skk.moe/List/domainset/speedtest.conf (AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0))
@@ -1329,6 +1329,7 @@ DOMAIN,kat-o1.speedtest.orange.pl
 DOMAIN,kay1speedtest.turktelekom.com.tr
 DOMAIN,kayseri.hizinitestet.com
 DOMAIN,kaztransnet.kz
+DOMAIN,kc.speedtest.rustbanned.net
 DOMAIN,kch-ookla01.celcomdigi.com
 DOMAIN,kch-ookla02.celcomdigi.com
 DOMAIN,kch-ookla03.celcomdigi.com
