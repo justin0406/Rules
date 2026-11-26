@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4793
+# 规则统计: 4792
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)
 # 来源:
 #   - https://ruleset.skk.moe/List/domainset/cdn.conf (AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0))
@@ -3883,7 +3883,6 @@ HOST-SUFFIX,fonts.net,CDN
 HOST-SUFFIX,forbesimg.com,CDN
 HOST-SUFFIX,forgecdn.net,CDN
 HOST-SUFFIX,fourhoi.com,CDN
-HOST-SUFFIX,frame.claudeusercontent.com,CDN
 HOST-SUFFIX,framercdn.com,CDN
 HOST-SUFFIX,framerstatic.com,CDN
 HOST-SUFFIX,framerusercontent.com,CDN
