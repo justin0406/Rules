@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19312
+# 规则统计: 19314
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)/未声明/本仓库 (AGPL-3.0)
 # 来源:
 #   - https://ruleset.skk.moe/List/domainset/speedtest.conf (AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0))
@@ -4360,6 +4360,7 @@ DOMAIN,speed-demak.gmdp.net.id
 DOMAIN,speed-emel1.cspirefiber.com
 DOMAIN,speed-ens.bouwhuisit.nl
 DOMAIN,speed-fabbtel.eneamertiri.com
+DOMAIN,speed-fra.laudat.org
 DOMAIN,speed-gre.zaaztelecom.com.br
 DOMAIN,speed-gsk.gis.net.id
 DOMAIN,speed-gto-01.ioh.co.id
@@ -12651,6 +12652,7 @@ DOMAIN,speedtest.speedmax.net.br
 DOMAIN,speedtest.speednet.blog
 DOMAIN,speedtest.speednetacara.com.br
 DOMAIN,speedtest.speednetinformatica.com.br
+DOMAIN,speedtest.speednetmacapa.com.br
 DOMAIN,speedtest.speednetpa.net.br
 DOMAIN,speedtest.speednetpacaja.com.br
 DOMAIN,speedtest.speednetweb.it
