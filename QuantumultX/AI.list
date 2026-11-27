@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 555
+# 规则统计: 554
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)/GPL-3.0/MIT/未声明
 # 来源:
 #   - https://ruleset.skk.moe/List/non_ip/ai.conf (AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0))
@@ -195,7 +195,6 @@ HOST,imagine.meta.com,AI
 HOST,in.appcenter.ms,AI
 HOST,infer.flow7.org,AI
 HOST,inference.baseten.co,AI
-HOST,inference.codeium.com,AI
 HOST,inference.coralbricks.ai,AI
 HOST,inference.do-ai.run,AI
 HOST,inference.generativeai.us-chicago-1.oci.oraclecloud.com,AI

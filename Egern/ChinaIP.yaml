@@ -1,5 +1,5 @@
 # 规则名称: ChinaIP
-# 规则统计: 12104
+# 规则统计: 12105
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)/GPL-3.0
 # 来源:
 #   - https://ruleset.skk.moe/List/ip/china_ip.conf (AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0))
@@ -7724,6 +7724,7 @@ ip_cidr_set:
   - '43.240.220.0/22'
   - '43.240.240.0/20'
   - '43.240.56.0/21'
+  - '43.240.60.0/22'
   - '43.240.68.0/22'
   - '43.240.72.0/21'
   - '43.240.72.0/22'
