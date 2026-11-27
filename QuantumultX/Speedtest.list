@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19314
+# 规则统计: 19315
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)/未声明/本仓库 (AGPL-3.0)
 # 来源:
 #   - https://ruleset.skk.moe/List/domainset/speedtest.conf (AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0))
@@ -2189,6 +2189,7 @@ HOST,ookla-lmg.gmdp.net.id,Speedtest
 HOST,ookla-lol01.movistar.pe,Speedtest
 HOST,ookla-london.briantbroadband.com,Speedtest
 HOST,ookla-london01.tropicalgames.net,Speedtest
+HOST,ookla-london3.tropicalhosting.net,Speedtest
 HOST,ookla-lyo.services.proxad.net,Speedtest
 HOST,ookla-met.c2.gr,Speedtest
 HOST,ookla-mgm.gigsouth.com,Speedtest
