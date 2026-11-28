@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 554
+# 规则统计: 562
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)/GPL-3.0/MIT/未声明
 # 来源:
 #   - https://ruleset.skk.moe/List/non_ip/ai.conf (AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0))
@@ -135,6 +135,7 @@ HOST,apple-relay.fastly-edge.com,AI
 HOST,appsgenaiserver-pa.clients.google.com,AI
 HOST,appsgenaiserver-pa.clients6.google.com,AI
 HOST,appsgenaiserver-pa.googleapis.com,AI
+HOST,ar-genai.graph.meta.com,AI
 HOST,assets.msn.com,AI
 HOST,aws-language-servers.us-east-1.amazonaws.com,AI
 HOST,aws-toolkit-language-servers.amazonaws.com,AI
@@ -160,6 +161,8 @@ HOST,coding-intl.dashscope.aliyuncs.com,AI
 HOST,cognito-identity.us-east-1.amazonaws.com,AI
 HOST,console.mistral.ai,AI
 HOST,copilot-proxy.githubusercontent.com,AI
+HOST,copilot-telemetry-service.githubusercontent.com,AI
+HOST,copilot-telemetry.githubusercontent.com,AI
 HOST,copilot-workspace.githubnext.com,AI
 HOST,copilot.microsoft.com,AI
 HOST,copilotprodattachments.blob.core.windows.net,AI
@@ -183,10 +186,12 @@ HOST,gemini.google,AI
 HOST,gemini.google.com,AI
 HOST,geminiweb-pa.clients.google.com,AI
 HOST,geminiweb-pa.clients6.google.com,AI
+HOST,genai-hatch-realtime.facebook.com,AI
 HOST,generativeai.google,AI
 HOST,generativelanguage.googleapis.com,AI
 HOST,go.fastrouter.ai,AI
 HOST,gspe1-ssl.ls.apple.com,AI
+HOST,hatch.ecto1.ai,AI
 HOST,host.livekit.cloud,AI
 HOST,hyper.charm.land,AI
 HOST,idetoolkits-hostedfiles.amazonaws.com,AI
@@ -214,6 +219,7 @@ HOST,llm.submodel.ai,AI
 HOST,llmtr.com,AI
 HOST,location.microsoft.com,AI
 HOST,makersuite.google.com,AI
+HOST,meta-ai-realtime.facebook.com,AI
 HOST,microquickjs.com,AI
 HOST,model.inferx.net,AI
 HOST,modelishub.com,AI
@@ -221,6 +227,7 @@ HOST,models.inference.ai.azure.com,AI
 HOST,models.mixlayer.ai,AI
 HOST,models.think.evroc.com,AI
 HOST,nano-gpt.com,AI
+HOST,node.hatch.one,AI
 HOST,notebooklm-pa.googleapis.com,AI
 HOST,notebooklm.google,AI
 HOST,notebooklm.google.com,AI
@@ -293,11 +300,7 @@ HOST-SUFFIX,api.microsoftapp.net,AI
 HOST-SUFFIX,api.revenuecat.com,AI
 HOST-SUFFIX,api.statsig.com,AI
 HOST-SUFFIX,apis.google.com,AI
-HOST-SUFFIX,apple-relay.akamaized.net,AI
-HOST-SUFFIX,apple-relay.apple.com,AI
-HOST-SUFFIX,apple-relay.cloudflare.com,AI
 HOST-SUFFIX,apple-relay.fastly-edge.com,AI
-HOST-SUFFIX,apps.mzstatic.com,AI
 HOST-SUFFIX,atmeta.com,AI
 HOST-SUFFIX,augmentcode.com,AI
 HOST-SUFFIX,auth0.com,AI
@@ -352,6 +355,9 @@ HOST-SUFFIX,comfyregistry.org,AI
 HOST-SUFFIX,commandcode.ai,AI
 HOST-SUFFIX,console.aws.a2z.com,AI
 HOST-SUFFIX,continue.dev,AI
+HOST-SUFFIX,copilot-stg.com,AI
+HOST-SUFFIX,copilot.cloud.microsoft,AI
+HOST-SUFFIX,copilot.com,AI
 HOST-SUFFIX,copilot.microsoft.com,AI
 HOST-SUFFIX,coze.com,AI
 HOST-SUFFIX,cp4.cloudflare.com,AI
@@ -362,6 +368,7 @@ HOST-SUFFIX,cursor.com,AI
 HOST-SUFFIX,cursor.sh,AI
 HOST-SUFFIX,cursorapi.com,AI
 HOST-SUFFIX,cursorvm.com,AI
+HOST-SUFFIX,customer.prod.willow606.com,AI
 HOST-SUFFIX,deepinfra.com,AI
 HOST-SUFFIX,deepmind.com,AI
 HOST-SUFFIX,deepmind.google,AI
@@ -387,7 +394,6 @@ HOST-SUFFIX,flow.google,AI
 HOST-SUFFIX,flow.google.com,AI
 HOST-SUFFIX,g.ai,AI
 HOST-SUFFIX,gamma.app,AI
-HOST-SUFFIX,gateway.icloud.com,AI
 HOST-SUFFIX,geller-pa.googleapis.com,AI
 HOST-SUFFIX,gemini.google,AI
 HOST-SUFFIX,gemini.google.com,AI
@@ -404,7 +410,9 @@ HOST-SUFFIX,grazie.aws.intellij.net,AI
 HOST-SUFFIX,grok.com,AI
 HOST-SUFFIX,grok.x.com,AI
 HOST-SUFFIX,grokbot.com,AI
+HOST-SUFFIX,grokcli.io,AI
 HOST-SUFFIX,grokipedia.com,AI
+HOST-SUFFIX,grokusercontent.com,AI
 HOST-SUFFIX,groq.com,AI
 HOST-SUFFIX,gspe1-ssl.ls.apple.com,AI
 HOST-SUFFIX,guzzoni.apple.com,AI
@@ -556,7 +564,7 @@ IP-CIDR,199.47.142.0/23,AI
 IP-CIDR,24.199.123.28/32,AI
 IP-CIDR,64.23.132.171/32,AI
 IP6-CIDR,2604:F20::/32,AI
-IP6-CIDR,2607:6BC0::/32,AI
+IP6-CIDR,2607:6bc0::/32,AI
 IP6-CIDR,2607:6bc0::/48,AI
 IP-ASN,14061,AI
 IP-ASN,20473,AI

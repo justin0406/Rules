@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8305
+# 规则统计: 8308
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)/CC BY-SA 4.0/GPL-3.0
 # 来源:
 #   - https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list (CC BY-SA 4.0)
@@ -295,6 +295,7 @@ HOST-SUFFIX,ai.azure.com,GFW
 HOST-SUFFIX,ai.dev,GFW
 HOST-SUFFIX,ai.studio,GFW
 HOST-SUFFIX,aicoin.com,GFW
+HOST-SUFFIX,aicu.cc,GFW
 HOST-SUFFIX,aidc.com.tw,GFW
 HOST-SUFFIX,aihub.top,GFW
 HOST-SUFFIX,aimoon.com,GFW
@@ -1704,6 +1705,7 @@ HOST-SUFFIX,dalianmeng.org,GFW
 HOST-SUFFIX,daliulian.org,GFW
 HOST-SUFFIX,danbooru.donmai.us,GFW
 HOST-SUFFIX,danke4china.net,GFW
+HOST-SUFFIX,danmakus.com,GFW
 HOST-SUFFIX,danwei.org,GFW
 HOST-SUFFIX,daolan.net,GFW
 HOST-SUFFIX,daozhongxing.org,GFW
@@ -6324,6 +6326,7 @@ HOST-SUFFIX,southnews.com.tw,GFW
 HOST-SUFFIX,southpark.cc.com,GFW
 HOST-SUFFIX,sowers.org.hk,GFW
 HOST-SUFFIX,soylent.com,GFW
+HOST-SUFFIX,spacedesk.net,GFW
 HOST-SUFFIX,spaceforce.mil,GFW
 HOST-SUFFIX,spaces.hightail.com,GFW
 HOST-SUFFIX,spacex.com,GFW

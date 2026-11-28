@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19315
+# 规则统计: 19319
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)/未声明/本仓库 (AGPL-3.0)
 # 来源:
 #   - https://ruleset.skk.moe/List/domainset/speedtest.conf (AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0))
@@ -124,6 +124,7 @@ DOMAIN,ammon-st.sumofiber.com
 DOMAIN,ams-eq6-tptest1.31173.se
 DOMAIN,ams-speedtest.isp.htb.systems
 DOMAIN,ams.speedtest.clouvider.net
+DOMAIN,ams.speedtest.rustbanned.net
 DOMAIN,ams.speedtest.serverside.com
 DOMAIN,ams.speedtest.warian.net
 DOMAIN,amsspeed.sharktech.net
@@ -2665,6 +2666,7 @@ DOMAIN,ookla.speednettelecom.com.br
 DOMAIN,ookla.speedredestelecom.net.br
 DOMAIN,ookla.speedtest.adc.nbo.angani.co
 DOMAIN,ookla.speedtest.cnix.cn
+DOMAIN,ookla.speedtest.freethought-internet.co.uk
 DOMAIN,ookla.speedtest.mbs.cloud
 DOMAIN,ookla.speedtest.pwnet.net.br
 DOMAIN,ookla.speedtestplusnet.com.br
@@ -6652,6 +6654,7 @@ DOMAIN,speedtest-sp-1.zoominternet.net
 DOMAIN,speedtest-sp1.3bb.co.th
 DOMAIN,speedtest-spk1.3bb.co.th
 DOMAIN,speedtest-spk1.ais-idc.net
+DOMAIN,speedtest-spo.fibranort.com.br
 DOMAIN,speedtest-spo.tesatelecom.com
 DOMAIN,speedtest-srb.telta.de
 DOMAIN,speedtest-srg.bitsnet.id
@@ -6810,6 +6813,7 @@ DOMAIN,speedtest.1-ix.net
 DOMAIN,speedtest.100g.macarne.com
 DOMAIN,speedtest.100limitetelecom.com.br
 DOMAIN,speedtest.10g.kz
+DOMAIN,speedtest.10gtelecomindia.com
 DOMAIN,speedtest.139play.com
 DOMAIN,speedtest.1440.rnds.com.ph
 DOMAIN,speedtest.15.com.tw

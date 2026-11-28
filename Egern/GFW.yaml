@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8305
+# 规则统计: 8308
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)/CC BY-SA 4.0/GPL-3.0
 # 来源:
 #   - https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list (CC BY-SA 4.0)
@@ -298,6 +298,7 @@ domain_suffix_set:
   - 'ai.dev'
   - 'ai.studio'
   - 'aicoin.com'
+  - 'aicu.cc'
   - 'aidc.com.tw'
   - 'aihub.top'
   - 'aimoon.com'
@@ -1707,6 +1708,7 @@ domain_suffix_set:
   - 'daliulian.org'
   - 'danbooru.donmai.us'
   - 'danke4china.net'
+  - 'danmakus.com'
   - 'danwei.org'
   - 'daolan.net'
   - 'daozhongxing.org'
@@ -6327,6 +6329,7 @@ domain_suffix_set:
   - 'southpark.cc.com'
   - 'sowers.org.hk'
   - 'soylent.com'
+  - 'spacedesk.net'
   - 'spaceforce.mil'
   - 'spaces.hightail.com'
   - 'spacex.com'

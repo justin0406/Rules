@@ -1,5 +1,5 @@
 # 规则名称: Speedtest
-# 规则统计: 19315
+# 规则统计: 19319
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)/未声明/本仓库 (AGPL-3.0)
 # 来源:
 #   - https://ruleset.skk.moe/List/domainset/speedtest.conf (AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0))
@@ -126,6 +126,7 @@ domain_set:
   - 'ams-eq6-tptest1.31173.se'
   - 'ams-speedtest.isp.htb.systems'
   - 'ams.speedtest.clouvider.net'
+  - 'ams.speedtest.rustbanned.net'
   - 'ams.speedtest.serverside.com'
   - 'ams.speedtest.warian.net'
   - 'amsspeed.sharktech.net'
@@ -2667,6 +2668,7 @@ domain_set:
   - 'ookla.speedredestelecom.net.br'
   - 'ookla.speedtest.adc.nbo.angani.co'
   - 'ookla.speedtest.cnix.cn'
+  - 'ookla.speedtest.freethought-internet.co.uk'
   - 'ookla.speedtest.mbs.cloud'
   - 'ookla.speedtest.pwnet.net.br'
   - 'ookla.speedtestplusnet.com.br'
@@ -6654,6 +6656,7 @@ domain_set:
   - 'speedtest-sp1.3bb.co.th'
   - 'speedtest-spk1.3bb.co.th'
   - 'speedtest-spk1.ais-idc.net'
+  - 'speedtest-spo.fibranort.com.br'
   - 'speedtest-spo.tesatelecom.com'
   - 'speedtest-srb.telta.de'
   - 'speedtest-srg.bitsnet.id'
@@ -6812,6 +6815,7 @@ domain_set:
   - 'speedtest.100g.macarne.com'
   - 'speedtest.100limitetelecom.com.br'
   - 'speedtest.10g.kz'
+  - 'speedtest.10gtelecomindia.com'
   - 'speedtest.139play.com'
   - 'speedtest.1440.rnds.com.ph'
   - 'speedtest.15.com.tw'

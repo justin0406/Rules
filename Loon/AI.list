@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 558
+# 规则统计: 566
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)/GPL-3.0/MIT/未声明
 # 来源:
 #   - https://ruleset.skk.moe/List/non_ip/ai.conf (AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0))
@@ -135,6 +135,7 @@ DOMAIN,apple-relay.fastly-edge.com
 DOMAIN,appsgenaiserver-pa.clients.google.com
 DOMAIN,appsgenaiserver-pa.clients6.google.com
 DOMAIN,appsgenaiserver-pa.googleapis.com
+DOMAIN,ar-genai.graph.meta.com
 DOMAIN,assets.msn.com
 DOMAIN,aws-language-servers.us-east-1.amazonaws.com
 DOMAIN,aws-toolkit-language-servers.amazonaws.com
@@ -160,6 +161,8 @@ DOMAIN,coding-intl.dashscope.aliyuncs.com
 DOMAIN,cognito-identity.us-east-1.amazonaws.com
 DOMAIN,console.mistral.ai
 DOMAIN,copilot-proxy.githubusercontent.com
+DOMAIN,copilot-telemetry-service.githubusercontent.com
+DOMAIN,copilot-telemetry.githubusercontent.com
 DOMAIN,copilot-workspace.githubnext.com
 DOMAIN,copilot.microsoft.com
 DOMAIN,copilotprodattachments.blob.core.windows.net
@@ -183,10 +186,12 @@ DOMAIN,gemini.google
 DOMAIN,gemini.google.com
 DOMAIN,geminiweb-pa.clients.google.com
 DOMAIN,geminiweb-pa.clients6.google.com
+DOMAIN,genai-hatch-realtime.facebook.com
 DOMAIN,generativeai.google
 DOMAIN,generativelanguage.googleapis.com
 DOMAIN,go.fastrouter.ai
 DOMAIN,gspe1-ssl.ls.apple.com
+DOMAIN,hatch.ecto1.ai
 DOMAIN,host.livekit.cloud
 DOMAIN,hyper.charm.land
 DOMAIN,idetoolkits-hostedfiles.amazonaws.com
@@ -214,6 +219,7 @@ DOMAIN,llm.submodel.ai
 DOMAIN,llmtr.com
 DOMAIN,location.microsoft.com
 DOMAIN,makersuite.google.com
+DOMAIN,meta-ai-realtime.facebook.com
 DOMAIN,microquickjs.com
 DOMAIN,model.inferx.net
 DOMAIN,modelishub.com
@@ -221,6 +227,7 @@ DOMAIN,models.inference.ai.azure.com
 DOMAIN,models.mixlayer.ai
 DOMAIN,models.think.evroc.com
 DOMAIN,nano-gpt.com
+DOMAIN,node.hatch.one
 DOMAIN,notebooklm-pa.googleapis.com
 DOMAIN,notebooklm.google
 DOMAIN,notebooklm.google.com
@@ -293,11 +300,7 @@ DOMAIN-SUFFIX,api.microsoftapp.net
 DOMAIN-SUFFIX,api.revenuecat.com
 DOMAIN-SUFFIX,api.statsig.com
 DOMAIN-SUFFIX,apis.google.com
-DOMAIN-SUFFIX,apple-relay.akamaized.net
-DOMAIN-SUFFIX,apple-relay.apple.com
-DOMAIN-SUFFIX,apple-relay.cloudflare.com
 DOMAIN-SUFFIX,apple-relay.fastly-edge.com
-DOMAIN-SUFFIX,apps.mzstatic.com
 DOMAIN-SUFFIX,atmeta.com
 DOMAIN-SUFFIX,augmentcode.com
 DOMAIN-SUFFIX,auth0.com
@@ -352,6 +355,9 @@ DOMAIN-SUFFIX,comfyregistry.org
 DOMAIN-SUFFIX,commandcode.ai
 DOMAIN-SUFFIX,console.aws.a2z.com
 DOMAIN-SUFFIX,continue.dev
+DOMAIN-SUFFIX,copilot-stg.com
+DOMAIN-SUFFIX,copilot.cloud.microsoft
+DOMAIN-SUFFIX,copilot.com
 DOMAIN-SUFFIX,copilot.microsoft.com
 DOMAIN-SUFFIX,coze.com
 DOMAIN-SUFFIX,cp4.cloudflare.com
@@ -362,6 +368,7 @@ DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursorapi.com
 DOMAIN-SUFFIX,cursorvm.com
+DOMAIN-SUFFIX,customer.prod.willow606.com
 DOMAIN-SUFFIX,deepinfra.com
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deepmind.google
@@ -387,7 +394,6 @@ DOMAIN-SUFFIX,flow.google
 DOMAIN-SUFFIX,flow.google.com
 DOMAIN-SUFFIX,g.ai
 DOMAIN-SUFFIX,gamma.app
-DOMAIN-SUFFIX,gateway.icloud.com
 DOMAIN-SUFFIX,geller-pa.googleapis.com
 DOMAIN-SUFFIX,gemini.google
 DOMAIN-SUFFIX,gemini.google.com
@@ -404,7 +410,9 @@ DOMAIN-SUFFIX,grazie.aws.intellij.net
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,grok.x.com
 DOMAIN-SUFFIX,grokbot.com
+DOMAIN-SUFFIX,grokcli.io
 DOMAIN-SUFFIX,grokipedia.com
+DOMAIN-SUFFIX,grokusercontent.com
 DOMAIN-SUFFIX,groq.com
 DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
 DOMAIN-SUFFIX,guzzoni.apple.com
@@ -556,7 +564,7 @@ IP-CIDR,199.47.142.0/23,no-resolve
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
 IP-CIDR6,2604:F20::/32,no-resolve
-IP-CIDR6,2607:6BC0::/32,no-resolve
+IP-CIDR6,2607:6bc0::/32,no-resolve
 IP-CIDR6,2607:6bc0::/48,no-resolve
 IP-ASN,14061,no-resolve
 IP-ASN,20473,no-resolve

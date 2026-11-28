@@ -1,5 +1,5 @@
 # 规则名称: GFW
-# 规则统计: 8304
+# 规则统计: 8307
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)/CC BY-SA 4.0/GPL-3.0
 # 来源:
 #   - https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list (CC BY-SA 4.0)
@@ -295,6 +295,7 @@ DOMAIN-SUFFIX,ai.azure.com
 DOMAIN-SUFFIX,ai.dev
 DOMAIN-SUFFIX,ai.studio
 DOMAIN-SUFFIX,aicoin.com
+DOMAIN-SUFFIX,aicu.cc
 DOMAIN-SUFFIX,aidc.com.tw
 DOMAIN-SUFFIX,aihub.top
 DOMAIN-SUFFIX,aimoon.com
@@ -1704,6 +1705,7 @@ DOMAIN-SUFFIX,dalianmeng.org
 DOMAIN-SUFFIX,daliulian.org
 DOMAIN-SUFFIX,danbooru.donmai.us
 DOMAIN-SUFFIX,danke4china.net
+DOMAIN-SUFFIX,danmakus.com
 DOMAIN-SUFFIX,danwei.org
 DOMAIN-SUFFIX,daolan.net
 DOMAIN-SUFFIX,daozhongxing.org
@@ -6324,6 +6326,7 @@ DOMAIN-SUFFIX,southnews.com.tw
 DOMAIN-SUFFIX,southpark.cc.com
 DOMAIN-SUFFIX,sowers.org.hk
 DOMAIN-SUFFIX,soylent.com
+DOMAIN-SUFFIX,spacedesk.net
 DOMAIN-SUFFIX,spaceforce.mil
 DOMAIN-SUFFIX,spaces.hightail.com
 DOMAIN-SUFFIX,spacex.com
