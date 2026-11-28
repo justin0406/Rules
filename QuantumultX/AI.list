@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 562
+# 规则统计: 612
 # 许可: AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0)/GPL-3.0/MIT/未声明
 # 来源:
 #   - https://ruleset.skk.moe/List/non_ip/ai.conf (AGPL-3.0 (SukkaW/Surge；ip/china_ip.conf 为 CC BY-SA 2.0))
@@ -116,6 +116,7 @@ HOST,api.synthetic.new,AI
 HOST,api.temprhq.io,AI
 HOST,api.tensorx.ai,AI
 HOST,api.thegrid.ai,AI
+HOST,api.together.xyz,AI
 HOST,api.tokenfactory.nebius.com,AI
 HOST,api.tokengo.com,AI
 HOST,api.tokenrouter.com,AI
@@ -132,6 +133,7 @@ HOST,app.frogbot.ai,AI
 HOST,apple-relay.apple.com,AI
 HOST,apple-relay.cloudflare.com,AI
 HOST,apple-relay.fastly-edge.com,AI
+HOST,apple-relay.mask.apple-dns.net,AI
 HOST,appsgenaiserver-pa.clients.google.com,AI
 HOST,appsgenaiserver-pa.clients6.google.com,AI
 HOST,appsgenaiserver-pa.googleapis.com,AI
@@ -190,9 +192,12 @@ HOST,genai-hatch-realtime.facebook.com,AI
 HOST,generativeai.google,AI
 HOST,generativelanguage.googleapis.com,AI
 HOST,go.fastrouter.ai,AI
+HOST,graph.facebook.com,AI
 HOST,gspe1-ssl.ls.apple.com,AI
+HOST,guzzoni.apple.com,AI
 HOST,hatch.ecto1.ai,AI
 HOST,host.livekit.cloud,AI
+HOST,http-intake.logs.us5.datadoghq.com,AI
 HOST,hyper.charm.land,AI
 HOST,idetoolkits-hostedfiles.amazonaws.com,AI
 HOST,idetoolkits.amazonwebservices.com,AI
@@ -232,12 +237,16 @@ HOST,notebooklm-pa.googleapis.com,AI
 HOST,notebooklm.google,AI
 HOST,notebooklm.google.com,AI
 HOST,notebooklm.googleapis.com,AI
+HOST,o1158394.ingest.us.sentry.io,AI
+HOST,o33249.ingest.sentry.io,AI
+HOST,o33249.ingest.us.sentry.io,AI
 HOST,oai.endpoints.kepler.ai.cloud.ovh.net,AI
 HOST,odc.officeapps.live.com,AI
 HOST,openai-api.arkoselabs.com,AI
 HOST,openai.blueclaw.network,AI
 HOST,openai.bothub.ru,AI
 HOST,openai.com.cdn.cloudflare.net,AI
+HOST,openai.qualtrics.com,AI
 HOST,openaiapi-site.azureedge.net,AI
 HOST,openaiassets.blob.core.windows.net,AI
 HOST,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,AI
@@ -272,11 +281,14 @@ HOST,trae-api-sg.mchost.guru,AI
 HOST,turn.livekit.cloud,AI
 HOST,vancine.com,AI
 HOST,webchannel-alkalimakersuite-pa.clients6.google.com,AI
+HOST,www.bing.com,AI
 HOST,xpersona.co,AI
 HOST,zed-us-east-1-zed-production.c15t.dev,AI
 HOST,zenmux.ai,AI
 HOST-SUFFIX,abtestvm-sg.bytedance.com,AI
+HOST-SUFFIX,agentclientprotocol.com,AI
 HOST-SUFFIX,agnes-ai.com,AI
+HOST-SUFFIX,ai.azure.com,AI
 HOST-SUFFIX,ai.cloudflare.com,AI
 HOST-SUFFIX,ai.com,AI
 HOST-SUFFIX,ai.google.dev,AI
@@ -296,11 +308,15 @@ HOST-SUFFIX,antigravity-unleash.goog,AI
 HOST-SUFFIX,antigravity.google,AI
 HOST-SUFFIX,antigravity.google.com,AI
 HOST-SUFFIX,antspace.dev,AI
+HOST-SUFFIX,anythingllm.com,AI
 HOST-SUFFIX,api.microsoftapp.net,AI
 HOST-SUFFIX,api.revenuecat.com,AI
 HOST-SUFFIX,api.statsig.com,AI
 HOST-SUFFIX,apis.google.com,AI
 HOST-SUFFIX,apple-relay.fastly-edge.com,AI
+HOST-SUFFIX,apps.mzstatic.com,AI
+HOST-SUFFIX,arena.ai,AI
+HOST-SUFFIX,artificialanalysis.ai,AI
 HOST-SUFFIX,atmeta.com,AI
 HOST-SUFFIX,augmentcode.com,AI
 HOST-SUFFIX,auth0.com,AI
@@ -339,6 +355,7 @@ HOST-SUFFIX,claudemcpcontent.com,AI
 HOST-SUFFIX,claudepages.dev,AI
 HOST-SUFFIX,claudestudio.com,AI
 HOST-SUFFIX,claudeusercontent.com,AI
+HOST-SUFFIX,clawhub.ai,AI
 HOST-SUFFIX,client-api.arkoselabs.com,AI
 HOST-SUFFIX,clients6.google.com,AI
 HOST-SUFFIX,cline.bot,AI
@@ -347,13 +364,16 @@ HOST-SUFFIX,cloudcode-pa.googleapis.com,AI
 HOST-SUFFIX,codeium.com,AI
 HOST-SUFFIX,codeiumdata.com,AI
 HOST-SUFFIX,coderabbit.ai,AI
+HOST-SUFFIX,coderabbit.gallery.vsassets.io,AI
 HOST-SUFFIX,cody.dev,AI
 HOST-SUFFIX,cohere.ai,AI
 HOST-SUFFIX,cohere.com,AI
 HOST-SUFFIX,comfy.org,AI
+HOST-SUFFIX,comfyci.org,AI
 HOST-SUFFIX,comfyregistry.org,AI
 HOST-SUFFIX,commandcode.ai,AI
 HOST-SUFFIX,console.aws.a2z.com,AI
+HOST-SUFFIX,context7.com,AI
 HOST-SUFFIX,continue.dev,AI
 HOST-SUFFIX,copilot-stg.com,AI
 HOST-SUFFIX,copilot.cloud.microsoft,AI
@@ -372,17 +392,24 @@ HOST-SUFFIX,customer.prod.willow606.com,AI
 HOST-SUFFIX,deepinfra.com,AI
 HOST-SUFFIX,deepmind.com,AI
 HOST-SUFFIX,deepmind.google,AI
+HOST-SUFFIX,deepwiki.com,AI
+HOST-SUFFIX,deepwiki.org,AI
 HOST-SUFFIX,descript.com,AI
 HOST-SUFFIX,devin.ai,AI
 HOST-SUFFIX,diabrowser.com,AI
 HOST-SUFFIX,diabrowser.engineering,AI
 HOST-SUFFIX,dify.ai,AI
+HOST-SUFFIX,dola.com,AI
+HOST-SUFFIX,dreamgen.com,AI
 HOST-SUFFIX,duck.ai,AI
 HOST-SUFFIX,edgeservices.bing.com,AI
 HOST-SUFFIX,eigent.ai,AI
 HOST-SUFFIX,elevenlabs.com,AI
 HOST-SUFFIX,elevenlabs.io,AI
 HOST-SUFFIX,elevenlabsusercontent.com,AI
+HOST-SUFFIX,envato-static.com,AI
+HOST-SUFFIX,envato.com,AI
+HOST-SUFFIX,envatousercontent.com,AI
 HOST-SUFFIX,events.statsigapi.net,AI
 HOST-SUFFIX,factory.ai,AI
 HOST-SUFFIX,featuregates.org,AI
@@ -394,6 +421,8 @@ HOST-SUFFIX,flow.google,AI
 HOST-SUFFIX,flow.google.com,AI
 HOST-SUFFIX,g.ai,AI
 HOST-SUFFIX,gamma.app,AI
+HOST-SUFFIX,gateway.ai.cloudflare.com,AI
+HOST-SUFFIX,gateway.icloud.com,AI
 HOST-SUFFIX,geller-pa.googleapis.com,AI
 HOST-SUFFIX,gemini.google,AI
 HOST-SUFFIX,gemini.google.com,AI
@@ -437,6 +466,7 @@ HOST-SUFFIX,jules.google,AI
 HOST-SUFFIX,jules.google.com,AI
 HOST-SUFFIX,kilo.ai,AI
 HOST-SUFFIX,kilo.codes,AI
+HOST-SUFFIX,kimi.ai,AI
 HOST-SUFFIX,kiro.dev,AI
 HOST-SUFFIX,labs.google,AI
 HOST-SUFFIX,labs.google.com,AI
@@ -447,13 +477,17 @@ HOST-SUFFIX,lcicat.org,AI
 HOST-SUFFIX,lcicollections.org,AI
 HOST-SUFFIX,leonardo.ai,AI
 HOST-SUFFIX,lf3-static.bytednsdoc.com,AI
+HOST-SUFFIX,livekit.cloud,AI
+HOST-SUFFIX,liveperson.net,AI
 HOST-SUFFIX,llama.com,AI
 HOST-SUFFIX,llamameta.net,AI
 HOST-SUFFIX,lmarena.ai,AI
 HOST-SUFFIX,lmstudio.ai,AI
 HOST-SUFFIX,lovable.dev,AI
 HOST-SUFFIX,lovart.ai,AI
+HOST-SUFFIX,lpsnmedia.net,AI
 HOST-SUFFIX,lumalabs.ai,AI
+HOST-SUFFIX,magnific.com,AI
 HOST-SUFFIX,makersuite.google.com,AI
 HOST-SUFFIX,manus.im,AI
 HOST-SUFFIX,manuscdn.com,AI
@@ -469,12 +503,17 @@ HOST-SUFFIX,modelcontextprotocol.com,AI
 HOST-SUFFIX,modelcontextprotocol.io,AI
 HOST-SUFFIX,modelcontextprotocol.net,AI
 HOST-SUFFIX,modelcontextprotocol.org,AI
+HOST-SUFFIX,moonshot.ai,AI
+HOST-SUFFIX,mozilla.ai,AI
 HOST-SUFFIX,muse.ai,AI
 HOST-SUFFIX,muthos.com,AI
 HOST-SUFFIX,notebook.google,AI
 HOST-SUFFIX,notebook.google.com,AI
 HOST-SUFFIX,notebooklm.google,AI
 HOST-SUFFIX,notebooklm.google.com,AI
+HOST-SUFFIX,notegpt.io,AI
+HOST-SUFFIX,nousresearch.com,AI
+HOST-SUFFIX,novelai.net,AI
 HOST-SUFFIX,novita.ai,AI
 HOST-SUFFIX,oaistatic.com,AI
 HOST-SUFFIX,oaistatsig.com,AI
@@ -492,12 +531,15 @@ HOST-SUFFIX,openart.ai,AI
 HOST-SUFFIX,openclaw.ai,AI
 HOST-SUFFIX,opencode.ai,AI
 HOST-SUFFIX,openrouter.ai,AI
+HOST-SUFFIX,openspec.dev,AI
 HOST-SUFFIX,otter.ai,AI
+HOST-SUFFIX,oystermercury.top,AI
 HOST-SUFFIX,perplexity.ai,AI
 HOST-SUFFIX,perplexity.com,AI
 HOST-SUFFIX,phind.com,AI
 HOST-SUFFIX,pi.ai,AI
 HOST-SUFFIX,pika.art,AI
+HOST-SUFFIX,plannotator.ai,AI
 HOST-SUFFIX,poe.com,AI
 HOST-SUFFIX,poecdn.net,AI
 HOST-SUFFIX,pool.ntp.org,AI
@@ -520,10 +562,12 @@ HOST-SUFFIX,runwayml.com,AI
 HOST-SUFFIX,segment.io,AI
 HOST-SUFFIX,sentry.io,AI
 HOST-SUFFIX,sf16-short-sg.bytedapm.com,AI
+HOST-SUFFIX,sider.ai,AI
 HOST-SUFFIX,sillylittleguy.org,AI
 HOST-SUFFIX,smoot.apple.com,AI
 HOST-SUFFIX,sora.com,AI
 HOST-SUFFIX,sourcegraph.com,AI
+HOST-SUFFIX,spicywriter.com,AI
 HOST-SUFFIX,sso.amazonaws.com,AI
 HOST-SUFFIX,stability.ai,AI
 HOST-SUFFIX,starling.zijieapi.com,AI
@@ -533,12 +577,17 @@ HOST-SUFFIX,stripe.com,AI
 HOST-SUFFIX,suno.ai,AI
 HOST-SUFFIX,suno.com,AI
 HOST-SUFFIX,synthesia.io,AI
+HOST-SUFFIX,syntx.ai,AI
 HOST-SUFFIX,tabnine.com,AI
+HOST-SUFFIX,talkai.info,AI
+HOST-SUFFIX,tapnow.ai,AI
+HOST-SUFFIX,themeforest.net,AI
 HOST-SUFFIX,together.ai,AI
 HOST-SUFFIX,together.xyz,AI
 HOST-SUFFIX,tokenflux.ai,AI
 HOST-SUFFIX,trae-api-sg.mchost.guru,AI
 HOST-SUFFIX,trae.ai,AI
+HOST-SUFFIX,tripo3d.ai,AI
 HOST-SUFFIX,tron-sg.bytelemon.com,AI
 HOST-SUFFIX,turn.livekit.cloud,AI
 HOST-SUFFIX,typesafe.ai,AI
@@ -557,6 +606,7 @@ HOST-SUFFIX,z.ai,AI
 HOST-SUFFIX,zed.dev,AI
 HOST-KEYWORD,alkalimakersuite-pa.clients6.google.com,AI
 HOST-KEYWORD,openai,AI
+HOST-WILDCARD,scontent-*.xx.fbcdn.net,AI
 IP-CIDR,129.146.3.78/32,AI
 IP-CIDR,160.79.104.0/21,AI
 IP-CIDR,160.79.104.0/23,AI
